@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/security
+END
+OpenXDataPasswordEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/security/OpenXDataPasswordEncoder.java
+END
+OpenXDataUserDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/security/OpenXDataUserDetails.java
+END
+OpenXdataUserDetailsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/security/OpenXdataUserDetailsService.java
+END
+OpenXDataUserDetailsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/security/OpenXDataUserDetailsServiceImpl.java
+END

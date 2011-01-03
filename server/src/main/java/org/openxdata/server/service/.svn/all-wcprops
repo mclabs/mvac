@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service
+END
+SchedulerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/SchedulerService.java
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/UserService.java
+END
+AuthenticationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/AuthenticationService.java
+END
+FormDownloadService.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/FormDownloadService.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/package.html
+END
+LocaleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/LocaleService.java
+END
+RoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/RoleService.java
+END
+SmsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/SmsService.java
+END
+TaskService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/TaskService.java
+END
+FormService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/FormService.java
+END
+StudyManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/StudyManagerService.java
+END
+UtilityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/UtilityService.java
+END
+DataExportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/DataExportService.java
+END
+ReportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/ReportService.java
+END
+SerializationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/SerializationService.java
+END
+SettingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/service/SettingService.java
+END

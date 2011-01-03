@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view
+END
+MenuView.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/EpiHandy/!svn/ver/2838/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view/MenuView.java
+END
+SpecToStudyView.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view/SpecToStudyView.java
+END
+TaskFormView.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view/TaskFormView.java
+END
+ParamQuestionView.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view/ParamQuestionView.java
+END
+SpecificationView.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/EpiHandy/!svn/ver/2838/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view/SpecificationView.java
+END
+AbstractRightView.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/EpiHandy/!svn/ver/3175/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view/AbstractRightView.java
+END
+AvailableWIRView.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/EpiHandy/!svn/ver/2916/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view/AvailableWIRView.java
+END
+MessageBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/EpiHandy/!svn/ver/3580/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view/MessageBox.java
+END
+RootPanelView.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/EpiHandy/!svn/ver/2691/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/view/RootPanelView.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/EpiHandy/!svn/ver/3358/branches/oxd-wf-prototype/openxdata/server/src/main/resources
+END
+ehcache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/ehcache.xml
+END
+hibernate.default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/hibernate.default.properties
+END
+openxdata-server-applicationContext-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/3358/branches/oxd-wf-prototype/openxdata/server/src/main/resources/openxdata-server-applicationContext-security.xml
+END
+openxdata-applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/openxdata-applicationContext.xml
+END
+openxdata-server-applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/openxdata-server-applicationContext.xml
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/server/src/main/resources/hibernate.cfg.xml
+END

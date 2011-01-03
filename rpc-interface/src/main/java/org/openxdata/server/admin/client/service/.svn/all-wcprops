@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/EpiHandy/!svn/ver/2872/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/UserService.java
+END
+AuthenticationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/AuthenticationService.java
+END
+RoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/RoleService.java
+END
+SmsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/SmsService.java
+END
+TaskService.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/TaskService.java
+END
+StudyManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/StudyManagerService.java
+END
+UtilityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/UtilityService.java
+END
+ReportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/ReportService.java
+END
+SettingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/SettingService.java
+END

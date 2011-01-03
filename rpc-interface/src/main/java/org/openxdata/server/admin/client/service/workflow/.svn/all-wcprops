@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2872/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/workflow
+END
+SpecificationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/workflow/SpecificationService.java
+END
+SpecStudyMapService.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/EpiHandy/!svn/ver/2872/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/workflow/SpecStudyMapService.java
+END
+WorkItemsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/rpc-interface/src/main/java/org/openxdata/server/admin/client/service/workflow/WorkItemsService.java
+END

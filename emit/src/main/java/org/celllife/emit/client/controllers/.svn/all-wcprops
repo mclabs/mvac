@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/controllers
+END
+DataCaptureController.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/controllers/DataCaptureController.java
+END
+FormListController.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/controllers/FormListController.java
+END
+UserProfileController.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/controllers/UserProfileController.java
+END
+FormPrintController.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/controllers/FormPrintController.java
+END
+FormResponsesController.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/controllers/FormResponsesController.java
+END
+LoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/controllers/LoginController.java
+END

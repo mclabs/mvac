@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/sms
+END
+OpenXDataAbstractJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/sms/OpenXDataAbstractJob.java
+END
+SmsProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/sms/SmsProcessor.java
+END
+FormSmsParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/sms/FormSmsParser.java
+END
+FormSmsTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/sms/FormSmsTask.java
+END
+WapPushSms.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/sms/WapPushSms.java
+END
+FormSmsServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/sms/FormSmsServer.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/sms/package.html
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs/LICENSE.txt
+END
+ext-all.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs/ext-all.js
+END
+ext-core.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs/ext-core.js
+END
+ext-all-debug.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs/ext-all-debug.js
+END
+ext-core-debug.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs/ext-core-debug.js
+END
+ext-lang-en.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs/ext-lang-en.js
+END
+ext-lang-pt.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs/ext-lang-pt.js
+END
+INCLUDE_ORDER.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs/INCLUDE_ORDER.txt
+END
+ext-lang-ny.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/extjs/ext-lang-ny.js
+END

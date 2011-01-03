@@ -1,0 +1,43 @@
+WorkItemsTable{Id, xml, state}
+
+WorkItemDAO
+WorkItemService
+WorkItemPersit{
+	workItemXml
+	workItemID
+	workItemState
+}
+
+
+Eidted files;
+applicationContext.xml
+hibernate.cfg.xml to add the hbm of the mappings
+Liquibase.xml to add the workItems table XML
+
+
+        String query = "  SELECT {wf_workitems.*} ,{wf_specifications.*} ,{wf_spec_study_maps.*}, {study.*}"
+                + "    FROM"
+                + "       openxdatawf.wf_workitems wf_workitems"
+                + " INNER JOIN"
+                + "        openxdatawf.wf_specifications wf_specifications"
+                + "     ON ("
+                + "                wf_workitems.specid = wf_specifications.name"
+                + "            )"
+                + "            AND ("
+                + "                wf_workitems.specversion = wf_specifications.version"
+                + "            )"
+                + " INNER JOIN wf_spec_study_maps"
+                + "            ON ("
+                + "                wf_spec_study_maps.spec_id = wf_specifications.id"
+                + "            )"
+                + " INNER JOIN study"
+                + " ON ("
+                + "                wf_spec_study_maps.study_id = study.study_id"
+                + "            )"
+                + "";
+
+        SQLQuery sQLQuery = getSession().createSQLQuery(query);
+        sQLQuery.addEntity("wf_workitems",WorkItemRecord.class);
+        sQLQuery.addEntity("wf_specifications", DBSpecification.class);
+        sQLQuery.addEntity("wf_spec_study_maps", DBSpecStudyMap.class);
+        sQLQuery.addEntity("study", StudyDef.class);

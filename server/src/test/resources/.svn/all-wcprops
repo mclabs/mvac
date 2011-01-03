@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/resources
+END
+default.rptdesign
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/resources/default.rptdesign
+END
+openxdata-test-applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/resources/openxdata-test-applicationContext.xml
+END
+test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/resources/test.properties
+END
+integration.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/resources/integration.properties
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/resources/log4j.xml
+END

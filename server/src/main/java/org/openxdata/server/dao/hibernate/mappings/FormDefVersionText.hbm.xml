@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openxdata.server.admin.model">
+  <class lazy="false" name="FormDefVersionText" table="form_definition_version_text">
+    <id column="form_definition_version_text_id" name="formDefVersionTextId" type="java.lang.Integer" unsaved-value="0">
+      <generator class="native">
+        <param name="sequence">form_def_version_text_form_def_version_text_id_seq</param>
+      </generator>
+    </id>
+    <discriminator column="form_definition_version_text_id" insert="false"/>
+    <property column="form_definition_version_id" name="formDefVersionId" not-null="true" type="java.lang.Integer"/>
+    <property column="locale_key" name="localeKey" not-null="true" type="java.lang.String"/>
+    <property column="xform_text" length="1024" name="xformText" not-null="true" type="java.lang.String"/>
+    <property column="layout_text" length="1024" name="layoutText" not-null="false" type="java.lang.String"/>
+  </class>
+</hibernate-mapping>

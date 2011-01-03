@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model
+END
+Locale.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/Locale.java
+END
+FormSmsError.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/FormSmsError.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/Role.java
+END
+MobileMenuText.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/MobileMenuText.java
+END
+FormDataVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/FormDataVersion.java
+END
+ExportedFormDataList.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/ExportedFormDataList.java
+END
+StudyUserMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/StudyUserMap.java
+END
+FormDataHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/FormDataHeader.java
+END
+ExportedFormData.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/ExportedFormData.java
+END
+ReportUserMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/ReportUserMap.java
+END
+Editable.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/Editable.java
+END
+Report.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/Report.java
+END
+Setting.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/Setting.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/User.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/package.html
+END
+TaskDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/TaskDef.java
+END
+FormDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/FormDef.java
+END
+TaskParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/TaskParam.java
+END
+ExportedDataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/ExportedDataType.java
+END
+StudyDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/StudyDef.java
+END
+FormDefText.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/FormDefText.java
+END
+FormDefVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/FormDefVersion.java
+END
+ReportGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/ReportGroup.java
+END
+Permission.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/Permission.java
+END
+FormSmsArchive.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/FormSmsArchive.java
+END
+SettingGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/SettingGroup.java
+END
+StudyDefText.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/StudyDefText.java
+END
+AbstractEditable.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/AbstractEditable.java
+END
+FormData.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/FormData.java
+END
+FormDefVersionText.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/FormDefVersionText.java
+END

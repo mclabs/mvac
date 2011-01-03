@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl
+END
+UserServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/UserServiceTest.java
+END
+AuthenticationServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/AuthenticationServiceTest.java
+END
+FormDefServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/FormDefServiceTest.java
+END
+PermissionServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/PermissionServiceTest.java
+END
+FormDownloadServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/FormDownloadServiceTest.java
+END
+FormDataServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/FormDataServiceTest.java
+END
+LocaleServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/LocaleServiceTest.java
+END
+LocaleServiceUnitTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/LocaleServiceUnitTest.java
+END
+importErrors.csv
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/importErrors.csv
+END
+MobileMenuTextServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/MobileMenuTextServiceTest.java
+END
+RoleServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/RoleServiceTest.java
+END
+TaskServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/TaskServiceTest.java
+END
+SmsServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/SmsServiceTest.java
+END
+UtilityServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/UtilityServiceTest.java
+END
+FormServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/FormServiceTest.java
+END
+StudyManagerServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/StudyManagerServiceTest.java
+END
+import.csv
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/import.csv
+END
+TaskServiceWithMockTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/TaskServiceWithMockTest.java
+END
+ReportServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/ReportServiceTest.java
+END
+DataExportServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/DataExportServiceTest.java
+END
+SettingServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/SettingServiceTest.java
+END
+SerializationServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/service/impl/SerializationServiceTest.java
+END

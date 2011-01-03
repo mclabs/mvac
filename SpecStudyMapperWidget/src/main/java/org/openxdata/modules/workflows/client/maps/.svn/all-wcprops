@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps
+END
+SpecStudyMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/SpecStudyMap.java
+END
+TaskFormDefMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/TaskFormDefMap.java
+END
+ParamQuestionMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/ParamQuestionMap.java
+END
+TaskFormVersionMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/TaskFormVersionMap.java
+END

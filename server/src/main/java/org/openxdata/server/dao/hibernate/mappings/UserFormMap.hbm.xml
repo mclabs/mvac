@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openxdata.server.admin.model.mapping">
+  <class lazy="false" name="UserFormMap" table="user_form">
+    <id column="user_form_id" name="userFormMapId" type="java.lang.Integer" unsaved-value="0">
+      <generator class="native">
+        <param name="sequence">user_form_map_id_seq </param>
+      </generator>
+    </id>
+    <discriminator column="user_form_id" insert="false"/>
+    <property column="user_id" length="50" name="userId" type="java.lang.Integer"/>
+    <property column="form_id" length="50" name="formId" type="java.lang.Integer"/>
+  </class>
+</hibernate-mapping>

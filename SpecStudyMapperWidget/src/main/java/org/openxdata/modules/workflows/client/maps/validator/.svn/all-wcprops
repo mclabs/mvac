@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/validator
+END
+XFormTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/validator/XFormTypes.java
+END
+CompletenessValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/validator/CompletenessValidator.java
+END
+TypeValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/validator/TypeValidator.java
+END
+DafaultTypeValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/validator/DafaultTypeValidator.java
+END
+DefaultCompletenessValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/maps/validator/DefaultCompletenessValidator.java
+END

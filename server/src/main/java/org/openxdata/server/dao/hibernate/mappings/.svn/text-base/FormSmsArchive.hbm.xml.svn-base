@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openxdata.server.admin.model">
+  <class name="FormSmsArchive" table="form_sms_archive">
+    <id column="form_sms_archive_id" name="formSmsArchiveId" type="int" unsaved-value="0">
+      <generator class="native">
+        <param name="sequence">form_sms_form_sms_archive_id_seq</param>
+      </generator>
+    </id>
+    <property column="sender" name="sender" not-null="true" type="java.lang.String"/>
+    <property column="form_definition_version_id" name="formDefVersionId" not-null="true" type="int"/>
+    <property column="description" length="1024" name="description" not-null="false" type="java.lang.String"/>
+    <property column="data" name="data" not-null="true" type="java.lang.String"/>
+    <many-to-one class="User" name="creator" not-null="true"/>
+    <property column="date_created" length="19" name="dateCreated" not-null="true" type="java.util.Date"/>
+    <many-to-one class="User" column="changed_by" name="changedBy"/>
+    <property column="date_changed" length="19" name="dateChanged" type="java.util.Date"/>
+    <many-to-one class="User" column="archive_creator" name="archiveCreator" not-null="true"/>
+    <property column="archive_date_created" name="archiveDateCreated" not-null="true" type="java.util.Date"/>
+  </class>
+</hibernate-mapping>

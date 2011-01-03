@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/EpiHandy/!svn/ver/3581/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao
+END
+WorkItemDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/3581/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao/WorkItemDAO.java
+END
+DBSpecificationDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/EpiHandy/!svn/ver/3217/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao/DBSpecificationDAO.java
+END
+DBSpecStudyMapDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/3216/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao/DBSpecStudyMapDAO.java
+END

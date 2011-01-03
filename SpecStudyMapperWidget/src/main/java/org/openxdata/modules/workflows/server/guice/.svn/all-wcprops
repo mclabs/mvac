@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2820/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/server/guice
+END
+ServletConfigModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/EpiHandy/!svn/ver/2820/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/server/guice/ServletConfigModule.java
+END
+ActionHandlerConfigModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/EpiHandy/!svn/ver/2820/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/server/guice/ActionHandlerConfigModule.java
+END
+ContextListerner.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/EpiHandy/!svn/ver/2820/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/server/guice/ContextListerner.java
+END

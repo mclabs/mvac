@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openxdata.server.admin.model">
+  <class name="FormDataVersion" table="form_data_version">
+    <id column="form_data_version_id" name="formDataVersionId" type="int" unsaved-value="0">
+      <generator class="native">
+        <param name="sequence">form_data_form_data_version_id_seq</param>
+      </generator>
+    </id>
+    <many-to-one cascade="none" class="FormData" column="form_data_id" name="formData" not-null="true"/>
+    <property column="data" name="data" not-null="true" type="java.lang.String"/>
+    <many-to-one class="User" name="creator" not-null="true"/>
+    <property column="date_created" length="19" name="dateCreated" not-null="true" type="java.util.Date"/>
+    <many-to-one class="User" column="changed_by" name="changedBy"/>
+    <property column="date_changed" length="19" name="dateChanged" type="java.util.Date"/>
+  </class>
+</hibernate-mapping>

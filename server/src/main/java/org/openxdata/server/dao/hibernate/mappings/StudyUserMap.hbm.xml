@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openxdata.server.admin.model">
+  <class lazy="false" name="StudyUserMap" table="study_user">
+    <id column="study_user_id" name="studyUserId" type="java.lang.Integer" unsaved-value="0">
+      <generator class="native">
+        <param name="sequence"> study_study_users_id_seq </param>
+      </generator>
+    </id>
+    <discriminator column="study_user_id" insert="false"/>
+    <property column="user_id" length="50" name="userId" type="java.lang.Integer"/>
+    <property column="study_id" length="50" name="studyId" type="java.lang.Integer"/>
+  </class>
+</hibernate-mapping>

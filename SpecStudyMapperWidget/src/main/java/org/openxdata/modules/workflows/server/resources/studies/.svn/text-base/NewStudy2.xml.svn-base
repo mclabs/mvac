@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<study description="" name="New Study2">
+<form description="" name="New Form1">
+<version description="" name="v1">
+<xform>&lt;xf:xforms xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xf:model&gt;
+    &lt;xf:instance id="new_study2_new_form1_v1"&gt;
+      &lt;new_study2_new_form1_v1 name="New Form1_v1" id="2"&gt;
+        &lt;question2/&gt;
+        &lt;question7/&gt;
+        &lt;question8/&gt;
+        &lt;question9/&gt;
+      &lt;/new_study2_new_form1_v1&gt;
+    &lt;/xf:instance&gt;
+    &lt;xf:bind id="question2" nodeset="/new_study2_new_form1_v1/question2" type="xsd:string"/&gt;
+    &lt;xf:bind id="question7" nodeset="/new_study2_new_form1_v1/question7" type="xsd:string"/&gt;
+    &lt;xf:bind id="question8" nodeset="/new_study2_new_form1_v1/question8" type="xsd:string"/&gt;
+    &lt;xf:bind id="question9" nodeset="/new_study2_new_form1_v1/question9" type="xsd:string"/&gt;
+  &lt;/xf:model&gt;
+  &lt;xf:group id="1"&gt;
+    &lt;xf:label&gt;Page2&lt;/xf:label&gt;
+    &lt;xf:input bind="question2"&gt;
+      &lt;xf:label&gt;Question2&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+    &lt;xf:input bind="question7"&gt;
+      &lt;xf:label&gt;Question7&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+    &lt;xf:input bind="question8"&gt;
+      &lt;xf:label&gt;Question8&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+    &lt;xf:input bind="question9"&gt;
+      &lt;xf:label&gt;Question9&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+  &lt;/xf:group&gt;
+&lt;/xf:xforms&gt;
+</xform>
+<layout>&lt;Form id="2"&gt;&#13;
+  &lt;Page Text="Page2" Binding="Page2" Width="100%" Height="383px" backgroundColor=""&gt;&#13;
+    &lt;Item WidgetType="Label" Text="Question2" HelpText="Question2" Binding="question2" Left="20px" Top="20px" TabIndex="0" fontFamily="Verdana,'Lucida Grande','Trebuchet MS',Arial,Sans-Serif"/&gt;&#13;
+    &lt;Item WidgetType="TextBox" HelpText="Question2" Binding="question2" Left="91px" Top="20px" Width="200px" Height="25px" TabIndex="1" fontFamily="Verdana, 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif"/&gt;&#13;
+    &lt;Item WidgetType="Label" Text="Question7" HelpText="Question7" Binding="question7" Left="20px" Top="60px" TabIndex="0" fontFamily="Verdana,'Lucida Grande','Trebuchet MS',Arial,Sans-Serif"/&gt;&#13;
+    &lt;Item WidgetType="TextBox" HelpText="Question7" Binding="question7" Left="91px" Top="60px" Width="200px" Height="25px" TabIndex="2" fontFamily="Verdana, 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif"/&gt;&#13;
+    &lt;Item WidgetType="Label" Text="Question8" HelpText="Question8" Binding="question8" Left="20px" Top="100px" TabIndex="0" fontFamily="Verdana,'Lucida Grande','Trebuchet MS',Arial,Sans-Serif"/&gt;&#13;
+    &lt;Item WidgetType="TextBox" HelpText="Question8" Binding="question8" Left="91px" Top="100px" Width="200px" Height="25px" TabIndex="3" fontFamily="Verdana, 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif"/&gt;&#13;
+    &lt;Item WidgetType="Label" Text="Question9" HelpText="Question9" Binding="question9" Left="20px" Top="140px" TabIndex="0" fontFamily="Verdana,'Lucida Grande','Trebuchet MS',Arial,Sans-Serif"/&gt;&#13;
+    &lt;Item WidgetType="TextBox" HelpText="Question9" Binding="question9" Left="91px" Top="140px" Width="200px" Height="25px" TabIndex="4" fontFamily="Verdana, 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif"/&gt;&#13;
+    &lt;Item WidgetType="Button" Text="Submit" HelpText="submit" Binding="submit" Left="20px" Top="190px" Width="70px" Height="30px" TabIndex="0" fontFamily="Verdana, 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif"/&gt;&#13;
+    &lt;Item WidgetType="Button" Text="Cancel" HelpText="cancel" Binding="cancel" Left="220px" Top="190px" Width="70px" Height="30px" TabIndex="0" fontFamily="Verdana, 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif"/&gt;&#13;
+  &lt;/Page&gt;&#13;
+&lt;/Form&gt;</layout>
+<versionText locale="en">
+<xform>&lt;xform id="2"&gt;&#13;
+    &lt;text xpath="xforms/model/instance/new_study2_new_form1_v1[@name]" value="New Form1_v1"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='1']/label" value="Page2"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='1']/input[@bind='question2']/label" value="Question2"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='1']/input[@bind='question7']/label" value="Question7"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='1']/input[@bind='question8']/label" value="Question8"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='1']/input[@bind='question9']/label" value="Question9"/&gt;&#13;
+  &lt;/xform&gt;</xform>
+<layout>&lt;Form id="2"&gt;&#13;
+    &lt;text xpath="Form/Page[@Binding='Page1'][@Text]" value="Page1"/&gt;&#13;
+  &lt;/Form&gt;</layout>
+</versionText>
+</version>
+</form>
+</study>

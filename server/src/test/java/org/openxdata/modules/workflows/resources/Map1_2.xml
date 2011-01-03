@@ -1,0 +1,14 @@
+<SpecStudyMap Id='0' SpecId='MalariaSurveyForOxd-OXD-CustomService0.3' StudyId='Sample Study'>
+    <TaskFormMaps>
+        <TaskFormDef TaskId='Malaria_4' FormId='1'>
+            <TaskFormVersionMaps>
+                <TaskFormVersion TaskId='Malaria_4' FormVersionId='1'>
+                    <ParamQuestionMaps>
+                        <ParamQuestion Question='title' Parameter='malariaType'/>
+                        <ParamQuestion Question='lastname' Parameter='weight'/>
+                    </ParamQuestionMaps>
+                </TaskFormVersion>
+            </TaskFormVersionMaps>
+        </TaskFormDef>
+    </TaskFormMaps>
+</SpecStudyMap>

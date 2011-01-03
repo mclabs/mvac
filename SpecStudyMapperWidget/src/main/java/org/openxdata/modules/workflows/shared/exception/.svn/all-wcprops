@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/3578/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/shared/exception
+END
+TypeMisMatchException.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/EpiHandy/!svn/ver/3573/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/shared/exception/TypeMisMatchException.java
+END
+IncompleteMapException.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/EpiHandy/!svn/ver/3578/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/shared/exception/IncompleteMapException.java
+END

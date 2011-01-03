@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/3280/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/hibernate/mappings
+END
+hibernate.reveng.xml
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/hibernate/mappings/hibernate.reveng.xml
+END
+Specifications.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/EpiHandy/!svn/ver/3280/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/hibernate/mappings/Specifications.hbm.xml
+END
+SpecStudyMaps.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/EpiHandy/!svn/ver/3071/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/hibernate/mappings/SpecStudyMaps.hbm.xml
+END
+Workitems.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/EpiHandy/!svn/ver/3071/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/hibernate/mappings/Workitems.hbm.xml
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/server/handler
+END
+ParseSpecActionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/server/handler/ParseSpecActionHandler.java
+END
+GetSpecActionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/server/handler/GetSpecActionHandler.java
+END
+GetStudiesActionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/server/handler/GetStudiesActionHandler.java
+END

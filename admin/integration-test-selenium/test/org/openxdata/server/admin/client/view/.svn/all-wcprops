@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/integration-test-selenium/test/org/openxdata/server/admin/client/view
+END
+StudyContentTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/integration-test-selenium/test/org/openxdata/server/admin/client/view/StudyContentTest.java
+END
+MainMenuContentTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/integration-test-selenium/test/org/openxdata/server/admin/client/view/MainMenuContentTest.java
+END
+MainViewContentTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/integration-test-selenium/test/org/openxdata/server/admin/client/view/MainViewContentTest.java
+END
+ToolbarContentTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/integration-test-selenium/test/org/openxdata/server/admin/client/view/ToolbarContentTest.java
+END
+LoginViewContentTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/integration-test-selenium/test/org/openxdata/server/admin/client/view/LoginViewContentTest.java
+END

@@ -1,0 +1,28 @@
+.openxdata-heading{
+    color: white;
+    background: black;
+    font: bold large;
+    text-align: center;
+}
+
+.list-panels{
+    background: black;
+    border: black;
+    border-width: thin;
+}
+
+.flex-Even-Row{
+    background-color: #D0D8E8;
+}
+
+.flex-Odd-Row{
+    background-color: #E9EDF4;
+}
+
+.flex-Heading-Table{
+    background-color: #4F81BD;
+}
+
+
+
+

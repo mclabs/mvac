@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/report/birt
+END
+ReportManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/report/birt/ReportManager.java
+END
+ReportColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/report/birt/ReportColumn.java
+END
+ReportDesigner.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/report/birt/ReportDesigner.java
+END
+ReportStyle.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/report/birt/ReportStyle.java
+END
+BirtConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/report/birt/BirtConstants.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/report/birt/package.html
+END

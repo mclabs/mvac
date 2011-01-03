@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 61
+.settings
+bin
+build
+dist
+openXdata Logs
+target
+www
+.projects
+
+END

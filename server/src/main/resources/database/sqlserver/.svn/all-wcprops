@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/sqlserver
+END
+create-database.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/sqlserver/create-database.sql
+END
+liquibase-master.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/sqlserver/liquibase-master.xml
+END
+liquibase-permissions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/sqlserver/liquibase-permissions.xml
+END
+OPENXDATA_SETTINGS.properties
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/sqlserver/OPENXDATA_SETTINGS.properties
+END

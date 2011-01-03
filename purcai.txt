@@ -1,0 +1,60 @@
+./SpecStudyMapperWidget/.svn/text-base/pom.xml.svn-base:            <artifactId>gwt-querybuilder</artifactId>
+./SpecStudyMapperWidget/pom.xml:            <artifactId>gwt-querybuilder</artifactId>
+./admin/pom.xml.bak:            <artifactId>gwt-querybuilder</artifactId>
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:import org.purc.purcforms.client.QueryBuilderWidget;
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:	private QueryBuilderWidget queryBuilder;
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:		queryBuilder = new QueryBuilderWidget();
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:			tabs.add(queryBuilder, "Fields");
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:		queryBuilder.hideDebugTabs();
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:					queryBuilder.setXform(getXform(formDefVersion));
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:				queryBuilder.setXform(getXform(formDefVersion));
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setQueryDef(report.getQueryDefinition());
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setSql(report.getQuerySql());
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setXform(null);
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setQueryDef(null);
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setSql(null);
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.load();
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:		return queryBuilder.getSql();
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:				report.setQueryDefinition(queryBuilder.getQueryDef());
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:				report.setQuerySql(queryBuilder.getSql());
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.load();
+Binary file ./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView$12.class matches
+Binary file ./admin/war/WEB-INF/classes/org/openxdata/server/admin/client/view/ReportView.class matches
+Binary file ./admin/war/WEB-INF/lib/gwt-querybuilder-2.0.5.jar matches
+./admin/.svn/text-base/.classpath.svn-base:	<classpathentry kind="var" path="M2_REPO/org/purc/gwt-querybuilder/2.0.2/gwt-querybuilder-2.0.2.jar"/>
+./admin/.svn/text-base/pom.xml.svn-base:            <artifactId>gwt-querybuilder</artifactId>
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:import org.purc.purcforms.client.QueryBuilderWidget;
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:	private QueryBuilderWidget queryBuilder;
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:		queryBuilder = new QueryBuilderWidget();
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:			tabs.add(queryBuilder, "Fields");
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:		queryBuilder.hideDebugTabs();
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:					queryBuilder.setXform(getXform(formDefVersion));
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:				queryBuilder.setXform(getXform(formDefVersion));
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setQueryDef(report.getQueryDefinition());
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setSql(report.getQuerySql());
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setXform(null);
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setQueryDef(null);
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.setSql(null);
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.load();
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:		return queryBuilder.getSql();
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:				report.setQueryDefinition(queryBuilder.getQueryDef());
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:				report.setQuerySql(queryBuilder.getSql());
+./admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java:			queryBuilder.load();
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:import org.purc.purcforms.client.QueryBuilderWidget;
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:	private QueryBuilderWidget queryBuilder;
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:		queryBuilder = new QueryBuilderWidget();
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:			tabs.add(queryBuilder, "Fields");
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:		queryBuilder.hideDebugTabs();
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:					queryBuilder.setXform(getXform(formDefVersion));
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:				queryBuilder.setXform(getXform(formDefVersion));
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:			queryBuilder.setQueryDef(report.getQueryDefinition());
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:			queryBuilder.setSql(report.getQuerySql());
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:			queryBuilder.setXform(null);
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:			queryBuilder.setQueryDef(null);
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:			queryBuilder.setSql(null);
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:			queryBuilder.load();
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:		return queryBuilder.getSql();
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:				report.setQueryDefinition(queryBuilder.getQueryDef());
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:				report.setQuerySql(queryBuilder.getSql());
+./admin/src/main/java/org/openxdata/server/admin/client/view/.svn/text-base/ReportView.java.svn-base:			queryBuilder.load();
+./admin/pom.xml:            <artifactId>gwt-querybuilder</artifactId>

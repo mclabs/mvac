@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%p - %C{1}.%M(%L) |%d{ISO8601}| %m%n" />
+		</layout>
+	</appender>
+		
+	<!-- Appender for Logging fatal information needed for system diagnosis -->
+	<appender name="OPENXDATASERVERERRORLOG" class="org.openxdata.server.logging.OpenXDataLog4JFileAppender">
+		<param name="Append" value="true"/>
+        <param name="datePattern" value="'.'yyyy-MM-dd"/>
+		<param name="File" value="openXdata logs/openxdata-server-error.log" />        
+  		<layout class="org.apache.log4j.PatternLayout">
+   			<param name="ConversionPattern" value="%c %d{ISO8601} -- %p -- %m%n"/>
+  		</layout>	
+  		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+      		<param name="LevelMin" value="ERROR" />
+    	</filter>	
+    	
+	</appender>
+
+	<appender name="OPENXDATAHTMLFILEAPPENDER" class="org.openxdata.server.logging.OpenXDataLog4JFileAppender">
+	  <param name="file" value="openXdata logs/openxdata-server-error.htm" />
+	  <param name="datePattern" value="'.'yyyy-MM-dd"/>
+	  <layout class="org.apache.log4j.HTMLLayout" />
+	</appender>
+	
+	<logger name="org.apache">
+		<level value="WARN" />
+		<appender-ref ref="OPENXDATASERVERERRORLOG"/>
+	</logger>
+	
+	<!-- Hide unnecessary errors logged by Hibernate during unit testing -->
+	<logger name="org.hibernate.tool.hbm2ddl.SchemaExport" >
+		<level value="FATAL" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="OPENXDATASERVERERRORLOG"/>
+	</logger>
+	
+	<logger name="org.hibernate">
+		<level value="ERROR" />
+		<appender-ref ref="OPENXDATASERVERERRORLOG"/>
+	</logger>
+	
+	<logger name="net.sf.ehcache">
+		<level value="ERROR" />
+		<appender-ref ref="OPENXDATASERVERERRORLOG"/>
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="WARN" />
+		<appender-ref ref="OPENXDATASERVERERRORLOG"/>
+	</logger>
+
+	<logger name="org.apache.fop">
+		<level value="ERROR" />
+		<appender-ref ref="OPENXDATASERVERERRORLOG"/>
+	</logger>
+	
+	<!-- Hide the useless MissingResourceException -->
+	<logger name="org.springframework.context.support.ResourceBundleMessageSource">
+		<level value="ERROR" />
+		<appender-ref ref="OPENXDATASERVERERRORLOG"/>
+	</logger>
+	
+	<logger name="com.intel.bluetooth">
+        <level value="INFO" />
+        <appender-ref ref="OPENXDATASERVERERRORLOG"/>
+    </logger>
+	
+	<logger name="org.openxdata">
+		<level value="ERROR" />
+		<appender-ref ref="OPENXDATASERVERERRORLOG"/>
+		<appender-ref ref="OPENXDATAHTMLFILEAPPENDER"/>
+	</logger>
+	
+	<root>
+		<level value="WARN" />	
+		
+		<!-- List of Appenders -->
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="OPENXDATASERVERERRORLOG"/>
+		<appender-ref ref="OPENXDATAHTMLFILEAPPENDER"/>
+	</root>
+
+</log4j:configuration>

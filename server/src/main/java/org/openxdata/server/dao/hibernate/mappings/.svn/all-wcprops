@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings
+END
+Report.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/Report.hbm.xml
+END
+Setting.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/Setting.hbm.xml
+END
+User.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/User.hbm.xml
+END
+TaskDef.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/TaskDef.hbm.xml
+END
+FormDef.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/FormDef.hbm.xml
+END
+TaskParam.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/TaskParam.hbm.xml
+END
+UserReportGroupMap.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/UserReportGroupMap.hbm.xml
+END
+StudyDef.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/StudyDef.hbm.xml
+END
+FormDefText.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/FormDefText.hbm.xml
+END
+FormDefVersion.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/FormDefVersion.hbm.xml
+END
+FormSmsArchive.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/FormSmsArchive.hbm.xml
+END
+Permission.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/Permission.hbm.xml
+END
+ReportGroup.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/ReportGroup.hbm.xml
+END
+SettingGroup.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/SettingGroup.hbm.xml
+END
+StudyDefText.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/StudyDefText.hbm.xml
+END
+FormDefVersionText.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/FormDefVersionText.hbm.xml
+END
+FormData.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/FormData.hbm.xml
+END
+Locale.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/Locale.hbm.xml
+END
+FormSmsError.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/FormSmsError.hbm.xml
+END
+UserFormMap.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/UserFormMap.hbm.xml
+END
+MobileMenuText.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/MobileMenuText.hbm.xml
+END
+Role.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/Role.hbm.xml
+END
+FormDataVersion.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/FormDataVersion.hbm.xml
+END
+StudyUserMap.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/StudyUserMap.hbm.xml
+END
+UserStudyMap.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/UserStudyMap.hbm.xml
+END
+FormDataHeader.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/FormDataHeader.hbm.xml
+END
+DeadlineLog.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/DeadlineLog.hbm.xml
+END
+ReportUserMap.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/ReportUserMap.hbm.xml
+END
+UserReportMap.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/dao/hibernate/mappings/UserReportMap.hbm.xml
+END

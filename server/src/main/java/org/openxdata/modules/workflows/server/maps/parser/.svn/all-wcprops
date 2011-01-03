@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/3272/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/maps/parser
+END
+SpecStudyParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/EpiHandy/!svn/ver/3188/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/maps/parser/SpecStudyParser.java
+END
+TaskFormDefParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/EpiHandy/!svn/ver/3188/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/maps/parser/TaskFormDefParser.java
+END
+MatcherHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/EpiHandy/!svn/ver/3272/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/maps/parser/MatcherHelper.java
+END
+ParamQuestionParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/EpiHandy/!svn/ver/3188/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/maps/parser/ParamQuestionParser.java
+END
+TaskFormVersionParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/EpiHandy/!svn/ver/3188/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/maps/parser/TaskFormVersionParser.java
+END

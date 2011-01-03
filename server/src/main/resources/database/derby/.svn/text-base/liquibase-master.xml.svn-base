@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+	<!-- master changelog includes all other changelogs	-->
+	<include file="database/derby/liquibase-insert-data.xml" />
+	<include file="database/derby/liquibase-create-tables.xml" />
+	<include file="database/derby/liquibase-create-foreignkeys.xml" />
+	<include file="database/derby/liquibase-permissions.xml" />
+	<include file="database/derby/liquibase-mobile-menu.xml" />
+	<include file="database/derby/liquibase-update-to-1.0.xml" />
+</databaseChangeLog>

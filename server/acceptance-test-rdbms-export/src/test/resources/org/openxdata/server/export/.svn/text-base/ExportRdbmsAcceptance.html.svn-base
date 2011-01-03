@@ -1,0 +1,129 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <title>Export RDBMS Acceptance test</title>
+    <body>
+        <h1>Export RDBMS Acceptance test</h1>
+        <h2>
+            The exporter should handle normal xforms
+        </h2>
+
+        <div class="example">
+            When the XForm definition is
+            <pre concordion:set="#definition"><![CDATA[
+<xf:xforms xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xf:model>
+    <xf:instance id="test1">
+      <test1 name="test form 1" id="9">
+        <question1/>
+        <question2/>
+      </test1>
+    </xf:instance>
+    <xf:bind id="question1" nodeset="/test1/question1" type="xsd:string"/>
+    <xf:bind id="question2" nodeset="/test1/question2" type="xsd:string"/>
+  </xf:model>
+  <xf:group id="1">
+    <xf:label>Page1</xf:label>
+    <xf:input bind="question1">
+      <xf:label>Question1</xf:label>
+    </xf:input>
+    <xf:select1 bind="question2">
+      <xf:label>Question2</xf:label>
+      <xf:item id="option1">
+        <xf:label>Option1</xf:label>
+        <xf:value>option1</xf:value>
+      </xf:item>
+      <xf:item id="option2">
+        <xf:label>Option2</xf:label>
+        <xf:value>option2</xf:value>
+      </xf:item>
+    </xf:select1>
+  </xf:group>
+</xf:xforms>]]>
+            </pre>
+            then the following create table should be generated
+            <pre concordion:assertEquals="generateTables(#definition)">
+CREATE TABLE test1
+(
+    id VARCHAR(36) NOT NULL,
+    openxdata_form_data_id VARCHAR(50),
+    openxdata_user_id VARCHAR(50),
+    openxdata_user_name VARCHAR(50),
+    question1 VARCHAR(255),
+    question2 VARCHAR(255),
+    PRIMARY KEY(id)
+);
+            </pre>
+            when we submit this data with the previous definition
+            <pre concordion:set="#data"><![CDATA[
+<?xml version='1.0' encoding='UTF-8' ?>
+<test1>
+    <question1>answer1</question1>
+    <question2>option1</question2>
+</test1>]]> </pre>
+            then this insert sql should be generated
+            <p>
+                <code concordion:assertEquals="generateData(#definition, #data)">
+                    INSERT INTO test (id, opexdata_form_data_id, openxdata_user_id, openxdata_username, question1, question2) values(?, ?, ?, ?, ?);
+                </code></p>
+        </div>
+
+        <h2>
+            What should the export do with names that clashes?
+        </h2>
+        <p>
+            Names with "id", "parentid" or "select" etc can cause random bugs.
+        </p>
+        <div class="example">
+            When the XForm definition is
+            <pre concordion:set="#definition"><![CDATA[
+<xf:xforms xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xf:model>
+    <xf:instance id="test1">
+      <select name="form with a reserved SQL word" id="9">
+        <id/>
+        <parentid/>
+      </select>
+    </xf:instance>
+    <xf:bind id="id" nodeset="/select/id" type="xsd:string"/>
+    <xf:bind id="parentid" nodeset="/select/parentid" type="xsd:string"/>
+  </xf:model>
+  <xf:group id="1">
+    <xf:label>Page1</xf:label>
+    <xf:input bind="id">
+      <xf:label>Id</xf:label>
+    </xf:input>
+    <xf:input bind="parentid">
+      <xf:label>Parent Id</xf:label>
+    </xf:input>
+  </xf:group>
+</xf:xforms>]]>
+            </pre>
+            then the following create table should be generated (???)
+            <pre concordion:assertEquals="generateTables(#definition)">
+CREATE TABLE select
+(
+    id VARCHAR(36) NOT NULL,
+    openxdata_form_data_id VARCHAR(50),
+    openxdata_user_id VARCHAR(50),
+    openxdata_user_name VARCHAR(50),
+    id VARCHAR(255),
+    parentid VARCHAR(255),
+    PRIMARY KEY(id)
+);
+            </pre>
+            when we submit this data with the previous definition
+            <pre concordion:set="#data"><![CDATA[
+<?xml version='1.0' encoding='UTF-8' ?>
+<select>
+    <id>answer1</id>
+    <parentid>answer2</id>
+</select>]]>
+            </pre>
+            then this insert sql should be generated
+            <p>
+                <code concordion:assertEquals="generateData(#definition, #data)">
+                    INSERT INTO test (id, opexdata_form_data_id, openxdata_user_id, openxdata_username, id, parentid) values(?, ?, ?, ?, ?);
+                </code>
+            </p>
+        </div>
+    </body>
+</html>

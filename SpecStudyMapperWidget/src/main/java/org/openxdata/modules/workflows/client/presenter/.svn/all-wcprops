@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter
+END
+IPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/EpiHandy/!svn/ver/2691/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter/IPresenter.java
+END
+ParamQuestionPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter/ParamQuestionPresenter.java
+END
+SpecificationPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter/SpecificationPresenter.java
+END
+WidgetDisplay.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/EpiHandy/!svn/ver/2691/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter/WidgetDisplay.java
+END
+AvailableWIRPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/EpiHandy/!svn/ver/3188/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter/AvailableWIRPresenter.java
+END
+RootPanelPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/EpiHandy/!svn/ver/2838/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter/RootPanelPresenter.java
+END
+SpecStudyPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter/SpecStudyPresenter.java
+END
+MenuPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/EpiHandy/!svn/ver/2838/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter/MenuPresenter.java
+END
+TaskFormPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/SpecStudyMapperWidget/src/main/java/org/openxdata/modules/workflows/client/presenter/TaskFormPresenter.java
+END

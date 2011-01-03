@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_4.xsd">
+  
+  <display-name>OpenXData Emit @Version@</display-name>
+  
+  <!-- Servlets -->  
+  <servlet>
+    <servlet-name>resetPasswordServlet</servlet-name>
+    <servlet-class>org.openxdata.server.servlet.ResetPasswordServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>resetPasswordServlet</servlet-name>
+    <url-pattern>/resetPassword</url-pattern>
+  </servlet-mapping>   
+  
+  <servlet>
+    <servlet-name>formService</servlet-name>
+    <servlet-class>org.celllife.emit.server.FormServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>formService</servlet-name>
+    <url-pattern>/emit/form</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>userService</servlet-name>
+    <servlet-class>org.celllife.emit.server.UserServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>userService</servlet-name>
+    <url-pattern>/emit/user</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>dataexport</servlet-name>
+    <servlet-class>org.openxdata.server.servlet.DataExportServlet</servlet-class>
+  </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>dataexport</servlet-name>
+    <url-pattern>/emit/dataexport</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>multimediaServlet</servlet-name>
+	<servlet-class>org.openxdata.server.servlet.MultimediaServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>multimediaServlet</servlet-name>
+    <url-pattern>/emit/multimedia</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>gwt-log-remote-logger-servlet</servlet-name>
+    <servlet-class>com.allen_sauer.gwt.log.server.RemoteLoggerServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>gwt-log-remote-logger-servlet</servlet-name>
+    <url-pattern>/emit/gwt-log</url-pattern>
+  </servlet-mapping>
+  
+  <!-- hide .jsp from the url (hides the technology from the user) -->
+  <servlet>
+    <servlet-name>login.jsp</servlet-name>
+    <jsp-file>/login.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>login.jsp</servlet-name>
+    <url-pattern>/login.html</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>resetPassword.jsp</servlet-name>
+    <jsp-file>/resetPassword.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>resetPassword.jsp</servlet-name>
+    <url-pattern>/resetPassword.html</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Emit.jsp</servlet-name>
+    <jsp-file>/Emit.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Emit.jsp</servlet-name>
+    <url-pattern>/Emit.html</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
+    /WEB-INF/openxdata-emit-applicationContext-security.xml
+    </param-value>
+  </context-param>
+
+  <!-- Acegi/Spring Security filter (to intercept the requests and perform security checks) s-->  
+  <filter>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+
+  <!-- The length (mins) of a user's session -->
+  <session-config>
+    <session-timeout>30</session-timeout> 
+  </session-config>
+
+</web-app>

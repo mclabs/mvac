@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/EpiHandy/!svn/ver/3280/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server
+END
+SettingServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/SettingServiceImpl.java
+END
+UserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/UserServiceImpl.java
+END
+AuthenticationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/AuthenticationServiceImpl.java
+END
+RoleServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/RoleServiceImpl.java
+END
+SmsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/SmsServiceImpl.java
+END
+TaskServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/TaskServiceImpl.java
+END
+StudyManagerServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/StudyManagerServiceImpl.java
+END
+UtilityServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/UtilityServiceImpl.java
+END
+ReportServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/ReportServiceImpl.java
+END

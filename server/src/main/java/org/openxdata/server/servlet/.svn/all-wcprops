@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/EpiHandy/!svn/ver/3001/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet
+END
+ImportServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/ImportServlet.java
+END
+MultimediaServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/MultimediaServlet.java
+END
+StudyExportServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/StudyExportServlet.java
+END
+DataExportServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/DataExportServlet.java
+END
+FormDownloadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/FormDownloadServlet.java
+END
+ReportServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/ReportServlet.java
+END
+WMDownloadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/WMDownloadServlet.java
+END
+Verify.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/Verify.java
+END
+FormSaveServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/FormSaveServlet.java
+END
+OTAServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/OTAServlet.java
+END
+DataImportServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/DataImportServlet.java
+END
+FormOpenServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/FormOpenServlet.java
+END
+ResetPasswordServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/3001/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/ResetPasswordServlet.java
+END
+BirtImagesServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/servlet/BirtImagesServlet.java
+END

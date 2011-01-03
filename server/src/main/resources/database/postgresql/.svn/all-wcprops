@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/postgresql
+END
+liquibase-create-foreignkeys.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/postgresql/liquibase-create-foreignkeys.xml
+END
+create-database.sql
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/postgresql/create-database.sql
+END
+liquibase-create-tables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/postgresql/liquibase-create-tables.xml
+END
+liquibase-insert-data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/postgresql/liquibase-insert-data.xml
+END
+liquibase-master.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/postgresql/liquibase-master.xml
+END
+liquibase-permissions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/postgresql/liquibase-permissions.xml
+END
+OPENXDATA_SETTINGS.properties
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/resources/database/postgresql/OPENXDATA_SETTINGS.properties
+END

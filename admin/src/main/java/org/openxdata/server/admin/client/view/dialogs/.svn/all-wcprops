@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs
+END
+ReLoginDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/ReLoginDialog.java
+END
+GetFileNameDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/GetFileNameDialog.java
+END
+LanguagesViewDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/LanguagesViewDialog.java
+END
+MobileMenuTextDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/MobileMenuTextDialog.java
+END
+OpenXDataDiagnosticToolDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/OpenXDataDiagnosticToolDialog.java
+END
+OpenXDataMessageDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/OpenXDataMessageDialog.java
+END
+PasswordChangeDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/PasswordChangeDialog.java
+END
+FormVersionOpenDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/FormVersionOpenDialog.java
+END
+OpenXDataEmailDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/OpenXDataEmailDialog.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/dialogs/package.html
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/EpiHandy/!svn/ver/2713/branches/oxd-wf-prototype/openxdata/emit/war/WEB-INF
+END
+openxdata-emit-applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/WEB-INF/openxdata-emit-applicationContext.xml
+END
+openxdata-emit-applicationContext-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/WEB-INF/openxdata-emit-applicationContext-security.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/war/WEB-INF/web.xml
+END

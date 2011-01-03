@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/util
+END
+Diagnosis.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/util/Diagnosis.java
+END
+DiagnosedStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/util/DiagnosedStatus.java
+END
+ErrorRiskLevel.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/util/ErrorRiskLevel.java
+END
+OpenXDataEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/util/OpenXDataEmail.java
+END

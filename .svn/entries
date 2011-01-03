@@ -1,0 +1,89 @@
+10
+
+dir
+3291
+https://www.zegeba.org/svn/EpiHandy/branches/oxd-wf-prototype/openxdata
+https://www.zegeba.org/svn/EpiHandy
+
+
+
+2010-11-17T15:11:29.741793Z
+3286
+kayondor@gmail.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+6cddc80d-1c40-44cd-927a-2be6005847d2
+
+model
+dir
+
+openxdata-wf-mobile-model
+dir
+
+rpc-interface
+dir
+
+workflow-server-lib
+dir
+
+server
+dir
+
+admin
+dir
+
+yawl-engine-with-parsers-lib
+dir
+
+pom.xml
+file
+
+
+
+
+2010-11-18T11:44:31.683732Z
+1ce4ed2d6c8a45984e4698ef65a92c18
+2010-11-15T15:41:00.073023Z
+3280
+kayondor@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3418
+
+SpecStudyMapperWidget
+dir
+
+emit
+dir
+

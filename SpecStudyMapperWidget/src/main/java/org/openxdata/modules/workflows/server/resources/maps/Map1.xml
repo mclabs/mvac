@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Maps>
+	<SpecStudyMap SpecId="MalariaSurveyForOxd0.1" StudyId="New Study4">
+		<TaskFormMaps>
+			<TaskFormDef TaskId="Malaria_4" FormId="0">
+				<TaskFormVersionMaps>
+					<TaskFormVersion TaskId="Malaria_4" FormVersionId="0">
+						<ParamQuestionMaps />
+					</TaskFormVersion>
+				</TaskFormVersionMaps>
+			</TaskFormDef>
+			<TaskFormDef TaskId="Patient_3" FormId="0">
+				<TaskFormVersionMaps>
+					<TaskFormVersion TaskId="Patient_3" FormVersionId="0">
+						<ParamQuestionMaps>
+							<ParamQuestion Question="question10" Parameter="name" />
+						</ParamQuestionMaps>
+					</TaskFormVersion>
+				</TaskFormVersionMaps>
+			</TaskFormDef>
+		</TaskFormMaps>
+	</SpecStudyMap>
+	<SpecStudyMap SpecId="MalariaSurveyForOxd0.3" StudyId="New Study3">
+		<TaskFormMaps>
+			<TaskFormDef TaskId="Patient_two_26" FormId="0">
+				<TaskFormVersionMaps>
+					<TaskFormVersion TaskId="Patient_two_26"
+						FormVersionId="0">
+						<ParamQuestionMaps>
+							<ParamQuestion Question="question6" Parameter="hasMalaria" />
+							<ParamQuestion Question="question5" Parameter="name" />
+						</ParamQuestionMaps>
+					</TaskFormVersion>
+				</TaskFormVersionMaps>
+			</TaskFormDef>
+			<TaskFormDef TaskId="Weight_5" FormId="0">
+				<TaskFormVersionMaps>
+					<TaskFormVersion TaskId="Weight_5" FormVersionId="0">
+						<ParamQuestionMaps />
+					</TaskFormVersion>
+				</TaskFormVersionMaps>
+			</TaskFormDef>
+		</TaskFormMaps>
+	</SpecStudyMap>
+</Maps>

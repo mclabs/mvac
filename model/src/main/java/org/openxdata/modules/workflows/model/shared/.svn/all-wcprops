@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/EpiHandy/!svn/ver/3228/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared
+END
+OParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/3580/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared/OParameter.java
+END
+OSpecification.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2726/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared/OSpecification.java
+END
+GWTFriendlyWorkItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2916/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared/GWTFriendlyWorkItem.java
+END
+OTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/3573/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared/OTask.java
+END
+DBSpecification.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/3216/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared/DBSpecification.java
+END
+DBSpecStudyMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared/DBSpecStudyMap.java
+END
+DBWorkitem.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared/DBWorkitem.java
+END
+WorkItemQuestion.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/3228/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared/WorkItemQuestion.java
+END
+ODecomposition.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/3573/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/modules/workflows/model/shared/ODecomposition.java
+END

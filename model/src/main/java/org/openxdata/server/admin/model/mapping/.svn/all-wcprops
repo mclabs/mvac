@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/mapping
+END
+UserFormMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/mapping/UserFormMap.java
+END
+UserReportGroupMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/mapping/UserReportGroupMap.java
+END
+UserStudyMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/mapping/UserStudyMap.java
+END
+UserReportMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/mapping/UserReportMap.java
+END

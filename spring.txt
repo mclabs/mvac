@@ -1,0 +1,6 @@
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/server/workflows/SpecStudyMapServiceImpl.java:        specSrv = (SpecificationService) getApplicationContext().getBean("specificationsService");
+./admin/war/WEB-INF/classes/org/openxdata/server/admin/server/workflows/SpecificationServiceImpl.java:        specService = (SpecificationService) getApplicationContext().getBean("specificationsService");
+./admin/src/main/java/org/openxdata/server/admin/server/workflows/SpecStudyMapServiceImpl.java:        specSrv = (SpecificationService) getApplicationContext().getBean("specificationsService");
+./admin/src/main/java/org/openxdata/server/admin/server/workflows/SpecificationServiceImpl.java:        specService = (SpecificationService) getApplicationContext().getBean("specificationsService");
+./server/src/main/java/org/openxdata/modules/workflows/server/service/impl/SpecificationServiceImpl.java:@Service("specificationsService")
+./server/src/main/java/org/openxdata/modules/workflows/server/context/WFContext.java:        return (SpecificationService) Context.getBean("specificationsService");

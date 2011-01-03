@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+	<changeSet author="daniel (generated)" id="1247515297531-30">
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="form_data" baseTableSchemaName="public" constraintName="form_data_user_who_last_changed_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-31">
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_data" baseTableSchemaName="public" constraintName="form_data_user_who_created_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-32">
+        <addForeignKeyConstraint baseColumnNames="form_definition_version_id" baseTableName="form_data" baseTableSchemaName="public" constraintName="form_data_form_definition_version_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_version_id" referencedTableName="form_definition_version" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-33">
+        <addForeignKeyConstraint baseColumnNames="archive_creator" baseTableName="form_data_archive" baseTableSchemaName="public" constraintName="form_data_archive_user_who_created_archive" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-34">
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="form_data_archive" baseTableSchemaName="public" constraintName="form_data_archive_user_who_last_changed_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-35">
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_data_archive" baseTableSchemaName="public" constraintName="form_data_archive_user_who_created_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-36">
+        <addForeignKeyConstraint baseColumnNames="form_definition_version_id" baseTableName="form_data_archive" baseTableSchemaName="public" constraintName="form_data_archive_form_definition_version_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_version_id" referencedTableName="form_definition_version" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-37">
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="form_definition" baseTableSchemaName="public" constraintName="form_definition_user_who_last_changed_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-38">
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_definition" baseTableSchemaName="public" constraintName="form_definition_user_who_created_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-39">
+        <addForeignKeyConstraint baseColumnNames="retired_by" baseTableName="form_definition" baseTableSchemaName="public" constraintName="form_definition_user_who_retired_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-40">
+        <addForeignKeyConstraint baseColumnNames="study_id" baseTableName="form_definition" baseTableSchemaName="public" constraintName="form_definition_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="study_id" referencedTableName="study" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-41">
+        <addForeignKeyConstraint baseColumnNames="form_definition_id" baseTableName="form_definition_text" baseTableSchemaName="public" constraintName="form_definition_text_form_definition" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_id" referencedTableName="form_definition" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-42">
+        <addForeignKeyConstraint baseColumnNames="locale_key" baseTableName="form_definition_text" baseTableSchemaName="public" constraintName="form_definition_text_locale" deferrable="false" initiallyDeferred="false" referencedColumnNames="locale_key" referencedTableName="locale" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-43">
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="form_definition_version" baseTableSchemaName="public" constraintName="form_definition_version_user_who_last_changed_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-44">
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_definition_version" baseTableSchemaName="public" constraintName="form_definition_version_user_who_created_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-45">
+        <addForeignKeyConstraint baseColumnNames="form_definition_id" baseTableName="form_definition_version" baseTableSchemaName="public" constraintName="form_definition_version_form_definition" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_id" referencedTableName="form_definition" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-46">
+        <addForeignKeyConstraint baseColumnNames="retired_by" baseTableName="form_definition_version" baseTableSchemaName="public" constraintName="form_definition_version_user_who_retired_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-47">
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_error" baseTableSchemaName="public" constraintName="form_error_user_who_created_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-48">
+        <addForeignKeyConstraint baseColumnNames="form_definition_version_id" baseTableName="form_error" baseTableSchemaName="public" constraintName="form_error_form_definition_version_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_version_id" referencedTableName="form_definition_version" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-49">
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="report" baseTableSchemaName="public" constraintName="user_who_changed_report" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-50">
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="report" baseTableSchemaName="public" constraintName="report_creator" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-51">
+        <addForeignKeyConstraint baseColumnNames="voided_by" baseTableName="report" baseTableSchemaName="public" constraintName="user_who_voided_report" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-52">
+        <addForeignKeyConstraint baseColumnNames="permission_id" baseTableName="role_permission" baseTableSchemaName="public" constraintName="role_permission_permission_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="permission_id" referencedTableName="permission" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-53">
+        <addForeignKeyConstraint baseColumnNames="role_id" baseTableName="role_permission" baseTableSchemaName="public" constraintName="role_permission_role_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="role_id" referencedTableName="role" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-54">
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="study" baseTableSchemaName="public" constraintName="user_who_last_changed_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-55">
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="study" baseTableSchemaName="public" constraintName="user_who_created_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-56">
+        <addForeignKeyConstraint baseColumnNames="retired_by" baseTableName="study" baseTableSchemaName="public" constraintName="user_who_retired_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-57">
+        <addForeignKeyConstraint baseColumnNames="locale_key" baseTableName="study_text" baseTableSchemaName="public" constraintName="study_text_locale" deferrable="false" initiallyDeferred="false" referencedColumnNames="locale_key" referencedTableName="locale" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-58">
+        <addForeignKeyConstraint baseColumnNames="study_id" baseTableName="study_text" baseTableSchemaName="public" constraintName="study_text_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="study_id" referencedTableName="study" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-59">
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="task" baseTableSchemaName="public" constraintName="task_changer" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-60">
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="task" baseTableSchemaName="public" constraintName="task_creator" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-61">
+        <addForeignKeyConstraint baseColumnNames="task_id" baseTableName="task_param" baseTableSchemaName="public" constraintName="referenced_task" deferrable="false" initiallyDeferred="false" referencedColumnNames="task_id" referencedTableName="task" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-62">
+        <addForeignKeyConstraint baseColumnNames="role_id" baseTableName="user_role" baseTableSchemaName="public" constraintName="role_definitions" deferrable="false" initiallyDeferred="false" referencedColumnNames="role_id" referencedTableName="role" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-63">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="user_role" baseTableSchemaName="public" constraintName="user_definitions" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-64">
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="users" baseTableSchemaName="public" constraintName="user_who_changed_user" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-65">
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="users" baseTableSchemaName="public" constraintName="user_creator" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247515297531-66">
+        <addForeignKeyConstraint baseColumnNames="voided_by" baseTableName="users" baseTableSchemaName="public" constraintName="user_who_voided_user" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users" referencedTableSchemaName="public"/>
+    </changeSet>
+</databaseChangeLog>

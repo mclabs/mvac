@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<Maps>
+    <SpecStudyMap SpecId='MalariaSurveyForOxd0.1' StudyId='New Study4'>
+        <TaskFormDef TaskId='Malaria_4' FormId='0'>
+            <TaskFormVersion TaskId='Malaria_4' FormVersionId='0'/>
+        </TaskFormDef>
+        <TaskFormDef TaskId='Patient_3' FormId='0'>
+            <TaskFormVersion TaskId='Patient_3' FormVersionId='0'>
+                <ParamQuestion Question='question10' Parameter='name' />
+            </TaskFormVersion>
+        </TaskFormDef>
+    </SpecStudyMap>
+    <SpecStudyMap SpecId='MalariaSurveyForOxd0.3' StudyId='New Study3'>
+        <TaskFormDef TaskId='Patient_two_26' FormId='0'>
+            <TaskFormVersion TaskId='Patient_two_26' FormVersionId='0'>
+                <ParamQuestion Question='question6' Parameter='hasMalaria' />
+                <ParamQuestion Question='question5' Parameter='name' />
+            </TaskFormVersion>
+        </TaskFormDef>
+        <TaskFormDef TaskId='Weight_5' FormId='0'>
+            <TaskFormVersion TaskId='Weight_5' FormVersionId='0'/>
+        </TaskFormDef>
+    </SpecStudyMap>
+</Maps>

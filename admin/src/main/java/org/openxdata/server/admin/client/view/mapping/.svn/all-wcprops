@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/mapping
+END
+UserReportGroupMapView.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/mapping/UserReportGroupMapView.java
+END
+UserStudyMapView.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/mapping/UserStudyMapView.java
+END
+RolePermissionMapView.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/mapping/RolePermissionMapView.java
+END
+UserReportMapView.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/mapping/UserReportMapView.java
+END
+UserRoleMapView.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/mapping/UserRoleMapView.java
+END
+UserFormMapView.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/mapping/UserFormMapView.java
+END
+OpenXDataBaseObjectMapView.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/mapping/OpenXDataBaseObjectMapView.java
+END

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><study description="" name="MalariaSurveyForOxd" studyKey="">
+<form description="" name="Malaria">
+<version description="" name="v1">
+<xform>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;xf:xforms xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&#13;
+  &lt;xf:model&gt;&#13;
+    &lt;xf:instance id="malariasurveyforoxd_malaria_v1"&gt;&#13;
+      &lt;malariasurveyforoxd_malaria_v1 formKey="malariasurveyforoxd_malaria_v1" id="2" name="Malaria_v1"&gt;&#13;
+        &lt;question1/&gt;&#13;
+        &lt;malariatype/&gt;&#13;
+        &lt;weight/&gt;&#13;
+      &lt;/malariasurveyforoxd_malaria_v1&gt;&#13;
+    &lt;/xf:instance&gt;&#13;
+    &lt;xf:bind id="question1" nodeset="/malariasurveyforoxd_malaria_v1/question1" type="xsd:string"/&gt;&#13;
+    &lt;xf:bind id="malariatype" nodeset="/malariasurveyforoxd_malaria_v1/malariatype" type="xsd:string"/&gt;&#13;
+    &lt;xf:bind id="weight" nodeset="/malariasurveyforoxd_malaria_v1/weight" type="xsd:string"/&gt;&#13;
+  &lt;/xf:model&gt;&#13;
+  &lt;xf:group id="1"&gt;&#13;
+    &lt;xf:label&gt;Page1&lt;/xf:label&gt;&#13;
+    &lt;xf:input bind="question1"&gt;&#13;
+      &lt;xf:label&gt;name1&lt;/xf:label&gt;&#13;
+    &lt;/xf:input&gt;&#13;
+    &lt;xf:input bind="malariatype"&gt;&#13;
+      &lt;xf:label&gt;malariaType&lt;/xf:label&gt;&#13;
+    &lt;/xf:input&gt;&#13;
+    &lt;xf:input bind="weight"&gt;&#13;
+      &lt;xf:label&gt;weight&lt;/xf:label&gt;&#13;
+    &lt;/xf:input&gt;&#13;
+  &lt;/xf:group&gt;&#13;
+&lt;/xf:xforms&gt;&#13;
+</xform>
+<layout/>
+<versionText locale="en">
+<xform>&lt;xform id="2"&gt;&#13;
+    &lt;text xpath="xforms/model/instance/malariasurveyforoxd_malaria_v1[@name]" value="Malaria_v1"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='1']/label" value="Page1"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='1']/input[@bind='question1']/label" value="name1"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='1']/input[@bind='malariatype']/label" value="malariaType"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='1']/input[@bind='weight']/label" value="weight"/&gt;&#13;
+  &lt;/xform&gt;</xform>
+<layout>&lt;Form id="2"&gt;&#13;
+    &lt;text xpath="Form/Page[@Binding='Page1'][@Text]" value="Page1"/&gt;&#13;
+  &lt;/Form&gt;</layout>
+</versionText>
+</version>
+</form>
+<form description="" name="Patient">
+<version description="" name="v1">
+<xform>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&#13;
+&lt;xf:xforms xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&#13;
+  &lt;xf:model&gt;&#13;
+    &lt;xf:instance id="malariasurveyforoxd_patient_v1"&gt;&#13;
+      &lt;malariasurveyforoxd_patient_v1 formKey="malariasurveyforoxd_patient_v1" id="3" name="Patient_v1"&gt;&#13;
+        &lt;question4/&gt;&#13;
+        &lt;hasmalaria/&gt;&#13;
+      &lt;/malariasurveyforoxd_patient_v1&gt;&#13;
+    &lt;/xf:instance&gt;&#13;
+    &lt;xf:bind id="question4" nodeset="/malariasurveyforoxd_patient_v1/question4" type="xsd:string"/&gt;&#13;
+    &lt;xf:bind id="hasmalaria" nodeset="/malariasurveyforoxd_patient_v1/hasmalaria" type="xsd:int"/&gt;&#13;
+  &lt;/xf:model&gt;&#13;
+  &lt;xf:group id="2"&gt;&#13;
+    &lt;xf:label&gt;Page2&lt;/xf:label&gt;&#13;
+    &lt;xf:input bind="question4"&gt;&#13;
+      &lt;xf:label&gt;name&lt;/xf:label&gt;&#13;
+    &lt;/xf:input&gt;&#13;
+    &lt;xf:input bind="hasmalaria"&gt;&#13;
+      &lt;xf:label&gt;hasMalaria&lt;/xf:label&gt;&#13;
+    &lt;/xf:input&gt;&#13;
+  &lt;/xf:group&gt;&#13;
+&lt;/xf:xforms&gt;&#13;
+</xform>
+</version>
+</form>
+<form description="" name="Weight">
+<version description="" name="v1">
+<xform>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&#13;
+&lt;xf:xforms xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&#13;
+  &lt;xf:model&gt;&#13;
+    &lt;xf:instance id="malariasurveyforoxd_weight_v1"&gt;&#13;
+      &lt;malariasurveyforoxd_weight_v1 formKey="malariasurveyforoxd_weight_v1" id="4" name="Weight_v1"&gt;&#13;
+        &lt;question6/&gt;&#13;
+        &lt;weight/&gt;&#13;
+      &lt;/malariasurveyforoxd_weight_v1&gt;&#13;
+    &lt;/xf:instance&gt;&#13;
+    &lt;xf:bind id="question6" nodeset="/malariasurveyforoxd_weight_v1/question6" type="xsd:string"/&gt;&#13;
+    &lt;xf:bind id="weight" nodeset="/malariasurveyforoxd_weight_v1/weight" type="xsd:string"/&gt;&#13;
+  &lt;/xf:model&gt;&#13;
+  &lt;xf:group id="3"&gt;&#13;
+    &lt;xf:label&gt;Page3&lt;/xf:label&gt;&#13;
+    &lt;xf:input bind="question6"&gt;&#13;
+      &lt;xf:label&gt;name&lt;/xf:label&gt;&#13;
+    &lt;/xf:input&gt;&#13;
+    &lt;xf:input bind="weight"&gt;&#13;
+      &lt;xf:label&gt;weight&lt;/xf:label&gt;&#13;
+    &lt;/xf:input&gt;&#13;
+  &lt;/xf:group&gt;&#13;
+&lt;/xf:xforms&gt;&#13;
+</xform>
+</version>
+</form>
+</study>

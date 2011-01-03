@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/export
+END
+FormExportTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/export/FormExportTest.java
+END
+VersionExportTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/export/VersionExportTest.java
+END
+StudyExportTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/export/StudyExportTest.java
+END
+VersionTextExportTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/export/VersionTextExportTest.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/dao/hibernate
+END
+HibernateEditableDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/dao/hibernate/HibernateEditableDAOTest.java
+END
+HibernateStudyManagerDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/dao/hibernate/HibernateStudyManagerDAOTest.java
+END

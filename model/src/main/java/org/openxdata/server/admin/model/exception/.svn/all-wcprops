@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception
+END
+OpenXDataException.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/OpenXDataException.java
+END
+ContextException.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/ContextException.java
+END
+UnexpectedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/UnexpectedException.java
+END
+ReplaceThisExceptionRuntimeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/ReplaceThisExceptionRuntimeException.java
+END
+OpenXDataParsingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/OpenXDataParsingException.java
+END
+OpenXDataRuntimeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/OpenXDataRuntimeException.java
+END
+OpenXDataSessionExpiredException.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/OpenXDataSessionExpiredException.java
+END
+OpenXDataDisabledUserException.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/OpenXDataDisabledUserException.java
+END
+OpenXDataSecurityException.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/OpenXDataSecurityException.java
+END
+UserNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/UserNotFoundException.java
+END
+OpenXDataValidationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/OpenXDataValidationException.java
+END
+OpenXdataDataAccessException.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/model/src/main/java/org/openxdata/server/admin/model/exception/OpenXdataDataAccessException.java
+END

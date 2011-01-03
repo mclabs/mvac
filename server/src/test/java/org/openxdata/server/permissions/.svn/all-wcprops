@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions
+END
+StudyPermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/StudyPermissionsTest.java
+END
+ReportPermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/ReportPermissionsTest.java
+END
+PriviledgesPermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/PriviledgesPermissionsTest.java
+END
+SettingPermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/SettingPermissionsTest.java
+END
+UserPermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/UserPermissionsTest.java
+END
+LocalePermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/LocalePermissionsTest.java
+END
+PermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/PermissionsTest.java
+END
+MobileMenuTextPermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/MobileMenuTextPermissionsTest.java
+END
+RolePermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/RolePermissionsTest.java
+END
+TaskPermissionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/test/java/org/openxdata/server/permissions/TaskPermissionsTest.java
+END

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openxdata.server.admin.model">
+  <class lazy="false" name="DeadlineLog" table="deadline_log">
+    <id column="log_id" name="logID" type="java.lang.Integer" unsaved-value="0">
+      <generator class="native">
+        <param name="sequence">deadlineLog_log_id_seq</param>
+      </generator>
+    </id>
+    <discriminator column="log_id" insert="false"/>
+    <property column="sender" length="255" name="sender" not-null="false" type="java.lang.String"/>
+    <property column="health_center" length="255" name="healthCenter" not-null="false" type="java.lang.String"/>
+    <property column="contact" length="255" name="contact" not-null="false" type="java.lang.String"/>
+    <property column="name" length="8" name="deadlineDate" not-null="false" type="java.util.Date"/>
+  </class>
+</hibernate-mapping>

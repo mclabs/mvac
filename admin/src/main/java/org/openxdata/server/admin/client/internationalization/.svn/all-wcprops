@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/internationalization
+END
+OpenXdataConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/internationalization/OpenXdataConstants.java
+END
+Facade.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/internationalization/Facade.java
+END
+OpenXDataFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/internationalization/OpenXDataFacade.java
+END
+openXdataConstants.properties
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/internationalization/openXdataConstants.properties
+END
+openXdataConstants_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/internationalization/openXdataConstants_en.properties
+END
+openXdataConstants_lug_UG.properties
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/internationalization/openXdataConstants_lug_UG.properties
+END

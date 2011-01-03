@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.yawlfoundation.yawl.worklist.model">
+  <class name="org.yawlfoundation.yawl.engine.interfce.WorkItemRecord" table="wf_workitems">
+    <id column="wir_id" name="_id" type="long">
+      <generator class="native"/>
+    </id>
+    <property access="field" column="specID" name="_specificationID"/>
+    <property access="field" column="specVersion" name="_specVersion"/>
+    <property access="field" column="caseID" name="_caseID"/>
+    <property access="field" column="taskID" name="_taskID"/>
+    <property access="field" column="uniqueID" name="_uniqueID"/>
+    <property access="field" column="ExtendedAttributes" name="_extendedAttributes"/>
+    <property access="field" column="canCreate" name="_allowsDynamicCreation"/>
+    <property access="field" column="codelet" name="_codelet"/>
+    <property access="field" column="deferredID" name="_deferredChoiceGroupID"/>
+    <property access="field" column="firingTime" name="_firingTime"/>
+    <property access="field" column="enablementTime" name="_enablementTime"/>
+    <property access="field" column="startTime" name="_startTime"/>
+    <property access="field" column="completionTime" name="_completionTime"/>
+    <property access="field" column="status" name="_status"/>
+    <property access="field" column="resourceStatus" name="_resourceStatus"/>
+    <property access="field" column="startedBy" name="_startedBy"/>
+    <property access="field" column="completedBy" name="_completedBy"/>
+    <property column="dataList" name="_dataList" type="text"/>
+    <property column="dataListUpdated" name="_dataListUpdated" type="text"/>
+    <property access="field" column="enabledTimeMS" name="_enablementTimeMs"/>
+    <property access="field" column="firingTimeMS" name="_firingTimeMs"/>
+    <property access="field" column="startTimeMS" name="_startTimeMs"/>
+    <property access="field" column="completionTimeMS" name="_completionTimeMs"/>
+    <property access="field" column="timertrigger" name="_timerTrigger"/>
+    <property access="field" column="timerexpiry" name="_timerExpiry"/>
+    <property access="field" column="edited" name="_edited" type="boolean"/>
+    <property access="field" column="customformurl" name="_customFormURL"/>
+    <property access="field" column="tag" name="_tag"/>
+  </class>
+</hibernate-mapping>

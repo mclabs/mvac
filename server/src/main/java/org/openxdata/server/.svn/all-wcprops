@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/EpiHandy/!svn/ver/3076/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server
+END
+OpenXDataPropertyPlaceholderConfigurer.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/OpenXDataPropertyPlaceholderConfigurer.java
+END
+OpenXDataConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/OpenXDataConstants.java
+END
+Task.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/Task.java
+END
+ResponseStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/ResponseStatus.java
+END
+ApplicationContextProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/EpiHandy/!svn/ver/2820/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/ApplicationContextProvider.java
+END
+Context.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/EpiHandy/!svn/ver/3001/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/Context.java
+END
+FormsServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/EpiHandy/!svn/ver/3076/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/server/FormsServer.java
+END

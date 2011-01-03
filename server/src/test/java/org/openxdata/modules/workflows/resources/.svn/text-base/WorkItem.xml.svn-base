@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<workItemRecord>
+    <id>116:Patient_3</id>
+    <specid>MalariaSurveyForOxd-OXD-CustomService0.3</specid>
+    <specversion>0.3</specversion>
+    <caseid>116</caseid>
+    <taskid>Malaria_4</taskid>
+    <uniqueid>000000000000000000000000D</uniqueid>
+    <allowsdynamiccreation>false</allowsdynamiccreation>
+    <requiresmanualresourcing>true</requiresmanualresourcing>
+    <codelet></codelet>
+    <deferredChoiceGroupid/>
+    <enablementTime>Aug:19, 2010 11:09:23</enablementTime>
+    <firingTime/>
+    <startTime/>
+    <completionTime/>
+    <enablementTimeMs>1282201763858</enablementTimeMs>
+    <firingTimeMs/>
+    <startTimeMs/>
+    <completionTimeMs/>
+    <timertrigger/>
+    <timerexpiry/>
+    <status>Enabled</status>
+    <resourceStatus>Unresourced</resourceStatus>
+    <startedBy/>
+    <completedBy/>
+    <edited>false</edited>
+    <tag>null</tag>
+    <customform/>
+    <data></data>
+    <updateddata></updateddata>
+</workItemRecord>

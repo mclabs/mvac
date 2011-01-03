@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/views
+END
+FormResponsesView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/views/FormResponsesView.java
+END
+ListCellEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/views/ListCellEditor.java
+END
+LoginView.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/views/LoginView.java
+END
+DataCaptureView.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/views/DataCaptureView.java
+END
+FormListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/views/FormListView.java
+END
+UserProfileView.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/views/UserProfileView.java
+END
+FormPrintView.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/emit/src/main/java/org/celllife/emit/client/views/FormPrintView.java
+END
