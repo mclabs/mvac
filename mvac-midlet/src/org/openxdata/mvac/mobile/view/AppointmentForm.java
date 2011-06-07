@@ -59,6 +59,7 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     private PageData currentPage;
 
     private String titleString = "Register Immunization";
+    
     private Command doneCmd = new Command("Save", 1);
     private Command cancelCmd = new Command("Cancel", 2);
     
@@ -71,6 +72,7 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     //Container lotIntegrCont = new COntainer
     Container lotLeft = new Container(new BoxLayout(BoxLayout.Y_AXIS));
     Container lotRight = new Container(new BorderLayout());
+    Container reasonCont = new Container(new BoxLayout(BoxLayout.Y_AXIS));
     
     //The question widgets
     Label notesLabel = new Label("");
@@ -85,6 +87,7 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     //Status
     String[] comboOpts = {"Yes","No"};
     ComboBox statusCombo = new ComboBox(comboOpts);
+
     
     String[] reasonOpts = {"None","Child absent"};
     ComboBox reasonCombo = new ComboBox(reasonOpts);
@@ -95,9 +98,11 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     //lot opts
     String[] lotOpts = {"Lot1","Lot2"};
     ComboBox lotCombo = new ComboBox(lotOpts);
+
+
     
-    
-    
+    private boolean isAdded = false ;
+    private CalendarForm calendarForm = new CalendarForm();
     
     
     
@@ -222,9 +227,11 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
             }else if(ques[k].getType().equals("Check box")){
                 appendStatus(ques[k]);
                 
-            }else if(ques[k].getType().equals("textarea")){
+            }
+            else if(ques[k].getType().equals("textarea")){
                 appendNotes(ques[k]);
-                
+
+
             }
         }
 
@@ -249,7 +256,8 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
 //        });
 
         //addComponent(BorderLayout.NORTH, field);
-        setCommandListener(this);
+        addCommandListener(this);
+        //setCommandListener(this);
         setLayout(new BorderLayout());
         addComponent(BorderLayout.CENTER, mainCont);
 
@@ -313,8 +321,65 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
         }else if(src==cancelCmd){
             parent.resume(null);
             
+        }else if(src == statusCombo){
+            String selection  = statusCombo.getSelectedItem().toString();
+            System.out.println("Combo selected :" + selection);
+            if(selection.equalsIgnoreCase("No")){
+                disableLotCont();
+                if(isAdded){
+                    disableResCont();
+
+                }else{
+
+                   appendReason();
+                   isAdded = true;
+                }
+
+                
+
+            }else if(selection.equalsIgnoreCase("Yes")){
+                enableLotCont();
+                disableResCont();
+            }
+        }else if(src == appDate){
+            //Load Calendar here
+
+            calendarForm.setListener(this);
+            AppUtil.get().setView(calendarForm);
+        }else if(src == calendarForm.okcmd){
+            System.out.println("Selected Date :" +calendarForm.getDate());
+            
+        }else if(src == calendarForm.cmdBack){
+            System.out.println("Back Command");
+            AppUtil.get().setView(this);
         }
         
+    }
+    
+    private void disableLotCont(){
+        lotLabel.setFocusable(false);
+        lotCombo.setFocusable(false);
+        lotButton.setFocusable(false);
+        lotContainer.setFocusable(false);
+    }
+
+    private void enableLotCont(){
+        lotLabel.setFocusable(true);
+        lotCombo.setFocusable(true);
+        lotButton.setFocusable(true);
+        lotContainer.setFocusable(true);
+    }
+
+    private void disableResCont(){
+        resonLabel.setFocusable(false);
+        reasonCombo.setFocusable(false);
+        reasonCont.setFocusable(false);
+    }
+
+    private void enableResCont(){
+        resonLabel.setFocusable(true);
+        reasonCombo.setFocusable(true);
+        reasonCont.setFocusable(true);
     }
 
     public void dialogReturned(Dialog dialog, boolean yesNo) {
@@ -368,6 +433,7 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
     private void appendDateofImmunization(QuestionListObj obj) {
         datelabel.setText(obj.getQuestion());
         dateCont.addComponent(datelabel);
+        appDate.addActionListener(this);
         dateCont.addComponent(appDate);
         mainCont.addComponent(dateCont);
     }
@@ -375,6 +441,7 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
     private void appendStatus(QuestionListObj obj) {
         statusLabel.setText(obj.getQuestion());
         statusCont.addComponent(statusLabel);
+        statusCombo.addActionListener(this);
         statusCont.addComponent(statusCombo);
         mainCont.addComponent(statusCont);
     }
@@ -386,6 +453,16 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
         notesCont.addComponent(notesField);
         mainCont.addComponent(notesCont);
     }
+
+    private void appendReason() {
+        if(!contains(reasonCombo)){
+        resonLabel.setText("Reason");
+        reasonCont.addComponent(resonLabel);
+        reasonCont.addComponent(reasonCombo);
+        mainCont.addComponent(reasonCont);
+        }
+    }
+
 
     private void saveData() {
         System.out.println("Question size:=>"+dipslayedQues.size());

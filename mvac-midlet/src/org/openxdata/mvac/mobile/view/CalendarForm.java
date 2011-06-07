@@ -72,8 +72,8 @@ public class CalendarForm extends Form implements IView {
         int d = cal.get(java.util.Calendar.DAY_OF_MONTH);
         int mon = cal.get(java.util.Calendar.MONTH);
         int year = cal.get(java.util.Calendar.YEAR);
-
         return d + "/" + mon + "/" + year;
+
     }
 
     public void setListener(ActionListener listener) {
