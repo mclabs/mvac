@@ -153,6 +153,7 @@ public class MvacTransportLayer implements Runnable, BluetoothClientListener, Al
 
 	String userName = "";
 	String password = "";
+        String nursename="";
 
 	private byte connectionRetries;
 	private byte streamRetries;
@@ -378,6 +379,7 @@ public class MvacTransportLayer implements Runnable, BluetoothClientListener, Al
 		this.isDownload = isDownload;
 		this.userName = userName;
 		this.password = password;
+                this.nursename=nursename;
 		this.progressMessage = progressMessage;
 	}
 
@@ -402,7 +404,7 @@ public class MvacTransportLayer implements Runnable, BluetoothClientListener, Al
 				connectBluetooth();
 				break;
 				/*case CON_TYPE_CABLE:
-				connectSerial();
+				connectSerial();dow
 				break;*/
 				/*case CON_TYPE_SMS:
 				connectSMS();
@@ -562,6 +564,8 @@ public class MvacTransportLayer implements Runnable, BluetoothClientListener, Al
 			int status  = ((HttpConnection)con).getResponseCode();
                         System.out.println("My Status=>"+status);
 			if (status != HttpConnection.HTTP_OK) {
+                            System.out.println("My Connection Failed=>"+MenuText.RESPONSE_CODE_FAIL() + status + ". " +
+						MenuText.SERVER_INVALID_URL());
 				this.eventListener.errorOccured(
 						MenuText.RESPONSE_CODE_FAIL() + status + ". " +
 						MenuText.SERVER_INVALID_URL(),

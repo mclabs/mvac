@@ -5,6 +5,8 @@
 
 package org.openxdata.mvac.mobile.util;
 
+import com.sun.lwuit.Font;
+import com.sun.lwuit.plaf.Style;
 import java.util.Hashtable;
 import javax.microedition.lcdui.Display;
 import javax.microedition.midlet.MIDlet;
@@ -21,9 +23,11 @@ public class AppUtil {
     private static AppUtil instance;
     private Hashtable registry = new Hashtable();
     private static IDisplay display;
-
+    static Style selc = null;
 
     private AppUtil(){
+        
+
         
         
     }
@@ -67,6 +71,17 @@ public class AppUtil {
         display.setView(view);
 
     }
+
+    public Style getMVACSelectStyle() {
+//        if(!(selc != null) ){
+        if(selc == null){
+            selc=new Style(0xffffff, 0x69b510, Font.getBitmapFont("NokiaSansWide14Bold"), (byte)255);
+        
+        }
+        return selc;
+    }
+    
+    
 
 
     

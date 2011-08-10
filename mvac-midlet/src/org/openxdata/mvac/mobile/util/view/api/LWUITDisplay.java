@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package org.openxdata.mvac.mobile.util.view.api;
 
 import com.sun.lwuit.Display;
@@ -17,9 +16,9 @@ import javax.microedition.midlet.MIDlet;
  *
  * @author soyfactor
  */
-public class LWUITDisplay implements IDisplay{
+public class LWUITDisplay implements IDisplay {
 
-    public LWUITDisplay(MIDlet parent ) {
+    public LWUITDisplay(MIDlet parent) {
         //ImplementationFactory.setInstance(new MobrizImplementationFactory());
         Display.init(parent);
         System.out.println("Initing the display");
@@ -33,19 +32,30 @@ public class LWUITDisplay implements IDisplay{
 
     //initalize LWUIT theme here
     private void initTheme() {
+        Resources r;
         try {
-            DataInputStream dis = new DataInputStream(this.getClass().getResourceAsStream("/mvac.res"));
-            System.out.println("Loaded Dis of size ->"+dis.available());
-                Resources r = Resources.open(dis);
-                 UIManager.getInstance().setThemeProps(r.getTheme("mvac_theme"));
+
+
+//            DataInputStream dis = new DataInputStream(this.getClass().getResourceAsStream("/NDG.res"));
+//            System.out.println("Loaded Dis of size ->" + dis.available());
+//            Resources r = Resources.open(dis);
+//            UIManager.getInstance().setThemeProps(r.getTheme("mvac_theme"));
+            
+            
+            r = Resources.open("/NDG.res");
+            UIManager.getInstance().setThemeProps(r.getTheme(r.getThemeResourceNames()[0]));
+
+
+
+
         } catch (IOException ioe) {
-                ioe.printStackTrace();
-                
+            ioe.printStackTrace();
+
         }
     }
 
     public void setView(IView view) {
-        ((Form)view).show();
+        ((Form) view).show();
 
     }
 
@@ -53,6 +63,4 @@ public class LWUITDisplay implements IDisplay{
         //Not supported by LWUIT. OR can return LWUIT display stuff. Whatever... :P
         return null;
     }
-    
-
 }

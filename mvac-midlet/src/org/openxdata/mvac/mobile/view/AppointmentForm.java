@@ -20,9 +20,13 @@ import com.sun.lwuit.events.ActionListener;
 import com.sun.lwuit.events.DataChangedListener;
 import com.sun.lwuit.layouts.BorderLayout;
 import com.sun.lwuit.layouts.BoxLayout;
+import com.sun.lwuit.list.DefaultListCellRenderer;
 import com.sun.lwuit.plaf.Border;
+import com.sun.lwuit.plaf.Style;
+import java.util.Date;
 import java.util.Hashtable;
 import java.util.Vector;
+import javax.microedition.lcdui.Display;
 import org.openxdata.communication.TransportLayerListener;
 import org.openxdata.db.util.Persistent;
 import org.openxdata.db.util.StorageListener;
@@ -39,6 +43,8 @@ import org.openxdata.mvac.mobile.util.AppUtil;
 import org.openxdata.mvac.mobile.util.Constants;
 import org.openxdata.mvac.mobile.util.view.api.IView;
 import org.openxdata.mvac.mobile.view.date.DateField;
+import org.openxdata.mvac.mobile.view.widgets.CalendarCanvas;
+import org.openxdata.mvac.mobile.view.widgets.LWUITCalendarForm;
 import org.openxdata.workflow.mobile.model.MWorkItem;
 
 /**
@@ -62,6 +68,7 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     
     private Command doneCmd = new Command("Save", 1);
     private Command cancelCmd = new Command("Cancel", 2);
+     private Command lotCmd = new Command("Refresh");
     
     //The containers
     Container mainCont = new Container(new BoxLayout(BoxLayout.Y_AXIS));
@@ -74,6 +81,13 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     Container lotRight = new Container(new BorderLayout());
     Container reasonCont = new Container(new BoxLayout(BoxLayout.Y_AXIS));
     
+    
+    int notesContID = 3 ;
+    int dateContID = 1 ;
+    int statusContID = 2 ;
+    int lotContID = 0 ;
+    int reasonContID = 4 ;
+    
     //The question widgets
     Label notesLabel = new Label("");
     Label datelabel = new Label("");
@@ -83,17 +97,20 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     
     Button lotButton = new Button("Refresh");
     
+    
     TextField notesField = new TextField("");
     //Status
     String[] comboOpts = {"Yes","No"};
     ComboBox statusCombo = new ComboBox(comboOpts);
 
     
-    String[] reasonOpts = {"None","Child absent"};
+    String[] reasonOpts = {"Refusal","Permanent contraindication"};
     ComboBox reasonCombo = new ComboBox(reasonOpts);
     
     //date stuff
     DateField appDate = new DateField(DateField.DDMMYYYY, '/');
+    Button selectDate = null;
+    Command selectDateCmd = new Command("Select Date");
     
     //lot opts
     String[] lotOpts = {"Lot1","Lot2"};
@@ -116,6 +133,7 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     public AppointmentForm(String title) {
         super(title);
         formutil = new FormUtil();
+        
         initView();
     }
 
@@ -125,6 +143,7 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
         setTitle(titleString);
         this.parent=parent;
         this.wir = wir;
+        
         initView();
     }
 
@@ -152,8 +171,17 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     }
 
     public void resume(Hashtable args) {
-        this.removeAll();
-        initView();
+        if(args!=null){
+            Date myDate = (Date)args.get("date");
+            System.out.println("Selected Date ->"+myDate.toString());
+            if(appDate!=null){
+                appDate.setDate(myDate);
+                
+            }
+            
+        }
+        //this.removeAll();
+        //initView();
         AppUtil.get().setView(this);
     }
 
@@ -182,6 +210,9 @@ public class AppointmentForm extends  Form implements IView,StorageListener,Acti
     }
 
     private void nowShow(){
+        selectDate = new Button(selectDateCmd);
+        selectDate.setSelectedStyle(new Style(0xffffff, 0x69b510, Font.getBitmapFont("NokiaSansWide14Bold"), (byte)255));
+        selectDate.addActionListener(this);
         int size = ((MvacController)AppUtil.get().getItem(Constants.CONTROLLER)).getDisplayQues().size() ;
         ques = new QuestionListObj[size];
         System.out.println("@ QuestionList : initItems() : Size of question array :" + ques.length);
@@ -259,6 +290,7 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
         addCommandListener(this);
         //setCommandListener(this);
         setLayout(new BorderLayout());
+        
         addComponent(BorderLayout.CENTER, mainCont);
 
         addCommand(cancelCmd);
@@ -312,6 +344,7 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
         System.out.println("Selected source=>"+src.getClass().toString());
         if (src==lotButton) {
             //refresh the Lot List
+            refreshLot();
             
         }else if(src==doneCmd){
             //save items
@@ -324,62 +357,66 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
         }else if(src == statusCombo){
             String selection  = statusCombo.getSelectedItem().toString();
             System.out.println("Combo selected :" + selection);
-            if(selection.equalsIgnoreCase("No")){
-                disableLotCont();
+            if(selection.equals("No")){
+              enableResCont();
+              isAdded = true ;
+
+            }else if(selection.equals("Yes")){
                 if(isAdded){
                     disableResCont();
-
-                }else{
-
-                   appendReason();
-                   isAdded = true;
                 }
-
-                
-
-            }else if(selection.equalsIgnoreCase("Yes")){
-                enableLotCont();
-                disableResCont();
             }
-        }else if(src == appDate){
+        }else if(src == selectDateCmd){
             //Load Calendar here
-
-            calendarForm.setListener(this);
-            AppUtil.get().setView(calendarForm);
+            CalendarCanvas calfoForm = new CalendarCanvas(this);
+            ((Display)AppUtil.get().getItem(Constants.MIDP_DISPLAY)).setCurrent(calfoForm);
+            
+            //calendarForm.setListener(this);
+            //AppUtil.get().setView(calendarForm);
         }else if(src == calendarForm.okcmd){
             System.out.println("Selected Date :" +calendarForm.getDate());
             
         }else if(src == calendarForm.cmdBack){
             System.out.println("Back Command");
             AppUtil.get().setView(this);
+        }else if (ae.getCommand() == progress.cancel) {
+            //transportlayer.
+            this.resume(null);
+
         }
         
     }
     
-    private void disableLotCont(){
-        lotLabel.setFocusable(false);
-        lotCombo.setFocusable(false);
-        lotButton.setFocusable(false);
-        lotContainer.setFocusable(false);
-    }
-
-    private void enableLotCont(){
-        lotLabel.setFocusable(true);
-        lotCombo.setFocusable(true);
-        lotButton.setFocusable(true);
-        lotContainer.setFocusable(true);
-    }
+//    private void disableLotCont(){
+//        mainCont.removeComponent(lotContainer);
+////        lotLabel.setFocusable(false);
+////        lotCombo.setFocusable(false);
+////        lotButton.setFocusable(false);
+////        lotContainer.setFocusable(false);
+//    }
+//
+//    private void enableLotCont(){
+//        mainCont.addComponent(lotContID ,lotContainer);
+////        lotLabel.setFocusable(true);
+////        lotCombo.setFocusable(true);
+////        lotButton.setFocusable(true);
+////        lotContainer.setFocusable(true);
+//    }
 
     private void disableResCont(){
-        resonLabel.setFocusable(false);
-        reasonCombo.setFocusable(false);
-        reasonCont.setFocusable(false);
+        mainCont.removeAll();
+        mainCont.addComponent(lotContainer);
+        mainCont.addComponent(dateCont);
+        mainCont.addComponent(statusCont);
+        mainCont.addComponent(notesCont);
     }
 
     private void enableResCont(){
-        resonLabel.setFocusable(true);
-        reasonCombo.setFocusable(true);
-        reasonCont.setFocusable(true);
+        mainCont.removeAll();
+        mainCont.addComponent(dateCont);
+        mainCont.addComponent(statusCont);
+        appendReason();
+        mainCont.addComponent(notesCont);
     }
 
     public void dialogReturned(Dialog dialog, boolean yesNo) {
@@ -401,6 +438,8 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
         if (dataOut instanceof UserListStudyDefList) {
         System.out.println("Saving the forms");
                     handleStudyAndUserDownloaded((UserListStudyDefList) dataOut);
+                }else if(dataOut instanceof Object){
+                    //do Lot number stuff here
                 }
         
         nowShow();
@@ -421,6 +460,7 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
         lotLeft.addComponent(lotLabel);
         lotLeft.addComponent(lotCombo);
         lotButton.addActionListener(this);
+        lotButton.setSelectedStyle(new Style(0xffffff, 0x69b510, Font.getBitmapFont("NokiaSansWide14Bold"), (byte)255));
         lotRight.addComponent(BorderLayout.CENTER, lotButton);
         lotContainer.addComponent(BorderLayout.WEST,lotLeft);
         lotContainer.addComponent(BorderLayout.EAST,lotRight);
@@ -433,14 +473,19 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
     private void appendDateofImmunization(QuestionListObj obj) {
         datelabel.setText(obj.getQuestion());
         dateCont.addComponent(datelabel);
-        appDate.addActionListener(this);
+//        appDate.addActionListener(this);
         dateCont.addComponent(appDate);
+        dateCont.addComponent(selectDate);
         mainCont.addComponent(dateCont);
     }
 
     private void appendStatus(QuestionListObj obj) {
         statusLabel.setText(obj.getQuestion());
         statusCont.addComponent(statusLabel);
+        statusCombo.getStyle().setFgColor(0Xff0001);
+        DefaultListCellRenderer dlcr =
+                (DefaultListCellRenderer)statusCombo.getRenderer();
+        dlcr.getStyle().setFgColor(0x0000ff);
         statusCombo.addActionListener(this);
         statusCont.addComponent(statusCombo);
         mainCont.addComponent(statusCont);
@@ -448,7 +493,7 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
 
     private void appendNotes(QuestionListObj obj) {
         notesLabel.setText(obj.getQuestion());
-        notesField.setText(""+obj.getValue());
+        notesField.setText((obj.getValue() == null)?"":""+obj.getValue());
         notesCont.addComponent(notesLabel);
         notesCont.addComponent(notesField);
         mainCont.addComponent(notesCont);
@@ -458,6 +503,10 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
         if(!contains(reasonCombo)){
         resonLabel.setText("Reason");
         reasonCont.addComponent(resonLabel);
+        reasonCombo.getStyle().setFgColor(0Xff0001);
+        DefaultListCellRenderer dlcr =
+                (DefaultListCellRenderer)reasonCombo.getRenderer();
+        dlcr.getStyle().setFgColor(0x0000ff);
         reasonCont.addComponent(reasonCombo);
         mainCont.addComponent(reasonCont);
         }
@@ -492,7 +541,21 @@ System.out.println("@ QuestionList :initItems : Text :" + qd.getText() + "  Text
         
     }
 
+    private void refreshLot() {
+        //Load Refresh
+        new BackgroundTask() {
 
+            public void performTask() {
+                progress = new FBProgressIndicator(AppointmentForm.this,"Refreshing Lot Information...");
+                progress.showModeless();
+                dwnLdMgr=((MvacController)AppUtil.get().getItem(Constants.CONTROLLER)).getDM();
+                dwnLdMgr.downloadLotNames(AppointmentForm.this);
+            }
+        }.start();
+    }
+    
+    
+    
 
 
 

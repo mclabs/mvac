@@ -16,7 +16,17 @@ public class Constants {
     public static final String PASSWROD="password";
     public static final String LOGIN_STATUS="login_status";
     public static final String CONTROLLER="controller";
-
+    public static final String NURSENAME="nursename";
+    public static final String DOWNLOAD_DATE="download_date";
+    
+    
+    public static final String AUTH_URL = "http://machost:8888/openxdatawf/auth";
+    //http://158.38.65.142:8888/openxdatawf/wirdownload
+    public static final String DWN_URL = "http://machost:8888/openxdatawf/wirdownload";
+    
+    public static final String UPLOAD_URL="";
+    
+    public static final String INPUT_LOWERCASE="abc";
 
 
 }

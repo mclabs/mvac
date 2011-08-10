@@ -9,6 +9,7 @@ import com.sun.lwuit.Command;
 import com.sun.lwuit.Container;
 import com.sun.lwuit.Dialog;
 import com.sun.lwuit.Display;
+import com.sun.lwuit.Font;
 import com.sun.lwuit.Form;
 import com.sun.lwuit.Image;
 import com.sun.lwuit.Label;
@@ -16,6 +17,7 @@ import com.sun.lwuit.events.ActionEvent;
 import com.sun.lwuit.events.ActionListener;
 import com.sun.lwuit.layouts.BorderLayout;
 import com.sun.lwuit.layouts.BoxLayout;
+import com.sun.lwuit.plaf.Style;
 import java.util.Hashtable;
 import java.util.Vector;
 import org.openxdata.communication.TransportLayerListener;
@@ -31,6 +33,7 @@ import org.openxdata.mvac.mobile.api.MvacController;
 import org.openxdata.mvac.mobile.db.WFStorage;
 import org.openxdata.mvac.mobile.util.AppUtil;
 import org.openxdata.mvac.mobile.util.Constants;
+import org.openxdata.mvac.mobile.util.NurseSettings;
 import org.openxdata.mvac.mobile.util.view.api.IDialogListener;
 import org.openxdata.mvac.mobile.util.view.api.IView;
 import org.openxdata.workflow.mobile.model.MWorkItem;
@@ -46,13 +49,9 @@ public class LWUITMainMenu extends Form implements ActionListener, IView, Transp
     private Button btnDownload;
     private Button btnAppointments;
     private Button btnSearch;
-    //private Button btnRegister;
-    //private Button btnUpload;
     private Command cmdDownload;
     private Command cmdAppointments;
     private Command cmdSearch;
-    //private Command cmdRegister;
-    //private Command cmdUpload;
     private MvacTransportLayer transportlayer;
     private FBProgressIndicator progress;
     private DownloadManager dwnLdMgr;
@@ -61,7 +60,9 @@ public class LWUITMainMenu extends Form implements ActionListener, IView, Transp
     private Image logo = null;
     private Label lblLogo = null;
     private AppointmentsDownloadDialog downloadDialog=null;
+    private Style selcStyle = new Style(0xffffff, 0x69b510, Font.getBitmapFont("NokiaSansWide14Bold"), (byte)255);
     
+   
 
     public LWUITMainMenu() {
         super("Main Menu");
@@ -91,25 +92,24 @@ System.out.println("Image not null");
         cmdDownload = new Command("Plan Appointments");
         cmdAppointments = new Command("Open Appointments");
         cmdSearch = new Command("Search");
-        //cmdRegister = new Command("Register Child/Caretaker");
-        //cmdUpload = new Command("Upload Data");
 
         btnAppointments = new Button(cmdAppointments);
+        
+//        Style selc = new Style(0xffffff, 0x69b510, Font.getBitmapFont("NokiaSansWide14Bold"), (byte)255);
+        btnAppointments.setSelectedStyle(new Style(0xffffff, 0x69b510, Font.getBitmapFont("NokiaSansWide14Bold"), (byte)255));
         btnAppointments.addActionListener(this);
         btnDownload = new Button(cmdDownload);
+        btnDownload.setSelectedStyle(new Style(0xffffff, 0x69b510, Font.getBitmapFont("NokiaSansWide14Bold"), (byte)255));
         btnDownload.addActionListener(this);
+        
         btnSearch = new Button(cmdSearch);
+        btnSearch.setSelectedStyle(new Style(0xffffff, 0x69b510, Font.getBitmapFont("NokiaSansWide14Bold"), (byte)255));
         btnSearch.addActionListener(this);
-        // btnRegister = new Button(cmdRegister);
-        // btnRegister.addActionListener(this);
-        // btnUpload = new Button(cmdUpload);
-        // btnUpload.addActionListener(this);
+        
 
         container.addComponent(btnDownload);
         container.addComponent(btnAppointments);
         container.addComponent(btnSearch);
-        // container.addComponent(btnRegister);
-        //container.addComponent(btnUpload);
 
         this.addComponent(BorderLayout.CENTER, container);
 
@@ -121,13 +121,26 @@ System.out.println("Image not null");
 
     public void actionPerformed(ActionEvent ae) {
         if (ae.getCommand() == cmdDownload) {
+            uploadCompletedItems();
 
             /****
              * Show Alert before proceed to download
              * Task is Upload then Download
              */
-            downloadDialog = new AppointmentsDownloadDialog(this);
-            downloadDialog.show();
+//            downloadDialog = new AppointmentsDownloadDialog(this);
+//            downloadDialog.show();
+            
+//            Object object = AppUtil.get().getItem(Constants.CONTROLLER);
+//            if(object != null && object instanceof MvacController){
+//                MvacController controller = (MvacController) object;
+//                AppUtil.get().putItem(Constants.DOWNLOAD_DATE, "No Date");
+//                controller.uploadData(this);
+//                
+//                
+//                
+//            }
+            
+            
 
 
 
@@ -141,11 +154,7 @@ System.out.println("Image not null");
             LWUITSearchForm sform = new LWUITSearchForm();
             AppUtil.get().setView(sform);
 
-        } //        else if (ae.getCommand() == cmdRegister) {
-        //            System.out.println("Register");
-        //
-        //
-        //        }
+        }
         else if (ae.getCommand() == progress.cancel) {
             //transportlayer.
             this.resume(null);
@@ -153,9 +162,6 @@ System.out.println("Image not null");
         } else if (ae.getSource() == cmdLogout) {
             LWUITLoginForm loginForm = new LWUITLoginForm("User Login");
                 AppUtil.get().setView(loginForm);
-
-
-
         }
 //            else if(ae.getCommand()==cmdUpload){
 //            ((MvacController)AppUtil.get().getItem(Constants.CONTROLLER)).uploadData(this);
@@ -186,10 +192,35 @@ System.out.println("Image not null");
     }
 
     public void resume(Hashtable args) {
-        AppUtil.get().setView(this);
+        if(args!=null){
+            String msg = (String)args.get("msg");
+            if(msg.equals("success")){
+                downloadDialog = new AppointmentsDownloadDialog(this);
+                downloadDialog.show();
+            }
+                    
+        }else{
+            AppUtil.get().setView(this);
+        }
+        
     }
 
-    public void uploaded(Persistent prstnt, Persistent prstnt1) {
+    public void uploaded(Persistent dataOutParams, Persistent dataOut) {
+        System.out.println("@ uploaded");
+        progress.dispose();
+        
+        if(dataOutParams!=null){
+            ResponseHeader rh = (ResponseHeader) dataOutParams;
+        System.out.println("In upload=>"+rh.isSuccess());
+                if (rh.isSuccess()) {
+                        WFStorage.deleteCompleteWorkItems(this, true);
+                }
+        }
+            System.out.println("In upload=>returning to view");
+            Hashtable args = new Hashtable();
+            args.put("msg", "success");
+            this.resume(args);
+
     }
 
     public void downloaded(Persistent dataOutParams, Persistent dataOut) {
@@ -296,60 +327,49 @@ System.out.println("Image not null");
     public void dialogReturned(Dialog dialog, boolean yesNo) {
 
         AppUtil.get().setView(this);
-        if (yesNo) {
-            download();
-        }
-    }
-
-
-
-    public abstract class BackgroundTask {
-
-        /**
-         * Start this task
-         */
-        public final void start() {
-            if (Display.getInstance().isEdt()) {
-                taskStarted();
-            } else {
-                Display.getInstance().callSeriallyAndWait(new Runnable() {
-
-                    public void run() {
-                        taskStarted();
-                    }
-                });
-            }
-            new Thread(new Runnable() {
-
-                public void run() {
-                    if (Display.getInstance().isEdt()) {
-                        taskFinished();
-                    } else {
-                        performTask();
-                        Display.getInstance().callSerially(this);
-                    }
+        Object object = null;
+        try{
+            object = AppUtil.get().getItem(Constants.NURSENAME);
+            if(object != null && object.toString().length()>0 && (!object.toString().equals(""))){
+                if (yesNo) {
+                    download();
                 }
-            }).start();
+            }else{
+                NurseSettings nurseSettings = new NurseSettings();
+                AppUtil.get().setView(nurseSettings);
+            }
+        }catch(Exception e){
+System.out.println("Exception thrown when fetching nurse name :" + e.getMessage());
+            NurseSettings settings = new NurseSettings();
+            AppUtil.get().setView(settings);
         }
-
-        /**
-         * Invoked on the LWUIT EDT before spawning the background thread, this allows
-         * the developer to perform initialization easily.
-         */
-        public void taskStarted() {
-        }
-
-        /**
-         * Invoked on a separate thread in the background, this task should not alter
-         * UI except to indicate progress.
-         */
-        public abstract void performTask();
-
-        /**
-         * Invoked on the LWUIT EDT after the background thread completed its
-         * execution.
-         */
-        public void taskFinished() {
-        }
+        
+        
+        
+        
+        
     }
+    
+    public void uploadCompletedItems(){
+        progress = new FBProgressIndicator(this,"Uploading Data...");
+        progress.showModeless();
+        
+        new BackgroundTask() {
+
+            public void performTask() {
+                dwnLdMgr.uploadWorkItems(LWUITMainMenu.this);
+                //dwnLdMgr.uploadWorkItems(null);
+            }
+
+            public void taskStarted() {
+            }
+
+
+
+        }.start();
+    }
+
+
+
+    
 }

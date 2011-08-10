@@ -30,15 +30,15 @@ public class AppGroupRender extends Container implements ListCellRenderer {
     private Container cnt;
     private Container childcnt;
     private Container caretakercnt;
-    private Font lblFont = Font.getBitmapFont("mvaccalibri13");
+//    private Font lblFont = Font.getBitmapFont("mvaccalibri13");
 
     public AppGroupRender(){
         cnt = new Container(new BoxLayout(BoxLayout.Y_AXIS));
         childcnt = new Container(new BoxLayout(BoxLayout.X_AXIS));
         caretakercnt = new Container(new BoxLayout(BoxLayout.X_AXIS));
 
-        name.getStyle().setFont(lblFont,true);
-        caretaker_id.getStyle().setFont(lblFont, true);
+//        name.getStyle().setFont(lblFont,true);
+//        caretaker_id.getStyle().setFont(lblFont, true);
 
         name.getStyle().setBgTransparency(0);
         caretaker.getStyle().setBgTransparency(0);

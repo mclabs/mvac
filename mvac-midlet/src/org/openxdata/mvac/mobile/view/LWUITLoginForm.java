@@ -5,7 +5,6 @@
 
 package org.openxdata.mvac.mobile.view;
 
-import com.sun.lwuit.Button;
 import com.sun.lwuit.Command;
 import com.sun.lwuit.Container;
 import com.sun.lwuit.Dialog;
@@ -17,10 +16,11 @@ import com.sun.lwuit.events.ActionListener;
 import com.sun.lwuit.layouts.BorderLayout;
 import com.sun.lwuit.layouts.BoxLayout;
 import java.util.Hashtable;
-import javax.microedition.lcdui.CommandListener;
-import javax.microedition.lcdui.Displayable;
 import javax.microedition.midlet.MIDlet;
 import javax.microedition.midlet.MIDletStateChangeException;
+import org.openxdata.mvac.communication.ITransportListener;
+import org.openxdata.mvac.communication.TransportManager;
+import org.openxdata.mvac.communication.model.Message;
 import org.openxdata.mvac.mobile.MvacMidlet;
 import org.openxdata.mvac.mobile.util.AppUtil;
 import org.openxdata.mvac.mobile.util.Constants;
@@ -33,7 +33,7 @@ import org.openxdata.mvac.mobile.view.user.MVACUserManager;
  *
  * @author soyfactor
  */
-public class LWUITLoginForm extends Form implements IView,IDialogListener,ActionListener{
+public class LWUITLoginForm extends Form implements IView,IDialogListener,ActionListener,ITransportListener{
     MVACUserManager usermanager = new MVACUserManager();
 
     private final String usernameLbl = "Username";
@@ -46,6 +46,8 @@ public class LWUITLoginForm extends Form implements IView,IDialogListener,Action
 
     private TextField txtUsername;
     private TextField txtPassword;
+    private TransportManager tm;
+    private FBProgressIndicator progress;
 
 
 
@@ -61,12 +63,13 @@ public class LWUITLoginForm extends Form implements IView,IDialogListener,Action
     public void resume(Hashtable args) {
         //process args
         //set next displayable
+        
         AppUtil.get().setView(this);
     }
 
     private void initView() {
         //Button butt = new Button(null)
-       
+       tm=new TransportManager("GET", this);
         setLayout(new BorderLayout());
 
 
@@ -78,9 +81,11 @@ public class LWUITLoginForm extends Form implements IView,IDialogListener,Action
 
         txtUsername = new TextField(20);
         txtUsername.setConstraint(TextField.ANY);
+        txtUsername.setInputMode(Constants.INPUT_LOWERCASE);
 
         txtPassword = new TextField();
         txtPassword.setConstraint(TextField.PASSWORD);
+        txtPassword.setInputMode(Constants.INPUT_LOWERCASE);
 
         container.addComponent(lblUsername);
         container.addComponent(txtUsername);
@@ -97,41 +102,47 @@ public class LWUITLoginForm extends Form implements IView,IDialogListener,Action
         addCommand(new Command("Login") {
             public void actionPerformed(ActionEvent evt) {
                 //authenticate user
-                //display main men
-                AppUtil.get().putItem(Constants.USERNAME,"admin");
-                AppUtil.get().putItem(Constants.PASSWROD,"admin");
-                LWUITMainMenu mainMenu = new LWUITMainMenu();
-                AppUtil.get().setView(mainMenu);
-//                try{
-//                    if (usermanager.isUserValid(getUsername(), getPassword())) {
-//                        LWUITMainMenu mainMenu = new LWUITMainMenu();
-//                        AppUtil.get().putItem(Constants.USERNAME, getUsername());
-//                        AppUtil.get().putItem(Constants.PASSWROD, getPassword());
-//                        AppUtil.get().setView(mainMenu);
-//                    }else{
-//                        //display error. return to Login form
-//                        resume(null);
-//                    }
-//
-//                }catch(Exception e){
-//                    e.printStackTrace();
-//                }
+                //display main menu
+//                AppUtil.get().putItem(Constants.USERNAME,"admin");
+//                AppUtil.get().putItem(Constants.PASSWROD,"admin");
+//                LWUITMainMenu mainMenu = new LWUITMainMenu();
+//                AppUtil.get().setView(mainMenu);
+                if(correctdetails()){
+                    progress = new FBProgressIndicator(this, "Authenticating... Please wait");
+                    progress.showModeless();
+                    Message msg = new Message(Constants.AUTH_URL) ;
+                    msg.setParam("uname", getUsername());
+                    msg.setParam("pwd", getPassword());
+                    tm.sendMessage(msg);
+                }else{
+                    GenericAlert genericAlert = new GenericAlert(LWUITLoginForm.this, "Enter valid username and password");
+                    genericAlert.show();
+                }
+                
+                
                 
                 
 
                 // Put code here
 
             }
+
+            private boolean correctdetails() {
+                String username=getUsername();
+                String pwd = getPassword();
+                if(username!=null&&username!=""&&pwd!=null&&pwd!=""){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
         });
 
         addCommand(new Command("Exit"){
             public void actionPerformed(ActionEvent ae){
-                System.out.println("Exit Command Pressed");
-                try {
-                    ((MvacMidlet) AppUtil.get().getItem(Constants.MIDLET)).exitApp(true);
-                } catch (MIDletStateChangeException ex) {
-                    ex.printStackTrace();
-                }
+                
+                    ((MIDlet) AppUtil.get().getItem(Constants.MIDLET)).notifyDestroyed();
+                
             }
         });
         
@@ -146,7 +157,11 @@ public class LWUITLoginForm extends Form implements IView,IDialogListener,Action
 
     public void actionPerformed(ActionEvent ae) {
 
-        
+        if (ae.getCommand() == progress.cancel) {
+            //transportlayer.
+            this.resume(null);
+
+        }
 
         
     }
@@ -160,6 +175,26 @@ public class LWUITLoginForm extends Form implements IView,IDialogListener,Action
     }
 
     public void dialogReturned(Dialog dialog, boolean yesNo) {
+    }
+
+    public void messageSent(Object args) {
+        String response = (String)args;
+        if (response.equals("200")) {
+            //success. Save user ans password. Proceed
+            LWUITMainMenu mainMenu = new LWUITMainMenu();
+            AppUtil.get().putItem(Constants.USERNAME, getUsername());
+            AppUtil.get().putItem(Constants.PASSWROD, getPassword());
+            AppUtil.get().putItem(Constants.NURSENAME, getUsername());
+            System.out.println("Nurse Set to"+(String)AppUtil.get().getItem(Constants.NURSENAME));
+            AppUtil.get().setView(mainMenu);
+        }else if(response.equals("201")){
+            //failed. alert user that login failed. return to login screen
+            txtUsername.setText("");
+            txtPassword.setText("");
+            this.resume(null);
+        }else{
+            //someting wong!
+        }
     }
 
 

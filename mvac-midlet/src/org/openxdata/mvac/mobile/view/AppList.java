@@ -6,8 +6,8 @@
 package org.openxdata.mvac.mobile.view;
 
 import com.sun.lwuit.Command;
+import com.sun.lwuit.Component;
 import com.sun.lwuit.Dialog;
-import com.sun.lwuit.Font;
 import com.sun.lwuit.Form;
 import com.sun.lwuit.Label;
 import com.sun.lwuit.List;
@@ -15,6 +15,7 @@ import com.sun.lwuit.TextField;
 import com.sun.lwuit.events.ActionEvent;
 import com.sun.lwuit.events.ActionListener;
 import com.sun.lwuit.events.DataChangedListener;
+import com.sun.lwuit.events.FocusListener;
 import com.sun.lwuit.layouts.BorderLayout;
 import java.util.Hashtable;
 import java.util.Vector;
@@ -28,11 +29,11 @@ import org.openxdata.workflow.mobile.model.MWorkItem;
  *
  * @author soyfactor
  */
-public class AppList extends  Form implements IView,StorageListener,ActionListener{
+public class AppList extends  Form implements IView,StorageListener,ActionListener,FocusListener{
     private Appointment[] apps;
     private List list;
     private  TextField field = new TextField("Click here to search", 22);
-    private Font lblFont = Font.getBitmapFont("mvaccalibri13");
+//    private Font lblFont = Font.getBitmapFont("mvaccalibri13");
     private Label searchlbl = new Label("Search:");
     private Vector mWorkItemsList = new Vector(0);
     private IView parent;
@@ -74,12 +75,16 @@ public class AppList extends  Form implements IView,StorageListener,ActionListen
         setLayout(new BorderLayout());
 
         field.setConstraint(TextField.ANY);
-        searchlbl.getStyle().setFont(lblFont);
+//        searchlbl.getStyle().setFont(lblFont);
         field.setLabelForComponent(searchlbl);
+        field.addFocusListener(this);
         field.addDataChangeListener(new DataChangedListener() {
 
             public void dataChanged(int i, int i1) {
-                proxyModel.filter(field.getText());
+                if(!field.getText().equals("Click here to search")){
+                    proxyModel.filter(field.getText());
+                }
+                
             }
         });
 
@@ -176,7 +181,23 @@ System.out.println("@ applist : action performed Selected this item=>"+slectedWi
     public void dialogReturned(Dialog dialog, boolean yesNo) {
     }
 
+    public void focusGained(Component cmpnt) {
+        if(cmpnt.equals(field)){
+            if(field.getText().equals("Click here to search")){
+                field.setText("");
+            }
+            
+        }
+    }
 
+    public void focusLost(Component cmpnt) {
+        if(cmpnt.equals(field)){
+            if(field.getText().equals("")){
+                field.setText("Click here to search");
+            }
+            
+        }
+    }
 
 
 

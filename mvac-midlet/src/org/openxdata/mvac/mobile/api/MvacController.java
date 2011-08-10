@@ -8,6 +8,7 @@ import com.sun.lwuit.Display;
 import com.sun.lwuit.events.ActionEvent;
 import com.sun.lwuit.events.ActionListener;
 import java.util.Date;
+import java.util.Hashtable;
 import java.util.Vector;
 import org.openxdata.communication.TransportLayerListener;
 import org.openxdata.db.OpenXdataDataStorage;
@@ -238,6 +239,7 @@ public class MvacController implements TransportLayerListener,ActionListener,Sto
 
 
     public void uploadData(IView activatingView){
+System.out.println("@ Controller : uploadData");
         this.activatingView = activatingView;
         this.isupload=true;
         progress = new FBProgressIndicator(this,"Uploading Data...");
@@ -640,13 +642,21 @@ System.out.println("@ downloaded");
     }
 
     public void uploaded(Persistent dataOutParams, Persistent dataOut) {
-        ResponseHeader rh = (ResponseHeader) dataOutParams;
+        System.out.println("@ uploaded");
+        progress.dispose();
+        
+        if(dataOutParams!=null){
+            ResponseHeader rh = (ResponseHeader) dataOutParams;
         System.out.println("In upload=>"+rh.isSuccess());
                 if (rh.isSuccess()) {
                         WFStorage.deleteCompleteWorkItems(this, true);
                 }
+        }
         if (activatingView!=null) {
-            activatingView.resume(null);
+            System.out.println("In upload=>returning to view");
+            Hashtable args = new Hashtable();
+            args.put("msg", "success");
+            activatingView.resume(args);
 
         }
     }
