@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 67
+.mtj.tmp
+deployed
+.settings
+bin
+build
+dist
+tmp8025
+tmp9132
+tmp9305
+
+END
