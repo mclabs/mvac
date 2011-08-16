@@ -7,6 +7,7 @@ package org.openxdata.modules.workflows.server.handlers;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Vector;
 import org.op4j.Op;
@@ -23,6 +24,7 @@ import org.openxdata.server.admin.model.User;
 @SuppressWarnings("UseOfObsoleteCollectionType")
 public class WIRInfoDownloadHandler implements RequestHandler {
 
+
         private ResourceService rsService;
 
         public WIRInfoDownloadHandler() {
@@ -30,7 +32,7 @@ public class WIRInfoDownloadHandler implements RequestHandler {
         }
 
         @Override
-        public void handleRequest(User user, InputStream is, OutputStream os) throws IOException {
+        public void handleRequest(User user, InputStream is, OutputStream os,Hashtable args) throws IOException {
                 List<WorkItemFormMapHolder> wirFormMap = rsService.getCurrentUserWorkItemFormMapHolders();
                 List infos = Op.on(wirFormMap).map(Call.methodForObject("asMWorkItemInfo")).get();
                 HandlerStreamUtil streamHelper = new HandlerStreamUtil(is, os);

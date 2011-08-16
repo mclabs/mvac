@@ -5,6 +5,8 @@ import com.google.inject.Injector;
 import com.google.inject.Scopes;
 import com.google.inject.servlet.GuiceServletContextListener;
 import com.google.inject.servlet.ServletModule;
+import org.openxdata.immunizations.server.servlet.AuthenticationServlet;
+import org.openxdata.immunizations.server.servlet.ImmunizationSearchServlet;
 import org.openxdata.modules.workflows.server.servlet.WorkItemsServlet;
 import org.yawlfoundation.yawl.engine.interfce.interfaceB.InterfaceB_EnvironmentBasedServer;
 
@@ -27,6 +29,8 @@ public class ServletConfig extends GuiceServletContextListener
             serve("/OpenXDataServerAdmin/WorkItemsService").with(WorkItemsServiceImpl.class);
             serve("/OpenXDataServerAdmin/SpecStudyMapService").with(SpecStudyMapServiceImpl.class);
             serve("/wirdownload").with(WorkItemsServlet.class);
+            serve("/immdownload").with(ImmunizationSearchServlet.class);
+            serve("/auth").with(AuthenticationServlet.class);
         }
     }
 }

@@ -17,10 +17,32 @@ public class WFRequest implements Persistent
     public String password;
     public String action;
     public String serializer;
+    private String nurseName;
+    private String downLoadDate;
 
     public WFRequest()
     {
     }
+
+    public String getDownLoadDate() {
+        return downLoadDate;
+    }
+
+
+
+    public void setDownLoadDate(String downLoadDate) {
+        this.downLoadDate = downLoadDate;
+    }
+
+    public String getNurseName() {
+        return nurseName;
+    }
+
+    public void setNurseName(String nurseName) {
+        this.nurseName = nurseName;
+    }
+
+
 
     public String getAction()
     {
@@ -52,10 +74,12 @@ public class WFRequest implements Persistent
         this.userName = userName;
     }
 
-    public WFRequest(String userName, String password, String action)
+    public WFRequest(String userName, String password, String nurseName, String downloadDate, String action)
     {
         this.userName = userName;
         this.password = password;
+        this.nurseName = nurseName;
+        this.downLoadDate = downloadDate;
         this.action = action;
     }
 
@@ -73,6 +97,8 @@ public class WFRequest implements Persistent
     {
         dos.writeUTF(userName);
         dos.writeUTF(password);
+        dos.writeUTF(nurseName);
+        dos.writeUTF(downLoadDate);
         dos.writeUTF(action);
         PersistentHelper.writeUTF(dos, serializer);
     }
@@ -81,6 +107,8 @@ public class WFRequest implements Persistent
     {
         userName = dis.readUTF();
         password = dis.readUTF();
+        nurseName = dis.readUTF();
+        downLoadDate = dis.readUTF();
         action = dis.readUTF();
         serializer = PersistentHelper.readUTF(dis);
     }

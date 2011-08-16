@@ -3,6 +3,7 @@ package org.openxdata.modules.workflows.server;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -37,6 +38,7 @@ public class YawlOXDCustomService extends InterfaceBWebsideController {
     SpecificationService specService;
     @Autowired
     WorkItemsService workItemsService;
+
 
     public YawlOXDCustomService() {
     }
@@ -239,5 +241,38 @@ public class YawlOXDCustomService extends InterfaceBWebsideController {
 
     private synchronized void cacheItem(WorkItemRecord workitem) {
         _model.addWorkItem(workitem);
+    }
+
+    /**
+     *function to launch cases.
+     * @param caseID -case id for which case data will be input variables
+     * @param caseData - xml representing input variables and
+     * @return List of caseIDs that have been started
+     */
+    public List<String> launchcases(YSpecificationID specID,List<String> caseData){
+        List<String> caseIDs = new ArrayList<String>();
+        try {
+            initSessionHandle();
+            for (String data:caseData) {
+                String caseID = _interfaceBClient.launchCase(specID, data, _sessionHandle);
+                if (caseID!=null) {
+                    caseIDs.add(caseID);
+                }
+            }
+//            for (int e=0;e<10;e++) {
+//                String data = caseIDs.get(e);
+//                String caseID = _interfaceBClient.launchCase(specID, data, _sessionHandle);
+//                if (caseID!=null) {
+//                    caseIDs.add(caseID);
+//                }
+//            }
+            
+        } catch (IOException ex) {
+            Logger.getLogger(YawlOXDCustomService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+
+
+        return caseIDs;
     }
 }

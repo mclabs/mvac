@@ -7,13 +7,19 @@ SpecificationService.java
 K 25
 svn:wc:ra_dav:version-url
 V 157
-/svn/EpiHandy/!svn/ver/3279/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/SpecificationService.java
+/svn/EpiHandy/!svn/ver/3588/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/SpecificationService.java
 END
 WorkItemsService.java
 K 25
 svn:wc:ra_dav:version-url
 V 153
 /svn/EpiHandy/!svn/ver/3547/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/WorkItemsService.java
+END
+LaunchCaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/EpiHandy/!svn/ver/3703/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/LaunchCaseService.java
 END
 ResourceService.java
 K 25

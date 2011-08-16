@@ -80,5 +80,7 @@ public interface OpenXDataImages extends Resources {
 
 	ImageResource pdf();
 	ImageResource logout();
+
+        ImageResource immunization();
 	
 }

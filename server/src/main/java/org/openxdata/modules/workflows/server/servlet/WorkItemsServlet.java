@@ -8,10 +8,12 @@ import com.google.inject.Singleton;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.IOException;
+import java.util.Hashtable;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.openxdata.immunizations.server.util.Constants;
 import org.openxdata.modules.workflows.server.context.WFContext;
 import org.openxdata.modules.workflows.server.handlers.AccessDeniedHandler;
 import org.openxdata.modules.workflows.server.handlers.ErrorWhileProcessHandler;
@@ -27,58 +29,69 @@ import org.openxdata.server.service.AuthenticationService;
 @Singleton
 public class WorkItemsServlet extends HttpServlet
 {
-    private class RequestParams
-    {
-        private User user;
-        private String type;
-    }
-    private ProcessorCreator processorCreator;
-    private AuthenticationService authSrv;
 
-    @Override
-    public void init() throws ServletException
-    {
-        super.init();
-        processorCreator = WFContext.getProcessorCreator();
-        authSrv = (AuthenticationService) org.openxdata.server.Context.getBean("authenticationService");
-
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
-    {
-        try {
-            RequestParams params = readType(req, resp);
-            RequestHandler reqHandler = processorCreator.buildRequestHandler(params.type);
-            ByteArrayOutputStream tempOS = new ByteArrayOutputStream();
-            reqHandler.handleRequest(params.user, req.getInputStream(), tempOS);
-            resp.getOutputStream().write(tempOS.toByteArray());
-            resp.getOutputStream().flush();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-            new ErrorWhileProcessHandler(ex).handleRequest(null, null, resp.getOutputStream());
+        private class RequestParams
+        {
+                private User user;
+                private String type;
+                private String nurseName;
+                private String downloadDate;
         }
-    }
+        private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(this.getClass());
+        private ProcessorCreator processorCreator;
+        private AuthenticationService authSrv;
 
-    private RequestParams readType(HttpServletRequest req, HttpServletResponse resp) throws IOException
-    {
-        RequestParams params = new RequestParams();
-        DataInputStream dis = new DataInputStream(req.getInputStream());
-        User user = authenticatedBinaryStream(dis);
-        if (user != null) {
-            params.user = user;
-            params.type = dis.readUTF();
-        } else {
-            params.type = AccessDeniedHandler.class.getName();
+        @Override
+        public void init() throws ServletException
+        {
+                super.init();
+                processorCreator = WFContext.getProcessorCreator();
+                authSrv = (AuthenticationService) org.openxdata.server.Context.getBean("authenticationService");
+
         }
-        return params;
-    }
 
-    private User authenticatedBinaryStream(DataInputStream dis) throws IOException
-    {
-        String userName = dis.readUTF();
-        String password = dis.readUTF();
-        User user = authSrv.authenticate(userName, password);
-        return user;
-    }
+        @Override
+        protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+        {
+            Hashtable args = new Hashtable();
+                try {
+                        RequestParams params = readType(req, resp);
+                        RequestHandler reqHandler = processorCreator.buildRequestHandler(params.type);
+                        ByteArrayOutputStream tempOS = new ByteArrayOutputStream();
+                        args.put(Constants.NURSE_NAME, params.nurseName);
+                        args.put(Constants.DOWNLOAD_DATE, params.downloadDate);
+                        reqHandler.handleRequest(params.user, req.getInputStream(), tempOS,args);
+                        resp.getOutputStream().write(tempOS.toByteArray());
+                        resp.getOutputStream().flush();
+                } catch (Exception ex) {
+                        log.error("Problem while processing request from mobile: ",ex);
+                        //null argumenst added by gmimano
+                        new ErrorWhileProcessHandler(ex).handleRequest(null, null, resp.getOutputStream(),null);
+                }
+        }
+
+        private RequestParams readType(HttpServletRequest req, HttpServletResponse resp) throws IOException
+        {
+                RequestParams params = new RequestParams();
+                DataInputStream dis = new DataInputStream(req.getInputStream());
+                User user = authenticatedBinaryStream(dis);
+                if (user != null) {
+                        params.user = user;
+                        params.nurseName=dis.readUTF();
+                        params.downloadDate=dis.readUTF();
+                        params.type = dis.readUTF();
+
+                } else {
+                        params.type = AccessDeniedHandler.class.getName();
+                }
+                return params;
+        }
+
+        private User authenticatedBinaryStream(DataInputStream dis) throws IOException
+        {
+                String userName = dis.readUTF();
+                String password = dis.readUTF();
+                User user = authSrv.authenticate(userName, password);
+                return user;
+        }
 }

@@ -43,7 +43,7 @@ public class HibernateDBSpecStudyMapDAO extends BaseDAOImpl<DBSpecStudyMap>
 
     public String replaceIdIfZero(int id, String xmlMap)
     {
-        //Preferred not to use an xml parser to just simply improve on speed
+        //Preferred not to use an xml parser to just simply and improve on speed
         int startTag = xmlMap.indexOf("<SpecStudyMap");
         int closeTag = xmlMap.indexOf(">", startTag);
 
@@ -79,4 +79,5 @@ public class HibernateDBSpecStudyMapDAO extends BaseDAOImpl<DBSpecStudyMap>
         query.setParameter("taskID", taskID);
         return (DBSpecStudyMap) query.uniqueResult();
     }
+
 }

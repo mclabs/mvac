@@ -12,6 +12,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -49,6 +50,7 @@ import org.yawlfoundation.yawl.engine.interfce.WorkItemRecord;
 public class WIRUploadHandler implements RequestHandler
 {
 
+        private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(this.getClass());
         private FormDownloadService formDownloadService;
         private KxmlXformSerializer serialiser;
         private MapService mapService;
@@ -67,7 +69,7 @@ public class WIRUploadHandler implements RequestHandler
         }
 
         @Override
-        public void handleRequest(User user, InputStream is, OutputStream os) throws IOException
+        public void handleRequest(User user, InputStream is, OutputStream os, Hashtable args) throws IOException
         {
                 try {
                         HandlerStreamUtil streamHelper = new HandlerStreamUtil(is, os);
@@ -126,11 +128,11 @@ public class WIRUploadHandler implements RequestHandler
                                 try {
                                         deserialiseMethod.invoke(serialiser, studyData, xmlForms, xformMap);
                                 } catch (Exception x) {
-                                        x.printStackTrace();
+                                       log.error("Error while deserialising study data id: "+studyData.getId(),x);
                                 }
                         }
                 } catch (Exception ex) {
-                        Logger.getLogger(WIRUploadHandler.class.getName()).log(Level.SEVERE, null, ex);
+                       log.error(ex);
                         throw new RuntimeException(ex);
                 }
                 return xmlForms;
@@ -166,6 +168,12 @@ public class WIRUploadHandler implements RequestHandler
                 for (Entry<String, String> paramQnEntry : paramQnMap.entrySet()) {
                         FormData mobileFormData = wirDat.getFormDataData();
                         QuestionData question = mobileFormData.getQuestion("/" + formVarName + "/" + paramQnEntry.getValue());
+                        if(question == null) {
+                                log.warn("ParamQuestion entry form ["+formVarName + "] workItem"
+                                        + " ["+workitem.getID()
+                                        + "] = "+paramQnEntry.toString()+" Has no corresponding quetsion");
+                                continue;
+                        }//To continue.. Wrong entry
                         WorkItemQuestion qn = new WorkItemQuestion(paramQnEntry.getKey(), question.getTextAnswer());
                         qnList.add(qn);
                 }

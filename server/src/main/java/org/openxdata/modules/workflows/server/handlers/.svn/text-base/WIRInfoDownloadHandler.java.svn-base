@@ -23,6 +23,7 @@ import org.openxdata.server.admin.model.User;
 @SuppressWarnings("UseOfObsoleteCollectionType")
 public class WIRInfoDownloadHandler implements RequestHandler {
 
+
         private ResourceService rsService;
 
         public WIRInfoDownloadHandler() {

@@ -7,7 +7,6 @@ package org.openxdata.modules.workflows.server.model;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
-import java.util.logging.Level;
 import org.apache.log4j.Logger;
 
 
@@ -37,7 +36,7 @@ import org.yawlfoundation.yawl.util.JDOMUtil;
 public class WorkItemFormMapHolder
 {
 
-        Logger log = Logger.getLogger(getClass());
+        private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(this.getClass());
         private FormDef formDef;
         private WorkItemRecord wir;
         private String xmlMap;
@@ -57,7 +56,11 @@ public class WorkItemFormMapHolder
                 xmlMap = map.getXml();
                 String formIdForTask = MatcherHelper.getFormIdForTask(wir.getTaskID(), xmlMap);
                 if (formIdForTask != null) {
-                        this.formDef = map.getStudy().getForm(Integer.parseInt(formIdForTask));
+                        try {
+                                this.formDef = map.getStudy().getForm(Integer.parseInt(formIdForTask));
+                        } catch (NumberFormatException x) {
+                                log.error("Map with erratic Match: TaskId=" + wir.getTaskID() + " FormId = " + formIdForTask,x);
+                        }
                 }
         }
 

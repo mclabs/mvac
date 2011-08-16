@@ -42,6 +42,7 @@ public class MenuView implements MenuPresenter.Display, ClickHandler {
 
     @Override
     public void onClick(ClickEvent event) {
+        System.out.println("Running some Test");
         Object source = event.getSource();
         btnAvailableWorkItems.setDown(source
                 == btnAvailableWorkItems && btnAvailableWorkItems.isDown());

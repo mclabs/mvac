@@ -7,6 +7,7 @@ package org.openxdata.modules.workflows.server.service;
 import java.util.List;
 import org.openxdata.modules.workflows.model.shared.DBSpecification;
 import org.yawlfoundation.yawl.elements.YSpecification;
+import org.yawlfoundation.yawl.elements.YTask;
 
 /**
  *
@@ -14,18 +15,18 @@ import org.yawlfoundation.yawl.elements.YSpecification;
  */
 public interface SpecificationService
 {
-    public void saveSpec(YSpecification specification);
 
-    public void saveSpecs(String specifications);
+        public void saveSpec(YSpecification specification);
 
-    public List<YSpecification> getSpecifications();
+        public void saveSpecs(String specifications);
 
-    public List<DBSpecification> getDBSpecifications();
+        public List<YSpecification> getSpecifications();
 
-    public DBSpecification getDBSpecWithSpecID(String specID);
+        public List<DBSpecification> getDBSpecifications();
 
-    public YSpecification getSpec(String specID, String version);
+        public DBSpecification getDBSpecWithSpecID(String specID);
 
+        public YSpecification getSpec(String specID, String version);
 
-
+        public YTask getTask(String taskId, String specID, String version);
 }

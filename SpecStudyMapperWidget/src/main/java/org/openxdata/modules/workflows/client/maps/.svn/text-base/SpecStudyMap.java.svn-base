@@ -19,7 +19,8 @@ import org.openxdata.server.admin.model.StudyDef;
  * @author kay
  * 
  */
-public class SpecStudyMap implements Serializable {
+public class SpecStudyMap implements Serializable
+{
 
         private static final long serialVersionUID = 1L;
         public static boolean validateOnConversion = false;
@@ -31,44 +32,52 @@ public class SpecStudyMap implements Serializable {
         private HashMap<String, TaskFormDefMap> taskFormDefMaps = new HashMap<String, TaskFormDefMap>();
         private OSpecification oSpecification;
         private StudyDef studyDef;
-        private CompletenessValidator completeValidator;
         private boolean dirty = true;
         private int id = 0;
 
-        SpecStudyMap() {
+        SpecStudyMap()
+        {
         }
 
-        public SpecStudyMap(OSpecification spec, StudyDef study) {
+        public SpecStudyMap(OSpecification spec, StudyDef study)
+        {
                 this.oSpecification = spec;
                 this.studyDef = study;
         }
 
-        public OSpecification getoSpecification() {
+        public OSpecification getoSpecification()
+        {
                 return oSpecification;
         }
 
-        public StudyDef getStudyDef() {
+        public StudyDef getStudyDef()
+        {
                 return studyDef;
         }
 
         @Override
-        public String toString() {
+        public String toString()
+        {
                 return getUniqueName();
         }
 
-        public String getUniqueName() {
+        public String getUniqueName()
+        {
                 return oSpecification.getUniqueName() + "/" + studyDef.getName();
         }
 
-        public int getId() {
+        public int getId()
+        {
                 return id;
         }
 
-        public void setId(int id) {
+        public void setId(int id)
+        {
                 this.id = id;
         }
 
-        public boolean equals(SpecStudyMap obj) {
+        public boolean equals(SpecStudyMap obj)
+        {
                 return obj.toString().equals(this.toString());
         }
 
@@ -80,7 +89,8 @@ public class SpecStudyMap implements Serializable {
          * @param formName
          *            unique name of the form
          */
-        public TaskFormDefMap addTaskFormDefMap(String taskName, String formName) {
+        public TaskFormDefMap addTaskFormDefMap(String taskName, String formName)
+        {
                 TaskFormDefMap taskFormMap = null;
                 OTask task = getTaskWithName(taskName);
                 FormDef form = getFormWithName(formName);
@@ -100,7 +110,8 @@ public class SpecStudyMap implements Serializable {
          * @param map
          *            the map to add
          */
-        public boolean addTaskFormDefMap(TaskFormDefMap map) {
+        public boolean addTaskFormDefMap(TaskFormDefMap map)
+        {
                 if (!validMap(map)) {
                         return false;
                 }
@@ -116,7 +127,8 @@ public class SpecStudyMap implements Serializable {
          * @param map
          *            map to remove
          */
-        public void removeTaskFormDef(TaskFormDefMap map) {
+        public void removeTaskFormDef(TaskFormDefMap map)
+        {
                 if (map == null) {
                         return;
                 }
@@ -131,7 +143,8 @@ public class SpecStudyMap implements Serializable {
          *            map to validate
          * @return
          */
-        private boolean validMap(TaskFormDefMap map) {
+        private boolean validMap(TaskFormDefMap map)
+        {
                 if (map == null) {
                         return false;
                 }
@@ -150,7 +163,8 @@ public class SpecStudyMap implements Serializable {
          *
          * @return list off all Tasks that are not Matched with a study
          */
-        public List<OTask> getAllUnMatchedTasks() {
+        public List<OTask> getAllUnMatchedTasks()
+        {
                 Collection<TaskFormDefMap> allMaps = taskFormDefMaps.values();
                 List<OTask> allTasks = new ArrayList<OTask>(oSpecification.getTasks());
                 // remove all maps that are are all already mapped
@@ -160,11 +174,13 @@ public class SpecStudyMap implements Serializable {
                 return allTasks;
         }
 
-        public List<FormDef> getAllUnMatchedForms() {
+        public List<FormDef> getAllUnMatchedForms()
+        {
                 return studyDef.getForms();
         }
 
-        public OTask getTaskWithName(String taskName) {
+        public OTask getTaskWithName(String taskName)
+        {
                 for (OTask oTask : oSpecification.getTasks()) {
                         if (oTask.getId().equals(taskName)) {
                                 return oTask;
@@ -173,7 +189,8 @@ public class SpecStudyMap implements Serializable {
                 return null;
         }
 
-        public FormDef getFormWithName(String formName) {
+        public FormDef getFormWithName(String formName)
+        {
                 for (FormDef form : studyDef.getForms()) {
                         if (form.getName().equals(formName)) {
                                 return form;
@@ -182,11 +199,13 @@ public class SpecStudyMap implements Serializable {
                 return null;
         }
 
-        public List<TaskFormDefMap> getTaskFormDefMaps() {
+        public List<TaskFormDefMap> getTaskFormDefMaps()
+        {
                 return new ArrayList<TaskFormDefMap>(taskFormDefMaps.values());
         }
 
-        public TaskFormDefMap removeTaskFormDefForString(String selectedPattern) {
+        public TaskFormDefMap removeTaskFormDefForString(String selectedPattern)
+        {
                 if (selectedPattern != null) {
                         final TaskFormDefMap map = taskFormDefMaps.remove(selectedPattern);
                         if (map != null) {
@@ -199,7 +218,8 @@ public class SpecStudyMap implements Serializable {
         }
 
         @Override
-        public int hashCode() {
+        public int hashCode()
+        {
                 final int prime = 31;
                 int result = 1;
                 result = prime * result
@@ -210,11 +230,12 @@ public class SpecStudyMap implements Serializable {
         }
 
         /**
-         * Object is equal only if the OSpecifation and Study containing are equal.
-         * Current they are equal by use of references.
+         * Object is equal only if the OSpecifation and Study contained are equal.
+         * Currently they are equal by use of references.
          */
         @Override
-        public boolean equals(Object obj) {
+        public boolean equals(Object obj)
+        {
                 if (this == obj) {
                         return true;
                 }
@@ -242,10 +263,11 @@ public class SpecStudyMap implements Serializable {
                 return true;
         }
 
-        public String asXml(CompletenessValidator validator) {
+        public String asXml(CompletenessValidator validator)
+        {
 
                 if (validator != null) {
-                      validator.isComplete(this);
+                        validator.isComplete(this);
                 }
                 StringBuilder builder = new StringBuilder();
 
@@ -263,7 +285,8 @@ public class SpecStudyMap implements Serializable {
                 return builder.toString();
         }
 
-        public FormDef getFormWithId(int formId) {
+        public FormDef getFormWithId(int formId)
+        {
                 for (FormDef form : studyDef.getForms()) {
                         if (form.getFormId() == formId) {
                                 return form;
@@ -273,11 +296,13 @@ public class SpecStudyMap implements Serializable {
 
         }
 
-        public boolean isDirty() {
+        public boolean isDirty()
+        {
                 return dirty;
         }
 
-        public void setDirty(boolean dirty) {
+        public void setDirty(boolean dirty)
+        {
                 this.dirty = dirty;
         }
 }

@@ -352,6 +352,11 @@
             <artifactId>jta</artifactId>
             <version>1.0.1B</version>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>immunizations</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

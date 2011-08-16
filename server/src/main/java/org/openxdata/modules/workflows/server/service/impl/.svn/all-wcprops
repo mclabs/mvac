@@ -7,19 +7,25 @@ MapServiceImpl.java
 K 25
 svn:wc:ra_dav:version-url
 V 156
-/svn/EpiHandy/!svn/ver/3581/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/impl/MapServiceImpl.java
+/svn/EpiHandy/!svn/ver/3716/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/impl/MapServiceImpl.java
 END
 SpecificationServiceImpl.java
 K 25
 svn:wc:ra_dav:version-url
 V 166
-/svn/EpiHandy/!svn/ver/3228/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/impl/SpecificationServiceImpl.java
+/svn/EpiHandy/!svn/ver/3652/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/impl/SpecificationServiceImpl.java
 END
 WorkItemsServiceImpl.java
 K 25
 svn:wc:ra_dav:version-url
 V 162
-/svn/EpiHandy/!svn/ver/3547/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/impl/WorkItemsServiceImpl.java
+/svn/EpiHandy/!svn/ver/3590/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/impl/WorkItemsServiceImpl.java
+END
+LaunchCaseServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/EpiHandy/!svn/ver/3703/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/service/impl/LaunchCaseServiceImpl.java
 END
 ResourceServiceImpl.java
 K 25

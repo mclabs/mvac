@@ -7,6 +7,7 @@ package org.openxdata.modules.workflows.server.handlers;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Hashtable;
 import org.openxdata.server.admin.model.User;
 
 /**
@@ -23,5 +24,5 @@ public interface RequestHandler
      * @param os Output stream for the requester.
      * @throws IOException
      */
-    public void handleRequest(User user, InputStream is, OutputStream os) throws IOException;
+    public void handleRequest(User user, InputStream is, OutputStream os,Hashtable args) throws IOException;
 }

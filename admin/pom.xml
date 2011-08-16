@@ -174,7 +174,11 @@
             <artifactId>gwt-dnd</artifactId>
             <version>3.0.0</version>
         </dependency>
-        
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>immunizations</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -226,7 +230,7 @@
                     <modules>
                         <module>${gwt.module}</module>
                     </modules>
-                    <extraJvmArgs>-Xmx700M -Xss1024k</extraJvmArgs>
+                    <extraJvmArgs>-Xmx700M -Xss1024k -XX:MaxPermSize=128M</extraJvmArgs>
                     <runTarget>${gwt.module}/OpenXDataServerAdmin.html</runTarget>
                 </configuration>
                 <executions>

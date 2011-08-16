@@ -7,7 +7,7 @@ NewClass.java
 K 25
 svn:wc:ra_dav:version-url
 V 151
-/svn/EpiHandy/!svn/ver/3081/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao/hibernate/NewClass.java
+/svn/EpiHandy/!svn/ver/3588/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao/hibernate/NewClass.java
 END
 HibernateWorkItemDAO.java
 K 25
@@ -19,11 +19,11 @@ HibernateDBSpecificationDAO.java
 K 25
 svn:wc:ra_dav:version-url
 V 170
-/svn/EpiHandy/!svn/ver/3217/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao/hibernate/HibernateDBSpecificationDAO.java
+/svn/EpiHandy/!svn/ver/3588/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao/hibernate/HibernateDBSpecificationDAO.java
 END
 HibernateDBSpecStudyMapDAO.java
 K 25
 svn:wc:ra_dav:version-url
 V 169
-/svn/EpiHandy/!svn/ver/3576/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao/hibernate/HibernateDBSpecStudyMapDAO.java
+/svn/EpiHandy/!svn/ver/3588/branches/oxd-wf-prototype/openxdata/server/src/main/java/org/openxdata/modules/workflows/server/dao/hibernate/HibernateDBSpecStudyMapDAO.java
 END

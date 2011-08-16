@@ -4,6 +4,7 @@ import org.openxdata.modules.workflows.server.YawlOXDCustomService;
 import org.openxdata.modules.workflows.server.service.WorkItemsService;
 
 import org.openxdata.modules.workflows.server.handlers.ProcessorCreator;
+import org.openxdata.modules.workflows.server.service.LaunchCaseService;
 import org.openxdata.modules.workflows.server.service.MapService;
 import org.openxdata.modules.workflows.server.service.ResourceService;
 import org.openxdata.modules.workflows.server.service.SpecificationService;
@@ -41,5 +42,9 @@ public class WFContext {
 
     public static YawlOXDCustomService getOXDCustomService() {
         return (YawlOXDCustomService) Context.getBean("YawlOXDCustomService");
+    }
+
+    public static LaunchCaseService getLaunchcaseService(){
+        return (LaunchCaseService)Context.getBean("launchCaseService");
     }
 }

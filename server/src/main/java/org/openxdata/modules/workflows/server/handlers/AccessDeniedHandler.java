@@ -10,6 +10,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Hashtable;
 import org.openxdata.model.ResponseHeader;
 import org.openxdata.server.admin.model.User;
 
@@ -20,7 +21,7 @@ import org.openxdata.server.admin.model.User;
 public class AccessDeniedHandler implements RequestHandler
 {
     @Override
-    public void handleRequest(User user, InputStream is, OutputStream os) throws IOException
+    public void handleRequest(User user, InputStream is, OutputStream os, Hashtable args) throws IOException
     {
         ZOutputStream zos = new ZOutputStream(os, JZlib.Z_BEST_COMPRESSION);
         DataOutputStream zdos = new DataOutputStream(zos);

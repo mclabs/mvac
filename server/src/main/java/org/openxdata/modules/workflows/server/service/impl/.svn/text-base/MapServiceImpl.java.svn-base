@@ -27,7 +27,8 @@ import org.yawlfoundation.yawl.engine.interfce.WorkItemRecord;
  */
 @Transactional
 @Service("specStudyService")
-public class MapServiceImpl implements MapService {
+public class MapServiceImpl implements MapService
+{
 
         @Autowired
         private DBSpecStudyMapDAO specStudyMapDAO;
@@ -37,46 +38,74 @@ public class MapServiceImpl implements MapService {
         private WorkItemsService wirSrv;
         private Logger log = Logger.getLogger(this.getClass());
 
+        public void setSpecStudyMapDAO(DBSpecStudyMapDAO specStudyMapDAO)
+        {
+                this.specStudyMapDAO = specStudyMapDAO;
+        }
+
+        public void setFormDAO(FormDAO formDAO)
+        {
+                this.formDAO = formDAO;
+        }
+
+        public void setWirSrv(WorkItemsService wirSrv)
+        {
+                this.wirSrv = wirSrv;
+        }
+
+
+
         @Override
-        public void save(List<DBSpecStudyMap> specStudyMaps) {
+        public void save(List<DBSpecStudyMap> specStudyMaps)
+        {
                 for (DBSpecStudyMap dBSpecStudyMap : specStudyMaps) {
                         specStudyMapDAO.save(dBSpecStudyMap);
                 }
         }
 
         @Override
-        public void save(DBSpecStudyMap specStudyMap) {
+        public void save(DBSpecStudyMap specStudyMap)
+        {
                 specStudyMapDAO.save(specStudyMap);
         }
 
         @Override
-        public List<DBSpecStudyMap> getAllMaps() {
+        public List<DBSpecStudyMap> getAllMaps()
+        {
                 return specStudyMapDAO.findAll();
         }
 
         @Override
-        public void delete(DBSpecStudyMap map) {
+        public void delete(DBSpecStudyMap map)
+        {
                 specStudyMapDAO.remove(map);
         }
 
         @Override
-        public DBSpecStudyMap getMapForWir(WorkItemRecord wir) {
+        public DBSpecStudyMap getMapForWir(WorkItemRecord wir)
+        {
                 return getMap4CaseIDtaskID(wir.getCaseID(), wir.getTaskID());
         }
 
         @Override
-        public DBSpecStudyMap getMap4CaseIDtaskID(String caseID, String taskID) {
+        public DBSpecStudyMap getMap4CaseIDtaskID(String caseID, String taskID)
+        {
                 return specStudyMapDAO.getMap(caseID, taskID);
         }
 
         @Override
-        public FormDef findMatchForWorkItem(WorkItemRecord wir) {
+        public FormDef findMatchForWorkItem(WorkItemRecord wir)
+        {
+                if (wir == null)
+                        return null;
                 int formIdForWorkItem = getMatchingFormIdForWorkItem(wir);
-                if(formIdForWorkItem == -1) return null;
+                if (formIdForWorkItem == -1)
+                        return null;
                 return formDAO.find(formIdForWorkItem);
         }
 
-        public int getMatchingFormIdForWorkItem(WorkItemRecord wir) {
+        public int getMatchingFormIdForWorkItem(WorkItemRecord wir)
+        {
                 DBSpecStudyMap requiredMap = getMapForWir(wir);
                 if (requiredMap == null) {
                         return -1;
@@ -86,13 +115,14 @@ public class MapServiceImpl implements MapService {
                 try {
                         return Integer.parseInt(formIdForTask);
                 } catch (NumberFormatException ex) {
-                        log.warn(wir+" Workitem has no valid formId match", ex);
+                        log.error(wir + " Workitem has no valid formId match in map " + requiredMap.getXml(), ex);
                         return -1;
                 }
         }
 
         @Override
-        public Map<String, String> getOutPutParamQuestionMap(int formID, WorkItemRecord workitem) {
+        public Map<String, String> getOutPutParamQuestionMap(int formID, WorkItemRecord workitem)
+        {
                 String xmlMap = getMap4CaseIDtaskID(workitem.getCaseID(), workitem.getTaskID()).getXml();
                 Map<String, YParameter> outputParams = wirSrv.getOutputParam(workitem);
                 Map<String, String> paramQnMap = new HashMap<String, String>();

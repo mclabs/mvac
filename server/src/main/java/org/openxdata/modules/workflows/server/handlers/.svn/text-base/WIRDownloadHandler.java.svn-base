@@ -25,34 +25,36 @@ import org.yawlfoundation.yawl.engine.interfce.WorkItemRecord;
 @SuppressWarnings("UseOfObsoleteCollectionType")
 public class WIRDownloadHandler implements RequestHandler
 {
-    private final ResourceService resourceService;
-    private final WorkItemsService wirService;
 
-    public WIRDownloadHandler()
-    {
-        resourceService = WFContext.getResourceService();
-        wirService = WFContext.getWorkItemsService();
-    }
+        private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(this.getClass());
+        private final ResourceService resourceService;
+        private final WorkItemsService wirService;
 
-    @Override
-    public void handleRequest(User user, InputStream is, OutputStream os) throws IOException
-    {
-        List<WorkItemFormMapHolder> wirFormMaps = resourceService.getCurrentUserWorkItemFormMapHolders();
-        List workItems = Op.on(wirFormMaps).map(Call.methodForObject("toMWorkItem")).get();
-        HandlerStreamUtil streamHelper = new HandlerStreamUtil(is, os);
-        streamHelper.writeSucess();
-        streamHelper.writeSmallVector(new Vector(workItems));
-        streamHelper.flush();
-        //Disable all the work items
-        for (WorkItemFormMapHolder wir : wirFormMaps) {
-              disableWorkItem(wir.getWir());
+        public WIRDownloadHandler()
+        {
+                resourceService = WFContext.getResourceService();
+                wirService = WFContext.getWorkItemsService();
         }
-    }
 
+        @Override
+        public void handleRequest(User user, InputStream is, OutputStream os) throws IOException
+        {
+                log.debug("Downloading workitems for User: "+user.getName());
+                List<WorkItemFormMapHolder> wirFormMaps = resourceService.getCurrentUserWorkItemFormMapHolders();
+                List workItems = Op.on(wirFormMaps).map(Call.methodForObject("toMWorkItem")).get();
+                HandlerStreamUtil streamHelper = new HandlerStreamUtil(is, os);
+                streamHelper.writeSucess();
+                streamHelper.writeSmallVector(new Vector(workItems));
+                streamHelper.flush();
+                //Disable all the work items
+                for (WorkItemFormMapHolder wir : wirFormMaps) {
+                        disableWorkItem(wir.getWir());
+                }
+        }
 
-    private void disableWorkItem(WorkItemRecord wir)
-    {
-        wir.setStatus(WorkItemRecord.statusResourceStarted);
-        wirService.saveWorkItem(wir);
-    }
+        private void disableWorkItem(WorkItemRecord wir)
+        {
+                wir.setStatus(WorkItemRecord.statusResourceStarted);
+                wirService.saveWorkItem(wir);
+        }
 }
