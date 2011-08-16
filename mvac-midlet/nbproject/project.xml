@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ant.freeform</type>
+    <configuration>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
+            <!-- Do not use Project Properties customizer when editing this file manually. -->
+            <name>mvac-midlet</name>
+            <properties/>
+            <folders>
+                <source-folder>
+                    <label>src</label>
+                    <type>java</type>
+                    <location>src</location>
+                </source-folder>
+            </folders>
+            <ide-actions>
+                <action name="build">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>compile</target>
+                </action>
+                <action name="clean">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>clean</target>
+                </action>
+                <action name="run">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>run-non-obfuscated</target>
+                </action>
+                <action name="rebuild">
+                    <script>nbproject/nbjdk.xml</script>
+                    <target>clean</target>
+                    <target>compile</target>
+                </action>
+            </ide-actions>
+            <view>
+                <items>
+                    <source-folder style="packages">
+                        <label>src</label>
+                        <location>src</location>
+                    </source-folder>
+                    <source-file>
+                        <location>build.xml</location>
+                    </source-file>
+                </items>
+                <context-menu>
+                    <ide-action name="build"/>
+                    <ide-action name="rebuild"/>
+                    <ide-action name="clean"/>
+                    <ide-action name="run"/>
+                </context-menu>
+            </view>
+            <subprojects/>
+        </general-data>
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/1">
+            <compilation-unit>
+                <package-root>src</package-root>
+                <classpath mode="compile">../../core/bluetooth-client/dist/bluetoothclient.jar:../../core/dbutils/dist/dbutils.jar:../../core/jzlib-1.0.7/dist/jzlib-1.0.7.jar:../../core/midp-dbutils/dist/midp-dbutils.jar:../../core/midp-mvc/dist/midp-mvc.jar:../../core/midp-utils/dist/midp-utils.jar:../../core/openxdata/dist/openxdata.jar:../../core/openxdata-midp/dist/openxdata-midp.jar:../../core/transport-layer/dist/transportlayer.jar:/home/openmrs/.m2/repository/org/openxdata/openxdata-wf-mobile-model/1.0-SNAPSHOT/openxdata-wf-mobile-model-1.0-SNAPSHOT.jar:lib/LWUIT.jar:lib/javolution-5.3.0.jar:lib/cldc_crypto.zip</classpath>
+                <source-level>1.4</source-level>
+            </compilation-unit>
+        </java-data>
+    </configuration>
+</project>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/EpiHandy/!svn/ver/3635/J2ME/branches/wf-prototype/External%20Apps/workflow-midlet/src/org/openxdata/workflow/mobile
+END
+modifies
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/EpiHandy/!svn/ver/3577/J2ME/branches/wf-prototype/External%20Apps/workflow-midlet/src/org/openxdata/workflow/mobile/modifies
+END
+DownloadManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/3577/J2ME/branches/wf-prototype/External%20Apps/workflow-midlet/src/org/openxdata/workflow/mobile/DownloadManager.java
+END
+FormListenerAdaptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/EpiHandy/!svn/ver/3577/J2ME/branches/wf-prototype/External%20Apps/workflow-midlet/src/org/openxdata/workflow/mobile/FormListenerAdaptor.java
+END
+WFMainForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/3577/J2ME/branches/wf-prototype/External%20Apps/workflow-midlet/src/org/openxdata/workflow/mobile/WFMainForm.java
+END
+Factory.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/EpiHandy/!svn/ver/3577/J2ME/branches/wf-prototype/External%20Apps/workflow-midlet/src/org/openxdata/workflow/mobile/Factory.java
+END
