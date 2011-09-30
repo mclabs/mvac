@@ -12,7 +12,7 @@ https://www.zegeba.org/svn/EpiHandy
 kayondor@gmail.com
 has-props
 has-prop-mods
-
+svn:special svn:externals svn:needs-lock
 
 
 
@@ -26,28 +26,22 @@ has-prop-mods
 
 6cddc80d-1c40-44cd-927a-2be6005847d2
 
-model
-dir
-
-openxdata-wf-mobile-model
-dir
-
-rpc-interface
-dir
-
-workflow-server-lib
-dir
-
-server
-dir
-
-immunizations
+SpecStudyMapperWidget
 dir
 
 admin
 dir
 
-yawl-engine-with-parsers-lib
+emit
+dir
+
+immunizations
+dir
+
+model
+dir
+
+openxdata-wf-mobile-model
 dir
 
 pom.xml
@@ -84,9 +78,15 @@ kayondor@gmail.com
 
 3418
 
-SpecStudyMapperWidget
+rpc-interface
 dir
 
-emit
+server
+dir
+
+workflow-server-lib
+dir
+
+yawl-engine-with-parsers-lib
 dir
 

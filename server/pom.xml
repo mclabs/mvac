@@ -45,11 +45,18 @@
             <artifactId>openxdata-workflow-server-lib</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.yawlfoundation.yawl</groupId>
+            <artifactId>yawl-engine</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        
         <!--==================================-->
         <dependency>
             <groupId>org.openxdata</groupId>
             <artifactId>openxdata-model-wf</artifactId>
             <version>1.1-SNAPSHOT</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.jcraft</groupId>
@@ -357,8 +364,13 @@
             <artifactId>immunizations</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- kay's stuff-->
+        <dependency>
+           <groupId>org.apache.httpcomponents</groupId>
+           <artifactId>httpclient</artifactId>
+           <version>4.1.1</version>
+       </dependency>
     </dependencies>
-
     <build>
         <resources>
             <resource>
