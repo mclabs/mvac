@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specificationSet xmlns="http://www.yawlfoundation.org/yawlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://www.yawlfoundation.org/yawlschema http://www.yawlfoundation.org/yawlschema/YAWL_Schema2.0.xsd">
+  <specification uri="MalariaSurveyForOxd">
+    <metaData>
+      <creator>kay</creator>
+      <description>No description has been given.</description>
+      <version>0.3</version>
+      <identifier>UID_78b9cc3a-4165-4392-8e55-3deee93eda01</identifier>
+    </metaData>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+    <decomposition id="Patient_Net" isRootNet="true" xsi:type="NetFactsType">
+      <localVariable>
+        <name>hasMalaria</name>
+        <type>unsignedInt</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <localVariable>
+        <name>malariaType</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <localVariable>
+        <name>name</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <localVariable>
+        <name>weight</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <initialValue />
+      </localVariable>
+      <processControlElements>
+        <inputCondition id="InputCondition_1">
+          <flowsInto>
+            <nextElementRef id="Patient_3" />
+          </flowsInto>
+        </inputCondition>
+        <task id="Patient_3">
+          <name>Patient</name>
+          <flowsInto>
+            <nextElementRef id="Patient_two_26" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <decomposesTo id="Patient" />
+        </task>
+        <task id="Patient_two_26">
+          <name>Patient two</name>
+          <flowsInto>
+            <nextElementRef id="jjj_7" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <decomposesTo id="Patient" />
+        </task>
+        <task id="jjj_7">
+          <name>jjj</name>
+          <flowsInto>
+            <nextElementRef id="Weight_5" />
+            <isDefaultFlow />
+          </flowsInto>
+          <flowsInto>
+            <nextElementRef id="Malaria_4" />
+            <predicate ordering="0">number(/Patient_Net/hasMalaria/text())=1</predicate>
+          </flowsInto>
+          <join code="xor" />
+          <split code="xor" />
+        </task>
+        <task id="Weight_5">
+          <name>Weight</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_2" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;name&gt;{/Patient_Net/name/text()}&lt;/name&gt;" />
+              <mapsTo>name</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;weight&gt;{/Weight/weight/text()}&lt;/weight&gt;" />
+              <mapsTo>weight</mapsTo>
+            </mapping>
+          </completedMappings>
+          <decomposesTo id="Weight" />
+        </task>
+        <task id="Malaria_4">
+          <name>Malaria</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_2" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;name&gt;{/Patient_Net/name/text()}&lt;/name&gt;" />
+              <mapsTo>name</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;malariaType&gt;{/Malaria/malariaType/text()}&lt;/malariaType&gt;" />
+              <mapsTo>malariaType</mapsTo>
+            </mapping>
+          </completedMappings>
+          <decomposesTo id="Malaria" />
+        </task>
+        <outputCondition id="OutputCondition_2" />
+      </processControlElements>
+    </decomposition>
+    <decomposition id="Weight" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <name>name</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <outputParam>
+        <name>weight</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <yawlService id="http://localhost:8888/wf" />
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Patient" xsi:type="WebServiceGatewayFactsType">
+      <outputParam>
+        <name>name</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <outputParam>
+        <name>hasMalaria</name>
+        <type>unsignedInt</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <yawlService id="http://localhost:8888/wf" />
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Malaria" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <name>name</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <outputParam>
+        <name>malariaType</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <outputParam>
+        <name>weight</name>
+        <type>string</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </outputParam>
+      <yawlService id="http://localhost:8888/wf" />
+      <externalInteraction>manual</externalInteraction>
+    </decomposition>
+  </specification>
+  <layout>
+    <locale language="en" country="US" />
+    <specification id="MalariaSurveyForOxd">
+      <size w="112" h="28" />
+      <net id="Patient_Net">
+        <bounds x="0" y="0" w="814" h="477" />
+        <frame x="2" y="25" w="817" h="480" />
+        <viewport x="0" y="0" w="817" h="480" />
+        <vertex id="InputCondition_1">
+          <attributes>
+            <bounds x="62.0" y="184.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <vertex id="OutputCondition_2">
+          <attributes>
+            <bounds x="602.0" y="196.0" w="32.0" h="32.0" />
+          </attributes>
+        </vertex>
+        <flow source="InputCondition_1" target="Patient_3">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+            <points>
+              <value x="77.0" y="343.5" />
+              <value x="36.0" y="343.5" />
+            </points>
+          </attributes>
+        </flow>
+        <container id="Patient_3">
+          <vertex>
+            <iconpath>/org/yawlfoundation/yawl/editor/resources/taskicons/Inspect.png</iconpath>
+            <attributes>
+              <bounds x="124.0" y="232.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="92.0" y="264.0" w="97.0" h="21.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Malaria_4">
+          <vertex>
+            <iconpath>/org/yawlfoundation/yawl/editor/resources/taskicons/File.png</iconpath>
+            <attributes>
+              <bounds x="454.0" y="120.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="424.0" y="152.0" w="97.0" h="21.0" />
+            </attributes>
+          </label>
+        </container>
+        <container id="Weight_5">
+          <vertex>
+            <iconpath>/org/yawlfoundation/yawl/editor/resources/taskicons/File.png</iconpath>
+            <attributes>
+              <bounds x="450.0" y="260.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="420.0" y="292.0" w="97.0" h="21.0" />
+            </attributes>
+          </label>
+        </container>
+        <flow source="Malaria_4" target="OutputCondition_2">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Weight_5" target="OutputCondition_2">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <container id="jjj_7">
+          <vertex>
+            <iconpath>/org/yawlfoundation/yawl/editor/resources/taskicons/Validate.png</iconpath>
+            <attributes>
+              <bounds x="316.0" y="188.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="347.0" y="188.0" w="11.0" h="32.0" />
+              <size w="11" h="32" />
+            </attributes>
+          </decorator>
+          <label>
+            <attributes>
+              <bounds x="288.0" y="220.0" w="96.0" h="20.0" />
+            </attributes>
+          </label>
+        </container>
+        <flow source="Patient_3" target="Patient_two_26">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+            <points>
+              <value x="155.0" y="247.5" />
+              <value x="248.0" y="299.5" />
+            </points>
+          </attributes>
+        </flow>
+        <flow source="jjj_7" target="Malaria_4">
+          <ports in="2" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="jjj_7" target="Weight_5">
+          <ports in="3" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <container id="Patient_two_26">
+          <vertex>
+            <iconpath>/org/yawlfoundation/yawl/editor/resources/taskicons/Inspect.png</iconpath>
+            <attributes>
+              <bounds x="248.0" y="284.0" w="32.0" h="32.0" />
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="216.0" y="316.0" w="97.0" h="21.0" />
+            </attributes>
+          </label>
+        </container>
+        <flow source="Patient_two_26" target="jjj_7">
+          <ports in="13" out="12" />
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+      </net>
+    </specification>
+  </layout>
+</specificationSet>
+
+

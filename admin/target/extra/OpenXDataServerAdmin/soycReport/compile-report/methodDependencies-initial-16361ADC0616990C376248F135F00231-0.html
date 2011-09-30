@@ -1,0 +1,830 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: org.openxdata.server.admin.client.permissions.util</h2>
+<a name="org.openxdata.server.admin.client.permissions.util.RolesListUtil$RolesListUtilHolder"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.permissions.util.RolesListUtil$RolesListUtilHolder</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil$RolesListUtilHolder</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.permissions.util.RolesListUtil"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.permissions.util.RolesListUtil</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::$hasUserGotAdminPrivileges</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::$setUserRoles</li>
+<li>org.openxdata.server.admin.client.view.factory.MainViewFactory::createMainView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getMainView</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$2::execute</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onSuccessfulLogin</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogin</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$login</li>
+<li>org.openxdata.server.admin.client.view.LoginView$2::onKeyPress</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$setup</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$LoginView</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$$init</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$OpenXDataServerAdmin</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::$setUserRoles</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.factory.MainViewFactory::createMainView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getMainView</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$2::execute</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onSuccessfulLogin</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogin</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$login</li>
+<li>org.openxdata.server.admin.client.view.LoginView$2::onKeyPress</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$setup</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$LoginView</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$$init</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$OpenXDataServerAdmin</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewFormsRoleOnFormMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserFormMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewReportGroupsRoleOnReportGroupMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserReportGroupMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewStudiesRoleOnStudyMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserStudyMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addXRoleToLists</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewFormsRoleOnFormMap</li>
+<li>org.openxdata.server.admin.client.view.mapping.UserFormMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::checkIfRoleExists</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addXRoleToLists</li>
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewFormsRoleOnFormMap</li>
+<li>org.openxdata.server.admin.client.view.mapping.UserFormMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::containsPermission</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewStudiesRoleOnStudyMap</li>
+<li>org.openxdata.server.admin.client.view.mapping.UserStudyMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::createAncillaryStudiesRole</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewStudiesRoleOnStudyMap</li>
+<li>org.openxdata.server.admin.client.view.mapping.UserStudyMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::createAncillaryViewFormsRole</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewFormsRoleOnFormMap</li>
+<li>org.openxdata.server.admin.client.view.mapping.UserFormMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::createAncillaryViewReportGroupsRole</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewReportGroupsRoleOnReportGroupMap</li>
+<li>org.openxdata.server.admin.client.view.mapping.UserReportGroupMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::getAncillaryPermission</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::createAncillaryStudiesRole</li>
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewStudiesRoleOnStudyMap</li>
+<li>org.openxdata.server.admin.client.view.mapping.UserStudyMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::getAncillaryRole</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewStudiesRoleOnStudyMap</li>
+<li>org.openxdata.server.admin.client.view.mapping.UserStudyMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::getUserPermissions</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::addViewStudiesRoleOnStudyMap</li>
+<li>org.openxdata.server.admin.client.view.mapping.UserStudyMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::removeViewFormsRoleAddedOnMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserFormMapView::unMapItemFromObject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::removeViewReportGroupsRoleOnReportGroupMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserReportGroupMapView::unMapItemFromObject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::removeViewReportsRoleAddedOnMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserReportMapView::unMapItemFromObject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserReportMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserReportMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserReportMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::removeViewStudiesRoleAddedOnMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserStudyMapView::unMapItemFromObject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::setPermissionResolver</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.factory.MainViewFactory::createMainView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getMainView</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$2::execute</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onSuccessfulLogin</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogin</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$login</li>
+<li>org.openxdata.server.admin.client.view.LoginView$2::onKeyPress</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$setup</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$LoginView</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$$init</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$OpenXDataServerAdmin</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesListUtil::setUserPermissions</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesListUtil::$setUserRoles</li>
+<li>org.openxdata.server.admin.client.view.factory.MainViewFactory::createMainView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getMainView</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$2::execute</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onSuccessfulLogin</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogin</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$login</li>
+<li>org.openxdata.server.admin.client.view.LoginView$2::onKeyPress</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$setup</li>
+<li>org.openxdata.server.admin.client.view.LoginView::$LoginView</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$$init</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$OpenXDataServerAdmin</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::$checkRoleMapping</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1::$RolesMappingUtil$1</li>
+<li>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::$checkRoleMapping</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1::$onSuccess</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::$checkRoleMapping</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::$checkRoleMapping</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1::onOtherFailure</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::$checkRoleMapping</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil$1::onSuccess</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::$checkRoleMapping</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.permissions.util.RolesMappingUtil"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.permissions.util.RolesMappingUtil</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::$checkRoleMapping</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::$checkRoleMapping</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.permissions.util.RolesMappingUtil::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::$deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.RolesTreeView::deleteSelectedItem</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRolesTreeView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getRoleView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

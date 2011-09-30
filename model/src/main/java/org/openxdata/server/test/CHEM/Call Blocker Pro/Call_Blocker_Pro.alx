@@ -1,0 +1,37 @@
+<loader version="1.0"><application id="Call Blocker Professional:Epic Applications"><name>Call Blocker Professional</name><description>ON SALE NOW! Get the fastest and most feature rich call blocker for the BlackBerry!
+Call Blocker Professional (CBP) offers nearly every feature you could imagine for a call blocking app. When a blocked call comes in, you can choose to send the caller to your voicemail, or pick up and hang up on them so they do not even know they were blocked and can't bother you with voicemails.
+You can have CBP automatically enable and disable itself at certain times, for example to block calls at night, but allow them during the day. You can even set up custom exclusions to allow certain numbers, such as family members, to get through regardless of your other settings.
+An icon is placed on your home screen which shows the current mode (Enabled or Disabled), and allows you to toggle it with a single click. With the icon updating according to its mode, it is always simple to tell what is going on. To make it even easier, a small icon can optionally be placed in your notification bar when CBP is enabled (OS 4.7+ only).
+You can view a comprehensive list of blocked calls, with the ability to call back with a single click.
+Features:
+- Pick up and hang up on the caller, or send them to voicemail
+- Extremely quick blocking and efficient operation through integration with Options screen, along with an icon to show you the current mode (Enabled or Disabled)
+- Comprehensive bulk blocking options--private numbers, unknown numbers, numbers not in your contacts, or even all numbers for privacy
+- Easily add numbers from your call logs or contact list, or by entering by hand
+- Block entire area codes (800, 866, etc)
+- Automatically send SMS to callers to let them know you are busy, or any other message you want
+- Automatically turn on and off at given times
+- Block calls even on call waiting
+- Works while locked or holstered
+- Whitelist to allow for certain callers to always get through
+- Back up and restore your settings to avoid ever having to re-enter
+- Fully customizable to fit your needs</description><version>5.25</version><vendor>Epic Applications</vendor><copyright></copyright><language langid="0x0009"><name>Call Blocker Professional</name><description>ON SALE NOW! Get the fastest and most feature rich call blocker for the BlackBerry!
+Call Blocker Professional (CBP) offers nearly every feature you could imagine for a call blocking app. When a blocked call comes in, you can choose to send the caller to your voicemail, or pick up and hang up on them so they do not even know they were blocked and can't bother you with voicemails.
+You can have CBP automatically enable and disable itself at certain times, for example to block calls at night, but allow them during the day. You can even set up custom exclusions to allow certain numbers, such as family members, to get through regardless of your other settings.
+An icon is placed on your home screen which shows the current mode (Enabled or Disabled), and allows you to toggle it with a single click. With the icon updating according to its mode, it is always simple to tell what is going on. To make it even easier, a small icon can optionally be placed in your notification bar when CBP is enabled (OS 4.7+ only).
+You can view a comprehensive list of blocked calls, with the ability to call back with a single click.
+Features:
+- Pick up and hang up on the caller, or send them to voicemail
+- Extremely quick blocking and efficient operation through integration with Options screen, along with an icon to show you the current mode (Enabled or Disabled)
+- Comprehensive bulk blocking options--private numbers, unknown numbers, numbers not in your contacts, or even all numbers for privacy
+- Easily add numbers from your call logs or contact list, or by entering by hand
+- Block entire area codes (800, 866, etc)
+- Automatically send SMS to callers to let them know you are busy, or any other message you want
+- Automatically turn on and off at given times
+- Block calls even on call waiting
+- Works while locked or holstered
+- Whitelist to allow for certain callers to always get through
+- Back up and restore your settings to avoid ever having to re-enter
+- Fully customizable to fit your needs</description><version>5.25</version><vendor>Epic Applications</vendor><copyright></copyright></language><fileset Java="1.0"><files>
+CBP45.cod
+</files></fileset></application></loader>

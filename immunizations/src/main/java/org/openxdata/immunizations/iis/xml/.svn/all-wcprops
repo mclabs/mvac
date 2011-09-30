@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/EpiHandy/!svn/ver/3702/branches/oxd-wf-prototype/openxdata/immunizations/src/main/java/org/openxdata/immunizations/iis/xml
+END
+AppointmentsUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/EpiHandy/!svn/ver/3626/branches/oxd-wf-prototype/openxdata/immunizations/src/main/java/org/openxdata/immunizations/iis/xml/AppointmentsUtil.java
+END
+IElementHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/EpiHandy/!svn/ver/3626/branches/oxd-wf-prototype/openxdata/immunizations/src/main/java/org/openxdata/immunizations/iis/xml/IElementHandler.java
+END
+IISAppointmentParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/3626/branches/oxd-wf-prototype/openxdata/immunizations/src/main/java/org/openxdata/immunizations/iis/xml/IISAppointmentParser.java
+END
+AppointmentsElementHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/EpiHandy/!svn/ver/3702/branches/oxd-wf-prototype/openxdata/immunizations/src/main/java/org/openxdata/immunizations/iis/xml/AppointmentsElementHandler.java
+END

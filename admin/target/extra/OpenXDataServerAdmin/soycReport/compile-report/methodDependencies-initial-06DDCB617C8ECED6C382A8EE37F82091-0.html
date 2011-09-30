@@ -1,0 +1,678 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: org.openxdata.server.admin.client.view.widget</h2>
+<a name="org.openxdata.server.admin.client.view.widget.CompositeTreeItem"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.view.widget.CompositeTreeItem</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.CompositeTreeItem</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.CompositeTreeItem::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.widget.CompositeTreeItem::$CompositeTreeItem</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.CompositeTreeItem::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.CompositeTreeItem::setSelected</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.CompositeTreeItem::setWidget</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.view.widget.OpenXDataButton"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.view.widget.OpenXDataButton</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataButton</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$setUpWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$ReLoginDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::instanceOfReLoginDialog</li>
+<li>org.openxdata.server.admin.client.util.AsyncCallBackUtil::handleSessionTimeoutException</li>
+<li>org.openxdata.server.admin.client.controller.callback.OpenXDataAsyncCallback::$onFailure</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataButton::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataButton::$OpenXDataButton</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$setUpWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$ReLoginDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::instanceOfReLoginDialog</li>
+<li>org.openxdata.server.admin.client.util.AsyncCallBackUtil::handleSessionTimeoutException</li>
+<li>org.openxdata.server.admin.client.controller.callback.OpenXDataAsyncCallback::$onFailure</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataButton::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$setUpWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$ReLoginDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::instanceOfReLoginDialog</li>
+<li>org.openxdata.server.admin.client.util.AsyncCallBackUtil::handleSessionTimeoutException</li>
+<li>org.openxdata.server.admin.client.controller.callback.OpenXDataAsyncCallback::$onFailure</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.view.widget.OpenXDataFlexTable"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.view.widget.OpenXDataFlexTable</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataFlexTable</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$setUpWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$ReLoginDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::instanceOfReLoginDialog</li>
+<li>org.openxdata.server.admin.client.util.AsyncCallBackUtil::handleSessionTimeoutException</li>
+<li>org.openxdata.server.admin.client.controller.callback.OpenXDataAsyncCallback::$onFailure</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataFlexTable::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataFlexTable::$OpenXDataFlexTable</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$setUpWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$ReLoginDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::instanceOfReLoginDialog</li>
+<li>org.openxdata.server.admin.client.util.AsyncCallBackUtil::handleSessionTimeoutException</li>
+<li>org.openxdata.server.admin.client.controller.callback.OpenXDataAsyncCallback::$onFailure</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataFlexTable::$setDefaultStyleNames</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataFlexTable::$OpenXDataFlexTable</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$setUpWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$ReLoginDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::instanceOfReLoginDialog</li>
+<li>org.openxdata.server.admin.client.util.AsyncCallBackUtil::handleSessionTimeoutException</li>
+<li>org.openxdata.server.admin.client.controller.callback.OpenXDataAsyncCallback::$onFailure</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataFlexTable::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$setUpWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::$ReLoginDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.ReLoginDialog::instanceOfReLoginDialog</li>
+<li>org.openxdata.server.admin.client.util.AsyncCallBackUtil::handleSessionTimeoutException</li>
+<li>org.openxdata.server.admin.client.controller.callback.OpenXDataAsyncCallback::$onFailure</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.view.widget.OpenXDataLabel"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.view.widget.OpenXDataLabel</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataLabel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getNotificationLabel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataLabel::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataLabel::$setText</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataLabel::$setFailureText</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.util.Utilities::displayFailureNotificationMessage</li>
+<li>org.openxdata.server.admin.client.controller.callback.SaveAsyncCallback::onOtherFailure</li>
+<li>org.openxdata.server.admin.client.controller.ReportsViewController::$saveReports</li>
+<li>org.openxdata.server.admin.client.view.ReportView::onSave</li>
+<li>org.openxdata.server.admin.client.view.listeners.OpenXDataViewApplicationEventListener::$clinit</li>
+<li>org.openxdata.server.admin.client.view.listeners.OpenXDataViewExtendedApplicationEventListener::$clinit</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataLabel::$setText</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataLabel::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getNotificationLabel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataLabel::setText</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getNotificationLabel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::$OpenXDataStackPanel</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.view.widget.TreeItemWidget"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.view.widget.TreeItemWidget</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.TreeItemWidget</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.TreeItemWidget::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.widget.TreeItemWidget::$TreeItemWidget</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.TreeItemWidget::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.view.widget.TreeItemWidget::onBrowserEvent</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$loadSettingGroups</li>
+<li>org.openxdata.server.admin.client.view.treeview.SettingsTreeView::$updateSettingGroups</li>
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObservable::$notifyObservers</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.StudiesViewController::$loadMappedStudies</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

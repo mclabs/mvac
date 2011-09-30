@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <changeSet author="daniel (generated)" id="1246567185890-30">
+        <addForeignKeyConstraint baseColumnNames="CHANGED_BY" baseTableName="FORM_DATA" baseTableSchemaName="TEST" constraintName="FORM_DATA_USER_WHO_LAST_CHANGED_DATA" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-31">
+        <addForeignKeyConstraint baseColumnNames="CREATOR" baseTableName="FORM_DATA" baseTableSchemaName="TEST" constraintName="FORM_DATA_USER_WHO_CREATED_DATA" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-32">
+        <addForeignKeyConstraint baseColumnNames="FORM_DEFINITION_VERSION_ID" baseTableName="FORM_DATA" baseTableSchemaName="TEST" constraintName="FORM_DATA_FORM_DEFINITION_VERSION_ID" deferrable="false" initiallyDeferred="false" referencedColumnNames="FORM_DEFINITION_VERSION_ID" referencedTableName="FORM_DEFINITION_VERSION" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-33">
+        <addForeignKeyConstraint baseColumnNames="ARCHIVE_CREATOR" baseTableName="FORM_DATA_ARCHIVE" baseTableSchemaName="TEST" constraintName="FORM_DATA_ARCHIVE_USER_WHO_CREATED_ARCHIVE" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-34">
+        <addForeignKeyConstraint baseColumnNames="CHANGED_BY" baseTableName="FORM_DATA_ARCHIVE" baseTableSchemaName="TEST" constraintName="FORM_DATA_ARCHIVE_USER_WHO_LAST_CHANGED_DATA" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-35">
+        <addForeignKeyConstraint baseColumnNames="CREATOR" baseTableName="FORM_DATA_ARCHIVE" baseTableSchemaName="TEST" constraintName="FORM_DATA_ARCHIVE_USER_WHO_CREATED_DATA" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-36">
+        <addForeignKeyConstraint baseColumnNames="FORM_DEFINITION_VERSION_ID" baseTableName="FORM_DATA_ARCHIVE" baseTableSchemaName="TEST" constraintName="FORM_DATA_ARCHIVE_FORM_DEFINITION_VERSION_ID" deferrable="false" initiallyDeferred="false" referencedColumnNames="FORM_DEFINITION_VERSION_ID" referencedTableName="FORM_DEFINITION_VERSION" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-37">
+        <addForeignKeyConstraint baseColumnNames="CHANGED_BY" baseTableName="FORM_DEFINITION" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_USER_WHO_LAST_CHANGED_FORM" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-38">
+        <addForeignKeyConstraint baseColumnNames="CREATOR" baseTableName="FORM_DEFINITION" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_USER_WHO_CREATED_FORM" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-39">
+        <addForeignKeyConstraint baseColumnNames="RETIRED_BY" baseTableName="FORM_DEFINITION" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_USER_WHO_RETIRED_FORM" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-40">
+        <addForeignKeyConstraint baseColumnNames="STUDY_ID" baseTableName="FORM_DEFINITION" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_STUDY" deferrable="false" initiallyDeferred="false" referencedColumnNames="STUDY_ID" referencedTableName="STUDY" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-41">
+        <addForeignKeyConstraint baseColumnNames="FORM_DEFINITION_ID" baseTableName="FORM_DEFINITION_TEXT" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_TEXT_FORM_DEFINITION" deferrable="false" initiallyDeferred="false" referencedColumnNames="FORM_DEFINITION_ID" referencedTableName="FORM_DEFINITION" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-42">
+        <addForeignKeyConstraint baseColumnNames="LOCALE_KEY" baseTableName="FORM_DEFINITION_TEXT" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_TEXT_LOCALE" deferrable="false" initiallyDeferred="false" referencedColumnNames="LOCALE_KEY" referencedTableName="LOCALE" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-43">
+        <addForeignKeyConstraint baseColumnNames="CHANGED_BY" baseTableName="FORM_DEFINITION_VERSION" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_VERSION_USER_WHO_LAST_CHANGED_FORM" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-44">
+        <addForeignKeyConstraint baseColumnNames="CREATOR" baseTableName="FORM_DEFINITION_VERSION" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_VERSION_USER_WHO_CREATED_FORM" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-45">
+        <addForeignKeyConstraint baseColumnNames="FORM_DEFINITION_ID" baseTableName="FORM_DEFINITION_VERSION" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_VERSION_FORM_DEFINITION" deferrable="false" initiallyDeferred="false" referencedColumnNames="FORM_DEFINITION_ID" referencedTableName="FORM_DEFINITION" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-46">
+        <addForeignKeyConstraint baseColumnNames="RETIRED_BY" baseTableName="FORM_DEFINITION_VERSION" baseTableSchemaName="TEST" constraintName="FORM_DEFINITION_VERSION_USER_WHO_RETIRED_FORM" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-47">
+        <addForeignKeyConstraint baseColumnNames="CREATOR" baseTableName="FORM_ERROR" baseTableSchemaName="TEST" constraintName="FORM_ERROR_USER_WHO_CREATED_DATA" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-48">
+        <addForeignKeyConstraint baseColumnNames="FORM_DEFINITION_VERSION_ID" baseTableName="FORM_ERROR" baseTableSchemaName="TEST" constraintName="FORM_ERROR_FORM_DEFINITION_VERSION_ID" deferrable="false" initiallyDeferred="false" referencedColumnNames="FORM_DEFINITION_VERSION_ID" referencedTableName="FORM_DEFINITION_VERSION" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-49">
+        <addForeignKeyConstraint baseColumnNames="CHANGED_BY" baseTableName="REPORT" baseTableSchemaName="TEST" constraintName="USER_WHO_CHANGED_REPORT" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-50">
+        <addForeignKeyConstraint baseColumnNames="CREATOR" baseTableName="REPORT" baseTableSchemaName="TEST" constraintName="REPORT_CREATOR" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-51">
+        <addForeignKeyConstraint baseColumnNames="VOIDED_BY" baseTableName="REPORT" baseTableSchemaName="TEST" constraintName="USER_WHO_VOIDED_REPORT" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-52">
+        <addForeignKeyConstraint baseColumnNames="PERMISSION_ID" baseTableName="ROLE_PERMISSION" baseTableSchemaName="TEST" constraintName="ROLE_PERMISSION_PERMISSION_ID" deferrable="false" initiallyDeferred="false" referencedColumnNames="PERMISSION_ID" referencedTableName="PERMISSION" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-53">
+        <addForeignKeyConstraint baseColumnNames="ROLE_ID" baseTableName="ROLE_PERMISSION" baseTableSchemaName="TEST" constraintName="ROLE_PERMISSION_ROLE_ID" deferrable="false" initiallyDeferred="false" referencedColumnNames="ROLE_ID" referencedTableName="ROLE" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-54">
+        <addForeignKeyConstraint baseColumnNames="CHANGED_BY" baseTableName="STUDY" baseTableSchemaName="TEST" constraintName="USER_WHO_LAST_CHANGED_STUDY" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-55">
+        <addForeignKeyConstraint baseColumnNames="CREATOR" baseTableName="STUDY" baseTableSchemaName="TEST" constraintName="USER_WHO_CREATED_STUDY" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-56">
+        <addForeignKeyConstraint baseColumnNames="RETIRED_BY" baseTableName="STUDY" baseTableSchemaName="TEST" constraintName="USER_WHO_RETIRED_STUDY" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-57">
+        <addForeignKeyConstraint baseColumnNames="LOCALE_KEY" baseTableName="STUDY_TEXT" baseTableSchemaName="TEST" constraintName="STUDY_TEXT_LOCALE" deferrable="false" initiallyDeferred="false" referencedColumnNames="LOCALE_KEY" referencedTableName="LOCALE" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-58">
+        <addForeignKeyConstraint baseColumnNames="STUDY_ID" baseTableName="STUDY_TEXT" baseTableSchemaName="TEST" constraintName="STUDY_TEXT_STUDY" deferrable="false" initiallyDeferred="false" referencedColumnNames="STUDY_ID" referencedTableName="STUDY" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-59">
+        <addForeignKeyConstraint baseColumnNames="CHANGED_BY" baseTableName="TASK" baseTableSchemaName="TEST" constraintName="TASK_CHANGER" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-60">
+        <addForeignKeyConstraint baseColumnNames="CREATOR" baseTableName="TASK" baseTableSchemaName="TEST" constraintName="TASK_CREATOR" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-61">
+        <addForeignKeyConstraint baseColumnNames="TASK_ID" baseTableName="TASK_PARAM" baseTableSchemaName="TEST" constraintName="REFERENCED_TASK" deferrable="false" initiallyDeferred="false" referencedColumnNames="TASK_ID" referencedTableName="TASK" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-62">
+        <addForeignKeyConstraint baseColumnNames="ROLE_ID" baseTableName="USER_ROLE" baseTableSchemaName="TEST" constraintName="ROLE_DEFINITIONS" deferrable="false" initiallyDeferred="false" referencedColumnNames="ROLE_ID" referencedTableName="ROLE" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-63">
+        <addForeignKeyConstraint baseColumnNames="USER_ID" baseTableName="USER_ROLE" baseTableSchemaName="TEST" constraintName="USER_DEFINITIONS" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-64">
+        <addForeignKeyConstraint baseColumnNames="CHANGED_BY" baseTableName="USERS" baseTableSchemaName="TEST" constraintName="USER_WHO_CHANGED_USER" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-65">
+        <addForeignKeyConstraint baseColumnNames="CREATOR" baseTableName="USERS" baseTableSchemaName="TEST" constraintName="USER_CREATOR" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1246567185890-66">
+        <addForeignKeyConstraint baseColumnNames="VOIDED_BY" baseTableName="USERS" baseTableSchemaName="TEST" constraintName="USER_WHO_VOIDED_USER" deferrable="false" initiallyDeferred="false" referencedColumnNames="USER_ID" referencedTableName="USERS" referencedTableSchemaName="TEST"/>
+    </changeSet>
+</databaseChangeLog>

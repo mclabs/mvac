@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/EpiHandy/!svn/ver/2872/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view
+END
+ReportDataView.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/ReportDataView.java
+END
+StudyView.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/StudyView.java
+END
+LoginView.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/LoginView.java
+END
+OpenXDataBaseObserverCompositeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/OpenXDataBaseObserverCompositeView.java
+END
+WorkFlowView.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/EpiHandy/!svn/ver/3585/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/WorkFlowView.java
+END
+ReportView.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/ReportView.java
+END
+SettingView.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/SettingView.java
+END
+UserView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/UserView.java
+END
+OpenXDataBaseView.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/OpenXDataBaseView.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/package.html
+END
+MainView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/MainView.java
+END
+StudyPropertiesView.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/StudyPropertiesView.java
+END
+ScheduleView.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/ScheduleView.java
+END
+RoleView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/RoleView.java
+END
+StudyDataView.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/StudyDataView.java
+END
+TaskView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/TaskView.java
+END
+ParametersView.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/ParametersView.java
+END

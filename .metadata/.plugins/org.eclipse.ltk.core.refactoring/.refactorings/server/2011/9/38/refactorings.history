@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;WIRUploadHandler.java&apos; to &apos;org.openxdata.modules.workflows.server.handlers.WIRUploadHandler.java&apos;&#x0A;- Original project: &apos;server&apos;&#x0A;- Destination element: &apos;org.openxdata.modules.workflows.server.handlers.WIRUploadHandler.java&apos;&#x0A;- Original element: &apos;org.openxdata.modules.workflows.server.handlers.WIRUploadHandler.java&apos;" description="Copy compilation unit" destination="/src\/main\/java&lt;org.openxdata.modules.workflows.server.handlers{WIRUploadHandler.java" element1="/src\/main\/java&lt;org.openxdata.modules.workflows.server.handlers{WIRUploadHandler.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1316094342226" units="1" version="1.0"/>
+</session>

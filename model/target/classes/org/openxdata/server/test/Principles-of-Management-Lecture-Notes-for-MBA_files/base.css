@@ -1,0 +1,1016 @@
+/* :asset_packager_compatibility, 'config/asset_packages.yml' @ 1301083584 */
+/* public/stylesheets/global/reset.css @ 1301083584 */
+/* Copyright (c) 2007, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.net/yui/license.txt version: 2.3.1 */ body {color: #000; background: #FFF}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {margin: 0; padding: 0}
+table {border-collapse: collapse; border-spacing: 0}
+fieldset, img {border: 0}
+address, caption, cite, code, dfn, em, strong, th, var {font-style: normal; font-weight: normal}
+li {list-style: none}
+caption, th {text-align: left}
+h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal}
+q:before, q:after {content: ''}
+abbr, acronym {border: 0; font-variant: normal}
+sup, sub {line-height: -1px; vertical-align: text-top}
+sub {vertical-align: text-bottom}
+input, textarea, select {font-family: inherit; font-size: inherit; font-weight: inherit}
+
+
+/* public/stylesheets/global/grids-min.css @ 1301083584 */
+/* Copyright (c) 2007, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.net/yui/license.txt version: 2.3.1 */ body {text-align: center}
+#ft {clear: both}
+#doc, #doc2, #doc3, #doc4, .yui-t1, .yui-t2, .yui-t3, .yui-t4, .yui-t5, .yui-t6, .yui-t7, .yui-t8, .yui-t9 {margin: auto; text-align: left; width: 57.69em; *width: 56.301em; min-width: 750px}
+#doc2 {width: 73.074em; *width: 71.313em}
+#doc3 {margin: auto 10px; width: auto}
+#doc4 {width: 74.923em; *width: 73.117em}
+.yui-b {position: relative}
+.yui-b {_position: static}
+#yui-main .yui-b {position: static}
+#yui-main {width: 100%}
+.yui-t1 #yui-main, .yui-t2 #yui-main, .yui-t3 #yui-main, .yui-t8 #yui-main, .yui-t9 #yui-main {float: right; margin-left: -31em}
+.yui-t4 #yui-main, .yui-t5 #yui-main, .yui-t6 #yui-main {float: left; margin-right: -25em}
+.yui-t1 .yui-b {float: left; width: 12.3207em; *width: 12.0106em}
+.yui-t1 #yui-main .yui-b {margin-left: 13.3207em; *margin-left: 13.0106em}
+.yui-t2 .yui-b {float: left; width: 13.8456em; *width: 13.512em}
+.yui-t2 #yui-main .yui-b {margin-left: 14.8456em; *margin-left: 14.512em}
+.yui-t3 .yui-b {float: left; width: 23.0759em; *width: 22.52em}
+.yui-t3 #yui-main .yui-b {margin-left: 24.0759em; *margin-left: 23.52em}
+.yui-t8 .yui-b {float: left; width: 18.4608em; *width: 18.016em}
+.yui-t8 #yui-main .yui-b {margin-left: 19.4608em; *margin-left: 19.016em}
+.yui-t9 .yui-b {float: left; width: 30.7692em; *width: 30.02769em}
+.yui-t9 #yui-main .yui-b {margin-left: 31.7692em; *margin-left: 31.02769em}
+.yui-t4 .yui-b {float: right; width: 13.8456em; *width: 13.512em}
+.yui-t4 #yui-main .yui-b {margin-right: 14.8456em; *margin-right: 14.512em}
+.yui-t5 .yui-b {float: right; width: 18.4608em; *width: 18.016em}
+.yui-t5 #yui-main .yui-b {margin-right: 19.4608em; *margin-right: 19.016em}
+.yui-t6 .yui-b {float: right; width: 23.0759em; *width: 22.52em}
+.yui-t6 #yui-main .yui-b {margin-right: 24.0759em; *margin-right: 23.52em}
+.yui-t7 #yui-main .yui-b {display: block; margin: 0 0 1em 0}
+#yui-main .yui-b {float: none; width: auto}
+.yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gb .yui-u, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {float: left; margin-left: 2%; width: 32%}
+.yui-gb .yui-gb .yui-u, .yui-gb .yui-gc .yui-u {*margin-left: 1.8%; _margin-left: 4%}
+.yui-g .yui-gb .yui-u {_margin-left: .8%}
+.yui-gb .yui-u {float: right}
+.yui-gb div.first {margin-left: 0; float: left}
+.yui-g .yui-gb div.first, .yui-gb .yui-gb div.first {*margin-right: 0; *width: 32%; _width: 31.7%}
+.yui-gb .yui-gc div.first, .yui-gb .yui-gd div.first {*margin-right: 0}
+.yui-gb .yui-gd .yui-u {*width: 66%; _width: 61.2%}
+.yui-gb .yui-gd div.first {*width: 31%; _width: 29.5%}
+.yui-g .yui-gc .yui-u, .yui-gb .yui-gc .yui-u {width: 32%; _float: right; margin-right: 0; _margin-left: 0}
+.yui-gb .yui-gc div.first {width: 66%; *float: left; *margin-left: 0}
+.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf .yui-u {margin: 0}
+.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf, .yui-gc .yui-u, .yui-gd .yui-g, .yui-g .yui-gc .yui-u, .yui-ge .yui-u, .yui-ge .yui-g, .yui-gf .yui-g, .yui-gf .yui-u {float: right}
+.yui-g .yui-gc div.first, .yui-g .yui-ge div.first, .yui-g div.first, .yui-gc div.first, .yui-gc div.first div.first, .yui-gd div.first, .yui-ge div.first, .yui-gf div.first {float: left}
+.yui-g .yui-g .yui-u, .yui-gb .yui-g .yui-u, .yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u, .yui-ge .yui-g .yui-u, .yui-gf .yui-g .yui-u {width: 49%; *width: 48.1%; *margin-left: 0}
+.yui-g .yui-g div.first {*margin: 0}
+.yui-gb .yui-g div.first {*margin-right: 4%; _margin-right: 1.3%}
+.yui-gb .yui-gb .yui-u {_margin-left: .7%}
+.yui-gb .yui-g div.first, .yui-gb .yui-gb div.first {*margin-left: 0}
+.yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u {*width: 48.1%; *margin-left: 0}
+.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf {width: 49.1%}
+.yui-g .yui-gb div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first {margin-left: 0}
+.yui-g .yui-gc div.first, .yui-gc div.first, .yui-gd .yui-g, .yui-gd .yui-u {width: 66%}
+.yui-gd div.first, .yui-gb .yui-gd div.first {width: 32%}
+.yui-g .yui-gd div.first {_width: 29.9%}
+.yui-ge .yui-u, .yui-ge .yui-g, .yui-gf div.first {width: 24%}
+.yui-gb .yui-ge div.yui-u, .yui-gb .yui-gf div.yui-u {float: right}
+.yui-gb .yui-ge div.first, .yui-gb .yui-gf div.first {float: left}
+.yui-ge div.first, .yui-gf .yui-g, .yui-gf .yui-u {width: 74.2%}
+.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf div.first {*width: 24%; _width: 20%}
+.yui-gb .yui-ge div.first, .yui-gb .yui-gf .yui-u {*width: 73.5%; _width: 65.5%}
+#bd:after, .yui-g:after, .yui-gb:after, .yui-gc:after, .yui-gd:after, .yui-ge:after, .yui-gf:after {content: "."; display: block; height: 0; clear: both; visibility: hidden}
+#bd, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {zoom: 1}
+.yui-gb .yui-u {float: left}
+
+
+/* public/stylesheets/global/fonts.css @ 1301083584 */
+/* Copyright (c) 2008, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.net/yui/license.txt version: 2.5.1 */ /** * Percents could work for IE, but for backCompat purposes, we are using keywords. * x-small is for IE6/7 quirks mode. */ body {font: 13px/1.231 arial,helvetica,clean,sans-serif; *font-size: small; *font: x-small}
+table {font-size: inherit; font: 100%}
+/** * Bump up IE to get to 13px equivalent */ pre, code, kbd, samp, tt {font-family: monospace; *font-size: 108%; line-height: 100%}
+
+
+/* public/stylesheets/global/general.css @ 1301083584 */
+body {font-family: arial, 'helvetica neue', helvetica, Trebuchet, sans-serif; color: #363636; text-align: center; background-color: #161312; font-size-adjust: none; font-style: normal; font-variant: normal; font-weight: normal}
+body.empty {background: #fff}
+body.help {background: #fff; text-align: left; margin: 15px}
+body#landing #topbar #logo {margin-top: 20px !important}
+#scribd-doc, #subheader #subhead_inner, .scribd-doc, .loc_word_show .header, #flashes_placeholder {background-color: transparent; margin: auto; text-align: left; /* leave unchanged */ width: 996px; min-width: 600px; /* optional but recommended */ }
+#scribd-doc {margin-bottom: 15px}
+#scribd-doc, #subheader #subhead_inner {padding-top: 15px}
+#subheader #subhead_inner h1 {margin-bottom: 8px}
+a, .pseudoLink {color: #1982ab; outline: none; font-weight: normal; text-decoration: none; cursor: pointer}
+a:hover, .pseudoLink:hover {text-decoration: underline}
+a.username {padding: 3px 4px 3px 4px; font-weight: bold}
+.underline {text-decoration: underline}
+.alert {color: #DB5B61}
+.alert_box {background-color: #fff1a4; border: #cdc3a7 solid 1px; padding: 10px; text-align: left}
+.alert_box h1 {font-size: 18px !important; margin: auto; float: none; clear: both; margin-top: 3px}
+.alert_icon {float: left; margin-right: 20px; margin-top: 15px}
+.alert_text {width: 500px; float: left}
+.bold {font-weight: bold}
+.basic_container {-moz-border-radius: 10px; -webkit-border-radius: 10px; border: #DEDEDE solid 1px; border-style: solid; margin: 0; padding: 10px; float: left; margin-top: 20px}
+.empty_avatar {-moz-border-radius: 10px; -webkit-border-radius: 10px; border: #DEDEDE solid 1px; border-style: solid; margin: 0; padding: 10px; margin-top: 0; margin-right: 10px; text-align: center; background-color: #eee}
+.basic_container p {clear: right; text-align: left}
+.basic_container ul {margin-top: 10px}
+.basic_container ul li {margin-bottom: 10px}
+.blue_container {-webkit-border-radius: 10px; -moz-border-radius: 10px; background: #d1cfce none repeat scroll 0 0; margin: 0; padding: 10px; float: left; margin-top: 20px}
+.yellow_container {-webkit-border-radius: 10px; -moz-border-radius: 10px; background: #FEFAE1 none repeat scroll 0 0; border: 1px solid #fff1a4; margin: 0; padding: 10px; float: left; margin-top: 20px}
+.center {margin-left: auto; margin-right: auto; text-align: center !important}
+.center a {margin-left: auto; margin-right: auto}
+.clear {clear: both !important; border: none !important}
+.deleted_notice {font-size: 116%; color: #363636; border: 1px solid #ccc; background: #fff; padding: 5px 10px 5px 10px; margin: 15px auto 15px auto; text-align: center}
+.emptyclear {clear: both; height: 0px; line-height: 1px; margin: 0; padding: 0}
+.float {float: left}
+.no_margin {margin: 0 !important}
+.left_margin {margin-left: 10px}
+.right_margin {margin-right: 10px}
+.inline {display: inline !important}
+.nofloat {float: none !important}
+.pagination {text-align: right; padding-top: 0px; padding-right: 15px}
+ul.pagination_bar {float: right; margin: 15px auto 8px auto; width: 100%}
+ul.pagination_bar li {display: inline; margin-left: 10px; line-height: 25px}
+ul.pagination_bar li img {vertical-align: middle}
+.second {width: 220px; margin-left: 480px; margin-top: 70px; text-align: center !important}
+.right_border {border-right: #ccc solid 1px}
+.clear_right {clear: right !important}
+.clear_left {clear: left !important}
+.copyable {float: left}
+div.first, ul.first {margin-top: 0 !important}
+.no_top_space {margin-top: 0 !important; padding-top: 0 !important}
+.error {color: #DB5B61}
+em {font-style: italic !important}
+form {font-size: 12px}
+.strongem {font-weight: bold; font-style: italic}
+h1, h2, h3, h4, h5, h6, h7 {color: #161312; font-weight: bold}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h7 a {font-weight: bold}
+h1 {font-size: 20px}
+h1.large {font-size: 25px; line-height: 25px; margin-top: 3px}
+h1.first, h2.first, h3.first, h4.first, h5.first, h6.first, p.first {margin-top: 0 !important}
+h1.underline {border-bottom: #ccc solid 1px; padding-bottom: 3px; text-decoration: none}
+h1 em {font-style: italic}
+h1 small, h1 small a {font-size: 12px !important}
+h1.user {font-size: 138.5%}
+h1.first {margin-top: 0}
+h2 {font-size: 18px}
+h2.adj {margin-top: 1em}
+h2.underline {padding-bottom: 2px; border-bottom: 1px solid #eee; text-decoration: none}
+h2.green, h2.green a {color: #363636 !important}
+h2.tight {margin: 0; margin-top: 15px; padding: 0}
+h3 {font-size: 15px}
+a h3 {color: #161312; outline: none; font-weight: normal; text-decoration: none}
+a h3:hover {text-decoration: underline}
+h3.error {color: #DB5B61}
+h3.sub {margin-top: 4px !important; color: #363636}
+h3.underline {border-bottom: #ccc solid 1px; padding-bottom: 3px; text-decoration: none}
+h3 em {font-weight: bold}
+h3.adj {margin-top: 10px}
+#right_nav h3 {margin: 16px 0}
+h4 {font-size: 15px}
+h5 {font-size: 13px}
+h4.underline, h5.underline {border-bottom: 1px solid #ddd; text-decoration: none}
+h4.underline small {text-align: right; text-decoration: none}
+h6 {font-size: 12px}
+h7 {font-size: 10px; text-transform: uppercase}
+.hidden {display: none !important}
+.holly_hack {height: 1%}
+.highlight {background-color: #FFFAAF}
+hr {background-color: #ccc; border: 0; clear: both; color: #e4e4e4; height: 1px}
+hr.stealthy {background-color: #fff; color: #fff; border: 0; height: 1px; margin-bottom: 10px}
+hr.blue {border: 0; height: 5px; background-color: #B0D2F6; margin: 5px 0}
+hr.yellow {border: 0; height: 5px; background-color: #fff1a4; margin: 5px 0}
+img {border: 0; vertical-align: middle}
+img.base {vertical-align: baseline}
+li {font-size: 12px}
+p.not_bold {font-weight: normal !important}
+p.large {font-size: 16px; line-height: 20px}
+textarea.default, input.default, .form textarea, .form input {border: 1px solid #999; padding: 4px}
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.clearfix {zoom: 1}
+.inline {display: inline !important}
+.leftpic {float: left; margin: 10px 10px 10px 0; clear: left}
+.left {float: left}
+.light {color: #777}
+.metadata_label {color: #999; margin-right: 0 !important}
+.middle {vertical-align: middle !important}
+.nag {background-color: #fff; padding: 15px; margin-bottom: 15px; -moz-border-radius: 10px; -webkit-border-radius: 10px}
+.nag .close {position: absolute; top: 10px; right: 10px}
+.no_float {float: none !important}
+.skip {position: relative; margin-left: 20px; top: 4px}
+.special_nag {border: #fff3b4 solid 10px; background-color: #fffdf1; padding: 15px; margin-bottom: 15px; -moz-border-radius: 10px; -webkit-border-radius: 10px}
+.special_nag p.first, .queue p.first {text-align: left}
+.special_nag .close {top: 20px; right: 20px}
+.special_nag_blue {border: #B0D2F6 solid 5px; background-color: #fff; padding: 15px; margin-bottom: 15px; -moz-border-radius: 10px; -webkit-border-radius: 10px}
+.onpage_specialnag .special_nag {width: 600px; margin-top: 20px}
+.no_border {border: none !important}
+.no_clear {clear: none !important}
+.relative_button {border: 0; position: relative; top: 13px}
+.right_col_container {float: right; border-left: 1px dotted #ccc; width: 315px}
+.right_col {float: right; width: 300px; margin-left: 15px}
+.notice_small, .notice, .notice_fluid, .notice_top {background: #fff; border: 1px solid #e4e4e4; padding: 5px; clear: both; margin: 10px auto 10px auto !important; text-align: left}
+.notice_top {text-align: left; width: 76.153em; /* non-IE */ *width: 74.3185em; /* IE */ min-width: 600px; /* optional but recommended */ }
+.notice_fluid {margin-left: 0}
+.notice_small {width: auto}
+.notice_small p {margin: 4px}
+.notice_small img {margin-right: 5px}
+.notice img {float: left; margin-right: 7px}
+.notice .image {float: left; margin: 10px}
+p {font-size: 13px; line-height: 16px; margin: 0.75em auto 0.75em auto}
+#landing {background: #fff}
+#landing p {font-size: 14px; line-height: 20px}
+#landing h1 {font-size: 28px}
+#landing h2 {font-size: 22px}
+#landing h2.sub {font-size: 20px; margin-top: 25px}
+#landing ul li {font-size: 14px; line-height: 18px; margin-bottom: 5px}
+p.description {clear: both}
+p.first {margin-top: 0; padding-top: 0}
+p.first .thumbnail_image {text-align: center}
+p.right {margin-top: 0}
+p.strong, .strong {font-weight: bold !important}
+p.message_excerpt {margin-right: 40px}
+p.notification {border-bottom: #e4e4e4 solid 1px; margin-bottom: 15px; padding-bottom: 5px}
+p.notification img {position: relative; top: 3px}
+p.notification small {color: #666; font-size: 9px; text-transform: uppercase}
+p.notification a.action {background-color: #EEEEEE; color: #363636; height: 13px; margin: 0pt 5px; padding: 1px 2px; text-decoration: none}
+p.notification a.action:hover {background-color: #ccc; color: #363636; height: 13px; margin: 0pt 5px; padding: 1px 2px; text-decoration: none}
+p.notification strong {color: #DB5B61; font-weight: bold; margin: 0 10px 0 10px}
+.pic {border: 3px solid #eee}
+.question {position: relative; top: -3px; width: 12px; height: 12px}
+.right {float: right !important}
+.rightpic {float: right; margin: 10px 0 10px 10px; text-align: center}
+.screenshot {border: #e4e4e4 solid 3px; margin: auto; padding: 3px}
+.see_all {float: right; font-size: 11px; margin-right: 7px}
+small, small a.cancel, small input.cancel, .small {font-size: 11px !important}
+small.new {background-color: #fff1a4; font-size: 77%; padding: 2px 4px}
+div.spacer {clear: both; height: 1px}
+#spinner {margin-right: 5px}
+strong, strong a {font-weight: bold}
+table {border-collapse: collapse; margin: 0; padding: 0}
+table.tinier_thumbs {margin-top: 10px; margin-left: 7px; width: 190px}
+table.tinier_thumbs tr td {width: 33px; margin: 0 17px 0 0; padding: 0 0 7px 0}
+table.tinier_thumbs tr td .tinier_thumbnail {margin: 0}
+table.center tr td {text-align: center}
+.tagline {font-size: 14px}
+.copy_flash_button {margin-left: 5px; float: left}
+#flash_notice {text-align: center; margin-top: 10px}
+#flash_error {font-weight: bold; color: #DB5B61; margin-top: 10px}
+/* Generic element customizations */ ul.plain, ul.plain li {list-style: none}
+/* end */ /* Text Formatting */ .text h1, .text h2, .text h3, .text h4, .text h5, .text h6 {margin: 20px auto 0 auto}
+.basic_container h5 {margin-top: 15px}
+.text form {clear: both; margin: 15px auto 15px auto}
+.text label {margin-top: 10px; display: block}
+.text .leftpic {margin-top: 0}
+.text ul li {list-style: disc; list-style-position: outside; margin-left: 15px; margin-bottom: 3px}
+.text ul li ul li {list-style: circle}
+.text ul, .text ol {margin: 15px auto 15px auto}
+.text ol li {list-style-position: outside; margin-left: 18px; margin-bottom: 3px; list-style-type: decimal}
+.text_container {clear: both; margin-bottom: 15px}
+.text_container .leftpic {margin-bottom: 15px}
+.text_box {background-color: #fff; border: #e4e4e4 solid 1px; padding: 15px; margin: 10px auto 10px auto}
+.text_box ul li {list-style: disc; list-style-position: outside; margin-left: 15px}
+.text table.info {width: 300px; margin: 10px auto 10px 0}
+.text table.info tr td {vertical-align: top; border: none; padding: 5px 10px 5px 0}
+img.thumbnail_image {border: #e4e4e4 solid 3px; margin: auto; padding: 3px}
+.thumbnail_square {border: #e4e4e4 solid 3px; float: left; margin: 0 5px 0 0; padding: 3px}
+ul.bullets {list-style-position: inside; margin: 10px 0; padding: 0}
+ul.bullets li {line-height: 15px; list-style-image: none; list-style-position: outside; list-style-type: disc; margin-bottom: 5px; margin-left: 15px}
+.error_box, #errorExplanation {border-top: 1px solid #DB5B61; border-bottom: 1px solid #DB5B61; padding: 10px; color: #DB5B61; clear: both; margin: 10px auto 10px auto; text-align: left}
+#errorExplanation h2 {color: #DB5B61; font-size: 12px; margin-top: 8px; font-weight: bold; text-align: left}
+#errorExplanation p {text-align: left; width: 100% !important; margin: 0; display: block; font-weight: bold}
+#errorExplanation ul {margin-bottom: 8px}
+#errorExplanation ul li {margin-left: 25px; list-style: square}
+/* @group Standard Layouts */ /* @group Columns */ .col6 {float: left; width: 153px; margin-right: 15px; border-right: 1px solid #ccc}
+.col6_last {border-right: 0}
+.col6_2 {float: left; width: 306px; margin-right: 15px; border-right: 1px solid #ccc}
+.col_75 {width: 75%; float: left}
+/* @end */ /* @group Main: Middle Column + Right Column */ #main #middle_col {float: left; margin-left: 15px; width: 503px}
+#main #right_col {float: right; width: 240px}
+#main #right_col .basic_container {float: none}
+#main #right_col .basic_container h1.first {margin-bottom: 10px}
+#right_column_alt {-moz-border-radius-bottomleft: 10px; -moz-border-radius-bottomright: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; background-color: #EEEEEE; border: 2px solid #CCCCCC; float: right; padding: 5px; width: 29%}
+/* @end */ /* @end */ /* @group Forms */ form p {margin: .5em 0 1em 0}
+form .text, form textarea {padding: 3px}
+form textarea {width: 300px}
+.form {text-align: left}
+.form .below_input {position: relative; top: -15px}
+.form .cancel_link {margin-left: 5px}
+.checkbox {border: 0 !important}
+.form label {display: block; margin-bottom: 3px; margin-top: 10px; clear: left}
+.form label.first {margin-top: 0 !important}
+.form input.last {margin-bottom: 20px}
+.form label em {color: #777; font-size: 85%; font-style: italic}
+.form h1 {margin-bottom: 15px}
+.form p.filled_in {font-weight: bold; margin-top: 0; margin-bottom: 20px}
+.form .input, .form .input_short {padding: 4px; margin-bottom: 0; width: 200px}
+.form input.tight {margin-bottom: 0}
+.form .input_short {width: 100px}
+.form input.shorter, .form select.shorter {width: 50px}
+.form .textarea {width: 350px; height: 150px}
+.form .last {margin-bottom: 0 !important}
+#login_spinner {float: left}
+#login_form_login_lb .spinner {margin-top: 3px}
+.button_container {margin-top: 20px; float: left}
+.radio {border: 0 !important}
+.form .fieldWithErrors .input {margin-bottom: 0}
+.form .submit {border: 0 !important}
+.form select {margin: 5px auto 5px auto}
+.form table {border-collapse: collapse}
+.form table tr td {padding: 10px; vertical-align: top}
+.form .signupform {margin-right: 25px}
+.form .signup_reasons_container {background: #fff; float: right; margin-right: 35px; width: 230px}
+.form .signup_reasons_container .signup_reasons {border: #ccc solid 1px; padding: 10px}
+.form .signup_reasons h2 {color: #363636}
+.form .w3 {width: 300px}
+/* @end */ dl.form dt, dl.form dd {float: left; display: block}
+dl.form dt {width: 250px}
+dl.form label {margin: 0; font-weight: bold}
+/* Subheader */ #subheader {background: url('/images/tabs/tab_back_1x9_v2.png?1301083584') repeat-x left bottom; zoom: 1}
+DIV#subheader DIV#subhead_inner {background-color: transparent; padding: 10px 0 0 0}
+/* end */ /* @group Tabs */ ul.content_tabs {border-left: 1px solid #ccc; overflow: hidden; zoom: 1}
+ul.content_tabs li {float: left; background: #f6f5f4 url('/images/tabs/tab_bg.gif?1301083584') repeat-x left bottom; padding: 5px 8px; border-top: 1px solid #ccc; border-right: 1px solid #ccc}
+ul.content_tabs li a {font-size: 1.1em; font-weight: bold}
+ul.content_tabs li.selected, ul.content_tabs li.current {background: #fff}
+ul.content_tabs li.selected a, ul.content_tabs li.selected a:hover, ul.content_tabs li.current a, ul.content_tabs li.current a:hover {color: #666; background: #fff; text-decoration: none}
+ul.button_tabs {overflow: hidden; zoom: 1}
+ul.button_tabs li {float: left; margin-left: 5px}
+ul.button_tabs li a {display: block; color: #847c78; background: white; padding: 3px 6px; font-size: 11px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border: 1px solid white}
+ul.minimalist_tabs {overflow: hidden; zoom: 1}
+ul.minimalist_tabs li {float: left; margin-right: 10px; padding-bottom: 8px}
+ul.minimalist_tabs li a {color: #595959; font-size: 11px; font-weight: bold; text-decoration: none}
+ul.minimalist_tabs li.current {background: url('/images/profile_triangle_fff.gif?1301083584') no-repeat bottom center}
+ul.minimalist_tabs li.current a {color: #191919}
+ul.minimalist_tabs li a:hover {text-decoration: underline}
+ul.profile_tabs {overflow: hidden; zoom: 1}
+ul.profile_tabs li {float: left; margin-right: 10px; padding-bottom: 8px}
+ul.profile_tabs li a {color: #595959; font-size: 11px; font-weight: bold; text-decoration: none}
+ul.profile_tabs li.current {background: url('/images/profile_triangle_f2f2f2.gif?1301083584') no-repeat bottom center}
+ul.profile_tabs li.current a {color: #191919}
+ul.profile_tabs li a:hover {text-decoration: underline}
+/* old style */ ul.content_tabs_old {list-style: none; padding: 0; margin: 10px 0 0 0; height: 29px}
+ul.content_tabs_old li {display: inline; font-size: 14px}
+ul.content_tabs_old li a, ul.content_tabs_old li.inactive span {background-color: #ccc; color: #666; border: #ccc solid 1px; display: block; float: left; margin-right: 10px; padding: 5px 10px; text-decoration: none; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; -webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: 10px}
+ul.content_tabs_old li.inactive span {background-color: #eee; border: #eee solid 1px; color: #999}
+ul.content_tabs_old li a:hover {background-color: #bbb; border-color: #bbb; color: #fff; text-decoration: none}
+ul.content_tabs_old li.current a, ul.content_tabs_old li.current a:hover {background-color: #6496C3; border: #6496C3 solid 1px; color: #fff}
+/* end */ .content_tabs_bottom {border-top: #ccc solid 1px; clear: left; margin: 0}
+ul.content_tabs_small li {display: inline; font-size: 12px}
+ul.content_tabs_small li a {background-color: #ccc; border: #ccc solid 1px; display: block; float: left; margin-right: 10px; padding: 3px 8px 3px 8px; text-decoration: none; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px}
+ul.content_tabs_small li.inactive span {background-color: #eee; border: #eee solid 1px; color: #999; display: block; float: left; margin-right: 10px; padding: 3px 8px 3px 8px; text-decoration: none; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px}
+ul.content_tabs_small li a:hover {background-color: #aaa; text-decoration: none}
+ul.content_tabs_small li.current a {background-color: #1982ab; border: #6496C3 solid 1px; color: #fff}
+/* @end */ /* @group Pagination */ .paginator {clear: both; float: left; margin: 10px 0 10px 0; font-size: 11px}
+.paginator p {float: left; margin-right: 20px}
+.paginator span {background: url("/images/pagination/gradient_1x27.png") repeat-x; color: #000}
+.paginator span.ellipsis {color: #999; background: none; border: none; width: auto; padding: 0; -webkit-box-shadow: 0 0 0 white; -moz-box-shadow: 0 0 0 white; box-shadow: 0 0 0 white; margin: 0}
+.paginator a, .paginator span {border: 1px solid #BEBEBE; display: block; float: left; font-weight: bold; text-align: center; margin: 0 2px; padding-left: 3px; padding-right: 3px; -webkit-box-shadow: 0px 1px 3px #bbbbbb; -moz-box-shadow: 0px 1px 3px #bbbbbb; box-shadow: 0px 1px 3px #bbbbbb; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-position: -2px 0px; line-height: 25px; height: 25px; min-width: 20px; _width: 23px}
+.paginator a {background: url("/images/pagination/gradient_inv_1x27.png") repeat-x; color: #999}
+.paginator a:hover {color: #000; text-decoration: none; -webkit-box-shadow: 0px -1px 3px #dddddd; -moz-box-shadow: 0px -1px 3px #dddddd; box-shadow: 0px -1px 3px #dddddd}
+.paginator a:active {color: #000; text-decoration: none; border: 1px solid #DDD; background: url("/images/pagination/gradient_1x27.png") repeat-x}
+.pagination_links a {padding: 1px 5px 1px 5px; background: white; color: #0E71CD; border: 1px solid #0E71CD; border-width: 1px; text-decoration: none; zoom: 1}
+.pagination_links a:hover {background: #0E71CD; color: white; text-decoration: none}
+.pagination_bar p {margin: 4px auto 4px auto; padding: 0}
+.pagination_bar {margin: 15px auto 15px auto}
+/* @end */ /* @group Nav Structure */ #main {clear: both; margin-left: 10px; /*overflow: auto;*/ width: 781px}
+#right_nav {float: right; margin: 0 0 25px 0; padding: 0 0 10px 5px; position: relative; width: 280px}
+#subcontainer {float: right; margin-left: -31em; text-align: left; width: 791px}
+ul.nav_list {clear: both; list-style: none; margin: 0; padding: 0; height: 1%; /* holly hack */ }
+ul.nav_list li {font-size: 12px; margin: 5px; padding-left: 3px}
+ul.nav_list li.selected {background-color: #161312; color: #fff; padding: 3px 3px 3px 5px; margin: 3px 0 3px 3px}
+ul.nav_list li.selected a {background-color: #161312; color: #fff; padding: 0; display: block}
+ul.nav_list li.expanded {border-top: #ccc solid 1px; border-bottom: #ccc solid 1px; font-size: 13px}
+ul.nav_list li.expanded h6 {margin-top: 5px}
+ul.nav_list_lined {clear: both; list-style: none; margin: 0; padding: 0; height: 1%; /* holly hack */ border-top: #ccc solid 1px}
+.nav_list_lined li div.premium, .module_bar a.premium {border: #fff solid 1px; -moz-border-radius: 10px; -webkit-border-radius: 10px; background-color: #ffc770; display: block; padding: 3px 8px; color: #4e4e4e; float: left}
+.nav_list_lined li a.premium_link {display: block; height: 23px; padding: 3px; margin: 0}
+ul.nav_list li.divider {padding-top: 5px}
+ul.nav_list_lined li {font-size: 12px; margin: 0; padding: 0; height: 1%; border-bottom: #ccc solid 1px}
+ul.nav_list_lined li a {padding: 5px; display: block; position: relative}
+ul.nav_list_lined li a:hover {background-color: #ddd; text-decoration: none}
+ul.nav_list_lined li.expanded {font-weight: bold; background-color: #CCCCCC}
+/* fixes bug in IE where anchor doesn't fill all of li, leaving a dark line on top */ ul.nav_list_lined li.expanded_hover {background-color: #D8E9FB !important}
+ul.nav_list_lined li.premium_selected {font-weight: bold; background-color: #FFC770}
+ul.nav_list_lined li.premium_selected a {color: #4E4E4E}
+ul.nav_list_lined li.expanded h6 {margin-top: 5px}
+ul.nav_list_lined li a {font-weight: bold}
+ul.nav_list_lined li.subcategories_container {border: 0 !important; padding: 0; margin: 0; height: 1%}
+ul.nav_list_lined ul.subcategories {margin: 0; padding: 0; background: #fff; border-bottom: 1px solid #ccc}
+ul.nav_list_lined ul.subcategories li {font-size: 11px; list-style-type: none; border-bottom: #eee solid 1px}
+ul.nav_list_lined ul.subcategories li.last {/* IE has some weird bugs with ul borders being too thick, so we instead put the border on the last li element in the subcat list */ /*border-bottom:#ccc solid 1px;*/ border-bottom: 0 !important}
+ul.nav_list_lined ul.subcategories li a {font-weight: normal !important; padding: 5px 5px 5px 13px}
+ul.nav_list_lined ul.subcategories li.selected {background-color: #fff}
+ul.nav_list_lined ul.subcategories li.selected a {font-weight: bold !important}
+ul.nav_list_lined ul.subcategories li.selected a:hover {text-decoration: none}
+.nav_action {position: relative; bottom: 2px; margin-left: 10px}
+.subnav {border-top: #eee solid 1px; border-bottom: #eee solid 1px; margin: 5px}
+.subnav h3 {font-size: 13px; margin: 3px}
+#middle_column {float: left; width: 67%}
+#right_column {float: right; padding: 5px; width: 30%}
+/* @end */ /* @group Data Table */ table.data {border-collapse: collapse; margin-bottom: 15px; margin-top: 15px}
+table.data tr th {font-size: 14px; font-weight: bold}
+table.data tr td, table.data tr th {padding: 10px; border: 1px solid #ccc; text-align: left}
+/* @end */ /* @group Dropdowns and Buttons */ ul.dropdowns {float: left; margin: 0; padding: 0; overflow: visible !important; position: relative; z-index: 5}
+ul.dropdowns li {-moz-border-radius: 4px; -webkit-border-radius: 4px; color: #363636; cursor: pointer; display: block; float: left; font-size: 11px; height: 13px; position: relative; text-decoration: none; z-index: -5; margin-right: 18px}
+ul.dropdowns li.open {z-index: auto}
+ul.dropdowns li.open .dropdown {display: block}
+ul.dropdowns li a {text-decoration: none}
+ul.dropdowns #file_types a img {bottom: 3px; position: relative}
+ul.dropdowns li span {bottom: 5px; position: relative}
+.dropdown {position: absolute; padding: 7px 0 0 0; background: url(../../images/explore/menu_top.gif) no-repeat 0 0; width: 134px; top: 20px; display: none; right: 1px; z-index: -3}
+.dropdown_long {width: 612px; background: url(../../images/explore/menu_top_long.gif) no-repeat 0 0; left: -10px}
+.dropdown .inner {border-left: 1px solid #cfcfcf; border-right: 1px solid #cfcfcf; background: #161312; zoom: 1}
+.dropdown .scroll_container {overflow: auto; margin-right: 5px; max-height: 250px}
+.dropdown .scroll_container a {width: auto}
+.long .inner {padding: 2px 0}
+.dropdown .menu_btm {width: 132px; height: 3px; position: absolute; bottom: -3px}
+.dropdown_long .menu_btm {width: 611px}
+.dropdown a, .dropdown .selected {display: block; padding: 4px 5px 2px 8px; text-decoration: none; color: #fff; z-index: 100}
+.dropdown .selected {font-weight: bold}
+.dropdown .sort_filetype {background-repeat: no-repeat; padding-left: 20px; background-position: 0 2px; margin-left: 6px}
+.dropdown table {border-collapse: collapse; background-color: #161312}
+.dropdown table tr td {width: 80px; padding: 0 10px 0 10px; border-right: 1px solid #555}
+.dropdown table tr td.last {border: 0}
+.dropdown a:hover {text-decoration: underline}
+ul.dropdowns_submit {float: left; margin: 0; padding: 0; overflow: hidden}
+ul.dropdowns_submit li {display: inline; display: block; float: left}
+ul.dropdowns_submit li .submit_tag {font-size: 11px; background-color: #eee; color: #6496C3; height: 19px; margin: 2px 5px; padding: 0px 5px 0 5px; text-decoration: none; border: 0}
+ul.dropdowns_submit li img {bottom: 3px; position: relative}
+ul.dropdowns_submit li span {bottom: 5px; position: relative}
+li.with_dropdown {position: relative; z-index: 15}
+li.with_dropdown a:hover {text-decoration: none}
+li.with_dropdown .dropdown {z-index: 18; top: 16px}
+/* @end */ /* @group Truncated Links */ .trunc_url {border-bottom: 1px dashed #aaa; position: relative; white-space: nowrap}
+.trunc_url_popup {position: absolute; white-space: nowrap; padding: 1px; border: 1px solid #CCC; background: #FFF; z-index: 100}
+/* @end */ /* BEGIN: styles for the AutoCompleter */ .autocomplete_field {position: relative}
+.autocomplete {background-color: #fff; border: 1px solid #ccc; padding: 1px; position: absolute; z-index: 500; display: block}
+.autocomplete ul {margin: 0px}
+.autocomplete ul li {padding: 5px 2px; margin: 0}
+.autocomplete .selected {background-color: #FFF3B4}
+/* END: styles for the AutoCompleter */ /* @group Popups */ .popup {position: absolute; z-index: 2500}
+.popup .pop_inner {width: 190px; padding: 5px 0; -moz-box-shadow: 3px 3px 3px #999; -webkit-box-shadow: 3px 3px 3px #999}
+.popup .popup_top {position: absolute; top: 0; left: 0}
+.popup .popup_middle {text-align: left; background-color: #fff; border-width: 0 5px; border-style: solid; border-color: #161312; padding: 0 10px; min-height: 190px; _height: 190px}
+.popup_short .popup_middle {min-height: 110px; _height: 110px}
+.popup_short .pop_inner {padding: 5px 0 0 0}
+.popup .popup_middle .spinner {position: absolute; top: 80px; left: 75px}
+.popup_short .popup_middle .spinner {top: 32px}
+.popup h3 {padding-top: 10px; font-size: 14px}
+.popup .popup_middle p {margin: 4px 0; font-size: 11px; color: #999}
+.popup .popup_middle p span.data {color: #555}
+.popup .popup_middle p span.metadata {color: #333}
+.popup .popup_middle .login {margin-top: 0; padding-top: 10px}
+.popup .popup_middle .subscribe {border-top: 1px dotted #aaa; font-size: 13px; padding-top: 4px; margin-bottom: 4px}
+.popup .popup_middle .description {color: #666}
+.popup .popup_middle .read_add, .popup .popup_middle .read_remove {border-top: 1px dotted #ccc; padding: 5px 0 10px 0; margin-bottom: 0}
+.read_add a {background: url('/images/icons/btn_add_to_collections_14x12.png?1301083584') no-repeat 0 0; padding-left: 18px; font-weight: bold}
+.read_remove a {background: url('/images/icons/btn_add_to_collections_14x12.png?1301083584') no-repeat 0 0; padding-left: 16px; font-weight: bold}
+.member_add a {display: block; background: url(/images/btn_addtogroups_102x26.png?1301083584) no-repeat 0 0; width: 102px; height: 26px}
+.member_add a:hover {background-position: 0 -26px}
+.member_add a:active {background-position: 0 -52px}
+.popup .pop_arrow {position: absolute; top: 50px}
+.popup .popup_bottom {position: absolute; bottom: 0px; left: 0px}
+.popup .follow_button {text-align: left; margin-bottom: 0; margin-left: 0}
+.popup .badge_data input {width: 90px; float: left; margin-right: 5px}
+.popup .badge_data .copy_flash_button {margin: 0}
+/* Left and Right Popup Specific styles */ .popup_right {padding-right: 5px}
+.popup_right .pop_arrow {right: 0px}
+.popup_left {padding-left: 5px}
+.popup_left .pop_arrow {left: 0px}
+.popup_left .popup_top, .popup_left .popup_bottom {left: 5px}
+/* @end */ /* Placeholder flash on top of each page */ #flashes_placeholder.active {padding-top: 15px; margin-bottom: 15px}
+
+
+/* public/stylesheets/global/layout.css @ 1301083584 */
+#wrap {background: white url('/images/global_header/hdr_rpt_bottom_1x5.gif?1301083584') repeat-x 0 top; zoom: 1}
+.fb_dialog {z-index: 99999 !important}
+/* @group Header */ /* Styles for layouts/_global_header.html.erb */ #global_header {background: transparent url('/images/global_header/nav_back_1x53.png?1301083584') repeat-x 0 bottom; height: 53px; margin: 0; padding: 0; text-align: left; zoom: 1}
+#global_header .inner {width: 996px; margin: 0 auto 0 auto; padding: 11px 0 8px 0; zoom: 1}
+#global_header .inner a {vertical-align: top}
+#global_header .logo {/* float: left;*/ display: inline-block; margin: 2px 0 0 0; background: transparent url('/images/global_header/logo_108x17.gif?1301083584') no-repeat; width: 108px; height: 27px; text-indent: -9999px; /* IE7 */ zoom: 1; *text-indent: 0px; *font-size: 0}
+#global_header .right_bar, #global_header .left_bar, #footer_navbar .left_bar {/* float: left;*/ margin: 2px 7px 0 15px; height: 28px; width: 0px; border-left: 1px solid #403733; border-right: 1px solid #382E2B}
+#global_header .right_bar {margin-right: 0; margin-left: 10px}
+#global_header ul.menu {/* float: left;*/ color: #fff; margin: 3px 0 0 0; padding: 0; display: inline-block; zoom: 1; *display: inline}
+#global_header .head_sep {background-image: url('/images/global_header/nav_sep_1x10.png?1301083584'); background-position: center center; background-repeat: none; border: 0; height: 10px; width: 1px; margin: 0 10px; margin-top: 12px; display: inline-block; vertical-align: top; zoom: 1; *display: inline}
+#global_header ul.menu li {display: inline; padding: 0; margin: 0}
+#global_header ul.menu li a {-moz-border-radius: 2px; -webkit-border-radius: 2px; padding: 5px 8px; margin-right: 1px; font-size: 13px; font-weight: bold; color: #FFF; zoom: 1; display: block; float: left; vertical-align: bottom}
+#global_header ul.menu li a:hover {padding: 4px 7px; background: #403733; border: 1px solid #403733; text-decoration: none}
+#global_header a.upload_button, #footer #content a.upload_button {cursor: pointer; outline: none; display: inline-block; margin: 2px 0 0 0; padding: 0; border: 0; /* float: left;*/ text-indent: -9999px; zoom: 1; *display: inline; background: transparent url('/images/global_header/btn_upload.gif?1301083584') no-repeat 0 0; width: 84px; height: 30px}
+#global_header a.upload_button:hover, #footer #content a.upload_button:hover {background-position: 0 -30px}
+#global_header a.upload_button:active, #footer #content a.upload_button:active {background-position: 0 -60px}
+body.smartling-es #global_header a.upload_button, body.smartling-es #footer #content a.upload_button {background: transparent url('/images/locales/es/global_header/btn_upload.gif?1301083584') no-repeat 0 0; width: 81px; height: 30px}
+body.smartling-es #global_header a.upload_button:hover, body.smartling-es #footer #content a.upload_button:hover {background-position: 0 -30px}
+body.smartling-es #global_header a.upload_button:active, body.smartling-es #footer #content a.upload_button:active {background-position: 0 -60px}
+body.smartling-pt #global_header a.upload_button, body.smartling-pt #footer #content a.upload_button {background: transparent url('/images/locales/pt-br/global_header/btn_upload.gif?1301083584') no-repeat 0 0; width: 92px; height: 30px}
+body.smartling-pt #global_header a.upload_button:hover, body.smartling-pt #footer #content a.upload_button:hover {background-position: 0 -30px}
+body.smartling-pt #global_header a.upload_button:active, body.smartling-pt #footer #content a.upload_button:active {background-position: 0 -60px}
+.search_autocompleter {background-color: white; width: 340px; z-index: 999; position: absolute; top: 25px; left: -30px; display: block; border-right: 1px solid #cdcdcd; border-left: 1px solid #cdcdcd; border-top: 1px solid #cdcdcd; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-radius-topright: 0; -webkit-box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2); box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2)}
+.search_autocompleter .ac_section {float: left; clear: both; border-bottom: 1px solid #cdcdcd; width: 100%; background-color: #e5e5e5}
+.search_autocompleter .ac_section .ac_main ul li img {width: 25px; height: 33px}
+.search_autocompleter .ac_users .ac_main ul li img, .search_autocompleter .ac_publishers .ac_main ul li img {height: 25px}
+.search_autocompleter .ac_users .ac_main ul li p, .search_autocompleter .ac_publishers .ac_main ul li p {padding-top: 6px}
+.search_autocompleter .ac_white_border {border-top: 1px solid white; border-left: 1px solid white; float: left}
+.search_autocompleter .ac_sidebar {float: left; background-color: #e5e5e5; width: 28px; overflow: hidden}
+.search_autocompleter .ac_sidebar img {display: block; margin: 10px auto 0 auto}
+.search_autocompleter .ac_main {width: 311px; float: right; background-color: white}
+.search_autocompleter .ac_main h4 {font-family: Helvetica, Arial, sans-serif; font-size: 11px; color: #AAA; text-transform: uppercase; font-weight: normal; margin: 12px 0 0 12px}
+.search_autocompleter .ac_main ul {float: left; width: 299px; padding: 6px 0 6px 0px}
+.search_autocompleter .ac_main ul a {text-decoration: none}
+.search_autocompleter .ac_main li {float: left; width: 100%; padding: 3px 0 3px 12px}
+.search_autocompleter .ac_main li p {color: #317E9A; float: left; margin: 0; padding: 0 0 6px 0; width: 240px}
+.search_autocompleter .ac_main li img {float: left; padding: 1px; border: 1px solid #ccc; margin: 0 5px 0 0}
+.search_autocompleter .ac_main li div {float: left}
+.search_autocompleter .ac_main li .ac_user_credit {clear: left; font-size: 11px; margin-top: -3px}
+.search_autocompleter .ac_main li .ac_user_credit .label {color: #AAA}
+.search_autocompleter .ac_main a.highlight li {background-color: #EDFFFF}
+form.global_search {position: relative; display: inline-block; zoom: 1; *display: inline}
+form.global_search input.search_input {margin: 0; height: 20px; padding: 5px 6px; font-size: 11px; width: 275px; border: 0; color: #363636; vertical-align: top; outline: none}
+form.global_search input.search_input.inactive {color: #999}
+form.global_search .search_button {border: 0 !important; padding: 0 !important; width: 63px; height: 30px; margin: 0 5px; display: inline-block; text-indent: -9999px; overflow: hidden; zoom: 1; *display: inline; background: transparent url('/images/global_header/btn_search.gif?1301083584') no-repeat 0 0; width: 63px; height: 30px}
+form.global_search .search_button:hover {background-position: 0 -30px}
+form.global_search .search_button:active {background-position: 0 -60px}
+body.smartling-es form.global_search .search_button {background: transparent url('/images/locales/es/global_header/btn_search.gif?1301083584') no-repeat 0 0; width: 63px; height: 30px}
+body.smartling-es form.global_search .search_button:hover {background-position: 0 -30px}
+body.smartling-es form.global_search .search_button:active {background-position: 0 -60px}
+body.smartling-pt form.global_search .search_button {background: transparent url('/images/locales/pt-br/global_header/btn_search.gif?1301083584') no-repeat 0 0; width: 86px; height: 30px}
+body.smartling-pt form.global_search .search_button:hover {background-position: 0 -30px}
+body.smartling-pt form.global_search .search_button:active {background-position: 0 -60px}
+#global_header ul.utilities li.l1 {display: inline; margin-right: 2px; font-size: 11px; color: #666; float: right}
+#global_header .utilities .head_sep {margin-top: 3px}
+#global_header ul.logged_out_utilities li.l1 a {color: #EEE; font-weight: bold}
+#global_header ul.utilities li.v_bar {color: #303030; margin-right: 7px; margin-left: 5px}
+#header_login .login {position: relative; z-index: 5000; zoom: 1}
+#header_login .login a {padding-right: 18px; background-image: url('/images/global_header/menu_arrows2.gif?1301083584'); background-repeat: no-repeat; background-position: right 5px; display: block}
+#header_login .open a {background-position: right -14px}
+#header_login #login_dropdown a {font-weight: normal; color: #eee; padding: 0; background: transparent}
+#user_util #util_separator {margin-top: 10px; padding-top: 10px; border-top: 1px dotted #ccc}
+#global_header #header_login #login_dropdown {width: 180px; right: 0px; padding: 15px 15px 15px 15px; text-align: left}
+#header_login #login_dropdown .button_container {width: 100%; margin-top: 10px}
+#header_login #login_dropdown .button_container .button {margin-right: 5px}
+#header_login #login_dropdown .button_container .spinner {margin-top: 3px}
+#header_login #login_dropdown .trouble {white-space: nowrap; float: right; margin-top: 6px; font-size: 11px}
+#header_login #login_dropdown label {color: #eee; display: block; font-size: .9em; margin-top: 5px}
+#header_login #login_dropdown label.first {margin-top: 0}
+#header_login #login_dropdown input {width: 170px; margin-top: 5px}
+#header_login #login_dropdown .button input {width: 50px}
+#header_login #login_dropdown .facebook_connect_button_container .fb_connect_button {background: url(../../images/icons/icon_map_sm.gif) no-repeat 0 -13px; padding-left: 15px; float: none; height: auto; width: auto; text-indent: 0; color: #eee}
+#header_login .openid_login_link {background: url('/images/icons/icon_map_sm.gif?1301083584') no-repeat scroll 0 -31px; padding-left: 16px; display: block; margin-top: 2px; color: #eee}
+#login_dropdown .facebook_connect_button_container {padding-top: 10px; border-top: 1px dotted #ccc; margin-top: 10px}
+#login_dropdown #header_quicklogin_openid_login input {width: 90px}
+#header_quicklogin_openid_login .button {margin-top: 5px}
+#global_header ul li.header_fb_login {padding-left: 10px; margin-top: 3px; float: left}
+#global_header .username {color: #fff; font-size: 10px; margin: 4px 0 0 8px; width: 140px; text-align: left; float: left; overflow: hidden}
+#global_header .username a {color: #fff; font-size: 10px; font-weight: bold}
+/* @end */ #lightboxes:after {content: "."; display: block; height: 0; clear: both; visibility: hidden}
+
+
+/* public/stylesheets/global/buttons.css @ 1301083584 */
+/* @group Followships */ .follow_button {margin: auto; text-align: center; margin-top: 5px; display: block}
+.inner_follow_button, a.inner_small_follow_button {background: #1982ab; border: 0; color: #fff; font-weight: bold; cursor: pointer; padding: 3px 4px 3px 4px}
+a.inner_follow_button:hover, a.inner_small_follow_button:hover {color: #fff; background: #056084; text-decoration: none}
+.users .follow_button {display: block; margin: 5px 10px auto 0; text-align: center}
+.follow_button span.inactive {background: #999; border-color: #e3d482; color: #fff; border: 0; color: #fff; font-weight: bold; padding: 3px 4px 3px 4px}
+.follow_button_inactive a, .follow_button_inactive a {background: #999; border-color: #e3d482; color: #fff}
+.follow_button_inactive a:hover, .follow_button_inactive a:hover {background: #777}
+/* @end */ .already_bought {background: transparent url('/images/buttons/already_bought.gif?1301083584') 0 -15px no-repeat; border: 0; padding: 0; margin-top: 10px; cursor: pointer; height: 15px; width: 219px}
+.already_bought:hover {background: transparent url('/images/buttons/already_bought.gif?1301083584') 0 0px no-repeat; height: 15px; width: 219px}
+a.button, input.button, embed.button {background-color: #6496C3; border: #6496C3 solid 1px; color: #fff !important; cursor: pointer; display: block; float: left; font-size: 12px; outline: none; padding: 3px 5px; cursor: pointer; text-decoration: none; text-align: center; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-outline: 0px}
+span.button {background: url('/images/buttons/btn_sm_map_v2.gif?1301083584') no-repeat 0 0; float: left; padding-left: 2px; display: block; cursor: pointer; text-align: center; height: 25px}
+span.button .button_inner {padding-right: 2px; height: 25px; display: block; float: left; background: url('/images/buttons/btn_sm_map_v2.gif?1301083584') no-repeat right -25px}
+span.button .button_inner input, span.button .button_inner a {background: url('/images/buttons/btn_sm_map_v2.gif?1301083584') repeat-x 0 -50px; border: 0; cursor: pointer; padding: 0 4px; margin: 0 auto !important; color: #CFCDCC; float: left; height: 25px; font-size: 11px; font-weight: bold}
+span.button span.button_inner input:hover {color: #fff}
+.button_container span.button {margin-right: 10px}
+span.button_disabled, span.button_disabled .button_inner, span.button_disabled .button_inner input {background-image: url(../../images/buttons/btn_disabled_sm_map.gif)}
+span.button_disabled span.button_inner input:hover {color: #fff}
+a.button:hover, input.button:hover {background-color: #fff; color: #6496C3 !important; border: #6496C3 solid 1px; -moz-outline: 0px; text-decoration: none}
+a.button:active, input.button:active {background-color: #fff; color: #363636 !important; border: #6496C3 solid 1px; -moz-outline: none}
+input.button_disabled, input.button_disabled:hover, input.button[disabled=''], input.button[disabled='']:hover {color: #aaa !important; background: #ddd !important; border: 1px solid #ccc !important; cursor: default}
+a.big_button, input.big_button, embed.big_button, span.big_button {background-color: #6496C3; border: #6496C3 solid 1px !important; color: #fff !important; cursor: pointer; display: block; float: left; font-size: 16px; margin-right: 10px; outline: none; padding: 5px 7px; cursor: pointer; text-decoration: none; text-align: center; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-outline: 0px}
+a.big_button:hover, input.big_button:hover {background-color: #fff; color: #6496C3 !important; border: #6496C3 solid 1px; -moz-outline: 0px}
+a.big_button:active, input.big_button:active {background-color: #fff; color: #363636 !important; border: #6496C3 solid 1px; -moz-outline: none}
+.buy_now {background: transparent url('/images/buttons/buy_now2.gif?1301083584') 0 -92px no-repeat; cursor: pointer; height: 46px; padding: 0; width: 160px; border: 0; margin: 0}
+.buy_now:hover {background: transparent url('/images/buttons/buy_now2.gif?1301083584') 0 -46px no-repeat; height: 46px; width: 160px}
+.buy_now:active {background: transparent url('/images/buttons/buy_now2.gif?1301083584') 0 0 no-repeat; height: 46px; width: 160px}
+.buy_button {position: relative; left: 15px}
+#buy_spinner {visibility: hidden; position: relative; top: -17px}
+.button_spinner {position: relative; margin-left: 10px}
+.cancel_button {background: transparent url('/images/buttons/cancel.gif?1301083584') 0 -60px no-repeat; display: block; height: 30px; outline: none; width: 104px}
+input.cancel, a.cancel, span.cancel {border: 0 !important; background-color: transparent; color: #DB5B61; cursor: pointer; font-size: 12px; text-transform: capitalize; padding: 0}
+.cancel_button:hover {background: transparent url('/images/buttons/cancel.gif?1301083584') 0 -30px no-repeat}
+.cancel_button:active {background: transparent url('/images/buttons/cancel.gif?1301083584') 0 0px no-repeat}
+a.close_button, a.back_button {display: block; width: 21px; height: 21px}
+a.close_button {background: transparent url('/images/buttons/btn_close_21x21.gif?1301083584') 0 0 no-repeat}
+a.close_button:hover {background: transparent url('/images/buttons/btn_close_21x21.gif?1301083584') no-repeat 0 -21px}
+a.back_button {background: transparent url('/images/buttons/btn_back_21x21.gif?1301083584') 0 0 no-repeat}
+a.back_button:hover {background: transparent url('/images/buttons/btn_back_21x21.gif?1301083584') no-repeat 0 -21px}
+a.subtle_close_button {display: block; height: 9px; width: 9px; overflow: hidden; background: transparent url('/images/home/bnt_close_grey_9x9.gif?1301083584') no-repeat left top}
+a.subtle_close_button:hover {background-position: left -9px}
+.continue {background: transparent url('/images/buttons/continue.gif?1301083584') 0 -29px no-repeat; border: 0 !important; padding: 0 !important; width: 95px; height: 29px}
+.continue:hover {background: transparent url('/images/buttons/continue.gif?1301083584') 0 0 no-repeat; width: 95px; height: 29px}
+.purchase_document_button {background: transparent url('/images/buttons/purchase_document.gif?1301083584') 0 -58px no-repeat; border: 0; padding: 0; width: 160px; height: 29px}
+.purchase_document_button:hover {background: transparent url('/images/buttons/purchase_document.gif?1301083584') 0 -29px no-repeat; border: 0; padding: 0; width: 160px; height: 29px}
+.purchase_document_button_inactive {background: transparent url('/images/buttons/purchase_document.gif?1301083584') 0 0 no-repeat; border: 0; padding: 0; width: 160px; height: 29px}
+.copy_button {display: block; background: transparent url('/images/buttons/btn_copy.png?1301083584') no-repeat 0 0; width: 47px; height: 26px}
+.copy_button:hover {background-position: 0 -26px}
+.copy_button:active {background-position: 0 -52px}
+body.smartling-es .copy_button {background: transparent url('/images/locales/es/buttons/btn_copy.png?1301083584') no-repeat 0 0; width: 57px; height: 26px}
+body.smartling-es .copy_button:hover {background-position: 0 -26px}
+body.smartling-es .copy_button:active {background-position: 0 -52px}
+body.smartling-pt .copy_button {background: transparent url('/images/locales/pt-br/buttons/btn_copy.png?1301083584') no-repeat 0 0; width: 57px; height: 26px}
+body.smartling-pt .copy_button:hover {background-position: 0 -26px}
+body.smartling-pt .copy_button:active {background-position: 0 -52px}
+.copy_small_button {background: transparent url('/images/buttons/copy_small.gif?1301083584') 0 -40px no-repeat; display: block; height: 20px; outline: none; width: 64px; float: left; margin: auto 5px auto 5px; position: relative; top: 1px}
+.copy_small_button:hover {background: transparent url('/images/buttons/copy_small.gif?1301083584') 0 -20px no-repeat; background-repeat: no-repeat}
+.copy_small_button:active {background: transparent url('/images/buttons/copy_small.gif?1301083584') 0 0px no-repeat; background-repeat: no-repeat}
+.resend_invite_button {background: transparent url('/images/buttons/resend_invite.gif?1301083584') 0 -60px no-repeat; border: 0; height: 30px; outline: none; padding: 0 !important; width: 118px}
+.resend_invite_button:hover {background: transparent url('/images/buttons/resend_invite.gif?1301083584') 0 -30px no-repeat}
+.resend_invite_button:active {background: transparent url('/images/buttons/resend_invite.gif?1301083584') 0 0 no-repeat}
+.small_blue_arrow {position: relative; top: -1px !important; bottom: auto !important; margin-right: 3px}
+input.text {background-color: transparent; border: none; color: #1982ab; cursor: pointer; font-size: 12px; padding: 0}
+input.disabled {color: #999}
+.yahoo_button, .yahoo_button_active, .yahoo_button_hover {background: transparent url('/images/buttons/yahoo_02.gif?1301083584') 0 -56px no-repeat; border: 0; display: block; height: 28px; outline: none; padding: 0; width: 118px; cursor: pointer}
+.yahoo_button:hover {background: transparent url('/images/buttons/yahoo_02.gif?1301083584') 0 -28px no-repeat}
+.yahoo_button_active {background: transparent url('/images/buttons/yahoo_02.gif?1301083584') 0 0 no-repeat}
+.hotmail_button, .hotmail_button_hover, .hotmail_button_active {background: transparent url('/images/buttons/hotmail_02.gif?1301083584') 0 -56px no-repeat; border: 0; display: block; height: 28px; outline: none; padding: 0; width: 118px; cursor: pointer}
+.hotmail_button:hover {background: transparent url('/images/buttons/hotmail_02.gif?1301083584') 0 -28px no-repeat}
+.hotmail_button_active {background: transparent url('/images/buttons/hotmail_02.gif?1301083584') 0 0 no-repeat}
+.gmail_button, .gmail_button_hover, .gmail_button_active {background: transparent url('/images/buttons/gmail_02.gif?1301083584') 0 -56px no-repeat; border: 0; display: block; height: 28px; outline: none; padding: 0; width: 118px; cursor: pointer}
+.gmail_button:hover {background: transparent url('/images/buttons/gmail_02.gif?1301083584') 0 -28px no-repeat}
+.gmail_button_active {background: transparent url('/images/buttons/gmail_02.gif?1301083584') 0 0 no-repeat}
+/* doc page buttons */ .yes_upload {margin-top: 20px; margin-left: 95px}
+.center .yes_upload {margin-left: 0}
+.maybe_later {margin-left: 50px; margin-top: 20px}
+.download_sample {background: transparent url('/images/buttons/download_a_sample.gif?1301083584') 0 -92px no-repeat; cursor: pointer; height: 46px; padding: 0; width: 243px; border: 0; margin: 0}
+.download_sample:hover {background: transparent url('/images/buttons/download_a_sample.gif?1301083584') 0 -46px no-repeat; height: 46px; width: 243px}
+.download_sample:active {background: transparent url('/images/buttons/download_a_sample.gif?1301083584') 0 0 no-repeat; height: 46px; width: 243px}
+.status_updater p.submit_status input {padding: 1px 3px; font-size: 11px}
+a.event_reply_button {font-size: 11px; line-height: 15px; display: block; float: left; padding-left: 20px; background: transparent url('/images/minis_silk/comment.gif?1301083584') 0 0 no-repeat; position: relative}
+/* landing page buttons */ a#signup_startpublishing {display: block; width: 413px; height: 52px; position: relative; cursor: pointer; background: url('/images/buttons/signup_startpublishing.gif?1301083584') no-repeat 0 -104px; margin: 20px 0}
+a#signup_startpublishing:hover {background-position: 0 -52px}
+a#signup_startpublishing:active {background-position: 0 0}
+a#startconvertingnow {display: block; width: 355px; height: 52px; position: relative; cursor: pointer; background: url('/images/buttons/startconvertingnow.gif?1301083584') no-repeat 0 -104px; margin: 20px 0}
+a#startconvertingnow:hover {background-position: 0 -52px}
+a#startconvertingnow:active {background-position: 0 0}
+#start_selling {background: url('/images/buttons/btn_startselling_181x52_v2.gif?1301083584') no-repeat 0 0; display: block; width: 181px; height: 52px; text-indent: -999em; margin: 10px auto}
+#start_selling:hover {background-position: 0 -52px}
+#start_selling:active {background-position: 0 -104px}
+#get_started {background: url('/images/buttons/btn_getstarted_181x52_v2.gif?1301083584') no-repeat 0 0; display: block; width: 181px; height: 52px; text-indent: -999em; margin: 10px auto}
+#get_started:hover {background-position: 0 -52px}
+#get_started:active {background-position: 0 -104px}
+.send_verification_email_yellow_button {background: transparent url('/images/buttons/send_verification_email_yellow.gif?1301083584') 0 -60px no-repeat; border: 0; display: block; height: 30px; outline: none; width: 200px}
+.send_verification_email_yellow_button:hover {background: transparent url('/images/buttons/send_verification_email_yellow.gif?1301083584') 0 -30px no-repeat}
+.send_verification_email_yellow_button:active {background: transparent url('/images/buttons/send_verification_email_yellow.gif?1301083584') 0 0px no-repeat}
+.view_mode_list_button, .view_mode_mixed_button, .view_mode_list_button_selected, .view_mode_mixed_button_selected, .view_mode_thumbnail_button, .view_mode_thumbnail_button_selected {height: 27px; width: 25px; display: block; float: left; outline: none; cursor: pointer}
+.view_mode_mixed_button, .view_mode_mixed_button_selected {width: 26px; background: transparent url("/images/subnav/mixedview_26x27.png") 0 0 no-repeat}
+.view_mode_thumbnail_button, .view_mode_thumbnail_button_selected {background: transparent url("/images/subnav/thumbnail_view_25x27.png")}
+.view_mode_list_button, .view_mode_list_button_selected {background: transparent url("/images/subnav/listview_25x27.png") 0 0 no-repeat}
+.view_mode_list_button {background-position: 0 0}
+.view_mode_list_button:hover {background-position: 0 -27px}
+.view_mode_list_button:active {background-position: 0 -54px}
+.view_mode_mixed_button:hover {background-position: 0 -27px}
+.view_mode_mixed_button:active {background-position: 0 -54px}
+.view_mode_thumbnail_button:hover {background-position: 0 -27px}
+.view_mode_thumbnail_button:active {background-position: 0 -54px}
+.view_mode_list_button_selected {background-position: 0 -54px}
+.view_mode_mixed_button_selected {background-position: 0 -54px}
+.view_mode_thumbnail_button_selected {background-position: 0 -54px}
+
+
+/* public/stylesheets/global/thumbnails.css @ 1301083584 */
+.tinier_thumbnail {width: 25px; height: 25px; margin-right: 10px; position: relative}
+.outer_border, .outer_border_layer2, .outer_border_layer3 {display: block; position: absolute; border-style: solid}
+.outer_border {border-color: #cccccc}
+.outer_border_layer2, .outer_border_layer3 {border-width: 0 0 0 1px; border-color: #6A6663}
+.outer_border_layer2 {top: 1px; left: -2px}
+.outer_border_layer3 {left: -4px; top: 2px}
+.tinier_letter_thumbnail {width: 25px; height: 31px; margin-right: 10px; position: relative}
+.tinier_letter_thumbnail a {display: block; width: 21px; height: 27px; background: #fff center center no-repeat; border: 1px solid #6A6663}
+.tinier_letter_thumbnail a:hover {text-decoration: none}
+.tinier_letter_thumbnail .outer_border {width: 22px; height: 28px; top: 2px; left: 1px; border-width: 0}
+.tiny_thumbnail {width: 50px; height: 50px; position: relative; margin-right: 12px}
+.tiny_thumbnail a {display: block; width: 48px; height: 48px; background: #fff 0 0 no-repeat; border: 1px solid #ccc; padding: 2px}
+/* users */ .profile_carousel_thumbnail {width: 88px; height: 112px; position: relative; margin-right: 10px}
+.profile_carousel_thumbnail a {display: block; width: 84px; height: 108px; line-height: 108px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.profile_carousel_thumbnail a:hover {text-decoration: none}
+.profile_carousel_thumbnail .outer_border {width: 85px; height: 109px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.profile_carousel_thumbnail .outer_border_layer2 {height: 108px}
+.profile_carousel_thumbnail .outer_border_layer3 {height: 106px}
+/* docs */ .tinier_thumbnail {width: 29px; height: 29px; position: relative; margin-right: 10px; margin: 0 1px 3px 0; _margin: 0 1px 2px 0; /* fuck you IE6 */ }
+.tinier_thumbnail a {display: block; width: 25px; height: 25px; line-height: 25px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.tinier_thumbnail a:hover {text-decoration: none}
+.tinier_thumbnail .outer_border {width: 26px; height: 26px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.tinier_thumbnail .outer_border_layer2 {height: 25px}
+.tinier_thumbnail .outer_border_layer3 {height: 23px}
+.feed_thumbnail {width: 22px; height: 22px; position: relative; margin-right: 10px; margin-right: 2px}
+.feed_thumbnail a {display: block; width: 18px; height: 18px; line-height: 18px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.feed_thumbnail a:hover {text-decoration: none}
+.feed_thumbnail .outer_border {width: 19px; height: 19px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.feed_thumbnail .outer_border_layer2 {height: 18px}
+.feed_thumbnail .outer_border_layer3 {height: 16px}
+.profile_header_thumbnail {width: 42px; height: 42px; position: relative; margin-right: 10px}
+.profile_header_thumbnail a {display: block; width: 38px; height: 38px; line-height: 38px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.profile_header_thumbnail a:hover {text-decoration: none}
+.profile_header_thumbnail .outer_border {width: 39px; height: 39px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.profile_header_thumbnail .outer_border_layer2 {height: 38px}
+.profile_header_thumbnail .outer_border_layer3 {height: 36px}
+.profile_dashboard_thumbnail {width: 155px; height: 155px; position: relative; margin-right: 10px}
+.profile_dashboard_thumbnail a {display: block; width: 151px; height: 151px; line-height: 151px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.profile_dashboard_thumbnail a:hover {text-decoration: none}
+.profile_dashboard_thumbnail .outer_border {width: 152px; height: 152px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.profile_dashboard_thumbnail .outer_border_layer2 {height: 151px}
+.profile_dashboard_thumbnail .outer_border_layer3 {height: 149px}
+.profile_dashboard_thumbnail a {line-height: 151px}
+.feed_nag_thumbnail {width: 135px; height: 135px; position: relative; margin-right: 10px}
+.feed_nag_thumbnail a {display: block; width: 131px; height: 131px; line-height: 131px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.feed_nag_thumbnail a:hover {text-decoration: none}
+.feed_nag_thumbnail .outer_border {width: 132px; height: 132px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.feed_nag_thumbnail .outer_border_layer2 {height: 131px}
+.feed_nag_thumbnail .outer_border_layer3 {height: 129px}
+.feed_nag_thumbnail a {line-height: 131px}
+.following_facepile_thumbnail {width: 33px; height: 33px; position: relative; margin-right: 10px}
+.following_facepile_thumbnail a {display: block; width: 29px; height: 29px; line-height: 29px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.following_facepile_thumbnail a:hover {text-decoration: none}
+.following_facepile_thumbnail .outer_border {width: 30px; height: 30px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.following_facepile_thumbnail .outer_border_layer2 {height: 29px}
+.following_facepile_thumbnail .outer_border_layer3 {height: 27px}
+.following_facepile_thumbnail a {line-height: 29px}
+.suggested_users_thumbnail {width: 64px; height: 64px; position: relative; margin-right: 10px}
+.suggested_users_thumbnail a {display: block; width: 60px; height: 60px; line-height: 60px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.suggested_users_thumbnail a:hover {text-decoration: none}
+.suggested_users_thumbnail .outer_border {width: 61px; height: 61px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.suggested_users_thumbnail .outer_border_layer2 {height: 60px}
+.suggested_users_thumbnail .outer_border_layer3 {height: 58px}
+.suggested_users_thumbnail a {line-height: 60px; padding: 2px; background-color: #fff; border: 1px solid #CCCCCC}
+.infocard_thumbnail {width: 155px; height: 155px; position: relative; margin-right: 10px}
+.infocard_thumbnail a {display: block; width: 151px; height: 151px; line-height: 151px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.infocard_thumbnail a:hover {text-decoration: none}
+.infocard_thumbnail .outer_border {width: 152px; height: 152px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.infocard_thumbnail .outer_border_layer2 {height: 151px}
+.infocard_thumbnail .outer_border_layer3 {height: 149px}
+.infocard_thumbnail a {line-height: 151px}
+.profile_navigation_thumbnail {width: 22px; height: 22px; position: relative; margin-right: 10px}
+.profile_navigation_thumbnail a {display: block; width: 18px; height: 18px; line-height: 18px !important; font-size: 0; background: #fff center center no-repeat; border: 1px solid #161312; overflow: hidden; text-align: center}
+.profile_navigation_thumbnail a:hover {text-decoration: none}
+.profile_navigation_thumbnail .outer_border {width: 19px; height: 19px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.profile_navigation_thumbnail .outer_border_layer2 {height: 18px}
+.profile_navigation_thumbnail .outer_border_layer3 {height: 16px}
+.profile_navigation_thumbnail a {line-height: 18px}
+.feed_large_thumbnail {width: 32px; height: 32px; position: relative}
+.feed_large_thumbnail a {display: block; width: 32px; height: 32px; line-height: 32px !important; font-size: 0; background: #fff center center no-repeat; overflow: hidden; text-align: center}
+.feed_large_thumbnail a:hover {text-decoration: none}
+.tiny_letter_thumbnail {width: 57px; height: 73px; position: relative; margin-right: 10px}
+.tiny_letter_thumbnail a {display: block; width: 53px; height: 69px; background: #fff center center no-repeat; border: 1px solid #161312}
+.tiny_letter_thumbnail a:hover {text-decoration: none}
+.tiny_letter_thumbnail .outer_border {width: 54px; height: 70px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.tiny_letter_thumbnail .outer_border_layer2 {height: 68px}
+.tiny_letter_thumbnail .outer_border_layer3 {height: 66px}
+.thumbnail_thumbnail {width: 112px; height: 143px; position: relative; z-index: 500; margin-right: 10px}
+.thumbnail_thumbnail a {display: block; width: 110px; height: 141px; background: #fff center center no-repeat; border: 1px solid #161312; text-align: center; overflow: hidden}
+.thumbnail_thumbnail a:hover {text-decoration: none !important}
+.thumbnail_thumbnail a table {margin: auto}
+.thumbnail_thumbnail a table tr td {height: 141px; vertical-align: middle}
+.thumbnail_thumbnail .outer_border {width: 111px; height: 142px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.thumbnail_thumbnail .outer_border_layer2 {height: 141px}
+.thumbnail_thumbnail .outer_border_layer3 {height: 139px}
+.thumbnail_square_thumbnail {width: 104px; height: 104px; position: relative; overflow: hidden; margin-right: 10px}
+.thumbnail_square_thumbnail a {display: block; width: 98px; height: 98px; overflow: hidden; background: #fff center center no-repeat; border: 1px solid #ccc; padding: 2px}
+.thumbnail_square_thumbnail a:hover {text-decoration: none !important}
+.thumbnail_large_thumbnail {width: 164px; height: 212px; position: relative; z-index: 500; margin-right: 10px}
+.thumbnail_large_thumbnail a {display: block; width: 162px; height: 210px; background: #fff center center no-repeat; border: 1px solid #161312}
+.thumbnail_large_thumbnail a:hover {text-decoration: none}
+.thumbnail_large_thumbnail .outer_border {position: absolute; width: 163px; height: 211px; top: 1px; left: 1px; border: solid #cccccc; border-width: 0 1px 1px 0}
+.medium_thumbnail {width: 202px; height: 251px; position: relative; margin-right: 10px}
+.medium_thumbnail a {display: block; width: 200px; height: 249px; background: #fff center center no-repeat; border: 1px solid #161312}
+.medium_thumbnail a:hover {text-decoration: none}
+.medium_thumbnail .outer_border {width: 201px; height: 250px; top: 1px; left: 1px; border-width: 0 1px 1px 0}
+.medium_square_thumbnail {width: 193px; height: 198px; overflow: hidden; margin-right: 10px}
+.medium_square_thumbnail a {display: block; width: 193px; height: 198px; background: #fff center center no-repeat}
+/* page number in bottom right hand corner */ .no_of_pages {display: block; bottom: 1px; *bottom: 0px; right: 1px; *right: 1px; line-height: 12px; color: #fff; cursor: pointer; font-size: 9px; padding: 3px 5px 3px 5px; margin: 0px; position: absolute; background: url('/images/thumbnails/pagecount_tab_v2_52x52.png?1301083584') no-repeat 0 0; _background: url('/images/thumbnails/page_bg_52x52.gif?1301083584') no-repeat 0 0}
+/* gold corner on purchasable doc thumbs */ .thumb_buy_banner {position: absolute; display: block; top: 1px; right: 1px; background: url('/images/thumbnails/buy_banner.png?1301083584') no-repeat; _background: url('/images/thumbnails/buy_banner.gif?1301083584') no-repeat; width: 52px; height: 51px; cursor: pointer}
+.thumb_buy_banner_small {display: block; position: absolute; top: 1px; right: 3px; background: url('/images/thumbnails/store_corner_15x15.gif?1301083584') no-repeat; width: 15px; height: 15px; cursor: pointer}
+/* TODO: kill these old classes */ .thumbnail .toolbar {text-align: left!important; margin: -20px auto 0; padding-left: 6px}
+.thumbnail .toolbar img {border: 0!important}
+#hot_container .thumbnail img {border: 0; margin: auto}
+.homepage .featured .group .thumbnail {float: left}
+.description_box .inner_box .thumbnail .share {border: 0; margin-top: 0}
+.description_box .inner_box .thumbnail .share img {border: 0}
+.recommendations .thumbnail {margin: 10px 30px 0 0; text-align: center}
+
+
+/* public/stylesheets/global/error.css @ 1301083584 */
+.error_block {text-align: center; width: 600px; margin: 35px auto 35px auto; background: #fff; border: 1px solid #e4e4e4; padding: 25px}
+.error_block p {font-size: 116%; color: #555}
+.error_block h1 {font-size: 170%}
+
+
+/* public/stylesheets/global/documents.css @ 1301083584 */
+/* @group Document Summary */ .summary .title {font-size: 138.5%}
+.summary .title img {vertical-align: middle}
+.summary {padding-left: 5px}
+.summary .right_toolbar {float: right; margin-left: 10px}
+.document_summary {width: 100%; border-bottom: #E4E4E4 solid 1px; margin-top: 20px; padding-bottom: 20px}
+.profile-right .document_summary {border-bottom: #E4E4E4 solid 1px; margin-top: 20px; padding-bottom: 20px; clear: both; width: 100%}
+.document_summary .thumbnail_thumbnail, .document_summary .tiny_letter_thumbnail {float: left}
+.document_summary .title {font-size: 18px}
+.document_summary .title img {vertical-align: middle}
+.document_summary .description {padding-left: 0px}
+.document_summary .thumbnail_thumbnail {z-index: 1}
+.document_summary h4 {padding-right: 75px; margin-bottom: 5px}
+.document_summary div.summary li.pages {bottom: 0; position: relative}
+.document_summary table td, .comment_summary table td, .application_summary table td {vertical-align: top}
+/* New list style metadata box */ .document_meta .meta_node {font-size: 11px}
+.document_meta.pills {display: block; float: left; width: 145px; float: right}
+.document_meta.pills .meta_node {display: block; padding: 7px; background-color: #eee; margin-bottom: 1px; font-size: 11px}
+.document_meta.pills .meta_node label, .document_meta.pills .meta_node .metadata_label {float: left; color: #999; text-shadow: 0px 1px 0px #fff}
+.document_meta.pills .meta_node strong {float: right; font-weight: normal; color: #333}
+.document_meta.pills .meta_node.top {-moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-radius-topleft: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-radius-topright: 3px}
+.document_meta.pills .meta_node.bottom {-moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; border-radius-bottomleft: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; border-radius-bottomright: 3px}
+/* Holly Hack: prevents 3px gap (only IE-win sees this) \*/ * html .summary {height: 1%; margin-left: 0}
+/* End Holly Hack */ .stats_bottom {list-style: none; margin: 10px 0 0 0; padding: 0; vertical-align: bottom}
+.stats_bottom li, .stats_bottom span {display: inline; float: left; font-size: 12px; line-height: 1.6em; margin: 0; margin-right: 20px; vertical-align: bottom}
+.stats_bottom span {float: none; vertical-align: baseline}
+.stats_bottom li.hot_date {color: #db5b61; font-weight: bold}
+.stats_bottom li img {vertical-align: top}
+.stats_bottom div.right_column {float: right; width: 91px}
+.stats_bottom div.right_column .stars {background-color: #ccc}
+.stats_bottom div.left_column {float: left; margin-right: 10px}
+.filetype {float: left; clear: left; margin-right: 0; color: #555; font-size: 85%; text-align: center}
+.document_summary .right_toolbar {float: right}
+.document_summary .thumbnail_thumbnail, .document_summary .tiny_thumbnail {float: left; text-align: left}
+/* @end */ /* @group Grid Listing */ table#doc_grid2 {text-align: left; border-collapse: collapse; z-index: 10}
+table#doc_grid2 tr {padding: 0; margin: 0}
+table#doc_grid2 tr td {width: 33%; padding: 0px; padding-right: 20px; padding-left: 10px}
+table#doc_grid2 tr td.thumb {vertical-align: top}
+table#doc_grid2 tr td.desc {vertical-align: top; padding-bottom: 20px}
+table#doc_grid2 tr td .title {font-size: 116%; line-height: 18px; overflow: hidden; margin-top: 4px}
+table#doc_grid2 tr td .data {margin-top: 6px; color: #555}
+table#doc_grid2 tr td .data p {margin-top: 2px}
+table#doc_grid2 tr td .thumb_container .toolbar {position: absolute; bottom: 3px; left: 3px}
+table#group_grid tr td, table#profile_grid tr td {padding: 15px; width: 33%; text-align: center; vertical-align: top}
+table#doc_grid tr td {padding: 15px; width: 33%; vertical-align: top}
+table#doc_grid tr td h4 {clear: both}
+table#doc_grid, table#group_grid, table#profile_grid {table-layout: fixed; width: 100%}
+table#doc_grid tr td img.thumbnail, table#group_grid tr td img.thumbnail, table#profile_grid tr td img.thumbnail {border: 1px solid #ccc; float: none}
+table#doc_grid tr td p.title, table#group_grid tr td p.title, table#profile_grid tr td p.title {font-size: 108%; font-weight: bold; margin-bottom: 10px}
+table#doc_grid tr td .filetype_no_thumb_available, table#profile_grid tr td .filetype_no_thumb_available, table#group_grid tr td .filetype_no_thumb_available {width: 120px; padding: 20px; background: transparent; margin: auto; height: 100px; vertical-align: middle; border: 1px solid #aaa}
+/* @end */ /* @group Listing Table */ table#listing_table {border-collapse: collapse; margin: 15px 0 15px 0; width: 100%}
+table#listing_table th, table#listing_table td {text-align: left; vertical-align: top; padding-top: 10px}
+table#listing_table th {background-color: #FBFBFB; border-bottom: 1px solid #dedede; border-top: 1px solid #dedede; margin: 0pt; padding: 6px 5px 5px 0; vertical-align: middle}
+table#listing_table tr {border-bottom: #eee solid 1px; background-color: #eee}
+table#listing_table tr.unread {border-bottom: #eee solid 1px; background-color: #fff}
+table#listing_table tr.document_subhead, table#listing_table .subhead {background-color: #fff; height: 20px; padding: 5px; border-bottom: 1px solid #6496C3}
+table#listing_table .subhead th {background: none; border-bottom: 1px solid #6496C3; border-top: 1px solid #6496C3; vertical-align: middle}
+table#listing_table tr.document_subhead td.sorted, table#listing_table .subhead .sorted {background-color: #fff; border-left: #6496C3 solid 1px; border-right: #6496C3 solid 1px; border-bottom: #fff solid 1px}
+table#listing_table tr.document_subhead td.sorted a, table#listing_table tr .sorted a {font-weight: bold}
+table#listing_table h4 {margin-top: 5px; text-align: left}
+table#listing_table p.description {float: left; text-align: left; overflow: hidden}
+table#listing_table th.message {width: 400px}
+table#listing_table th.from {width: 80px}
+table#listing_table th.date {width: 120px}
+table#listing_table tr.document_subhead h5 {margin: 5px 0 5px 0}
+table#listing_table .button {position: relative; bottom: 1px}
+table#listing_table td img {text-align: center; vertical-align: middle}
+table#listing_table tr.message_row td {padding-top: 10px}
+table#listing_table .members td, table#listing_table .discussions td {font-size: .9em; padding: 10px 0 10px 0; vertical-align: top}
+table#listing_table .members td img {margin-right: 10px}
+table#listing_table .members td a, table#listing_table .members td span {white-space: nowrap}
+table#listing_table .members p.actions {font-size: 11px}
+/* @end */ 
+
+
+/* public/stylesheets/global/users.css @ 1301083584 */
+.user_display p {width: 100px; text-align: center}
+.user_display .thumbnail_square_thumbnail {margin: auto; width: 104px; height: 104px}
+.user_display p.username {margin-top: 10px; margin-bottom: 6px}
+.user_display p.metadata {margin-top: 0; margin-bottom: 8px; font-size: 11px; color: #888}
+.user_display p.last {margin-top: 0; margin-bottom: 0.75em}
+.user_display .follow_button {margin: 10px auto auto auto}
+/* @group User Listing */ .user_listing {margin-top: 15px}
+.user_listing td {font-size: 12px}
+.user_listing .gray {color: #9eaaac}
+.user_listing .oneperson {padding: 10px; float: left; margin-bottom: 10px; text-align: center; width: 120px}
+.user_listing .oneperson .thumbnail {margin: auto}
+.user_listing .oneperson p {clear: both; margin-top: 10px; margin-bottom: .3em}
+/* @end */ 
+
+
+/* public/stylesheets/global/personal_header.css @ 1301083584 */
+#personal_header {background: url('/images/profile_header_1x5.png?1301083584') repeat-x top left #cbc9c9; border-bottom: 1px solid #C1BDBB; /* alert flash compensation */ }
+#personal_header #scribd_top_flashes .scribd-doc {margin-bottom: 5px}
+#personal_header div.content {width: 996px; margin: 0 auto}
+#personal_header h2 {color: #FFF; font-size: 15px; text-align: left; margin-top: 8px}
+#personal_header .profile_header_thumbnail {float: left; margin: 7px 7px 0 0}
+#personal_header a.profile_image img {height: 38px; width: 38px}
+#personal_header div.links {float: left}
+#personal_header div.links div.personal_links {margin-bottom: 2px; top: 3px; position: relative; /* for IE6... otherwise use margin-top */ }
+#personal_header div.links div.personal_links li {height: 14px; /* and screw you too IE7 */ }
+#personal_header div.utility_links {float: right; margin-top: 15px; width: 200px; /* for IE6 */ }
+#personal_header div.utility_links ul {float: right}
+
+
+/* public/stylesheets/global/profile_header.css @ 1301083584 */
+#profile_header {background: url('/images/profile_header_1x5.png?1301083584') repeat-x top left #cbc9c9; _background-image: none; border-bottom: 1px solid #C1BDBB; zoom: 1; /* alert flash compensation */ }
+#profile_header #scribd_top_flashes .scribd-doc {margin-bottom: 5px}
+#profile_header .content {width: 996px; margin: 0 auto}
+#profile_header h1 {color: #FFF; font-size: 15px; text-align: left; margin-top: 8px}
+#profile_header .links {float: left}
+#profile_header .links h1 a {text-decoration: none; color: #fff}
+#profile_header .links h1 a:hover {text-decoration: none; color: #fff}
+#profile_header .links .profile_links {top: 3px; position: relative; /* for IE6... otherwise use margin-top */ margin-bottom: 2px}
+#profile_header .links .profile_links li {height: 14px; /* and screw you too IE7 */ }
+#profile_header .share_links {float: right; margin-top: 15px; width: 200px; /* for IE6 */ }
+#profile_header .share_links ul {float: right}
+#profile_header .profile_header_thumbnail {float: left; margin: 7px 7px 0 0}
+#profile_header .utility_links {float: right; margin-top: 15px; width: 200px; /* for IE6 */ }
+#profile_header .utility_links ul {float: right}
+#profile_header .fb_like_button {float: right; height: 30px; margin-top: 15px}
+#publisher_custom_banner {width: 996px; max-height: 80px; overflow: hidden; text-align: left; padding-top: 7px}
+#publisher_custom_banner a {text-decoration: none}
+#publisher_custom_banner img {max-width: 996px; max-height: 80px; float: none}
+
+
+/* public/stylesheets/global/lightbox.css @ 1301083584 */
+#overlay {position: absolute; top: 0; left: 0; height: 100%; width: 100%; opacity: 0.6; -moz-opacity: 0.6; filter: alpha(opacity=60); background: black; z-index: 1002}
+.lightbox {z-index: 30000; position: absolute; overflow: auto; text-align: left; -webkit-border-radius: 10px; -moz-border-radius: 10px; width: 610px}
+.lightbox h1 {font-size: 15px}
+.lightbox .content, .lightbox .footer {background-image: url('/images/lightbox/lightbox_bg_1000_v3.png?1301083584'); /* There is an IE6 specific image for this in ie6_hacks */ background-repeat: no-repeat; background-color: transparent}
+.lightbox .content .spinner_container, .lightbox .footer .spinner_container {text-align: center; margin: 15px auto 15px auto}
+.lightbox .lb_inner {background-color: #fff}
+.lightbox .content {background-position: 0 0; padding: 30px 30px 15px 30px}
+.lightbox .content_tight {background-position: 0 0; padding: 16px !important}
+.lightbox .content_tight .spinner_container {margin-top: 27px}
+.lightbox .footer {background-position: 0 100%; display: block; height: 16px}
+.lightbox .close {position: absolute; top: 10px; right: 10px}
+.lightbox .close_bar {position: absolute; top: 7px; right: 7px}
+.lightbox .close_button {float: right}
+.lightbox .special_nag {margin-top: 20px; margin-bottom: 0}
+.lightbox .iframe_container iframe {height: 85px; overflow: hidden; border: 0; width: 100%}
+#lightbox_load_message {-moz-border-radius: 10px; -webkit-border-radius: 10px; z-index: 110; position: absolute; font-size: 20px; width: 175px; height: 50px; background: #555; color: #eee; text-align: center; padding-top: 20px}
+
+
+/* public/stylesheets/prototip.css @ 1301083584 */
+/* CSS to go with Prototip.Styles */ .prototip {font: 11px Arial, Helvetica, sans-serif; color: #000}
+/* the default style */ .prototip .default {width: 250px; color: #808080}
+.prototip .default .toolbar {background: #f1f1f1; font-weight: bold}
+.prototip .default .title {padding: 5px}
+.prototip .default .content {padding: 5px; background: #fff}
+/* basic */ .prototip .basic {width: 250px; color: #808080}
+.prototip .basic .toolbar {background: #f1f1f1; font-weight: bold}
+.prototip .basic .title {padding: 5px}
+.prototip .basic .content {padding: 5px; background: #fff}
+/* basic */ .prototip .hint {width: 250px; color: #313120; background: #fff6aa}
+.prototip .hint .toolbar {background: #fdf1a0; font-weight: bold}
+.prototip .hint .title, .prototip .hint .content {padding: 5px}
+/* protoblue */ .prototip .protoblue {width: 250px; color: #fff}
+.prototip .protoblue .toolbar {background: #0d7cd0; font-weight: bold}
+.prototip .protoblue .title {padding: 5px}
+.prototip .protoblue .content {background: #1e90ff; padding: 5px}
+/* creamy */ .prototip .creamy {width: 250px; color: #bb9c61}
+.prototip .creamy .toolbar {background: #f3edc2; font-weight: bold}
+.prototip .creamy .title {padding: 5px}
+.prototip .creamy .content {background: #f8f4ca; padding: 5px}
+/* darkgrey */ .prototip .darkgrey {width: 250px; color: #fff}
+.prototip .darkgrey .toolbar {background: #5f5f5f; font-weight: bold}
+.prototip .darkgrey .title {padding: 5px}
+.prototip .darkgrey .content {background: #808080; padding: 5px}
+/* protogrey */ .prototip .protogrey {width: 250px; color: #fff; background: #fff}
+.prototip .protogrey .toolbar {background: #969c92; font-weight: bold}
+.prototip .protogrey .title {padding: 5px}
+.prototip .protogrey .content {color: #808080; padding: 5px}
+/* This is how to resize the close button for a style */ .prototip .protogrey .toolbar .close {width: 14px; height: 14px}
+/* loader gif */ .prototipLoader {position: absolute; top: -1000px; left: -1000px; height: 14px; width: 14px; border: 1px solid #dddddd; overflow: hidden}
+/* Required for all tooltips, do not modify */ .prototip {position: absolute; overflow: hidden}
+.prototip .tooltip, .prototip .toolbar, .prototip .toolbar .title {position: relative}
+.prototip .content {clear: both}
+.prototip .toolbar .close {position: relative; text-decoration: none; float: right; width: 19px; height: 15px; display: block; line-height: 0; font-size: 0; border: 0; cursor: pointer}
+.prototip .tooltip {clear: both; float: left}
+.prototip .borderLeftWrapper, .prototip .borderRightWrapper {position: absolute; top: 0; left: 0; width: 300px; height: 20px}
+.prototip .borderFrame {height: 100%; width: 100%; float: left; margin: 0; padding: 0; position: relative}
+.prototip .borderTop, .prototip .borderBottom {overflow: hidden}
+.prototip .borderRow {list-style-type: none; float: left; width: 100%; position: relative; clear: both; margin: 0; padding: 0}
+.prototip_CornerWrapper {position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0; clear: both}
+.prototip_Corner {float: left; position: relative}
+.prototip canvas {position: relative; float: left}
+.prototip_CornerTr, .prototip_CornerBr {float: right}
+.prototip_BetweenCorners {position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; clear: both}
+.prototip .borderMiddle {position: relative; float: left}
+.prototip .borderCenter {position: relative; float: left; height: 100%}
+.prototip_StemWrapper {position: relative; width: 100%; height: auto; clear: both}
+.prototip_StemBox {float: left; position: relative}
+.prototip_Stem {width: 100%; position: absolute; overflow: hidden}
+.iframeShim {position: absolute; border: 0; margin: 0; padding: 0; background: none; overflow: hidden}
+.prototip .clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.prototip .clearfix {display: inline-block}
+/* IE Mac Hide \*/ .prototip .clearfix {display: block}
+/* IE Mac Hide End */ 
+
+
+/* public/stylesheets/tooltip.css @ 1301083584 */
+.prototip {text-align: left !important}
+.black_trans .content, .black_trans_bottom .content {color: #fff; font-size: 11px; font-weight: bold; background-color: #000; padding: 3px 6px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; opacity: 0.85}
+.black_trans {white-space: nowrap}
+
+
+/* :files, 'public/stylesheets/shared', ... @ (none) */
+
+
+/* :files, 'app/views', ... @ (none) */
+
+
+/* :class_inlines, 'app/views', ... @ (none) */

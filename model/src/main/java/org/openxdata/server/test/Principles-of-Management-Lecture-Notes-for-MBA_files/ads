@@ -1,0 +1,41 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BZ7X-ayWTTYnZNNT6-AaS_d2qAszy-_YB1KbAnhfAjbcB4PogEAEYASDQpIIKKAI4AFD3h77U______8BYJWL5gSyAQ53d3cuc2NyaWJkLmNvbcgBAdoBUWh0dHA6Ly93d3cuc2NyaWJkLmNvbS9kb2MvMzA0NTc0NDcvUHJpbmNpcGxlcy1vZi1NYW5hZ2VtZW50LUxlY3R1cmUtTm90ZXMtZm9yLU1CQYACAakCd3opZeentz6oAwHoA9IC6AOHCegDywLoA58G9QMCAAAE&amp;num=1&amp;sig=AGiWqtw-0OIOHxAo3u0GAk6x8JaRzyxuFg&amp;client=ca-pub-7291399211842501&amp;adurl=http://www.smcuniversity.com"; 
+google_ad.visible_url = "www.smcuniversity.com"; 
+google_ad.line1 = "Top Ranked MBA Online"; 
+google_ad.line2 = "Leading Swiss Business School."; 
+google_ad.line3 = "Accredited, Flexible, Affordable"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BKS59ayWTTYnZNNT6-AaS_d2qApDHltUBiISUsRnAjbcBsNsGEAIYAiDQpIIKKAI4AFCd7aOXAWCVi-YEoAGoj4PvA7IBDnd3dy5zY3JpYmQuY29tyAEB2gFRaHR0cDovL3d3dy5zY3JpYmQuY29tL2RvYy8zMDQ1NzQ0Ny9QcmluY2lwbGVzLW9mLU1hbmFnZW1lbnQtTGVjdHVyZS1Ob3Rlcy1mb3ItTUJBqQJ3eill56e3PqgDAegD0gLoA4cJ6APLAugDnwb1AwIAAAQ&amp;num=2&amp;sig=AGiWqtzpMRbp-r1m6cZjZSB5jnlIpH3KqA&amp;client=ca-pub-7291399211842501&amp;adurl=http://www.bsn.eu/english/ProgrammeSearch/MBA/Pages/InternationalMBA(default).aspx"; 
+google_ad.visible_url = "www.bsn.eu/english"; 
+google_ad.line1 = "Management Programmes"; 
+google_ad.line2 = "Business School Netherlands"; 
+google_ad.line3 = "Starts Feb 2011 | Apply today!"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.scribd.com/doc/30457447/Principles-of-Management-Lecture-Notes-for-MBA%26hl%3Den%26client%3Dca-pub-7291399211842501%26adU%3Dwww.smcuniversity.com%26adT%3DTop%2BRanked%2BMBA%2BOnline%26adU%3Dwww.bsn.eu/english%26adT%3DManagement%2BProgrammes%26gl%3DKE\x26usg\x3dAFQjCNG9ZxUejLv3z1GF_P_30MT98wP9_Q";
+var google_attribution_text = "Ads by Google";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

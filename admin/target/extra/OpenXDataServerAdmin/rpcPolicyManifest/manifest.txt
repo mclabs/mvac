@@ -1,0 +1,14 @@
+# Module OpenXDataServerAdmin
+# RPC service class, partial path of RPC policy file
+net.customware.gwt.dispatch.client.service.DispatchService, 784D5469CE9BF8F73FB9B1D6A1C3A04A.gwt.rpc
+org.openxdata.server.admin.client.service.AuthenticationService, DCD2D208BFCF7B6F50C63F51BFB41C22.gwt.rpc
+org.openxdata.server.admin.client.service.ReportService, 072D597F0EAA703501C26E36D269F42C.gwt.rpc
+org.openxdata.server.admin.client.service.RoleService, 07B8F976FE46570592BB22925C44BD9F.gwt.rpc
+org.openxdata.server.admin.client.service.SettingService, D94014F88C4460A7EE4C140697779ACF.gwt.rpc
+org.openxdata.server.admin.client.service.SmsService, 051C689E5FE1420DFD0AC6D6DF617576.gwt.rpc
+org.openxdata.server.admin.client.service.StudyManagerService, C3E920666A1406899BEA36C1ACF82D6F.gwt.rpc
+org.openxdata.server.admin.client.service.TaskService, 0DD69F9D1289652EFAEA6878EF9726DF.gwt.rpc
+org.openxdata.server.admin.client.service.UserService, 9D4C19CB9F73CEC67290C7E352DA47F9.gwt.rpc
+org.openxdata.server.admin.client.service.UtilityService, 6FEA30EA72157C16C22FC4555DEDC989.gwt.rpc
+org.openxdata.server.admin.client.service.workflow.SpecStudyMapService, FB96A34790D62D5C5B24BD315B3F84FE.gwt.rpc
+org.openxdata.server.admin.client.service.workflow.SpecificationService, 358BDF56373CBD2F30B50E4561576063.gwt.rpc

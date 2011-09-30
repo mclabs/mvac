@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openxdata.server.admin.model">
+  <class name="Setting" table="setting">
+    <id column="setting_id" name="id" type="java.lang.Integer" unsaved-value="0">
+      <generator class="native">
+        <param name="sequence">setting_setting_id_seq</param>
+      </generator>
+    </id>
+    <discriminator column="setting_id" insert="false"/>
+    <property column="name" length="255" name="name" type="java.lang.String"/>
+    <property name="description" not-null="false" type="java.lang.String"/>
+    <property column="value" length="65535" name="value" not-null="false" type="java.lang.String"/>
+    <many-to-one class="SettingGroup" column="setting_group_id" name="settingGroup"/>
+  </class>
+</hibernate-mapping>

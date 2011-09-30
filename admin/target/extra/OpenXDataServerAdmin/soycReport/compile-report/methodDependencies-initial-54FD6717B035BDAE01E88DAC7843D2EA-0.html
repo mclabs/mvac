@@ -1,0 +1,1363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: com.google.gwt.core.client</h2>
+<a name="com.google.gwt.core.client.Duration"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.Duration</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.Duration</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.Duration::currentTimeMillis</li>
+<li>com.google.gwt.animation.client.Animation::$run</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$center</li>
+<li>org.openxdata.server.admin.client.util.AsyncCallBackUtil::handleSessionTimeoutException</li>
+<li>org.openxdata.server.admin.client.controller.callback.OpenXDataAsyncCallback::$onFailure</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.Duration::currentTimeMillis</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.animation.client.Animation::$run</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$center</li>
+<li>org.openxdata.server.admin.client.util.AsyncCallBackUtil::handleSessionTimeoutException</li>
+<li>org.openxdata.server.admin.client.controller.callback.OpenXDataAsyncCallback::$onFailure</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="com.google.gwt.core.client.EntryPoint"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.EntryPoint</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.EntryPoint</a>
+<ul class="soyc-call-stack-list">
+</ul>
+</div>
+<a name="com.google.gwt.core.client.GWT$UncaughtExceptionHandler"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.GWT$UncaughtExceptionHandler</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.GWT$UncaughtExceptionHandler</a>
+<ul class="soyc-call-stack-list">
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoadDeffered</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint$1::execute</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="com.google.gwt.core.client.GWT"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.GWT</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.GWT</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.GWT::getModuleName</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::timeStat</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.GWT::getModuleName</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::timeStat</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.GWT::isScript</a>
+<ul class="soyc-call-stack-list">
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.GWT::setUncaughtExceptionHandler</a>
+<ul class="soyc-call-stack-list">
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoadDeffered</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint$1::execute</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="com.google.gwt.core.client.JavaScriptException"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.JavaScriptException</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.lang.Exceptions::caught</li>
+<li>java.util.AbstractSequentialList::get</li>
+<li>java.util.LinkedList::new</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::create_com_google_gwt_user_client_rpc_core_java_util_LinkedList_CustomFieldSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::$JavaScriptException</li>
+<li>com.google.gwt.lang.Exceptions::caught</li>
+<li>java.util.AbstractSequentialList::get</li>
+<li>java.util.LinkedList::new</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::create_com_google_gwt_user_client_rpc_core_java_util_LinkedList_CustomFieldSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::$getMessage</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::$init</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.lang.Exceptions::caught</li>
+<li>java.util.AbstractSequentialList::get</li>
+<li>java.util.LinkedList::new</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::create_com_google_gwt_user_client_rpc_core_java_util_LinkedList_CustomFieldSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::getDescription</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::getDescription0</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::getDescription</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::getMessage</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::getName</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::getName0</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::getName</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::getProperties</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptException::getProperties0</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::getProperties</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="com.google.gwt.core.client.JavaScriptObject"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.JavaScriptObject</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::createArray</li>
+<li>com.google.gwt.dom.client.StyleInjector::$clinit</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::$equals</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::equals__devirtual$</li>
+<li>java.util.HashMap::equals</li>
+<li>java.util.AbstractHashMap::equalsBridge</li>
+<li>java.util.AbstractHashMap::$getHashValue</li>
+<li>java.util.AbstractHashMap::get</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$$init</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$HandlerManager$HandlerRegistry</li>
+<li>com.google.gwt.event.shared.HandlerManager::$HandlerManager</li>
+<li>org.openxdata.server.admin.client.Context::$clinit</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::$getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::getClass</li>
+<li>com.google.gwt.core.client.JavaScriptObject::getClass__devirtual$</li>
+<li>com.google.gwt.user.client.rpc.impl.ClientSerializationStreamWriter::$getObjectTypeSignature</li>
+<li>com.google.gwt.user.client.rpc.impl.AbstractSerializationStreamWriter::$writeObject</li>
+<li>com.google.gwt.user.client.rpc.core.java.util.Collection_CustomFieldSerializerBase::serialize</li>
+<li>com.allen_sauer.gwt.dnd.client.DragHandlerCollection_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::$hashCode</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::hashCode__devirtual$</li>
+<li>java.util.HashMap::getHashCode</li>
+<li>java.util.AbstractHashMap::remove</li>
+<li>java.util.AbstractHashMap$EntrySetIterator::remove</li>
+<li>java.util.AbstractMap::$implFindEntry</li>
+<li>java.util.AbstractMap::containsKey</li>
+<li>java.util.AbstractMap::$equals</li>
+<li>java.util.AbstractMap::equals</li>
+<li>com.google.gwt.core.client.JavaScriptObject::equals__devirtual$</li>
+<li>java.util.HashMap::equals</li>
+<li>java.util.AbstractHashMap::equalsBridge</li>
+<li>java.util.AbstractHashMap::$getHashValue</li>
+<li>java.util.AbstractHashMap::get</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$$init</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$HandlerManager$HandlerRegistry</li>
+<li>com.google.gwt.event.shared.HandlerManager::$HandlerManager</li>
+<li>org.openxdata.server.admin.client.Context::$clinit</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::$toString</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::getDescription</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::createArray</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.dom.client.StyleInjector::$clinit</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::createObject</a>
+<ul class="soyc-call-stack-list">
+<li>java.util.AbstractHashMap::$clearImpl</li>
+<li>java.util.HashMap::$HashMap</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$$init</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$HandlerManager$HandlerRegistry</li>
+<li>com.google.gwt.event.shared.HandlerManager::$HandlerManager</li>
+<li>org.openxdata.server.admin.client.Context::$clinit</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::equals</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::equals__devirtual$</li>
+<li>java.util.HashMap::equals</li>
+<li>java.util.AbstractHashMap::equalsBridge</li>
+<li>java.util.AbstractHashMap::$getHashValue</li>
+<li>java.util.AbstractHashMap::get</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$$init</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$HandlerManager$HandlerRegistry</li>
+<li>com.google.gwt.event.shared.HandlerManager::$HandlerManager</li>
+<li>org.openxdata.server.admin.client.Context::$clinit</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::equals__devirtual$</a>
+<ul class="soyc-call-stack-list">
+<li>java.util.HashMap::equals</li>
+<li>java.util.AbstractHashMap::equalsBridge</li>
+<li>java.util.AbstractHashMap::$getHashValue</li>
+<li>java.util.AbstractHashMap::get</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$$init</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$HandlerManager$HandlerRegistry</li>
+<li>com.google.gwt.event.shared.HandlerManager::$HandlerManager</li>
+<li>org.openxdata.server.admin.client.Context::$clinit</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::getClass__devirtual$</li>
+<li>com.google.gwt.user.client.rpc.impl.ClientSerializationStreamWriter::$getObjectTypeSignature</li>
+<li>com.google.gwt.user.client.rpc.impl.AbstractSerializationStreamWriter::$writeObject</li>
+<li>com.google.gwt.user.client.rpc.core.java.util.Collection_CustomFieldSerializerBase::serialize</li>
+<li>com.allen_sauer.gwt.dnd.client.DragHandlerCollection_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::getClass__devirtual$</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.user.client.rpc.impl.ClientSerializationStreamWriter::$getObjectTypeSignature</li>
+<li>com.google.gwt.user.client.rpc.impl.AbstractSerializationStreamWriter::$writeObject</li>
+<li>com.google.gwt.user.client.rpc.core.java.util.Collection_CustomFieldSerializerBase::serialize</li>
+<li>com.allen_sauer.gwt.dnd.client.DragHandlerCollection_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::hashCode</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::hashCode__devirtual$</li>
+<li>java.util.HashMap::getHashCode</li>
+<li>java.util.AbstractHashMap::remove</li>
+<li>java.util.AbstractHashMap$EntrySetIterator::remove</li>
+<li>java.util.AbstractMap::$implFindEntry</li>
+<li>java.util.AbstractMap::containsKey</li>
+<li>java.util.AbstractMap::$equals</li>
+<li>java.util.AbstractMap::equals</li>
+<li>com.google.gwt.core.client.JavaScriptObject::equals__devirtual$</li>
+<li>java.util.HashMap::equals</li>
+<li>java.util.AbstractHashMap::equalsBridge</li>
+<li>java.util.AbstractHashMap::$getHashValue</li>
+<li>java.util.AbstractHashMap::get</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$$init</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$HandlerManager$HandlerRegistry</li>
+<li>com.google.gwt.event.shared.HandlerManager::$HandlerManager</li>
+<li>org.openxdata.server.admin.client.Context::$clinit</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::hashCode__devirtual$</a>
+<ul class="soyc-call-stack-list">
+<li>java.util.HashMap::getHashCode</li>
+<li>java.util.AbstractHashMap::remove</li>
+<li>java.util.AbstractHashMap$EntrySetIterator::remove</li>
+<li>java.util.AbstractMap::$implFindEntry</li>
+<li>java.util.AbstractMap::containsKey</li>
+<li>java.util.AbstractMap::$equals</li>
+<li>java.util.AbstractMap::equals</li>
+<li>com.google.gwt.core.client.JavaScriptObject::equals__devirtual$</li>
+<li>java.util.HashMap::equals</li>
+<li>java.util.AbstractHashMap::equalsBridge</li>
+<li>java.util.AbstractHashMap::$getHashValue</li>
+<li>java.util.AbstractHashMap::get</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$$init</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$HandlerManager$HandlerRegistry</li>
+<li>com.google.gwt.event.shared.HandlerManager::$HandlerManager</li>
+<li>org.openxdata.server.admin.client.Context::$clinit</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::toString</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptException::getDescription</li>
+<li>com.google.gwt.core.client.JavaScriptException::$init</li>
+<li>com.google.gwt.core.client.JavaScriptException::$getMessage</li>
+<li>com.google.gwt.core.client.JavaScriptException::getMessage</li>
+<li>com.google.gwt.http.client.RequestBuilder::$doSend</li>
+<li>com.google.gwt.user.client.rpc.impl.RemoteServiceProxy::$doInvoke</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::toStringSimple</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.StackTraceCreator$CollectorEmulated::$collect</li>
+<li>com.google.gwt.core.client.impl.StackTraceCreator$CollectorEmulated::$fillInStackTrace</li>
+<li>java.lang.ClassCastException::$ClassCastException</li>
+<li>com.google.gwt.lang.Cast::dynamicCast</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$getHandlerCount</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JavaScriptObject::toString__devirtual$</a>
+<ul class="soyc-call-stack-list">
+<li>java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry::toString</li>
+<li>java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet$1::next</li>
+<li>java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet::iterator</li>
+<li>java.util.Collections$UnmodifiableMap::entrySet</li>
+<li>java.util.Collections::$clinit</li>
+<li>java.util.Collections::enumeration</li>
+<li>org.purc.purcforms.client.xpath.XPathLocationStep::$getResult</li>
+<li>org.purc.purcforms.client.xpath.XPathExpression::$XPathExpression</li>
+<li>org.purc.purcforms.client.xforms.XformParser::setQuestionDataNode</li>
+<li>org.purc.purcforms.client.xforms.XformParser::parseUiElement</li>
+<li>org.purc.purcforms.client.xforms.XformParser::parseElement</li>
+<li>org.purc.purcforms.client.xforms.XformParser::getFormDef</li>
+<li>org.purc.purcforms.client.xforms.XformParser::fromXform2FormDef</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$11::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$refreshFormDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$10::onResponseReceived</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$refreshForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$6::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$refreshObject</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="com.google.gwt.core.client.JsArray"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.JsArray</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArray</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JsArray::$push</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$scheduleFinally</li>
+<li>com.google.gwt.dom.client.StyleInjector::schedule</li>
+<li>com.google.gwt.dom.client.StyleInjector::inject</li>
+<li>com.google.gwt.dom.client.StyleInjector::injectAtStart</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArray::$get</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.StackTraceCreator$CollectorEmulated::$collect</li>
+<li>com.google.gwt.core.client.impl.StackTraceCreator$CollectorEmulated::$fillInStackTrace</li>
+<li>java.lang.ClassCastException::$ClassCastException</li>
+<li>com.google.gwt.lang.Cast::dynamicCast</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$getHandlerCount</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArray::$length</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.SchedulerImpl::runScheduledTasks</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$flushFinallyCommands</li>
+<li>com.google.gwt.core.client.impl.Impl::exit</li>
+<li>com.google.gwt.core.client.impl.Impl::entry0</li>
+<li>com.google.gwt.core.client.impl.Impl::entry</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArray::$push</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$scheduleFinally</li>
+<li>com.google.gwt.dom.client.StyleInjector::schedule</li>
+<li>com.google.gwt.dom.client.StyleInjector::inject</li>
+<li>com.google.gwt.dom.client.StyleInjector::injectAtStart</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArray::$set</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.SchedulerImpl::runRepeatingTasks</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$flushPostEventPumpCommands</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl$1::execute</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl::runScheduledTasks</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$flushFinallyCommands</li>
+<li>com.google.gwt.core.client.impl.Impl::exit</li>
+<li>com.google.gwt.core.client.impl.Impl::entry0</li>
+<li>com.google.gwt.core.client.impl.Impl::entry</li>
+</ul>
+</div>
+<a name="com.google.gwt.core.client.JsArrayString"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.JsArrayString</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArrayString</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JsArrayString::$unshift</li>
+<li>com.google.gwt.dom.client.StyleInjector::injectAtStart</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArrayString::$get</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.StackTraceCreator$CollectorEmulated::$fillInStackTrace</li>
+<li>java.lang.ClassCastException::$ClassCastException</li>
+<li>com.google.gwt.lang.Cast::dynamicCast</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$getHandlerCount</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArrayString::$join</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.dom.client.StyleInjector::flush</li>
+<li>com.google.gwt.dom.client.StyleInjector::inject</li>
+<li>com.google.gwt.dom.client.StyleInjector::injectAtStart</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArrayString::$length</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.dom.client.StyleInjector::flush</li>
+<li>com.google.gwt.dom.client.StyleInjector::inject</li>
+<li>com.google.gwt.dom.client.StyleInjector::injectAtStart</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArrayString::$set</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.StackTraceCreator$CollectorEmulated::$collect</li>
+<li>com.google.gwt.core.client.impl.StackTraceCreator$CollectorEmulated::$fillInStackTrace</li>
+<li>java.lang.ClassCastException::$ClassCastException</li>
+<li>com.google.gwt.lang.Cast::dynamicCast</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$getHandlerCount</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArrayString::$setLength</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.dom.client.StyleInjector::flush</li>
+<li>com.google.gwt.dom.client.StyleInjector::inject</li>
+<li>com.google.gwt.dom.client.StyleInjector::injectAtStart</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.JsArrayString::$unshift</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.dom.client.StyleInjector::injectAtStart</li>
+</ul>
+</div>
+<a name="com.google.gwt.core.client.Scheduler$RepeatingCommand"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.Scheduler$RepeatingCommand</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.Scheduler$RepeatingCommand</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$$init</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$SchedulerImpl</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$clinit</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$scheduleFinally</li>
+<li>com.google.gwt.dom.client.StyleInjector::schedule</li>
+<li>com.google.gwt.dom.client.StyleInjector::inject</li>
+<li>com.google.gwt.dom.client.StyleInjector::injectAtStart</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.Scheduler$RepeatingCommand::execute</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.SchedulerImpl::runScheduledTasks</li>
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$flushFinallyCommands</li>
+<li>com.google.gwt.core.client.impl.Impl::exit</li>
+<li>com.google.gwt.core.client.impl.Impl::entry0</li>
+<li>com.google.gwt.core.client.impl.Impl::entry</li>
+</ul>
+</div>
+<a name="com.google.gwt.core.client.Scheduler$ScheduledCommand"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.Scheduler$ScheduledCommand</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.Scheduler$ScheduledCommand</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.dom.client.StyleInjector::$clinit</li>
+</ul>
+</div>
+<a name="com.google.gwt.core.client.Scheduler"><h3 class="soyc-class-header">Class: com.google.gwt.core.client.Scheduler</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.Scheduler</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.impl.SchedulerImpl::$scheduleFinally</li>
+<li>com.google.gwt.dom.client.StyleInjector::schedule</li>
+<li>com.google.gwt.dom.client.StyleInjector::inject</li>
+<li>com.google.gwt.dom.client.StyleInjector::injectAtStart</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>com.google.gwt.core.client.Scheduler::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>com.google.gwt.core.client.JavaScriptObject::getClass__devirtual$</li>
+<li>com.google.gwt.user.client.rpc.impl.ClientSerializationStreamWriter::$getObjectTypeSignature</li>
+<li>com.google.gwt.user.client.rpc.impl.AbstractSerializationStreamWriter::$writeObject</li>
+<li>com.google.gwt.user.client.rpc.core.java.util.Collection_CustomFieldSerializerBase::serialize</li>
+<li>com.allen_sauer.gwt.dnd.client.DragHandlerCollection_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

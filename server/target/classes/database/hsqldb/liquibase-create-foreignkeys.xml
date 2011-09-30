@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 
+						http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+						
+						    <changeSet author="daniel (generated)" id="1247499877015-29">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_data_user_who_last_changed_data"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="form_data" constraintName="form_data_user_who_last_changed_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-30">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_data_user_who_created_data"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_data" constraintName="form_data_user_who_created_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-31">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_data_form_definition_version_id"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="form_definition_version_id" baseTableName="form_data" constraintName="form_data_form_definition_version_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_version_id" referencedTableName="form_definition_version"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-32">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_data_archive_user_who_created_archive"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="archive_creator" baseTableName="form_data_archive" constraintName="form_data_archive_user_who_created_archive" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-33">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_data_archive_user_who_last_changed_data"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="form_data_archive" constraintName="form_data_archive_user_who_last_changed_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-34">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_data_archive_user_who_created_data"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_data_archive" constraintName="form_data_archive_user_who_created_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-35">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_data_archive_form_definition_version_id"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="form_definition_version_id" baseTableName="form_data_archive" constraintName="form_data_archive_form_definition_version_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_version_id" referencedTableName="form_definition_version"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-36">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_user_who_last_changed_form"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="form_definition" constraintName="form_definition_user_who_last_changed_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-37">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_user_who_created_form"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_definition" constraintName="form_definition_user_who_created_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-38">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_user_who_retired_form"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="retired_by" baseTableName="form_definition" constraintName="form_definition_user_who_retired_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-39">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_study"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="study_id" baseTableName="form_definition" constraintName="form_definition_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="study_id" referencedTableName="study"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-40">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_text_form_definition"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="form_definition_id" baseTableName="form_definition_text" constraintName="form_definition_text_form_definition" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_id" referencedTableName="form_definition"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-41">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_text_locale"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="locale_key" baseTableName="form_definition_text" constraintName="form_definition_text_locale" deferrable="false" initiallyDeferred="false" referencedColumnNames="locale_key" referencedTableName="locale"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-42">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_version_user_who_last_changed_form"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="form_definition_version" constraintName="form_definition_version_user_who_last_changed_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-43">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_version_user_who_created_form"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_definition_version" constraintName="form_definition_version_user_who_created_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-44">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_version_form_definition"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="form_definition_id" baseTableName="form_definition_version" constraintName="form_definition_version_form_definition" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_id" referencedTableName="form_definition"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-45">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_definition_version_user_who_retired_form"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="retired_by" baseTableName="form_definition_version" constraintName="form_definition_version_user_who_retired_form" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-46">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_error_user_who_created_data"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="form_error" constraintName="form_error_user_who_created_data" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-47">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="form_error_form_definition_version_id"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="form_definition_version_id" baseTableName="form_error" constraintName="form_error_form_definition_version_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="form_definition_version_id" referencedTableName="form_definition_version"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-48">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="user_who_changed_report"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="report" constraintName="user_who_changed_report" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-49">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="report_creator"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="report" constraintName="report_creator" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-50">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="user_who_voided_report"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="voided_by" baseTableName="report" constraintName="user_who_voided_report" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-51">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="role_permission_permission_id"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="permission_id" baseTableName="role_permission" constraintName="role_permission_permission_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="permission_id" referencedTableName="permission"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-52">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="role_permission_role_id"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="role_id" baseTableName="role_permission" constraintName="role_permission_role_id" deferrable="false" initiallyDeferred="false" referencedColumnNames="role_id" referencedTableName="role"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-53">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="user_who_last_changed_study"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="study" constraintName="user_who_last_changed_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-54">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="user_who_created_study"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="study" constraintName="user_who_created_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-55">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="user_who_retired_study"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="retired_by" baseTableName="study" constraintName="user_who_retired_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-56">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="study_text_locale"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="locale_key" baseTableName="study_text" constraintName="study_text_locale" deferrable="false" initiallyDeferred="false" referencedColumnNames="locale_key" referencedTableName="locale"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-57">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="study_text_study"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="study_id" baseTableName="study_text" constraintName="study_text_study" deferrable="false" initiallyDeferred="false" referencedColumnNames="study_id" referencedTableName="study"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-58">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="task_changer"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="task" constraintName="task_changer" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-59">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="task_creator"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="task" constraintName="task_creator" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-60">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="referenced_task"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="task_id" baseTableName="task_param" constraintName="referenced_task" deferrable="false" initiallyDeferred="false" referencedColumnNames="task_id" referencedTableName="task"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-61">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="role_definitions"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="role_id" baseTableName="user_role" constraintName="role_definitions" deferrable="false" initiallyDeferred="false" referencedColumnNames="role_id" referencedTableName="role"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-62">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="user_definitions"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="user_role" constraintName="user_definitions" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-63">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="users_user_who_changed_user"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="changed_by" baseTableName="users" constraintName="users_user_who_changed_user" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-64">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="users_user_creator"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="creator" baseTableName="users" constraintName="users_user_creator" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    <changeSet author="daniel (generated)" id="1247499877015-65">
+        <preConditions onFail="MARK_RAN">
+			<not><foreignKeyConstraintExists foreignKeyName="users_user_who_voided_user"/></not>
+		</preConditions>
+        <addForeignKeyConstraint baseColumnNames="voided_by" baseTableName="users" constraintName="users_user_who_voided_user" deferrable="false" initiallyDeferred="false" referencedColumnNames="user_id" referencedTableName="users"/>
+    </changeSet>
+    
+    </databaseChangeLog>

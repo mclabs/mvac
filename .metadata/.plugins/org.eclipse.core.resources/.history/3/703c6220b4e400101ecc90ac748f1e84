@@ -1,0 +1,49 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+
+public class App {
+	
+	
+	public static String formatDate(Date date, String format) {
+		   SimpleDateFormat form = new SimpleDateFormat(format);
+		   return form.format(date);
+		  }
+	
+	public static String formatTime(Date time, String format) {
+		   SimpleDateFormat form = new SimpleDateFormat(format);  
+		   return form.format(time);
+		  }
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String myDate = "30/09/2011 00:00:00";
+		
+		Date immDate = null;
+		DateFormat df= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+
+		//df.get
+		try {
+			immDate = df.parse(myDate);
+			
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("Date value =>"+immDate.getTime());
+		
+		Date date = immDate;
+		   System.out.println(date);
+		   String dt1 = App.formatDate(date,"dd-MM-yyyy");
+		   System.out.println(dt1);
+		   String dt2 = App.formatTime(date,"hh:mm:ss");
+		   System.out.println(dt2);
+
+	}
+
+}

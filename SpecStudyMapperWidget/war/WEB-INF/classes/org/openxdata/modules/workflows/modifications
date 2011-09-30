@@ -1,0 +1,34 @@
+WorkItemsTable{Id, xml, state}
+spec_study_(id, study, form, xmlMap)
+specifiactions(id, spec_id, xml)
+
+WorkItemDAO
+WorkItemService
+WorkItemPersit{
+	workItemXml
+	workItemID
+	workItemState
+}
+MainViewControllerFacdeListens to the stack panel in openxdata
+modified rpc pom to included the model of spec study map
+
+Eidted files;
+applicationContext.xml
+hibernate.cfg.xml to add the hbm of the mappings
+Liquibase.xml to add the workItems table XML, plus the specifiactions table plus specstudy map
+
+openXdata MainView.java to add the workflow menus to the widget
+added a workflow treeview
+added a workflow view
+Views r changed thru the openxdata main view controller facade
+OpenXDataWidgetFactory
+OpenXDataWidgetFactory
+
+made abstractBasedao public
+
+Add handler manager to the context
+
+Context.java client
+Added workitemsServie, EventBus, Specifitaitons Service
+
+

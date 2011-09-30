@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.openxdata.server.admin.model">
+  <class lazy="false" name="FormDefVersion" table="form_definition_version">
+    <id column="form_definition_version_id" name="formDefVersionId" type="java.lang.Integer" unsaved-value="0">
+      <generator class="native">
+        <param name="sequence">form_definition_version_form_definition_version_id_seq</param>
+      </generator>
+    </id>
+    <discriminator column="form_definition_version_id" insert="false"/>
+    <many-to-one class="FormDef" name="formDef" not-null="true">
+      <column name="form_definition_id"/>
+    </many-to-one>
+    <property column="name" length="255" name="name" not-null="true" type="java.lang.String"/>
+    <property column="description" length="1024" name="description" not-null="false" type="java.lang.String"/>
+    <property column="xform" length="1024" name="xform" not-null="false" type="java.lang.String"/>
+    <property column="layout" length="1024" name="layout" not-null="false" type="java.lang.String"/>
+    <many-to-one class="User" name="creator" not-null="true"/>
+    <property column="date_created" length="19" name="dateCreated" type="java.util.Date"/>
+    <many-to-one class="User" column="changed_by" name="changedBy"/>
+    <property column="date_changed" length="19" name="dateChanged" type="java.util.Date"/>
+    <property column="retired" length="1" name="retired" not-null="true" type="boolean"/>
+    <many-to-one class="User" column="retired_by" name="retiredBy"/>
+    <property column="date_retired" length="19" name="dateRetired" type="java.util.Date"/>
+    <property column="retired_reason" length="255" name="retiredReason" type="java.lang.String"/>
+    <property column="is_default" length="1" name="isDefault" not-null="true" type="boolean"/>
+    <bag cascade="all,delete-orphan,evict" inverse="true" lazy="false" name="versionText">
+      <key column="form_definition_version_id"/>
+      <one-to-many class="FormDefVersionText"/>
+    </bag>
+  </class>
+</hibernate-mapping>

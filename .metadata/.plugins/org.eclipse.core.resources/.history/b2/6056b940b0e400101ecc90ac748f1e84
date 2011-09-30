@@ -1,0 +1,29 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+
+public class App {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String myDate = "30/09/2011";
+		
+		Date immDate = null;
+		DateFormat df= new SimpleDateFormat("dd/MM/yyyy");
+		try {
+			immDate = df.parse(myDate);
+			
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("Date value =>"+immDate.getTime());
+
+	}
+
+}

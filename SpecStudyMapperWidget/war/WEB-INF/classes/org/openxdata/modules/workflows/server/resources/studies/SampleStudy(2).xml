@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<study description="" name="Sample Study">
+<form description="" name="Sample Form">
+<version description="" name="v1">
+<xform>&lt;xf:xforms xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xf:model&gt;
+    &lt;xf:instance id="newform1"&gt;
+      &lt;newform1 name="New Form1" id="1"&gt;
+        &lt;question15/&gt;
+        &lt;question16/&gt;
+        &lt;question17/&gt;
+        &lt;question18/&gt;
+        &lt;question19/&gt;
+        &lt;question20/&gt;
+      &lt;/newform1&gt;
+    &lt;/xf:instance&gt;
+    &lt;xf:bind id="question15" nodeset="/newform1/question15" type="xsd:string"/&gt;
+    &lt;xf:bind id="question16" nodeset="/newform1/question16" type="xsd:string"/&gt;
+    &lt;xf:bind id="question17" nodeset="/newform1/question17" type="xsd:string"/&gt;
+    &lt;xf:bind id="question18" nodeset="/newform1/question18" type="xsd:string"/&gt;
+    &lt;xf:bind id="question19" nodeset="/newform1/question19" type="xsd:string"/&gt;
+    &lt;xf:bind id="question20" nodeset="/newform1/question20" type="xsd:string"/&gt;
+  &lt;/xf:model&gt;
+  &lt;xf:group id="3"&gt;
+    &lt;xf:label&gt;Page3&lt;/xf:label&gt;
+    &lt;xf:input bind="question15"&gt;
+      &lt;xf:label&gt;Question15&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+    &lt;xf:input bind="question16"&gt;
+      &lt;xf:label&gt;Question16&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+    &lt;xf:input bind="question17"&gt;
+      &lt;xf:label&gt;Question17&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+    &lt;xf:input bind="question18"&gt;
+      &lt;xf:label&gt;Question18&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+    &lt;xf:input bind="question19"&gt;
+      &lt;xf:label&gt;Question19&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+    &lt;xf:input bind="question20"&gt;
+      &lt;xf:label&gt;Question20&lt;/xf:label&gt;
+    &lt;/xf:input&gt;
+  &lt;/xf:group&gt;
+&lt;/xf:xforms&gt;
+</xform>
+<layout/>
+<versionText locale="en">
+<xform>&lt;xform id="1"&gt;&#13;
+    &lt;text xpath="xforms/model/instance/newform1[@name]" value="New Form1"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='3']/label" value="Page3"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='3']/input[@bind='question15']/label" value="Question15"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='3']/input[@bind='question16']/label" value="Question16"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='3']/input[@bind='question17']/label" value="Question17"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='3']/input[@bind='question18']/label" value="Question18"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='3']/input[@bind='question19']/label" value="Question19"/&gt;&#13;
+    &lt;text xpath="xforms/group[@id='3']/input[@bind='question20']/label" value="Question20"/&gt;&#13;
+  &lt;/xform&gt;</xform>
+<layout>&lt;Form id="1"&gt;&#13;
+    &lt;text xpath="Form/Page[@Binding='Page1'][@Text]" value="Page1"/&gt;&#13;
+  &lt;/Form&gt;</layout>
+</versionText>
+</version>
+</form>
+</study>

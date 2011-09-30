@@ -1,0 +1,2560 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: org.openxdata.server.admin.model.mapping</h2>
+<a name="org.openxdata.server.admin.model.mapping.UserFormMap"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserFormMap</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap::new</li>
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap::$setFormId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserFormMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap::$setUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserFormMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserFormMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap::new</li>
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap::isNew</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.util.MainViewControllerUtil::setEditableProperties</li>
+<li>org.openxdata.server.admin.client.controller.ReportsViewController::$saveReports</li>
+<li>org.openxdata.server.admin.client.view.ReportView::onSave</li>
+<li>org.openxdata.server.admin.client.view.listeners.OpenXDataViewApplicationEventListener::$clinit</li>
+<li>org.openxdata.server.admin.client.view.listeners.OpenXDataViewExtendedApplicationEventListener::$clinit</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap::new</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserFormMap_Array_Rank_1_FieldSerializer"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserFormMap_Array_Rank_1_FieldSerializer</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_Array_Rank_1_FieldSerializer</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_Array_Rank_1_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_Array_Rank_1_FieldSerializer::deserialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_Array_Rank_1_FieldSerializer::instantiate</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_Array_Rank_1_FieldSerializer::serialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::deserialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::getFormId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::getUserFormMapId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::getUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::instantiate</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::serialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::setFormId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::setUserFormMapId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::setUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserFormMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserReportGroupMap"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserReportGroupMap</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap::new</li>
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap::$setReportGroupId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserReportGroupMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap::$setUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserReportGroupMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserReportGroupMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap::new</li>
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap::isNew</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.util.MainViewControllerUtil::setEditableProperties</li>
+<li>org.openxdata.server.admin.client.controller.ReportsViewController::$saveReports</li>
+<li>org.openxdata.server.admin.client.view.ReportView::onSave</li>
+<li>org.openxdata.server.admin.client.view.listeners.OpenXDataViewApplicationEventListener::$clinit</li>
+<li>org.openxdata.server.admin.client.view.listeners.OpenXDataViewExtendedApplicationEventListener::$clinit</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap::new</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserReportGroupMap_Array_Rank_1_FieldSerializer"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserReportGroupMap_Array_Rank_1_FieldSerializer</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_Array_Rank_1_FieldSerializer</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_Array_Rank_1_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_Array_Rank_1_FieldSerializer::deserialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_Array_Rank_1_FieldSerializer::instantiate</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_Array_Rank_1_FieldSerializer::serialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::deserialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::getReportGroupId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::getUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::getUserReportGroupMapId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::instantiate</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::serialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::setReportGroupId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::setUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::setUserReportGroupMapId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportGroupMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserReportMap"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserReportMap</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap::new</li>
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap::$setReportId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserReportMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserReportMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserReportMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserReportMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap::$setUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserReportMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserReportMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserReportMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserReportMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap::new</li>
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap::new</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserReportMap_Array_Rank_1_FieldSerializer"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserReportMap_Array_Rank_1_FieldSerializer</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_Array_Rank_1_FieldSerializer</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_Array_Rank_1_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_Array_Rank_1_FieldSerializer::deserialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_Array_Rank_1_FieldSerializer::instantiate</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_Array_Rank_1_FieldSerializer::serialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::deserialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::getReportId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::getUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::getUserReportMapId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::instantiate</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::serialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::setReportId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::setUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::setUserReportMapId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserReportMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserStudyMap"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserStudyMap</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap::new</li>
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap::$setStudyId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserStudyMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap::$setUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.mapping.UserStudyMapView::mapItemTobject</li>
+<li>org.openxdata.server.admin.client.view.factory.UserObjectMapViewFactory::createOrGetUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$setupUserStudyMapView</li>
+<li>org.openxdata.server.admin.client.view.UserView::$loadView</li>
+<li>org.openxdata.server.admin.client.view.UserView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getUserView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap::new</li>
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap::isNew</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.util.MainViewControllerUtil::setEditableProperties</li>
+<li>org.openxdata.server.admin.client.controller.ReportsViewController::$saveReports</li>
+<li>org.openxdata.server.admin.client.view.ReportView::onSave</li>
+<li>org.openxdata.server.admin.client.view.listeners.OpenXDataViewApplicationEventListener::$clinit</li>
+<li>org.openxdata.server.admin.client.view.listeners.OpenXDataViewExtendedApplicationEventListener::$clinit</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap::new</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserStudyMap_Array_Rank_1_FieldSerializer"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserStudyMap_Array_Rank_1_FieldSerializer</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_Array_Rank_1_FieldSerializer</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_Array_Rank_1_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_Array_Rank_1_FieldSerializer::deserialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_Array_Rank_1_FieldSerializer::instantiate</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_Array_Rank_1_FieldSerializer::serialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::instantiate</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::deserialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::getStudyId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::getUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::getUserStudyMapId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::serialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::instantiate</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::serialize</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::setStudyId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::setUserId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::setUserStudyMapId</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.model.mapping.UserStudyMap_FieldSerializer::deserialize</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::registerMethods</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_TypeSerializer::$UserService_TypeSerializer</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$clinit</li>
+<li>org.openxdata.server.admin.client.service.UserService_Proxy::$logout</li>
+<li>org.openxdata.server.admin.client.OpenXDataServerAdmin::$onLogout</li>
+<li>com.google.gwt.user.client.Window$ClosingEvent::dispatch</li>
+<li>com.google.gwt.event.shared.HandlerManager$HandlerRegistry::$fireEvent</li>
+<li>com.google.gwt.event.shared.HandlerManager::$fireEvent</li>
+<li>com.google.gwt.user.client.Window::fireEvent</li>
+<li>com.google.gwt.user.client.Window::onClosing</li>
+<li>com.google.gwt.user.client.impl.WindowImpl::$initWindowCloseHandler</li>
+<li>com.google.gwt.user.client.Window::maybeInitializeCloseHandlers</li>
+<li>com.google.gwt.user.client.Window::addCloseHandler</li>
+<li>com.google.gwt.user.client.Timer::$clinit</li>
+<li>com.google.gwt.user.client.CommandExecutor$1::$CommandExecutor$1</li>
+<li>com.google.gwt.user.client.CommandExecutor::$$init</li>
+<li>com.google.gwt.user.client.CommandExecutor::$CommandExecutor</li>
+<li>com.google.gwt.user.client.DeferredCommand::$clinit</li>
+<li>com.google.gwt.user.client.DeferredCommand::addCommand</li>
+<li>com.google.gwt.user.client.ui.impl.PopupImplMozilla::$createElement</li>
+<li>com.google.gwt.user.client.ui.PopupPanel::$PopupPanel</li>
+<li>com.google.gwt.user.client.ui.DecoratedPopupPanel::$DecoratedPopupPanel</li>
+<li>com.google.gwt.user.client.ui.DialogBox::$DialogBox</li>
+<li>org.purc.purcforms.client.view.ProgressDialog::$ProgressDialog</li>
+<li>org.purc.purcforms.client.util.FormUtil::$clinit</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

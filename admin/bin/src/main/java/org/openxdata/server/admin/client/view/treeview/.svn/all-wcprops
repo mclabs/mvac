@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview
+END
+RolesTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview/RolesTreeView.java
+END
+TasksTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview/TasksTreeView.java
+END
+WorkFlowTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2691/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview/WorkFlowTreeView.java
+END
+OpenXDataBaseTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview/OpenXDataBaseTreeView.java
+END
+ReportsTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview/ReportsTreeView.java
+END
+SettingsTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview/SettingsTreeView.java
+END
+StudiesTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview/StudiesTreeView.java
+END
+UsersTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview/UsersTreeView.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/EpiHandy/!svn/ver/2687/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/client/view/treeview/package.html
+END

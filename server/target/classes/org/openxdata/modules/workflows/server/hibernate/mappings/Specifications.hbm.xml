@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 8, 2010 5:31:29 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="org.openxdata.modules.workflows.model.shared.DBSpecification" table="wf_specifications">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="name" type="string">
+      <column name="name" not-null="true"/>
+    </property>
+    <property name="version" type="string">
+      <column name="version" not-null="true"/>
+    </property>
+    <property name="specId" type="string">
+      <column name="spec_id" not-null="true" unique="true"/>
+    </property>
+    <property name="xml" type="string">
+      <column name="xml" not-null="true"/>
+    </property>
+    <set inverse="true" name="specStudyMapses">
+      <key>
+        <column name="spec_id" not-null="true"/>
+      </key>
+      <one-to-many class="org.openxdata.modules.workflows.model.shared.DBSpecStudyMap"/>
+    </set>
+  </class>
+</hibernate-mapping>

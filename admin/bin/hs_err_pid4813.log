@@ -1,0 +1,722 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (sharedRuntime.cpp:486), pid=4813, tid=140519935448832
+#  Error: guarantee(false,"missing exception handler")
+#
+# JRE version: 6.0_22-b04
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (17.1-b03 mixed mode linux-amd64 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000004247d800):  JavaThread "AWT-XAWT" daemon [_thread_in_vm, id=4848, stack(0x00007fcd58c61000,0x00007fcd58d62000)]
+
+Stack: [0x00007fcd58c61000,0x00007fcd58d62000],  sp=0x00007fcd58d5fd00,  free space=3fb0000000000000018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x7306a0]
+V  [libjvm.so+0x2f3076]
+V  [libjvm.so+0x667a58]
+V  [libjvm.so+0x6615b7]
+V  [libjvm.so+0x6617d9]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+v  ~ExceptionBlob
+J  sun.awt.X11.XToolkit.run(Z)V
+j  sun.awt.X11.XToolkit.run()V+5
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007fcd54c8d000 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=9798, stack(0x00007fcd4e8d2000,0x00007fcd4e9d3000)]
+  0x00007fcd54c55800 JavaThread "com.google.inject.internal.Finalizer" daemon [_thread_blocked, id=5146, stack(0x00007fcd52951000,0x00007fcd52a52000)]
+  0x00007fcd5542d800 JavaThread "TimerQueue" daemon [_thread_blocked, id=5131, stack(0x00007fcd52a52000,0x00007fcd52b53000)]
+  0x00007fcd55cce800 JavaThread "DefaultQuartzScheduler_QuartzSchedulerThread" [_thread_blocked, id=5111, stack(0x00007fcd52b53000,0x00007fcd52c54000)]
+  0x00007fcd54e00800 JavaThread "DefaultQuartzScheduler_Worker-9" [_thread_blocked, id=5110, stack(0x00007fcd52c54000,0x00007fcd52d55000)]
+  0x00007fcd54b10800 JavaThread "DefaultQuartzScheduler_Worker-8" [_thread_blocked, id=5109, stack(0x00007fcd52d55000,0x00007fcd52e56000)]
+  0x00007fcd55bc3800 JavaThread "DefaultQuartzScheduler_Worker-7" [_thread_blocked, id=5108, stack(0x00007fcd52e56000,0x00007fcd52f57000)]
+  0x00007fcd54a59800 JavaThread "DefaultQuartzScheduler_Worker-6" [_thread_blocked, id=5107, stack(0x00007fcd52f57000,0x00007fcd53058000)]
+  0x00007fcd55ce3800 JavaThread "DefaultQuartzScheduler_Worker-5" [_thread_blocked, id=5106, stack(0x00007fcd53058000,0x00007fcd53159000)]
+  0x00007fcd55bd2800 JavaThread "DefaultQuartzScheduler_Worker-4" [_thread_blocked, id=5105, stack(0x00007fcd53159000,0x00007fcd5325a000)]
+  0x00007fcd55bba800 JavaThread "DefaultQuartzScheduler_Worker-3" [_thread_blocked, id=5104, stack(0x00007fcd5325a000,0x00007fcd5335b000)]
+  0x00007fcd54119800 JavaThread "DefaultQuartzScheduler_Worker-2" [_thread_blocked, id=5103, stack(0x00007fcd5852f000,0x00007fcd58630000)]
+  0x00007fcd54332000 JavaThread "DefaultQuartzScheduler_Worker-1" [_thread_blocked, id=5102, stack(0x00007fcd58738000,0x00007fcd58839000)]
+  0x00007fcd54502000 JavaThread "DefaultQuartzScheduler_Worker-0" [_thread_blocked, id=5101, stack(0x00007fcd5357d000,0x00007fcd5367e000)]
+  0x000000004260c000 JavaThread "Timer-1" daemon [_thread_blocked, id=4935, stack(0x00007fcd58839000,0x00007fcd5893a000)]
+  0x0000000042641800 JavaThread "btpool0-1 - Acceptor0 SelectChannelConnector@127.0.0.1:8888" [_thread_in_native, id=4877, stack(0x00007fcd53875000,0x00007fcd53976000)]
+  0x000000004269e000 JavaThread "btpool0-0" [_thread_blocked, id=4876, stack(0x00007fcd58029000,0x00007fcd5812a000)]
+  0x000000004260e000 JavaThread "Code server listener" daemon [_thread_in_native, id=4875, stack(0x00007fcd5832d000,0x00007fcd5842e000)]
+  0x0000000042619000 JavaThread "Timer-0" daemon [_thread_blocked, id=4874, stack(0x00007fcd5842e000,0x00007fcd5852f000)]
+  0x000000004247e800 JavaThread "AWT-Shutdown" [_thread_blocked, id=4849, stack(0x00007fcd58b60000,0x00007fcd58c61000)]
+=>0x000000004247d800 JavaThread "AWT-XAWT" daemon [_thread_in_vm, id=4848, stack(0x00007fcd58c61000,0x00007fcd58d62000)]
+  0x0000000042415800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=4830, stack(0x00007fcd5939b000,0x00007fcd5949c000)]
+  0x0000000041dbf000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=4825, stack(0x00007fcd5af05000,0x00007fcd5b006000)]
+  0x0000000041dba000 JavaThread "CompilerThread1" daemon [_thread_blocked, id=4824, stack(0x00007fcd5b006000,0x00007fcd5b107000)]
+  0x0000000041db7800 JavaThread "CompilerThread0" daemon [_thread_blocked, id=4823, stack(0x00007fcd5b107000,0x00007fcd5b208000)]
+  0x0000000041db5000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=4822, stack(0x00007fcd5b208000,0x00007fcd5b309000)]
+  0x0000000041d96000 JavaThread "Finalizer" daemon [_thread_blocked, id=4821, stack(0x00007fcd5b348000,0x00007fcd5b449000)]
+  0x0000000041d8e800 JavaThread "Reference Handler" daemon [_thread_blocked, id=4820, stack(0x00007fcd5b449000,0x00007fcd5b54a000)]
+  0x0000000041d31000 JavaThread "main" [_thread_blocked, id=4816, stack(0x00007fcd90e8a000,0x00007fcd90f8b000)]
+
+Other Threads:
+  0x0000000041d8a800 VMThread [stack: 0x00007fcd5b54a000,0x00007fcd5b64b000] [id=4819]
+  0x0000000041dc9800 WatcherThread [stack: 0x00007fcd5ae04000,0x00007fcd5af05000] [id=4826]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 135360K, used 2K [0x00007fcd7e690000, 0x00007fcd87070000, 0x00007fcd8cfe0000)
+  eden space 135296K, 0% used [0x00007fcd7e690000,0x00007fcd7e690838,0x00007fcd86ab0000)
+  from space 64K, 0% used [0x00007fcd86ab0000,0x00007fcd86ab0000,0x00007fcd86ac0000)
+  to   space 2880K, 0% used [0x00007fcd86da0000,0x00007fcd86da0000,0x00007fcd87070000)
+ PSOldGen        total 477888K, used 113644K [0x00007fcd613e0000, 0x00007fcd7e690000, 0x00007fcd7e690000)
+  object space 477888K, 23% used [0x00007fcd613e0000,0x00007fcd682db0b0,0x00007fcd7e690000)
+ PSPermGen       total 86016K, used 86015K [0x00007fcd5bfe0000, 0x00007fcd613e0000, 0x00007fcd613e0000)
+  object space 86016K, 99% used [0x00007fcd5bfe0000,0x00007fcd613dffe8,0x00007fcd613e0000)
+
+Dynamic libraries:
+40000000-40009000 r-xp 00000000 08:01 6309564                            /opt/jdk1.6.0_22/jre/bin/java
+40108000-4010a000 rwxp 00008000 08:01 6309564                            /opt/jdk1.6.0_22/jre/bin/java
+41d22000-4683a000 rwxp 00000000 00:00 0                                  [heap]
+7fcd4e29b000-7fcd4e29e000 ---p 00000000 00:00 0 
+7fcd4e29e000-7fcd4e39c000 rwxp 00000000 00:00 0 
+7fcd4e39c000-7fcd4e39f000 ---p 00000000 00:00 0 
+7fcd4e39f000-7fcd4e49d000 rwxp 00000000 00:00 0 
+7fcd4e49d000-7fcd4e4a0000 ---p 00000000 00:00 0 
+7fcd4e4a0000-7fcd4e59e000 rwxp 00000000 00:00 0 
+7fcd4e59e000-7fcd4e5a1000 ---p 00000000 00:00 0 
+7fcd4e5a1000-7fcd4e69f000 rwxp 00000000 00:00 0 
+7fcd4e69f000-7fcd4e6a2000 ---p 00000000 00:00 0 
+7fcd4e6a2000-7fcd4e7a0000 rwxp 00000000 00:00 0 
+7fcd4e7a0000-7fcd4e7cc000 r-xp 00000000 08:01 6438418                    /opt/jdk1.6.0_22/jre/lib/amd64/libjpeg.so
+7fcd4e7cc000-7fcd4e8cc000 ---p 0002c000 08:01 6438418                    /opt/jdk1.6.0_22/jre/lib/amd64/libjpeg.so
+7fcd4e8cc000-7fcd4e8d2000 rwxp 0002c000 08:01 6438418                    /opt/jdk1.6.0_22/jre/lib/amd64/libjpeg.so
+7fcd4e8d2000-7fcd4e8d5000 ---p 00000000 00:00 0 
+7fcd4e8d5000-7fcd4e9d3000 rwxp 00000000 00:00 0 
+7fcd4e9d3000-7fcd4eaad000 r-xp 00000000 08:01 789366                     /usr/lib/libasound.so.2.0.0
+7fcd4eaad000-7fcd4ecad000 ---p 000da000 08:01 789366                     /usr/lib/libasound.so.2.0.0
+7fcd4ecad000-7fcd4ecb3000 r-xp 000da000 08:01 789366                     /usr/lib/libasound.so.2.0.0
+7fcd4ecb3000-7fcd4ecb4000 rwxp 000e0000 08:01 789366                     /usr/lib/libasound.so.2.0.0
+7fcd4ecb4000-7fcd4ecb9000 r-xp 00000000 08:01 789276                     /usr/lib/libORBitCosNaming-2.so.0.1.0
+7fcd4ecb9000-7fcd4eeb9000 ---p 00005000 08:01 789276                     /usr/lib/libORBitCosNaming-2.so.0.1.0
+7fcd4eeb9000-7fcd4eeba000 r-xp 00005000 08:01 789276                     /usr/lib/libORBitCosNaming-2.so.0.1.0
+7fcd4eeba000-7fcd4eebb000 rwxp 00006000 08:01 789276                     /usr/lib/libORBitCosNaming-2.so.0.1.0
+7fcd4eebb000-7fcd4eec5000 r-xp 00000000 08:01 3670167                    /lib/libpopt.so.0.0.0
+7fcd4eec5000-7fcd4f0c4000 ---p 0000a000 08:01 3670167                    /lib/libpopt.so.0.0.0
+7fcd4f0c4000-7fcd4f0c5000 r-xp 00009000 08:01 3670167                    /lib/libpopt.so.0.0.0
+7fcd4f0c5000-7fcd4f0c6000 rwxp 0000a000 08:01 3670167                    /lib/libpopt.so.0.0.0
+7fcd4f0c6000-7fcd4f0eb000 r-xp 00000000 08:01 789376                     /usr/lib/libaudiofile.so.0.0.2
+7fcd4f0eb000-7fcd4f2eb000 ---p 00025000 08:01 789376                     /usr/lib/libaudiofile.so.0.0.2
+7fcd4f2eb000-7fcd4f2ec000 r-xp 00025000 08:01 789376                     /usr/lib/libaudiofile.so.0.0.2
+7fcd4f2ec000-7fcd4f2ef000 rwxp 00026000 08:01 789376                     /usr/lib/libaudiofile.so.0.0.2
+7fcd4f2ef000-7fcd4f2f9000 r-xp 00000000 08:01 789556                     /usr/lib/libesd.so.0.2.39
+7fcd4f2f9000-7fcd4f4f8000 ---p 0000a000 08:01 789556                     /usr/lib/libesd.so.0.2.39
+7fcd4f4f8000-7fcd4f4f9000 r-xp 00009000 08:01 789556                     /usr/lib/libesd.so.0.2.39
+7fcd4f4f9000-7fcd4f4fa000 rwxp 0000a000 08:01 789556                     /usr/lib/libesd.so.0.2.39
+7fcd4f4fa000-7fcd4f511000 r-xp 00000000 08:01 789401                     /usr/lib/libbonobo-activation.so.4.0.0
+7fcd4f511000-7fcd4f711000 ---p 00017000 08:01 789401                     /usr/lib/libbonobo-activation.so.4.0.0
+7fcd4f711000-7fcd4f713000 r-xp 00017000 08:01 789401                     /usr/lib/libbonobo-activation.so.4.0.0
+7fcd4f713000-7fcd4f715000 rwxp 00019000 08:01 789401                     /usr/lib/libbonobo-activation.so.4.0.0
+7fcd4f715000-7fcd4f77a000 r-xp 00000000 08:01 789399                     /usr/lib/libbonobo-2.so.0.0.0
+7fcd4f77a000-7fcd4f979000 ---p 00065000 08:01 789399                     /usr/lib/libbonobo-2.so.0.0.0
+7fcd4f979000-7fcd4f97f000 r-xp 00064000 08:01 789399                     /usr/lib/libbonobo-2.so.0.0.0
+7fcd4f97f000-7fcd4f98a000 rwxp 0006a000 08:01 789399                     /usr/lib/libbonobo-2.so.0.0.0
+7fcd4f98a000-7fcd4f9a1000 r-xp 00000000 08:01 789661                     /usr/lib/libgnome-2.so.0.3000.0
+7fcd4f9a1000-7fcd4fba0000 ---p 00017000 08:01 789661                     /usr/lib/libgnome-2.so.0.3000.0
+7fcd4fba0000-7fcd4fba1000 r-xp 00016000 08:01 789661                     /usr/lib/libgnome-2.so.0.3000.0
+7fcd4fba1000-7fcd4fba2000 rwxp 00017000 08:01 789661                     /usr/lib/libgnome-2.so.0.3000.0
+7fcd4fba2000-7fcd4fba5000 r-xp 00000000 08:01 3670101                    /lib/libgpg-error.so.0.4.0
+7fcd4fba5000-7fcd4fda4000 ---p 00003000 08:01 3670101                    /lib/libgpg-error.so.0.4.0
+7fcd4fda4000-7fcd4fda5000 r-xp 00002000 08:01 3670101                    /lib/libgpg-error.so.0.4.0
+7fcd4fda5000-7fcd4fda6000 rwxp 00003000 08:01 3670101                    /lib/libgpg-error.so.0.4.0
+7fcd4fda6000-7fcd4fe1b000 r-xp 00000000 08:01 3670097                    /lib/libgcrypt.so.11.5.2
+7fcd4fe1b000-7fcd5001a000 ---p 00075000 08:01 3670097                    /lib/libgcrypt.so.11.5.2
+7fcd5001a000-7fcd5001b000 r-xp 00074000 08:01 3670097                    /lib/libgcrypt.so.11.5.2
+7fcd5001b000-7fcd5001e000 rwxp 00075000 08:01 3670097                    /lib/libgcrypt.so.11.5.2
+7fcd5001e000-7fcd5002e000 r-xp 00000000 08:01 790197                     /usr/lib/libtasn1.so.3.1.7
+7fcd5002e000-7fcd5022d000 ---p 00010000 08:01 790197                     /usr/lib/libtasn1.so.3.1.7
+7fcd5022d000-7fcd5022e000 r-xp 0000f000 08:01 790197                     /usr/lib/libtasn1.so.3.1.7
+7fcd5022e000-7fcd5022f000 rwxp 00010000 08:01 790197                     /usr/lib/libtasn1.so.3.1.7
+7fcd5022f000-7fcd50245000 r-xp 00000000 08:01 3670210                    /lib/libz.so.1.2.3.3
+7fcd50245000-7fcd50444000 ---p 00016000 08:01 3670210                    /lib/libz.so.1.2.3.3
+7fcd50444000-7fcd50445000 r-xp 00015000 08:01 3670210                    /lib/libz.so.1.2.3.3
+7fcd50445000-7fcd50446000 rwxp 00016000 08:01 3670210                    /lib/libz.so.1.2.3.3
+7fcd50446000-7fcd504a2000 r-xp 00000000 08:01 789272                     /usr/lib/libORBit-2.so.0.1.0
+7fcd504a2000-7fcd506a2000 ---p 0005c000 08:01 789272                     /usr/lib/libORBit-2.so.0.1.0
+7fcd506a2000-7fcd506b1000 r-xp 0005c000 08:01 789272                     /usr/lib/libORBit-2.so.0.1.0
+7fcd506b1000-7fcd506b4000 rwxp 0006b000 08:01 789272                     /usr/lib/libORBit-2.so.0.1.0
+7fcd506b4000-7fcd506e1000 r-xp 00000000 08:01 3670153                    /lib/libpcre.so.3.12.1
+7fcd506e1000-7fcd508e0000 ---p 0002d000 08:01 3670153                    /lib/libpcre.so.3.12.1
+7fcd508e0000-7fcd508e1000 r-xp 0002c000 08:01 3670153                    /lib/libpcre.so.3.12.1
+7fcd508e1000-7fcd508e2000 rwxp 0002d000 08:01 3670153                    /lib/libpcre.so.3.12.1
+7fcd508e2000-7fcd508e4000 r-xp 00000000 08:01 3673414                    /lib/libutil-2.11.1.so
+7fcd508e4000-7fcd50ae3000 ---p 00002000 08:01 3673414                    /lib/libutil-2.11.1.so
+7fcd50ae3000-7fcd50ae4000 r-xp 00001000 08:01 3673414                    /lib/libutil-2.11.1.so
+7fcd50ae4000-7fcd50ae5000 rwxp 00002000 08:01 3673414                    /lib/libutil-2.11.1.so
+7fcd50ae5000-7fcd50af5000 r-xp 00000000 08:01 788869                     /usr/lib/libavahi-client.so.3.2.5
+7fcd50af5000-7fcd50cf4000 ---p 00010000 08:01 788869                     /usr/lib/libavahi-client.so.3.2.5
+7fcd50cf4000-7fcd50cf5000 r-xp 0000f000 08:01 788869                     /usr/lib/libavahi-client.so.3.2.5
+7fcd50cf5000-7fcd50cf6000 rwxp 00010000 08:01 788869                     /usr/lib/libavahi-client.so.3.2.5
+7fcd50cf6000-7fcd50d01000 r-xp 00000000 08:01 787699                     /usr/lib/libavahi-common.so.3.5.1
+7fcd50d01000-7fcd50f01000 ---p 0000b000 08:01 787699                     /usr/lib/libavahi-common.so.3.5.1
+7fcd50f01000-7fcd50f02000 r-xp 0000b000 08:01 787699                     /usr/lib/libavahi-common.so.3.5.1
+7fcd50f02000-7fcd50f03000 rwxp 0000c000 08:01 787699                     /usr/lib/libavahi-common.so.3.5.1
+7fcd50f03000-7fcd50fde000 r-xp 00000000 08:01 3670099                    /lib/libglib-2.0.so.0.2400.1
+7fcd50fde000-7fcd511de000 ---p 000db000 08:01 3670099                    /lib/libglib-2.0.so.0.2400.1
+7fcd511de000-7fcd511df000 r-xp 000db000 08:01 3670099                    /lib/libglib-2.0.so.0.2400.1
+7fcd511df000-7fcd511e0000 rwxp 000dc000 08:01 3670099                    /lib/libglib-2.0.so.0.2400.1
+7fcd511e0000-7fcd511e1000 rwxp 00000000 00:00 0 
+7fcd511e1000-7fcd511e4000 r-xp 00000000 08:01 786992                     /usr/lib/libavahi-glib.so.1.0.1
+7fcd511e4000-7fcd513e3000 ---p 00003000 08:01 786992                     /usr/lib/libavahi-glib.so.1.0.1
+7fcd513e3000-7fcd513e4000 r-xp 00002000 08:01 786992                     /usr/lib/libavahi-glib.so.1.0.1
+7fcd513e4000-7fcd513e5000 rwxp 00003000 08:01 786992                     /usr/lib/libavahi-glib.so.1.0.1
+7fcd513e5000-7fcd51481000 r-xp 00000000 08:01 789691                     /usr/lib/libgnutls.so.26.14.12
+7fcd51481000-7fcd51680000 ---p 0009c000 08:01 789691                     /usr/lib/libgnutls.so.26.14.12
+7fcd51680000-7fcd51686000 r-xp 0009b000 08:01 789691                     /usr/lib/libgnutls.so.26.14.12
+7fcd51686000-7fcd51687000 rwxp 000a1000 08:01 789691                     /usr/lib/libgnutls.so.26.14.12
+7fcd51687000-7fcd5168b000 r-xp 00000000 08:01 789777                     /usr/lib/libgthread-2.0.so.0.2400.1
+7fcd5168b000-7fcd5188a000 ---p 00004000 08:01 789777                     /usr/lib/libgthread-2.0.so.0.2400.1
+7fcd5188a000-7fcd5188b000 r-xp 00003000 08:01 789777                     /usr/lib/libgthread-2.0.so.0.2400.1
+7fcd5188b000-7fcd5188c000 rwxp 00004000 08:01 789777                     /usr/lib/libgthread-2.0.so.0.2400.1
+7fcd5188c000-7fcd518d1000 r-xp 00000000 08:01 789693                     /usr/lib/libgobject-2.0.so.0.2400.1
+7fcd518d1000-7fcd51ad1000 ---p 00045000 08:01 789693                     /usr/lib/libgobject-2.0.so.0.2400.1
+7fcd51ad1000-7fcd51ad2000 r-xp 00045000 08:01 789693                     /usr/lib/libgobject-2.0.so.0.2400.1
+7fcd51ad2000-7fcd51ad3000 rwxp 00046000 08:01 789693                     /usr/lib/libgobject-2.0.so.0.2400.1
+7fcd51ad3000-7fcd51ad4000 rwxp 00000000 00:00 0 
+7fcd51ad4000-7fcd51b11000 r-xp 00000000 08:01 3670073                    /lib/libdbus-1.so.3.4.0
+7fcd51b11000-7fcd51d11000 ---p 0003d000 08:01 3670073                    /lib/libdbus-1.so.3.4.0
+7fcd51d11000-7fcd51d12000 r-xp 0003d000 08:01 3670073                    /lib/libdbus-1.so.3.4.0
+7fcd51d12000-7fcd51d13000 rwxp 0003e000 08:01 3670073                    /lib/libdbus-1.so.3.4.0
+7fcd51d13000-7fcd51d34000 r-xp 00000000 08:01 789497                     /usr/lib/libdbus-glib-1.so.2.1.0
+7fcd51d34000-7fcd51f33000 ---p 00021000 08:01 789497                     /usr/lib/libdbus-glib-1.so.2.1.0
+7fcd51f33000-7fcd51f34000 r-xp 00020000 08:01 789497                     /usr/lib/libdbus-glib-1.so.2.1.0
+7fcd51f34000-7fcd51f35000 rwxp 00021000 08:01 789497                     /usr/lib/libdbus-glib-1.so.2.1.0
+7fcd51f35000-7fcd5207b000 r-xp 00000000 08:01 788587                     /usr/lib/libxml2.so.2.7.6
+7fcd5207b000-7fcd5227a000 ---p 00146000 08:01 788587                     /usr/lib/libxml2.so.2.7.6
+7fcd5227a000-7fcd52282000 r-xp 00145000 08:01 788587                     /usr/lib/libxml2.so.2.7.6
+7fcd52282000-7fcd52284000 rwxp 0014d000 08:01 788587                     /usr/lib/libxml2.so.2.7.6
+7fcd52284000-7fcd52285000 rwxp 00000000 00:00 0 
+7fcd52285000-7fcd522bd000 r-xp 00000000 08:01 789603                     /usr/lib/libgconf-2.so.4.1.5
+7fcd522bd000-7fcd524bd000 ---p 00038000 08:01 789603                     /usr/lib/libgconf-2.so.4.1.5
+7fcd524bd000-7fcd524bf000 r-xp 00038000 08:01 789603                     /usr/lib/libgconf-2.so.4.1.5
+7fcd524bf000-7fcd524c2000 rwxp 0003a000 08:01 789603                     /usr/lib/libgconf-2.so.4.1.5
+7fcd524c2000-7fcd524c5000 r-xp 00000000 08:01 789657                     /usr/lib/libgmodule-2.0.so.0.2400.1
+7fcd524c5000-7fcd526c4000 ---p 00003000 08:01 789657                     /usr/lib/libgmodule-2.0.so.0.2400.1
+7fcd526c4000-7fcd526c5000 r-xp 00002000 08:01 789657                     /usr/lib/libgmodule-2.0.so.0.2400.1
+7fcd526c5000-7fcd526c6000 rwxp 00003000 08:01 789657                     /usr/lib/libgmodule-2.0.so.0.2400.1
+7fcd526c6000-7fcd5272d000 r-xp 00000000 08:01 789685                     /usr/lib/libgnomevfs-2.so.0.2400.2
+7fcd5272d000-7fcd5292c000 ---p 00067000 08:01 789685                     /usr/lib/libgnomevfs-2.so.0.2400.2
+7fcd5292c000-7fcd5292f000 r-xp 00066000 08:01 789685                     /usr/lib/libgnomevfs-2.so.0.2400.2
+7fcd5292f000-7fcd52931000 rwxp 00069000 08:01 789685                     /usr/lib/libgnomevfs-2.so.0.2400.2
+7fcd52931000-7fcd52932000 rwxp 00000000 00:00 0 
+7fcd52951000-7fcd52954000 ---p 00000000 00:00 0 
+7fcd52954000-7fcd52a52000 rwxp 00000000 00:00 0 
+7fcd52a52000-7fcd52a55000 ---p 00000000 00:00 0 
+7fcd52a55000-7fcd52b53000 rwxp 00000000 00:00 0 
+7fcd52b53000-7fcd52b56000 ---p 00000000 00:00 0 
+7fcd52b56000-7fcd52c54000 rwxp 00000000 00:00 0 
+7fcd52c54000-7fcd52c57000 ---p 00000000 00:00 0 
+7fcd52c57000-7fcd52d55000 rwxp 00000000 00:00 0 
+7fcd52d55000-7fcd52d58000 ---p 00000000 00:00 0 
+7fcd52d58000-7fcd52e56000 rwxp 00000000 00:00 0 
+7fcd52e56000-7fcd52e59000 ---p 00000000 00:00 0 
+7fcd52e59000-7fcd52f57000 rwxp 00000000 00:00 0 
+7fcd52f57000-7fcd52f5a000 ---p 00000000 00:00 0 
+7fcd52f5a000-7fcd53058000 rwxp 00000000 00:00 0 
+7fcd53058000-7fcd5305b000 ---p 00000000 00:00 0 
+7fcd5305b000-7fcd53159000 rwxp 00000000 00:00 0 
+7fcd53159000-7fcd5315c000 ---p 00000000 00:00 0 
+7fcd5315c000-7fcd5325a000 rwxp 00000000 00:00 0 
+7fcd5325a000-7fcd5325d000 ---p 00000000 00:00 0 
+7fcd5325d000-7fcd5335b000 rwxp 00000000 00:00 0 
+7fcd5335b000-7fcd5335d000 r-xp 00000000 08:01 3670132                    /lib/libnss_mdns4.so.2
+7fcd5335d000-7fcd5355c000 ---p 00002000 08:01 3670132                    /lib/libnss_mdns4.so.2
+7fcd5355c000-7fcd5355d000 r-xp 00001000 08:01 3670132                    /lib/libnss_mdns4.so.2
+7fcd5355d000-7fcd5355e000 rwxp 00002000 08:01 3670132                    /lib/libnss_mdns4.so.2
+7fcd53571000-7fcd53574000 r-xs 00027000 08:01 6310057                    /opt/jdk1.6.0_22/jre/lib/ext/sunjce_provider.jar
+7fcd53574000-7fcd53576000 r-xs 00001000 08:01 6310053                    /opt/jdk1.6.0_22/jre/lib/ext/dnsns.jar
+7fcd53576000-7fcd5357a000 r-xs 00035000 08:01 6310056                    /opt/jdk1.6.0_22/jre/lib/ext/sunpkcs11.jar
+7fcd5357a000-7fcd5357d000 r-xs 000cb000 08:01 6310109                    /opt/jdk1.6.0_22/jre/lib/ext/localedata.jar
+7fcd5357d000-7fcd53580000 ---p 00000000 00:00 0 
+7fcd53580000-7fcd5367e000 rwxp 00000000 00:00 0 
+7fcd5367e000-7fcd53680000 r-xs 0001e000 08:01 3028094                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/saxon-9.1.0.8-dom.jar
+7fcd53680000-7fcd53682000 r-xs 0000c000 08:01 3028166                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/selenium-java-client-driver-1.0.2.jar
+7fcd53682000-7fcd5368d000 r-xs 0008a000 08:01 3028136                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/c3p0-0.9.1.jar
+7fcd5368d000-7fcd5368f000 r-xs 0000e000 08:01 3028146                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/trg-search-0.5.1.jar
+7fcd5368f000-7fcd53699000 r-xs 0006b000 08:01 3028116                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-beans-2.5.2.jar
+7fcd53699000-7fcd5369f000 r-xs 0003f000 08:01 3028120                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-core-2.5.2.jar
+7fcd5369f000-7fcd536a6000 r-xs 00067000 08:01 3028134                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/mail-1.4.1.jar
+7fcd536a6000-7fcd536a8000 r-xs 0000b000 08:01 3028096                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/guice-servlet-2.0.jar
+7fcd536a8000-7fcd536ab000 r-xs 00015000 08:01 3028075                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gin-1.0.jar
+7fcd536ab000-7fcd536af000 r-xs 00028000 08:01 3028163                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-test-2.5.2.jar
+7fcd536af000-7fcd536b0000 r-xs 00001000 08:01 3028160                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/jdbc-stdext-2.0.jar
+7fcd536b0000-7fcd536b3000 r-xs 0000a000 08:01 3028147                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/persistence-api-1.0.jar
+7fcd536b3000-7fcd536b4000 r-xs 00003000 08:01 3028148                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/trg-search-hibernate-0.5.1.jar
+7fcd536b4000-7fcd536ba000 r-xs 0003f000 08:01 3028082                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/cglib-2.1_3.jar
+7fcd536ba000-7fcd536bb000 r-xs 00000000 08:01 3028087                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/openxdata-workflow-server-lib-1.0-SNAPSHOT.jar
+7fcd536bb000-7fcd536c2000 r-xs 0007c000 08:01 3028089                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/yawl-engine-2.0.1.jar
+7fcd536c2000-7fcd536c8000 r-xs 00067000 08:01 3028142                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/antlr-2.7.6.jar
+7fcd536c8000-7fcd536dc000 r-xs 000d4000 08:01 3028108                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/op4j-1.0.jar
+7fcd536dc000-7fcd536e4000 r-xs 00032000 08:01 3028070                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/openxdata-workflow-1.0-SNAPSHOT.jar
+7fcd536e4000-7fcd536eb000 r-xs 0004c000 08:01 3028129                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/sms-server-1.0.jar
+7fcd536eb000-7fcd536f2000 r-xs 00031000 08:01 3028077                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gilead4gwt-1.3.0.jar
+7fcd536f2000-7fcd536f6000 r-xs 0001d000 08:01 3028168                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gwt-dnd-3.0.0.jar
+7fcd536f6000-7fcd53735000 r-xs 00282000 08:01 3028106                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-2.5.2.jar
+7fcd53735000-7fcd53737000 r-xs 00005000 08:01 3028079                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/slf4j-api-1.6.1.jar
+7fcd53737000-7fcd53750000 r-xs 00191000 08:01 3028114                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/aspectjweaver-1.6.7.jar
+7fcd53750000-7fcd53755000 r-xs 00029000 08:01 3028123                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-web-2.5.2.jar
+7fcd53755000-7fcd5375e000 r-xs 0006d000 08:01 3028081                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/log4j-1.2.16.jar
+7fcd5375e000-7fcd5376c000 r-xs 0007f000 08:01 3028143                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/commons-collections-3.2.1.jar
+7fcd5376c000-7fcd5376e000 r-xs 0000f000 08:01 3028110                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/javaruntype-1.1.jar
+7fcd5376e000-7fcd5377f000 r-xs 000ab000 08:01 3028115                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-security-core-2.0.5.RELEASE.jar
+7fcd5377f000-7fcd53782000 r-xs 0001f000 08:01 3028111                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/antlr-runtime-3.1.2.jar
+7fcd53782000-7fcd537a5000 r-xs 00209000 08:01 3028149                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/hibernate-core-3.3.1.GA.jar
+7fcd537a5000-7fcd537a8000 r-xs 00019000 08:01 3028126                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/engineapi-2.5.0.jar
+7fcd537a8000-7fcd537b0000 r-xs 00059000 08:01 3028119                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-webmvc-2.5.2.jar
+7fcd537b0000-7fcd537b2000 r-xs 0000d000 08:01 3028099                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/openxdata-mobile-model-1.0.jar
+7fcd537b2000-7fcd537b7000 r-xs 00018000 08:01 3028113                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/aspectjrt-1.6.7.jar
+7fcd537b7000-7fcd537ba000 r-xs 0001a000 08:01 3028155                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/hibernate-entitymanager-3.3.2.GA.jar
+7fcd537ba000-7fcd537bd000 r-xs 0000a000 08:01 3028158                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/ejb3-persistence-1.0.1.GA.jar
+7fcd537bd000-7fcd537c0000 r-xs 00006000 08:01 3028072                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gwt-dispatch-1.0.0.jar
+7fcd537c0000-7fcd537c1000 r-xs 00002000 08:01 3028165                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/slf4j-log4j12-1.6.1.jar
+7fcd537c1000-7fcd537c5000 r-xs 0001d000 08:01 3028103                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gwt-dnd-3.0.1.jar
+7fcd537c5000-7fcd537c7000 r-xs 00000000 08:01 3028074                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/aopalliance-1.0.jar
+7fcd537c7000-7fcd537c8000 r-xs 00001000 08:01 3028124                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-security-core-tiger-2.0.5.RELEASE.jar
+7fcd537c8000-7fcd537c9000 r-xs 00001000 08:01 3028151                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/xmlpull-1.1.3.1.jar
+7fcd537c9000-7fcd537d2000 r-xs 000cc000 08:01 3028131                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/js-1.7R2.jar
+7fcd537d2000-7fcd537e3000 r-xs 00105000 08:01 3028100                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gwt-purcforms-2.0.2.jar
+7fcd537e3000-7fcd537e9000 r-xs 0006d000 08:01 3028159                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/javassist-3.4.GA.jar
+7fcd537e9000-7fcd537eb000 r-xs 0000a000 08:01 3028117                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/commons-codec-1.3.jar
+7fcd537eb000-7fcd537ee000 r-xs 00014000 08:01 3028122                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-context-support-2.5.2.jar
+7fcd537ee000-7fcd537ef000 r-xs 00003000 08:01 3028139                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/jta-1.1.jar
+7fcd537ef000-7fcd537f1000 r-xs 0000a000 08:01 3028085                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/beanlib-hibernate-5.0.2beta.jar
+7fcd537f1000-7fcd537f3000 r-xs 00009000 08:01 3028101                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gwt-datepicker-r30.jar
+7fcd537f3000-7fcd537fd000 r-xs 0008f000 08:01 3028112                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/liquibase-core-1.9.5.jar
+7fcd537fd000-7fcd53808000 r-xs 00067000 08:01 3028121                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/spring-context-2.5.2.jar
+7fcd53808000-7fcd53875000 r-xs 0048c000 08:01 3028162                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gwt-user-2.0.3.jar
+7fcd53875000-7fcd53878000 ---p 00000000 00:00 0 
+7fcd53878000-7fcd53976000 rwxp 00000000 00:00 0 
+7fcd53976000-7fcd53be1000 rwxs 00000000 00:04 24936475                   /SYSV00000000 (deleted)
+7fcd53be1000-7fcd53bf7000 r-xp 00000000 08:01 3672884                    /lib/libresolv-2.11.1.so
+7fcd53bf7000-7fcd53df6000 ---p 00016000 08:01 3672884                    /lib/libresolv-2.11.1.so
+7fcd53df6000-7fcd53df7000 r-xp 00015000 08:01 3672884                    /lib/libresolv-2.11.1.so
+7fcd53df7000-7fcd53df8000 rwxp 00016000 08:01 3672884                    /lib/libresolv-2.11.1.so
+7fcd53df8000-7fcd53dfa000 rwxp 00000000 00:00 0 
+7fcd53dfa000-7fcd53dff000 r-xp 00000000 08:01 3686843                    /lib/libnss_dns-2.11.1.so
+7fcd53dff000-7fcd53ffe000 ---p 00005000 08:01 3686843                    /lib/libnss_dns-2.11.1.so
+7fcd53ffe000-7fcd53fff000 r-xp 00004000 08:01 3686843                    /lib/libnss_dns-2.11.1.so
+7fcd53fff000-7fcd54000000 rwxp 00005000 08:01 3686843                    /lib/libnss_dns-2.11.1.so
+7fcd54000000-7fcd57497000 rwxp 00000000 00:00 0 
+7fcd57497000-7fcd58000000 ---p 00000000 00:00 0 
+7fcd58000000-7fcd58029000 r-xs 00158000 08:01 3028071                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gwt-servlet-2.0.3.jar
+7fcd58029000-7fcd5802c000 ---p 00000000 00:00 0 
+7fcd5802c000-7fcd5812a000 rwxp 00000000 00:00 0 
+7fcd5812a000-7fcd5812c000 r-xp 00000000 08:01 3670133                    /lib/libnss_mdns4_minimal.so.2
+7fcd5812c000-7fcd5832b000 ---p 00002000 08:01 3670133                    /lib/libnss_mdns4_minimal.so.2
+7fcd5832b000-7fcd5832c000 r-xp 00001000 08:01 3670133                    /lib/libnss_mdns4_minimal.so.2
+7fcd5832c000-7fcd5832d000 rwxp 00002000 08:01 3670133                    /lib/libnss_mdns4_minimal.so.2
+7fcd5832d000-7fcd58330000 ---p 00000000 00:00 0 
+7fcd58330000-7fcd5842e000 rwxp 00000000 00:00 0 
+7fcd5842e000-7fcd58431000 ---p 00000000 00:00 0 
+7fcd58431000-7fcd5852f000 rwxp 00000000 00:00 0 
+7fcd5852f000-7fcd58532000 ---p 00000000 00:00 0 
+7fcd58532000-7fcd58630000 rwxp 00000000 00:00 0 
+7fcd58630000-7fcd58637000 r-xp 00000000 08:01 6438382                    /opt/jdk1.6.0_22/jre/lib/amd64/libnio.so
+7fcd58637000-7fcd58736000 ---p 00007000 08:01 6438382                    /opt/jdk1.6.0_22/jre/lib/amd64/libnio.so
+7fcd58736000-7fcd58738000 rwxp 00006000 08:01 6438382                    /opt/jdk1.6.0_22/jre/lib/amd64/libnio.so
+7fcd58738000-7fcd5873b000 ---p 00000000 00:00 0 
+7fcd5873b000-7fcd58839000 rwxp 00000000 00:00 0 
+7fcd58839000-7fcd5883c000 ---p 00000000 00:00 0 
+7fcd5883c000-7fcd5893a000 rwxp 00000000 00:00 0 
+7fcd5893a000-7fcd5893d000 ---p 00000000 00:00 0 
+7fcd5893d000-7fcd58a3b000 rwxp 00000000 00:00 0 
+7fcd58a3b000-7fcd58a3c000 r-xs 00000000 08:01 4211951                    /var/cache/fontconfig/26de28bc8622bbc1fb67fd234c21975f-le64.cache-3
+7fcd58a3c000-7fcd58a3d000 r-xs 00000000 08:01 4194369                    /var/cache/fontconfig/c05880de57d1f5e948fdfacc138775d9-le64.cache-3
+7fcd58a3d000-7fcd58a46000 r-xs 00000000 08:01 4194366                    /var/cache/fontconfig/945677eb7aeaf62f1d50efc3fb3ec7d8-le64.cache-3
+7fcd58a46000-7fcd58a48000 r-xs 00000000 08:01 4194367                    /var/cache/fontconfig/99e8ed0e538f840c565b6ed5dad60d56-le64.cache-3
+7fcd58a48000-7fcd58a4b000 r-xs 00000000 08:01 4194376                    /var/cache/fontconfig/e383d7ea5fbe662a33d9b44caf393297-le64.cache-3
+7fcd58a4b000-7fcd58a4c000 r-xs 00000000 08:01 4194377                    /var/cache/fontconfig/e7071f4a29fa870f4323321c154eba04-le64.cache-3
+7fcd58a4c000-7fcd58a50000 r-xs 00000000 08:01 4194363                    /var/cache/fontconfig/6eb3985aa4124903f6ff08ba781cd364-le64.cache-3
+7fcd58a50000-7fcd58a51000 r-xs 00000000 08:01 4194359                    /var/cache/fontconfig/4c73fe0c47614734b17d736dbde7580a-le64.cache-3
+7fcd58a51000-7fcd58a52000 r-xs 00000000 08:01 4194353                    /var/cache/fontconfig/0d8c3b2ac0904cb8a57a757ad11a4a08-le64.cache-3
+7fcd58a52000-7fcd58a53000 r-xs 00000000 08:01 4194361                    /var/cache/fontconfig/6a53c69dea097a2d716e069445527da8-le64.cache-3
+7fcd58a53000-7fcd58a59000 r-xs 00000000 08:01 4194368                    /var/cache/fontconfig/a755afe4a08bf5b97852ceb7400b47bc-le64.cache-3
+7fcd58a59000-7fcd58a62000 r-xs 00000000 08:01 4201970                    /var/cache/fontconfig/6d41288fd70b0be22e8c3a91e032eec0-le64.cache-3
+7fcd58a62000-7fcd58a72000 r-xs 00000000 08:01 4214189                    /var/cache/fontconfig/0f34bcd4b6ee430af32735b75db7f02b-le64.cache-3
+7fcd58a72000-7fcd58aa0000 r-xs 00000000 08:01 4212557                    /var/cache/fontconfig/365b55f210c0a22e9a19e35191240f32-le64.cache-3
+7fcd58aa0000-7fcd58aa1000 r-xs 00002000 08:01 3028098                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/openxdata-wf-mobile-model-1.0-SNAPSHOT.jar
+7fcd58aa1000-7fcd58aa2000 r-xs 0000b000 08:01 3028105                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/jzlib-1.0.7.jar
+7fcd58aa2000-7fcd58aa5000 r-xs 00013000 08:01 3028097                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/commons-io-1.3.2.jar
+7fcd58aa5000-7fcd58aae000 r-xs 00081000 08:01 3028102                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gwt-querybuilder-2.0.2.jar
+7fcd58aae000-7fcd58ab0000 r-xs 00004000 08:01 3028145                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/trg-dao-0.5.1.jar
+7fcd58ab0000-7fcd58ab5000 r-xs 00040000 08:01 3028109                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/commons-lang-2.5.jar
+7fcd58ab5000-7fcd58ab7000 r-xs 00003000 08:01 3028125                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/opencsv-2.1.jar
+7fcd58ab7000-7fcd58abc000 r-xs 00052000 08:01 3028118                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/quartz-1.5.1.jar
+7fcd58abc000-7fcd58abf000 r-xs 0000e000 08:01 3028157                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/hibernate-commons-annotations-3.0.0.ga.jar
+7fcd58abf000-7fcd58ac1000 r-xs 00003000 08:01 3028140                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/asm-attrs-1.5.3.jar
+7fcd58ac1000-7fcd58ac7000 r-xs 000a6000 08:01 3028091                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/xsd-2.2.3.jar
+7fcd58ac7000-7fcd58acd000 r-xs 00034000 08:01 3028078                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gilead-core-1.3.0.jar
+7fcd58acd000-7fcd58ad3000 r-xs 000ad000 08:01 3028167                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/mysql-connector-java-5.1.12.jar
+7fcd58ad3000-7fcd58ae1000 r-xs 00095000 08:01 3028073                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/guice-2.0.jar
+7fcd58ae1000-7fcd58ae2000 r-xs 00000000 08:01 3028084                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/jcip-annotations-1.0.jar
+7fcd58ae2000-7fcd58b03000 r-xs 00206000 08:01 3028137                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/hibernate-3.2.5.ga.jar
+7fcd58b03000-7fcd58b26000 r-xs 001ef000 08:01 3028127                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/modelapi-2.5.0.jar
+7fcd58b26000-7fcd58b2c000 r-xs 0003c000 08:01 3028128                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/coreapi-2.5.0.jar
+7fcd58b2c000-7fcd58b31000 r-xs 00082000 08:01 3028130                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/bluetooth-server-1.0.jar
+7fcd58b31000-7fcd58b32000 r-xs 00006000 08:01 3028083                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/asm-1.5.3.jar
+7fcd58b32000-7fcd58b34000 r-xs 00006000 08:01 3028169                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/immunizations-1.0-SNAPSHOT.jar
+7fcd58b34000-7fcd58b35000 r-xs 0000a000 08:01 3028150                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/kxml2-2.2.2.jar
+7fcd58b35000-7fcd58b3a000 r-xs 00048000 08:01 3028141                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/dom4j-1.6.1.jar
+7fcd58b3a000-7fcd58b3f000 r-xs 00019000 08:01 3028080                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/beanlib-5.0.2beta.jar
+7fcd58b3f000-7fcd58b42000 r-xs 0000a000 08:01 3028161                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/openxdata-rpc-interface-wf-1.1-SNAPSHOT.jar
+7fcd58b42000-7fcd58b45000 r-xs 00023000 08:01 3028090                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/jdom-1.1.jar
+7fcd58b45000-7fcd58b48000 r-xs 0001f000 08:01 3028133                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/htmlparser-2.0.jar
+7fcd58b48000-7fcd58b4d000 r-xs 00040000 08:01 3028156                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/hibernate-annotations-3.3.1.GA.jar
+7fcd58b4d000-7fcd58b5b000 r-xs 000b7000 08:01 3028104                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/openxdata-server-wf-1.1-SNAPSHOT.jar
+7fcd58b5b000-7fcd58b60000 r-xs 00023000 08:01 3028164                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/junit-4.4.jar
+7fcd58b60000-7fcd58b63000 ---p 00000000 00:00 0 
+7fcd58b63000-7fcd58c61000 rwxp 00000000 00:00 0 
+7fcd58c61000-7fcd58c64000 ---p 00000000 00:00 0 
+7fcd58c64000-7fcd58d62000 rwxp 00000000 00:00 0 
+7fcd58d62000-7fcd58d67000 r-xp 00000000 08:01 789301                     /usr/lib/libXfixes.so.3.1.0
+7fcd58d67000-7fcd58f66000 ---p 00005000 08:01 789301                     /usr/lib/libXfixes.so.3.1.0
+7fcd58f66000-7fcd58f67000 r-xp 00004000 08:01 789301                     /usr/lib/libXfixes.so.3.1.0
+7fcd58f67000-7fcd58f68000 rwxp 00005000 08:01 789301                     /usr/lib/libXfixes.so.3.1.0
+7fcd58f68000-7fcd58f71000 r-xp 00000000 08:01 789321                     /usr/lib/libXrender.so.1.3.0
+7fcd58f71000-7fcd59170000 ---p 00009000 08:01 789321                     /usr/lib/libXrender.so.1.3.0
+7fcd59170000-7fcd59171000 r-xp 00008000 08:01 789321                     /usr/lib/libXrender.so.1.3.0
+7fcd59171000-7fcd59172000 rwxp 00009000 08:01 789321                     /usr/lib/libXrender.so.1.3.0
+7fcd59172000-7fcd5917b000 r-xp 00000000 08:01 789293                     /usr/lib/libXcursor.so.1.0.2
+7fcd5917b000-7fcd5937a000 ---p 00009000 08:01 789293                     /usr/lib/libXcursor.so.1.0.2
+7fcd5937a000-7fcd5937b000 r-xp 00008000 08:01 789293                     /usr/lib/libXcursor.so.1.0.2
+7fcd5937b000-7fcd5937c000 rwxp 00009000 08:01 789293                     /usr/lib/libXcursor.so.1.0.2
+7fcd5937c000-7fcd5937e000 r-xs 00010000 08:01 3028132                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/htmllexer-2.0.jar
+7fcd5937e000-7fcd59383000 r-xs 00021000 08:01 3028076                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/openxdata-model-wf-1.1-SNAPSHOT.jar
+7fcd59383000-7fcd5938f000 r-xs 000ac000 08:01 3028092                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/ecore-2.2.3.jar
+7fcd5938f000-7fcd59391000 r-xs 0001f000 08:01 3028095                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/saxon-9.1.0.8-s9api.jar
+7fcd59391000-7fcd59393000 r-xs 0000d000 08:01 3028107                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/commons-logging-1.1.1.jar
+7fcd59393000-7fcd59397000 r-xs 00023000 08:01 3028093                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/common-2.2.3.jar
+7fcd59397000-7fcd5939b000 r-xs 0002f000 08:01 3028138                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/ehcache-1.2.3.jar
+7fcd5939b000-7fcd5939e000 ---p 00000000 00:00 0 
+7fcd5939e000-7fcd5949c000 rwxp 00000000 00:00 0 
+7fcd5949c000-7fcd59515000 r-xp 00000000 08:01 6438390                    /opt/jdk1.6.0_22/jre/lib/amd64/libfontmanager.so
+7fcd59515000-7fcd59614000 ---p 00079000 08:01 6438390                    /opt/jdk1.6.0_22/jre/lib/amd64/libfontmanager.so
+7fcd59614000-7fcd59629000 rwxp 00078000 08:01 6438390                    /opt/jdk1.6.0_22/jre/lib/amd64/libfontmanager.so
+7fcd59629000-7fcd5963a000 rwxp 00000000 00:00 0 
+7fcd5963a000-7fcd5963f000 r-xp 00000000 08:01 789297                     /usr/lib/libXdmcp.so.6.0.0
+7fcd5963f000-7fcd5983e000 ---p 00005000 08:01 789297                     /usr/lib/libXdmcp.so.6.0.0
+7fcd5983e000-7fcd5983f000 r-xp 00004000 08:01 789297                     /usr/lib/libXdmcp.so.6.0.0
+7fcd5983f000-7fcd59840000 rwxp 00005000 08:01 789297                     /usr/lib/libXdmcp.so.6.0.0
+7fcd59840000-7fcd59842000 r-xp 00000000 08:01 789286                     /usr/lib/libXau.so.6.0.0
+7fcd59842000-7fcd59a42000 ---p 00002000 08:01 789286                     /usr/lib/libXau.so.6.0.0
+7fcd59a42000-7fcd59a43000 r-xp 00002000 08:01 789286                     /usr/lib/libXau.so.6.0.0
+7fcd59a43000-7fcd59a44000 rwxp 00003000 08:01 789286                     /usr/lib/libXau.so.6.0.0
+7fcd59a44000-7fcd59a5f000 r-xp 00000000 08:01 790292                     /usr/lib/libxcb.so.1.1.0
+7fcd59a5f000-7fcd59c5e000 ---p 0001b000 08:01 790292                     /usr/lib/libxcb.so.1.1.0
+7fcd59c5e000-7fcd59c5f000 r-xp 0001a000 08:01 790292                     /usr/lib/libxcb.so.1.1.0
+7fcd59c5f000-7fcd59c60000 rwxp 0001b000 08:01 790292                     /usr/lib/libxcb.so.1.1.0
+7fcd59c60000-7fcd59c6f000 r-xp 00000000 08:01 789307                     /usr/lib/libXi.so.6.1.0
+7fcd59c6f000-7fcd59e6e000 ---p 0000f000 08:01 789307                     /usr/lib/libXi.so.6.1.0
+7fcd59e6e000-7fcd59e6f000 r-xp 0000e000 08:01 789307                     /usr/lib/libXi.so.6.1.0
+7fcd59e6f000-7fcd59e70000 rwxp 0000f000 08:01 789307                     /usr/lib/libXi.so.6.1.0
+7fcd59e70000-7fcd59e75000 r-xp 00000000 08:01 789327                     /usr/lib/libXtst.so.6.1.0
+7fcd59e75000-7fcd5a075000 ---p 00005000 08:01 789327                     /usr/lib/libXtst.so.6.1.0
+7fcd5a075000-7fcd5a076000 r-xp 00005000 08:01 789327                     /usr/lib/libXtst.so.6.1.0
+7fcd5a076000-7fcd5a077000 rwxp 00006000 08:01 789327                     /usr/lib/libXtst.so.6.1.0
+7fcd5a077000-7fcd5a1a8000 r-xp 00000000 08:01 789282                     /usr/lib/libX11.so.6.3.0
+7fcd5a1a8000-7fcd5a3a8000 ---p 00131000 08:01 789282                     /usr/lib/libX11.so.6.3.0
+7fcd5a3a8000-7fcd5a3a9000 r-xp 00131000 08:01 789282                     /usr/lib/libX11.so.6.3.0
+7fcd5a3a9000-7fcd5a3ad000 rwxp 00132000 08:01 789282                     /usr/lib/libX11.so.6.3.0
+7fcd5a3ad000-7fcd5a3be000 r-xp 00000000 08:01 789299                     /usr/lib/libXext.so.6.4.0
+7fcd5a3be000-7fcd5a5bd000 ---p 00011000 08:01 789299                     /usr/lib/libXext.so.6.4.0
+7fcd5a5bd000-7fcd5a5be000 r-xp 00010000 08:01 789299                     /usr/lib/libXext.so.6.4.0
+7fcd5a5be000-7fcd5a5bf000 rwxp 00011000 08:01 789299                     /usr/lib/libXext.so.6.4.0
+7fcd5a5bf000-7fcd5a5c0000 r-xs 00008000 08:01 3028086                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/gilead-hibernate-1.3.0.jar
+7fcd5a5c0000-7fcd5a5c1000 r-xs 00000000 08:01 3028088                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/yawl-engine-with-parsers-2.0.1-SNAPSHOT.jar
+7fcd5a5c1000-7fcd5a5c9000 r-xs 00115000 08:01 6310110                    /opt/jdk1.6.0_22/jre/lib/resources.jar
+7fcd5a5c9000-7fcd5a5d3000 r-xs 00000000 08:01 4194372                    /var/cache/fontconfig/d52a8644073d54c13679302ca1180695-le64.cache-3
+7fcd5a5d3000-7fcd5a5de000 r-xs 00000000 08:01 4203926                    /var/cache/fontconfig/e13b20fdb08344e0e664864cc2ede53d-le64.cache-3
+7fcd5a5de000-7fcd5a620000 r-xp 00000000 08:01 6438379                    /opt/jdk1.6.0_22/jre/lib/amd64/xawt/libmawt.so
+7fcd5a620000-7fcd5a71f000 ---p 00042000 08:01 6438379                    /opt/jdk1.6.0_22/jre/lib/amd64/xawt/libmawt.so
+7fcd5a71f000-7fcd5a72a000 rwxp 00041000 08:01 6438379                    /opt/jdk1.6.0_22/jre/lib/amd64/xawt/libmawt.so
+7fcd5a72a000-7fcd5a72c000 rwxp 00000000 00:00 0 
+7fcd5a72c000-7fcd5a7be000 r-xp 00000000 08:01 6438426                    /opt/jdk1.6.0_22/jre/lib/amd64/libawt.so
+7fcd5a7be000-7fcd5a8bd000 ---p 00092000 08:01 6438426                    /opt/jdk1.6.0_22/jre/lib/amd64/libawt.so
+7fcd5a8bd000-7fcd5a8d6000 rwxp 00091000 08:01 6438426                    /opt/jdk1.6.0_22/jre/lib/amd64/libawt.so
+7fcd5a8d6000-7fcd5a8fb000 rwxp 00000000 00:00 0 
+7fcd5a8fb000-7fcd5a90e000 r-xp 00000000 08:01 6438381                    /opt/jdk1.6.0_22/jre/lib/amd64/libnet.so
+7fcd5a90e000-7fcd5aa0f000 ---p 00013000 08:01 6438381                    /opt/jdk1.6.0_22/jre/lib/amd64/libnet.so
+7fcd5aa0f000-7fcd5aa12000 rwxp 00014000 08:01 6438381                    /opt/jdk1.6.0_22/jre/lib/amd64/libnet.so
+7fcd5aa12000-7fcd5ab11000 r-xs 0110b000 08:01 6307599                    /home/soyfactor/.m2/repository/com/google/gwt/gwt-dev/2.0.3/gwt-dev-2.0.3.jar
+7fcd5ab11000-7fcd5ab13000 r-xs 00006000 08:01 947667                     /home/soyfactor/.m2/repository/org/openxdata/immunizations/1.0-SNAPSHOT/immunizations-1.0-SNAPSHOT.jar
+7fcd5ab13000-7fcd5ab17000 r-xs 0001d000 08:01 1723010                    /home/soyfactor/.m2/repository/com/google/code/gwt-dnd/gwt-dnd/3.0.0/gwt-dnd-3.0.0.jar
+7fcd5ab17000-7fcd5ab1d000 r-xs 000ad000 08:01 3815854                    /home/soyfactor/.m2/repository/mysql/mysql-connector-java/5.1.12/mysql-connector-java-5.1.12.jar
+7fcd5ab1d000-7fcd5ab1e000 r-xs 00002000 08:01 681017                     /home/soyfactor/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar
+7fcd5ab1e000-7fcd5ab8b000 r-xs 0048c000 08:01 1722995                    /home/soyfactor/.m2/repository/com/google/gwt/gwt-user/2.0.3/gwt-user-2.0.3.jar
+7fcd5ab8b000-7fcd5ab8e000 r-xs 0000a000 08:01 684203                     /home/soyfactor/.m2/repository/org/openxdata/openxdata-rpc-interface-wf/1.1-SNAPSHOT/openxdata-rpc-interface-wf-1.1-SNAPSHOT.jar
+7fcd5ab8e000-7fcd5ab8f000 r-xs 00001000 08:01 1594199                    /home/soyfactor/.m2/repository/javax/sql/jdbc-stdext/2.0/jdbc-stdext-2.0.jar
+7fcd5ab8f000-7fcd5ab95000 r-xs 0006d000 08:01 3686788                    /home/soyfactor/.m2/repository/javassist/javassist/3.4.GA/javassist-3.4.GA.jar
+7fcd5ab95000-7fcd5ab98000 r-xs 0000a000 08:01 3941521                    /home/soyfactor/.m2/repository/org/hibernate/ejb3-persistence/1.0.1.GA/ejb3-persistence-1.0.1.GA.jar
+7fcd5ab98000-7fcd5ab9b000 r-xs 0000e000 08:01 3941518                    /home/soyfactor/.m2/repository/org/hibernate/hibernate-commons-annotations/3.0.0.ga/hibernate-commons-annotations-3.0.0.ga.jar
+7fcd5ab9b000-7fcd5aba0000 r-xs 00040000 08:01 3941515                    /home/soyfactor/.m2/repository/org/hibernate/hibernate-annotations/3.3.1.GA/hibernate-annotations-3.3.1.GA.jar
+7fcd5aba0000-7fcd5aba3000 r-xs 0001a000 08:01 3941510                    /home/soyfactor/.m2/repository/org/hibernate/hibernate-entitymanager/3.3.2.GA/hibernate-entitymanager-3.3.2.GA.jar
+7fcd5aba3000-7fcd5aba6000 r-xs 0000d000 08:01 679901                     /home/soyfactor/.m2/repository/commons-io/commons-io/1.1/commons-io-1.1.jar
+7fcd5aba6000-7fcd5aba7000 r-xs 00007000 08:01 3941300                    /home/soyfactor/.m2/repository/commons-fileupload/commons-fileupload/1.1.1/commons-fileupload-1.1.1.jar
+7fcd5aba7000-7fcd5aba8000 r-xs 00002000 08:01 3941416                    /home/soyfactor/.m2/repository/net/sf/minixpath/minixpath/0.3/minixpath-0.3.jar
+7fcd5aba8000-7fcd5aba9000 r-xs 00001000 08:01 3941409                    /home/soyfactor/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+7fcd5aba9000-7fcd5abaa000 r-xs 0000a000 08:01 3941401                    /home/soyfactor/.m2/repository/net/sf/kxml/kxml2/2.2.2/kxml2-2.2.2.jar
+7fcd5abaa000-7fcd5abcd000 r-xs 00209000 08:01 3941439                    /home/soyfactor/.m2/repository/org/hibernate/hibernate-core/3.3.1.GA/hibernate-core-3.3.1.GA.jar
+7fcd5abcd000-7fcd5abce000 r-xs 00003000 08:01 3941436                    /home/soyfactor/.m2/repository/com/trg/trg-search-hibernate/0.5.1/trg-search-hibernate-0.5.1.jar
+7fcd5abce000-7fcd5abd1000 r-xs 0000a000 08:01 3941404                    /home/soyfactor/.m2/repository/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar
+7fcd5abd1000-7fcd5abd3000 r-xs 0000e000 08:01 3941435                    /home/soyfactor/.m2/repository/com/trg/trg-search/0.5.1/trg-search-0.5.1.jar
+7fcd5abd3000-7fcd5abd5000 r-xs 00004000 08:01 3941430                    /home/soyfactor/.m2/repository/com/trg/trg-dao/0.5.1/trg-dao-0.5.1.jar
+7fcd5abd5000-7fcd5abd6000 r-xs 00006000 08:01 3941419                    /home/soyfactor/.m2/repository/com/trg/trg-dao-hibernate/0.5.1/trg-dao-hibernate-0.5.1.jar
+7fcd5abd6000-7fcd5abe4000 r-xs 0007f000 08:01 3941408                    /home/soyfactor/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+7fcd5abe4000-7fcd5abea000 r-xs 00067000 08:01 3941405                    /home/soyfactor/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar
+7fcd5abea000-7fcd5abef000 r-xs 00048000 08:01 3941392                    /home/soyfactor/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+7fcd5abef000-7fcd5abf1000 r-xs 00003000 08:01 682699                     /home/soyfactor/.m2/repository/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.jar
+7fcd5abf1000-7fcd5abf2000 r-xs 00003000 08:01 3941424                    /home/soyfactor/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar
+7fcd5abf2000-7fcd5abf6000 r-xs 0002f000 08:01 1460729                    /home/soyfactor/.m2/repository/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar
+7fcd5abf6000-7fcd5ac17000 r-xs 00206000 08:01 3941415                    /home/soyfactor/.m2/repository/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.jar
+7fcd5ac17000-7fcd5ac22000 r-xs 0008a000 08:01 3941393                    /home/soyfactor/.m2/repository/c3p0/c3p0/0.9.1/c3p0-0.9.1.jar
+7fcd5ac22000-7fcd5ac24000 r-xs 0000f000 08:01 3941506                    /home/soyfactor/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar
+7fcd5ac24000-7fcd5ac2b000 r-xs 00067000 08:01 3941507                    /home/soyfactor/.m2/repository/javax/mail/mail/1.4.1/mail-1.4.1.jar
+7fcd5ac2b000-7fcd5ac2e000 r-xs 0001f000 08:01 3941427                    /home/soyfactor/.m2/repository/org/htmlparser/htmlparser/2.0/htmlparser-2.0.jar
+7fcd5ac2e000-7fcd5ac30000 r-xs 00010000 08:01 3941398                    /home/soyfactor/.m2/repository/org/htmlparser/htmllexer/2.0/htmllexer-2.0.jar
+7fcd5ac30000-7fcd5ac39000 r-xs 000cc000 08:01 3941414                    /home/soyfactor/.m2/repository/rhino/js/1.7R2/js-1.7R2.jar
+7fcd5ac39000-7fcd5ac3e000 r-xs 00082000 08:01 3815016                    /home/soyfactor/.m2/repository/org/fcitmuk/bluetooth-server/1.0/bluetooth-server-1.0.jar
+7fcd5ac3e000-7fcd5ac45000 r-xs 0004c000 08:01 3815009                    /home/soyfactor/.m2/repository/org/fcitmuk/sms-server/1.0/sms-server-1.0.jar
+7fcd5ac45000-7fcd5ac4b000 r-xs 0003c000 08:01 3815018                    /home/soyfactor/.m2/repository/org/eclipse/birt/coreapi/2.5.0/coreapi-2.5.0.jar
+7fcd5ac4b000-7fcd5ac6e000 r-xs 001ef000 08:01 3815012                    /home/soyfactor/.m2/repository/org/eclipse/birt/modelapi/2.5.0/modelapi-2.5.0.jar
+7fcd5ac6e000-7fcd5ac71000 r-xs 00019000 08:01 3815003                    /home/soyfactor/.m2/repository/org/eclipse/birt/engineapi/2.5.0/engineapi-2.5.0.jar
+7fcd5ac71000-7fcd5ac73000 r-xs 00003000 08:01 1460732                    /home/soyfactor/.m2/repository/net/sf/opencsv/opencsv/2.1/opencsv-2.1.jar
+7fcd5ac73000-7fcd5ac74000 r-xs 00001000 08:01 1721178                    /home/soyfactor/.m2/repository/org/springframework/security/spring-security-core-tiger/2.0.5.RELEASE/spring-security-core-tiger-2.0.5.RELEASE.jar
+7fcd5ac74000-7fcd5ac79000 r-xs 00029000 08:01 1722687                    /home/soyfactor/.m2/repository/org/springframework/spring-web/2.5.2/spring-web-2.5.2.jar
+7fcd5ac79000-7fcd5ac7c000 r-xs 00014000 08:01 1722683                    /home/soyfactor/.m2/repository/org/springframework/spring-context-support/2.5.2/spring-context-support-2.5.2.jar
+7fcd5ac7c000-7fcd5ac87000 r-xs 00067000 08:01 1722678                    /home/soyfactor/.m2/repository/org/springframework/spring-context/2.5.2/spring-context-2.5.2.jar
+7fcd5ac87000-7fcd5ac8d000 r-xs 0003f000 08:01 1722673                    /home/soyfactor/.m2/repository/org/springframework/spring-core/2.5.2/spring-core-2.5.2.jar
+7fcd5ac8d000-7fcd5ac95000 r-xs 00059000 08:01 1721243                    /home/soyfactor/.m2/repository/org/springframework/spring-webmvc/2.5.2/spring-webmvc-2.5.2.jar
+7fcd5ac95000-7fcd5ac9a000 r-xs 00052000 08:01 1721174                    /home/soyfactor/.m2/repository/quartz/quartz/1.5.1/quartz-1.5.1.jar
+7fcd5ac9a000-7fcd5ac9c000 r-xs 0000a000 08:01 1721171                    /home/soyfactor/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar
+7fcd5ac9c000-7fcd5aca6000 r-xs 0006b000 08:01 1721186                    /home/soyfactor/.m2/repository/org/springframework/spring-beans/2.5.2/spring-beans-2.5.2.jar
+7fcd5aca6000-7fcd5acb7000 r-xs 000ab000 08:01 1721158                    /home/soyfactor/.m2/repository/org/springframework/security/spring-security-core/2.0.5.RELEASE/spring-security-core-2.0.5.RELEASE.jar
+7fcd5acb7000-7fcd5acd0000 r-xs 00191000 08:01 1721177                    /home/soyfactor/.m2/repository/org/aspectj/aspectjweaver/1.6.7/aspectjweaver-1.6.7.jar
+7fcd5acd0000-7fcd5acd5000 r-xs 00018000 08:01 1721150                    /home/soyfactor/.m2/repository/org/aspectj/aspectjrt/1.6.7/aspectjrt-1.6.7.jar
+7fcd5acd5000-7fcd5acdf000 r-xs 0008f000 08:01 1721153                    /home/soyfactor/.m2/repository/org/liquibase/liquibase-core/1.9.5/liquibase-core-1.9.5.jar
+7fcd5acdf000-7fcd5ace2000 r-xs 0001f000 08:01 683236                     /home/soyfactor/.m2/repository/org/antlr/antlr-runtime/3.1.2/antlr-runtime-3.1.2.jar
+7fcd5ace2000-7fcd5ace4000 r-xs 0000f000 08:01 683221                     /home/soyfactor/.m2/repository/org/javaruntype/javaruntype/1.1/javaruntype-1.1.jar
+7fcd5ace4000-7fcd5ace9000 r-xs 00040000 08:01 3815006                    /home/soyfactor/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar
+7fcd5ace9000-7fcd5acfd000 r-xs 000d4000 08:01 683305                     /home/soyfactor/.m2/repository/org/op4j/op4j/1.0/op4j-1.0.jar
+7fcd5acfd000-7fcd5acff000 r-xs 0000d000 08:01 1721164                    /home/soyfactor/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+7fcd5acff000-7fcd5ad3e000 r-xs 00282000 08:01 1337000                    /home/soyfactor/.m2/repository/org/springframework/spring/2.5.2/spring-2.5.2.jar
+7fcd5ad3e000-7fcd5ad3f000 r-xs 0000b000 08:01 1337003                    /home/soyfactor/.m2/repository/com/jcraft/jzlib/1.0.7/jzlib-1.0.7.jar
+7fcd5ad3f000-7fcd5ad4d000 r-xs 000b7000 08:01 684291                     /home/soyfactor/.m2/repository/org/openxdata/openxdata-server-wf/1.1-SNAPSHOT/openxdata-server-wf-1.1-SNAPSHOT.jar
+7fcd5ad4d000-7fcd5ad51000 r-xs 0001d000 08:01 679658                     /home/soyfactor/.m2/repository/com/allen_sauer/gwt-dnd/3.0.1/gwt-dnd-3.0.1.jar
+7fcd5ad51000-7fcd5ad5a000 r-xs 00081000 08:01 3035762                    /home/soyfactor/.m2/repository/org/purc/gwt-querybuilder/2.0.2/gwt-querybuilder-2.0.2.jar
+7fcd5ad5a000-7fcd5ad5c000 r-xs 00009000 08:01 681004                     /home/soyfactor/.m2/repository/org/zenika/gwt-datepicker/r30/gwt-datepicker-r30.jar
+7fcd5ad5c000-7fcd5ad6d000 r-xs 00105000 08:01 1851860                    /home/soyfactor/.m2/repository/org/purc/gwt-purcforms/2.0.2/gwt-purcforms-2.0.2.jar
+7fcd5ad6d000-7fcd5ad6f000 r-xs 0000d000 08:01 679174                     /home/soyfactor/.m2/repository/org/openxdata/openxdata-mobile-model/1.0/openxdata-mobile-model-1.0.jar
+7fcd5ad6f000-7fcd5ad70000 r-xs 00002000 08:01 6949473                    /home/soyfactor/.m2/repository/org/openxdata/openxdata-wf-mobile-model/1.0-SNAPSHOT/openxdata-wf-mobile-model-1.0-SNAPSHOT.jar
+7fcd5ad70000-7fcd5ad73000 r-xs 00013000 08:01 1721157                    /home/soyfactor/.m2/repository/org/apache/commons/commons-io/1.3.2/commons-io-1.3.2.jar
+7fcd5ad73000-7fcd5ad75000 r-xs 0000b000 08:01 4598847                    /home/soyfactor/.m2/repository/com/google/inject/extensions/guice-servlet/2.0/guice-servlet-2.0.jar
+7fcd5ad75000-7fcd5ad77000 r-xs 0001f000 08:01 677775                     /home/soyfactor/.m2/repository/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8-s9api.jar
+7fcd5ad77000-7fcd5ad79000 r-xs 0001e000 08:01 680312                     /home/soyfactor/.m2/repository/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8-dom.jar
+7fcd5ad79000-7fcd5ad7d000 r-xs 00023000 08:01 3815347                    /home/soyfactor/.m2/repository/org/eclipse/emf/common/2.2.3/common-2.2.3.jar
+7fcd5ad7d000-7fcd5ad89000 r-xs 000ac000 08:01 3815010                    /home/soyfactor/.m2/repository/org/eclipse/emf/ecore/2.2.3/ecore-2.2.3.jar
+7fcd5ad89000-7fcd5ad8f000 r-xs 000a6000 08:01 3815014                    /home/soyfactor/.m2/repository/org/eclipse/xsd/xsd/2.2.3/xsd-2.2.3.jar
+7fcd5ad8f000-7fcd5ad92000 r-xs 00023000 08:01 6438033                    /home/soyfactor/.m2/repository/org/jdom/jdom/1.1/jdom-1.1.jar
+7fcd5ad92000-7fcd5ad99000 r-xs 0007c000 08:01 1594153                    /home/soyfactor/.m2/repository/org/yawlfoundation/yawl/yawl-engine/2.0.1/yawl-engine-2.0.1.jar
+7fcd5ad99000-7fcd5ad9a000 r-xs 00000000 08:01 4073561                    /home/soyfactor/.m2/repository/org/yawlfowndation/yawl-engine-with-parsers/2.0.1-SNAPSHOT/yawl-engine-with-parsers-2.0.1-SNAPSHOT.jar
+7fcd5ad9a000-7fcd5ad9b000 r-xs 00000000 08:01 683919                     /home/soyfactor/.m2/repository/org/openxdata/openxdata-workflow-server-lib/1.0-SNAPSHOT/openxdata-workflow-server-lib-1.0-SNAPSHOT.jar
+7fcd5ad9b000-7fcd5ad9c000 r-xs 00008000 08:01 680316                     /home/soyfactor/.m2/repository/net/sf/gilead/gilead-hibernate/1.3.0/gilead-hibernate-1.3.0.jar
+7fcd5ad9c000-7fcd5ad9e000 r-xs 0000a000 08:01 680303                     /home/soyfactor/.m2/repository/net/sf/beanlib/beanlib-hibernate/5.0.2beta/beanlib-hibernate-5.0.2beta.jar
+7fcd5ad9e000-7fcd5ad9f000 r-xs 00000000 08:01 680283                     /home/soyfactor/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar
+7fcd5ad9f000-7fcd5ada0000 r-xs 00006000 08:01 682695                     /home/soyfactor/.m2/repository/asm/asm/1.5.3/asm-1.5.3.jar
+7fcd5ada0000-7fcd5ada6000 r-xs 0003f000 08:01 680284                     /home/soyfactor/.m2/repository/cglib/cglib/2.1_3/cglib-2.1_3.jar
+7fcd5ada6000-7fcd5adaf000 r-xs 0006d000 08:01 680614                     /home/soyfactor/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar
+7fcd5adaf000-7fcd5adb4000 r-xs 00019000 08:01 680292                     /home/soyfactor/.m2/repository/net/sf/beanlib/beanlib/5.0.2beta/beanlib-5.0.2beta.jar
+7fcd5adb4000-7fcd5adb6000 r-xs 00005000 08:01 681009                     /home/soyfactor/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar
+7fcd5adb6000-7fcd5adbc000 r-xs 00034000 08:01 680305                     /home/soyfactor/.m2/repository/net/sf/gilead/gilead-core/1.3.0/gilead-core-1.3.0.jar
+7fcd5adbc000-7fcd5adc3000 r-xs 00031000 08:01 680293                     /home/soyfactor/.m2/repository/net/sf/gilead/gilead4gwt/1.3.0/gilead4gwt-1.3.0.jar
+7fcd5adc3000-7fcd5adc8000 r-xs 00021000 08:01 679647                     /home/soyfactor/.m2/repository/org/openxdata/openxdata-model-wf/1.1-SNAPSHOT/openxdata-model-wf-1.1-SNAPSHOT.jar
+7fcd5adc8000-7fcd5adcb000 r-xs 00015000 08:01 1721024                    /home/soyfactor/.m2/repository/com/google/gwt/inject/gin/1.0/gin-1.0.jar
+7fcd5adcb000-7fcd5adcd000 r-xs 00000000 08:01 680288                     /home/soyfactor/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+7fcd5adcd000-7fcd5addb000 r-xs 00095000 08:01 4598848                    /home/soyfactor/.m2/repository/com/google/inject/guice/2.0/guice-2.0.jar
+7fcd5addb000-7fcd5ae04000 r-xs 00158000 08:01 1721156                    /home/soyfactor/.m2/repository/com/google/gwt/gwt-servlet/2.0.3/gwt-servlet-2.0.3.jar
+7fcd5ae04000-7fcd5ae05000 ---p 00000000 00:00 0 
+7fcd5ae05000-7fcd5af05000 rwxp 00000000 00:00 0 
+7fcd5af05000-7fcd5af08000 ---p 00000000 00:00 0 
+7fcd5af08000-7fcd5b006000 rwxp 00000000 00:00 0 
+7fcd5b006000-7fcd5b009000 ---p 00000000 00:00 0 
+7fcd5b009000-7fcd5b107000 rwxp 00000000 00:00 0 
+7fcd5b107000-7fcd5b10a000 ---p 00000000 00:00 0 
+7fcd5b10a000-7fcd5b208000 rwxp 00000000 00:00 0 
+7fcd5b208000-7fcd5b20b000 ---p 00000000 00:00 0 
+7fcd5b20b000-7fcd5b309000 rwxp 00000000 00:00 0 
+7fcd5b309000-7fcd5b348000 r-xp 00000000 08:01 794091                     /usr/lib/locale/en_US.utf8/LC_CTYPE
+7fcd5b348000-7fcd5b34b000 ---p 00000000 00:00 0 
+7fcd5b34b000-7fcd5b449000 rwxp 00000000 00:00 0 
+7fcd5b449000-7fcd5b44c000 ---p 00000000 00:00 0 
+7fcd5b44c000-7fcd5b54a000 rwxp 00000000 00:00 0 
+7fcd5b54a000-7fcd5b54b000 ---p 00000000 00:00 0 
+7fcd5b54b000-7fcd5b981000 rwxp 00000000 00:00 0 
+7fcd5b981000-7fcd5bb19000 r-xs 03013000 08:01 6291461                    /opt/jdk1.6.0_22/jre/lib/rt.jar
+7fcd5bb19000-7fcd5bb41000 rwxp 00000000 00:00 0 
+7fcd5bb41000-7fcd5bb42000 ---p 00000000 00:00 0 
+7fcd5bb42000-7fcd5bc42000 rwxp 00000000 00:00 0 
+7fcd5bc42000-7fcd5bc43000 ---p 00000000 00:00 0 
+7fcd5bc43000-7fcd5bd6d000 rwxp 00000000 00:00 0 
+7fcd5bd6d000-7fcd5be57000 rwxp 00000000 00:00 0 
+7fcd5be57000-7fcd5be81000 rwxp 00000000 00:00 0 
+7fcd5be81000-7fcd5bf6a000 rwxp 00000000 00:00 0 
+7fcd5bf6a000-7fcd5bfb0000 rwxp 00000000 00:00 0 
+7fcd5bfb0000-7fcd5bfdf000 ---p 00000000 00:00 0 
+7fcd5bfdf000-7fcd613e0000 rwxp 00000000 00:00 0 
+7fcd613e0000-7fcd7e690000 rwxp 00000000 00:00 0 
+7fcd7e690000-7fcd87070000 rwxp 00000000 00:00 0 
+7fcd87070000-7fcd8cfe0000 ---p 00000000 00:00 0 
+7fcd8cfe0000-7fcd8cfe1000 r-xs 00007000 08:01 3028153                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/commons-fileupload-1.1.1.jar
+7fcd8cfe1000-7fcd8cfe2000 r-xs 00006000 08:01 3028144                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/trg-dao-hibernate-0.5.1.jar
+7fcd8cfe2000-7fcd8cfe5000 r-xs 0000d000 08:01 3028154                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/commons-io-1.1.jar
+7fcd8cfe5000-7fcd8cfe7000 r-xs 0000f000 08:01 3028135                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/activation-1.1.1.jar
+7fcd8cfe7000-7fcd8cfea000 r-xs 00000000 08:01 4194373                    /var/cache/fontconfig/d60319d88cac85ba9e1a07bd06cfbb8c-le64.cache-3
+7fcd8cfea000-7fcd8db4a000 rwxp 00000000 00:00 0 
+7fcd8db4a000-7fcd8ffea000 rwxp 00000000 00:00 0 
+7fcd8ffea000-7fcd8fff8000 r-xp 00000000 08:01 6438392                    /opt/jdk1.6.0_22/jre/lib/amd64/libzip.so
+7fcd8fff8000-7fcd900fa000 ---p 0000e000 08:01 6438392                    /opt/jdk1.6.0_22/jre/lib/amd64/libzip.so
+7fcd900fa000-7fcd900fd000 rwxp 00010000 08:01 6438392                    /opt/jdk1.6.0_22/jre/lib/amd64/libzip.so
+7fcd900fd000-7fcd900fe000 rwxp 00000000 00:00 0 
+7fcd900fe000-7fcd9010a000 r-xp 00000000 08:01 3687307                    /lib/libnss_files-2.11.1.so
+7fcd9010a000-7fcd90309000 ---p 0000c000 08:01 3687307                    /lib/libnss_files-2.11.1.so
+7fcd90309000-7fcd9030a000 r-xp 0000b000 08:01 3687307                    /lib/libnss_files-2.11.1.so
+7fcd9030a000-7fcd9030b000 rwxp 0000c000 08:01 3687307                    /lib/libnss_files-2.11.1.so
+7fcd9030b000-7fcd90315000 r-xp 00000000 08:01 3673411                    /lib/libnss_nis-2.11.1.so
+7fcd90315000-7fcd90514000 ---p 0000a000 08:01 3673411                    /lib/libnss_nis-2.11.1.so
+7fcd90514000-7fcd90515000 r-xp 00009000 08:01 3673411                    /lib/libnss_nis-2.11.1.so
+7fcd90515000-7fcd90516000 rwxp 0000a000 08:01 3673411                    /lib/libnss_nis-2.11.1.so
+7fcd90516000-7fcd9051e000 r-xp 00000000 08:01 3673410                    /lib/libnss_compat-2.11.1.so
+7fcd9051e000-7fcd9071d000 ---p 00008000 08:01 3673410                    /lib/libnss_compat-2.11.1.so
+7fcd9071d000-7fcd9071e000 r-xp 00007000 08:01 3673410                    /lib/libnss_compat-2.11.1.so
+7fcd9071e000-7fcd9071f000 rwxp 00008000 08:01 3673410                    /lib/libnss_compat-2.11.1.so
+7fcd9071f000-7fcd90726000 r-xp 00000000 08:01 6438394                    /opt/jdk1.6.0_22/jre/lib/amd64/native_threads/libhpi.so
+7fcd90726000-7fcd90827000 ---p 00007000 08:01 6438394                    /opt/jdk1.6.0_22/jre/lib/amd64/native_threads/libhpi.so
+7fcd90827000-7fcd90829000 rwxp 00008000 08:01 6438394                    /opt/jdk1.6.0_22/jre/lib/amd64/native_threads/libhpi.so
+7fcd90829000-7fcd9082a000 rwxp 00000000 00:00 0 
+7fcd9082a000-7fcd90841000 r-xp 00000000 08:01 3672879                    /lib/libnsl-2.11.1.so
+7fcd90841000-7fcd90a40000 ---p 00017000 08:01 3672879                    /lib/libnsl-2.11.1.so
+7fcd90a40000-7fcd90a41000 r-xp 00016000 08:01 3672879                    /lib/libnsl-2.11.1.so
+7fcd90a41000-7fcd90a42000 rwxp 00017000 08:01 3672879                    /lib/libnsl-2.11.1.so
+7fcd90a42000-7fcd90a44000 rwxp 00000000 00:00 0 
+7fcd90a44000-7fcd90a6c000 r-xp 00000000 08:01 6438405                    /opt/jdk1.6.0_22/jre/lib/amd64/libjava.so
+7fcd90a6c000-7fcd90b6c000 ---p 00028000 08:01 6438405                    /opt/jdk1.6.0_22/jre/lib/amd64/libjava.so
+7fcd90b6c000-7fcd90b73000 rwxp 00028000 08:01 6438405                    /opt/jdk1.6.0_22/jre/lib/amd64/libjava.so
+7fcd90b73000-7fcd90b80000 r-xp 00000000 08:01 6438387                    /opt/jdk1.6.0_22/jre/lib/amd64/libverify.so
+7fcd90b80000-7fcd90c7f000 ---p 0000d000 08:01 6438387                    /opt/jdk1.6.0_22/jre/lib/amd64/libverify.so
+7fcd90c7f000-7fcd90c82000 rwxp 0000c000 08:01 6438387                    /opt/jdk1.6.0_22/jre/lib/amd64/libverify.so
+7fcd90c82000-7fcd90c89000 r-xp 00000000 08:01 3672883                    /lib/librt-2.11.1.so
+7fcd90c89000-7fcd90e88000 ---p 00007000 08:01 3672883                    /lib/librt-2.11.1.so
+7fcd90e88000-7fcd90e89000 r-xp 00006000 08:01 3672883                    /lib/librt-2.11.1.so
+7fcd90e89000-7fcd90e8a000 rwxp 00007000 08:01 3672883                    /lib/librt-2.11.1.so
+7fcd90e8a000-7fcd90e8d000 ---p 00000000 00:00 0 
+7fcd90e8d000-7fcd90f8b000 rwxp 00000000 00:00 0 
+7fcd90f8b000-7fcd9100d000 r-xp 00000000 08:01 3670195                    /lib/libm-2.11.1.so
+7fcd9100d000-7fcd9120c000 ---p 00082000 08:01 3670195                    /lib/libm-2.11.1.so
+7fcd9120c000-7fcd9120d000 r-xp 00081000 08:01 3670195                    /lib/libm-2.11.1.so
+7fcd9120d000-7fcd9120e000 rwxp 00082000 08:01 3670195                    /lib/libm-2.11.1.so
+7fcd9120e000-7fcd919e8000 r-xp 00000000 08:01 6438412                    /opt/jdk1.6.0_22/jre/lib/amd64/server/libjvm.so
+7fcd919e8000-7fcd91aea000 ---p 007da000 08:01 6438412                    /opt/jdk1.6.0_22/jre/lib/amd64/server/libjvm.so
+7fcd91aea000-7fcd91c7b000 rwxp 007dc000 08:01 6438412                    /opt/jdk1.6.0_22/jre/lib/amd64/server/libjvm.so
+7fcd91c7b000-7fcd91cb6000 rwxp 00000000 00:00 0 
+7fcd91cb6000-7fcd91e30000 r-xp 00000000 08:01 3687304                    /lib/libc-2.11.1.so
+7fcd91e30000-7fcd9202f000 ---p 0017a000 08:01 3687304                    /lib/libc-2.11.1.so
+7fcd9202f000-7fcd92033000 r-xp 00179000 08:01 3687304                    /lib/libc-2.11.1.so
+7fcd92033000-7fcd92034000 rwxp 0017d000 08:01 3687304                    /lib/libc-2.11.1.so
+7fcd92034000-7fcd92039000 rwxp 00000000 00:00 0 
+7fcd92039000-7fcd9203b000 r-xp 00000000 08:01 3687308                    /lib/libdl-2.11.1.so
+7fcd9203b000-7fcd9223b000 ---p 00002000 08:01 3687308                    /lib/libdl-2.11.1.so
+7fcd9223b000-7fcd9223c000 r-xp 00002000 08:01 3687308                    /lib/libdl-2.11.1.so
+7fcd9223c000-7fcd9223d000 rwxp 00003000 08:01 3687308                    /lib/libdl-2.11.1.so
+7fcd9223d000-7fcd92255000 r-xp 00000000 08:01 3673416                    /lib/libpthread-2.11.1.so
+7fcd92255000-7fcd92454000 ---p 00018000 08:01 3673416                    /lib/libpthread-2.11.1.so
+7fcd92454000-7fcd92455000 r-xp 00017000 08:01 3673416                    /lib/libpthread-2.11.1.so
+7fcd92455000-7fcd92456000 rwxp 00018000 08:01 3673416                    /lib/libpthread-2.11.1.so
+7fcd92456000-7fcd9245a000 rwxp 00000000 00:00 0 
+7fcd9245a000-7fcd9247a000 r-xp 00000000 08:01 3672880                    /lib/ld-2.11.1.so
+7fcd9247a000-7fcd9247b000 r-xs 00002000 08:01 3028152                    /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war/WEB-INF/lib/minixpath-0.3.jar
+7fcd9247b000-7fcd9247f000 r-xs 00000000 08:01 4196831                    /var/cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-3
+7fcd9247f000-7fcd92482000 r-xs 00006000 08:01 679675                     /home/soyfactor/.m2/repository/net/customware/gwt/dispatch/gwt-dispatch/1.0.0/gwt-dispatch-1.0.0.jar
+7fcd92482000-7fcd9248a000 r-xs 00032000 08:01 683168                     /home/soyfactor/.m2/repository/org/openxdata/openxdata-workflow/1.0-SNAPSHOT/openxdata-workflow-1.0-SNAPSHOT.jar
+7fcd9248a000-7fcd924b8000 rwxp 00000000 00:00 0 
+7fcd924b8000-7fcd9254a000 rwxp 00000000 00:00 0 
+7fcd9254a000-7fcd9254d000 rwxp 00000000 00:00 0 
+7fcd9254d000-7fcd92554000 r-xp 00000000 08:01 6438377                    /opt/jdk1.6.0_22/jre/lib/amd64/jli/libjli.so
+7fcd92554000-7fcd92655000 ---p 00007000 08:01 6438377                    /opt/jdk1.6.0_22/jre/lib/amd64/jli/libjli.so
+7fcd92655000-7fcd92657000 rwxp 00008000 08:01 6438377                    /opt/jdk1.6.0_22/jre/lib/amd64/jli/libjli.so
+7fcd92657000-7fcd92658000 rwxp 00000000 00:00 0 
+7fcd92658000-7fcd92659000 r-xs 00000000 08:01 4194357                    /var/cache/fontconfig/4794a0821666d79190d59a36cb4f44b5-le64.cache-3
+7fcd92659000-7fcd9265f000 r-xs 000ad000 08:01 6316738                    /opt/jdk1.6.0_22/jre/lib/ext/mysql-connector-java-5.1.12.jar
+7fcd9265f000-7fcd92666000 r-xs 0006a000 08:01 6316736                    /opt/jdk1.6.0_22/jre/lib/ext/mail.jar
+7fcd92666000-7fcd9266d000 r-xs 00000000 08:01 809087                     /usr/lib/gconv/gconv-modules.cache
+7fcd9266d000-7fcd92675000 rwxs 00000000 08:01 6836113                    /tmp/hsperfdata_soyfactor/4813
+7fcd92675000-7fcd92676000 rwxp 00000000 00:00 0 
+7fcd92676000-7fcd92677000 r-xp 00000000 00:00 0 
+7fcd92677000-7fcd92679000 rwxp 00000000 00:00 0 
+7fcd92679000-7fcd9267a000 r-xp 0001f000 08:01 3672880                    /lib/ld-2.11.1.so
+7fcd9267a000-7fcd9267b000 rwxp 00020000 08:01 3672880                    /lib/ld-2.11.1.so
+7fcd9267b000-7fcd9267c000 rwxp 00000000 00:00 0 
+7fff91ee6000-7fff91efe000 rwxp 00000000 00:00 0                          [stack]
+7fff91fc6000-7fff91fc7000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xmx700M -Xss1024k 
+java_command: com.google.gwt.dev.DevMode -war /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/war -gen /home/soyfactor/mvac/Code/oxdWorkflows/server/openxdata/admin/target/.generated -logLevel INFO -port 8888 -startupUrl OpenXDataServerAdmin/OpenXDataServerAdmin.html org.openxdata.server.admin.OpenXDataServerAdminFirefox
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/opt/jdk1.6.0_22/
+PATH=/opt/apache-tomcat-6.0.29/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+USERNAME=soyfactor
+LD_LIBRARY_PATH=/opt/jdk1.6.0_22/jre/lib/amd64/server:/opt/jdk1.6.0_22/jre/lib/amd64:/opt/jdk1.6.0_22/jre/../lib/amd64
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x731250], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x731250], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x5f5e30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: SIG_IGN, sa_mask[0]=0x00001000, sa_flags=0x10000000
+SIGXFSZ: [libjvm.so+0x5f5e30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x5f5e30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x5f8650], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x5f83a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x5f83a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x5f83a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x5f83a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:squeeze/sid
+
+uname:Linux 2.6.32-27-generic #49-Ubuntu SMP Thu Dec 2 00:51:09 UTC 2010 x86_64
+libc:glibc 2.11.1 NPTL 2.11.1 
+rlimit: STACK 8192k, CORE 0k, NPROC infinity, NOFILE 1024, AS infinity
+load average:3.05 2.24 2.07
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 6, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1
+
+Memory: 4k page, physical 4048628k(163612k free), swap 4805624k(4709828k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (17.1-b03) for linux-amd64 JRE (1.6.0_22-b04), built on Sep 15 2010 01:07:59 by "java_re" with gcc 3.2.2 (SuSE Linux)
+
+time: Wed Jan 19 15:00:12 2011
+elapsed time: 738 seconds
+

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"> 
+ 
+   
+    <script type="text/javascript">
+      function getXMLHttpRequest() {
+        if (window.XMLHttpRequest) {
+          return new window.XMLHttpRequest;
+        } else {
+          try {
+            return new ActiveXObject("MSXML2.XMLHTTP.3.0");
+          } catch(ex) {
+            return null;
+          }
+        }
+      }
+
+      function starLP() {
+        var r = getXMLHttpRequest() 
+        r.open("GET", '/' + document.location.hash.replace('#', '') + "/lp.json");
+        r.send();
+      }
+    </script>
+  </head><body onload="setTimeout(starLP, 1000)">
+    hi
+  </body></html>

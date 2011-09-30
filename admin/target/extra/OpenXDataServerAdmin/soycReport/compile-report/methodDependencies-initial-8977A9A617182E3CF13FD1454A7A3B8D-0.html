@@ -1,0 +1,1416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: org.openxdata.modules.workflows.client.presenter.uimodel</h2>
+<a name="org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel"><h3 class="soyc-class-header">Class: org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel::$AvailableWIRSModel</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$AvailableWIRSModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$AvailableWIRSModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$clearMaps</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$refreshMaps</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::onRefresh</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel::$AvailableWIRSModel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$AvailableWIRSModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$AvailableWIRSModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$clearMaps</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$refreshMaps</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::onRefresh</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel::$addWir</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.AvailableWIRPresenter::$loadWorkItems</li>
+<li>org.openxdata.modules.workflows.client.presenter.AvailableWIRPresenter$1::$onWirsLoaded</li>
+<li>org.openxdata.modules.workflows.client.event.NewWIREvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewWIREvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadWorkItems</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$2::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$2::callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadWorkItems</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel::$addWir</li>
+<li>org.openxdata.modules.workflows.client.presenter.AvailableWIRPresenter::$loadWorkItems</li>
+<li>org.openxdata.modules.workflows.client.presenter.AvailableWIRPresenter$1::$onWirsLoaded</li>
+<li>org.openxdata.modules.workflows.client.event.NewWIREvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewWIREvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadWorkItems</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$2::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$2::callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadWorkItems</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel::$deleteWorkItems</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.AvailableWIRPresenter::$deleteWorkItems</li>
+<li>org.openxdata.modules.workflows.client.presenter.AvailableWIRPresenter$1::$onWirsDeleted</li>
+<li>org.openxdata.modules.workflows.client.event.NewWIREvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewWIREvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadWorkItems</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$2::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$2::callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadWorkItems</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.AvailableWIRSModel::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$AvailableWIRSModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$AvailableWIRSModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$clearMaps</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$refreshMaps</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::onRefresh</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel"><h3 class="soyc-class-header">Class: org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$ParamQuestionUiModel</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$ParamQuestionUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$ParamQuestionUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$ParamQuestionUiModel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$ParamQuestionUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$ParamQuestionUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$addParamQuestionMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$addMatch</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$2::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$bindUi</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$ParamQuestionPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$addTaskFormDefMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$addTaskFormDefMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$1::$onCreated</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadMaps</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$removeTaskFormDefMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$deleteTaskFormDefMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$1::$onDeleted</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadMaps</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$containsMapWithString</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$addTaskFormDefMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$addTaskFormDefMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$1::$onCreated</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadMaps</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$getParamQuestionMaps</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.view.ParamQuestionView::$refresh</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$deleteTaskFormDefMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$1::$onDeleted</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadMaps</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$getTaskVerFormMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$setCurrentTaskFormVersion</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$setCurrentTaskFormVersionMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$3::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$bindUi</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$ParamQuestionPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$getUnMatchedParams</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.view.ParamQuestionView::$refresh</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$deleteTaskFormDefMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$1::$onDeleted</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadMaps</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$getUnMatchedQuestions</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.view.ParamQuestionView::$refresh</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$deleteTaskFormDefMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$1::$onDeleted</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadMaps</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$removeParmaQuestionMapForString</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$deleteParamQuestionMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$4::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$bindUi</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$ParamQuestionPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$removeTaskFormDefMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$deleteTaskFormDefMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$1::$onDeleted</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewTaskFormEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadMaps</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::$setCurrentTaskFormVersion</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$setCurrentTaskFormVersionMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter$3::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$bindUi</li>
+<li>org.openxdata.modules.workflows.client.presenter.ParamQuestionPresenter::$ParamQuestionPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.ParamQuestionUiModel::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$ParamQuestionUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$ParamQuestionUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$ParamQuestionPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel"><h3 class="soyc-class-header">Class: org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$SpecStudyUiModel</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$SpecStudyUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$SpecStudyUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$SpecStudyUiModel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$SpecStudyUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$SpecStudyUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$addMatch</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$match</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$match</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter$1::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$SpecStudyPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$addSpec</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$addSpecification</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter$3::$onSpecLoaded</li>
+<li>org.openxdata.modules.workflows.client.event.NewSpecicationEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewSpecicationEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadOSpecifications</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$3::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$3::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$addStudy</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$addStudy</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter$4::$onStudyLoaded</li>
+<li>org.openxdata.modules.workflows.client.event.NewStudyEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewStudyEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadStudies</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadStudiesIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$addStudy</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$addStudy</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter$4::$onStudyLoaded</li>
+<li>org.openxdata.modules.workflows.client.event.NewStudyEvent::$dispatch</li>
+<li>org.openxdata.modules.workflows.client.event.NewStudyEvent::dispatch</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadStudies</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadStudiesIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$getMapWithUniqueName</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$removeMatch</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$unmatch</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter$2::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$SpecStudyPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$isValid</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$addMatch</li>
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$match</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$match</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter$1::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$SpecStudyPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$match</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$match</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter$1::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$SpecStudyPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$removeMatch</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$unmatch</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter$2::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$SpecStudyPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$similarMapExists</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$addMatch</li>
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::$match</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$match</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter$1::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.SpecStudyPresenter::$SpecStudyPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$SpecStudyPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.SpecStudyUiModel::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$SpecStudyUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$SpecStudyUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$loadXMLMap</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::$callback</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$4::callback</li>
+<li>org.openxdata.modules.workflows.client.dispatch.HelpCalback::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadSpecAndMapsIntoWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::$loadData</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView$1::$onViewed</li>
+<li>org.openxdata.server.admin.client.events.ViewMatchWorkflowsEvent::dispatch</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel"><h3 class="soyc-class-header">Class: org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$TaskFormUiModel</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$TaskFormUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$TaskFormUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$TaskFormUiModel</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$TaskFormUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$TaskFormUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$addSpecStudyMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$addSpecStudyMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter$4::mapCreated</li>
+<li>org.openxdata.modules.workflows.client.event.NewSpecStudyMapEvent$Handler::$clinit</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$bindHandlers</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$addTaskFormDefMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$addTaskFormMatch</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter$1::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$bindUi</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$getTasksList</li>
+<li>org.openxdata.modules.workflows.client.view.TaskFormView::$refresh</li>
+<li>org.openxdata.modules.workflows.client.view.TaskFormView::$setModel</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$getFormsList</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.view.TaskFormView::$refresh</li>
+<li>org.openxdata.modules.workflows.client.view.TaskFormView::$setModel</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$getMaps</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.view.TaskFormView::$refresh</li>
+<li>org.openxdata.modules.workflows.client.view.TaskFormView::$setModel</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$getSpecStudyMapFromString</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$setCurrentSpecStudyMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$setCurrentSpecStudy</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter$3::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$bindUi</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$getTasksList</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.view.TaskFormView::$refresh</li>
+<li>org.openxdata.modules.workflows.client.view.TaskFormView::$setModel</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$hasSpecStudyMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$addSpecStudyMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$addSpecStudyMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter$4::mapCreated</li>
+<li>org.openxdata.modules.workflows.client.event.NewSpecStudyMapEvent$Handler::$clinit</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$bindHandlers</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$removeSpecStudyMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$deleteSpecStudyMap</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter$4::mapDeleted</li>
+<li>org.openxdata.modules.workflows.client.event.NewSpecStudyMapEvent$Handler::$clinit</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$bindHandlers</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$removeTaskFormDefMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$deleteTaskFormMatch</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter$2::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$bindUi</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::$setCurrentSpecStudyMap</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$setCurrentSpecStudy</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter$3::onClick</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$bindUi</li>
+<li>org.openxdata.modules.workflows.client.presenter.TaskFormPresenter::$TaskFormPresenter</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.modules.workflows.client.presenter.uimodel.TaskFormUiModel::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$TaskFormUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$uimodel$TaskFormUiModel$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$TaskFormPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$create_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.gin.WFInjectorImpl::$get_Key$type$org$openxdata$modules$workflows$client$presenter$RootPanelPresenter$_annotation$$none$$</li>
+<li>org.openxdata.modules.workflows.client.WorkFlowWidget::$WorkFlowWidget</li>
+<li>org.openxdata.server.admin.client.view.WorkFlowView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getWorkFlowView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

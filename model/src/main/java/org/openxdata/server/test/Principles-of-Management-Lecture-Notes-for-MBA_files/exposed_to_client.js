@@ -1,0 +1,3 @@
+if(!window.Scribd) var Scribd = new Object();
+
+Scribd.ServerOptions = {"boomerang_enable_bandwidth_test":true,"boomerang_action_probability_word/view":0.2,"boomerang_action_probability_explore/index":"0.20","boomerang_action_probability_solr/documents":"0.03","boomerang_action_probability_login/login":0.3,"boomerang_action_probability_home/index":0.015,"boomerang_send_to_ga":true,"boomerang_logging_enabled":true,"boomerang_action_probability_people/view":"0.20","boomerang_action_probability_word/show":0.2,"boomerang_default_probability":1.0,"boomerang_action_probability_upload/upload_new":0.3,"boomerang_action_probability_user_document_collections/show":0.2,"boomerang_send_to_scribd":true};

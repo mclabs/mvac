@@ -1,0 +1,1904 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: org.openxdata.server.admin.client.tools</h2>
+<a name="org.openxdata.server.admin.client.tools.DiagnosisView"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.DiagnosisView</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.DiagnosisView</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.DiagnosisView::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.DiagnosisView::$update</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.DiagnosisView::$setupWidgets</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.DiagnosisView::$DiagnosisView</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.DiagnosisView::$update</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.DiagnosisView::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.DiagnosisView::update</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.HTMLLogFileView$1"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.HTMLLogFileView$1</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$1</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$1::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$1::$HTMLLogFileView$1</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$1::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$1::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.HTMLLogFileView$2"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.HTMLLogFileView$2</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$2</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::$HTMLLogFileView$2</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.HTMLLogFileView$3"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.HTMLLogFileView$3</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$3</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$clearLogFiles</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::onClick</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$3::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$3::$HTMLLogFileView$3</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$clearLogFiles</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::onClick</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$3::$onSuccess</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$3::onSuccess</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$clearLogFiles</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::onClick</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$3::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$clearLogFiles</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::onClick</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$3::onOtherFailure</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$clearLogFiles</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::onClick</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView$3::onSuccess</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$clearLogFiles</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::onClick</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.HTMLLogFileView"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.HTMLLogFileView</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView::$clearLogFiles</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView$2::onClick</li>
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView::$setUp</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.HTMLLogFileView::$initializeDialog</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$displayHTMLOutput</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.HTMLLogFileView::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.MobileInstaller$1"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.MobileInstaller$1</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$1</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$1::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::$MobileInstaller$1</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$1::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.MobileInstaller$2"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.MobileInstaller$2</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$2</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$2::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$2::$MobileInstaller$2</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$2::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$2::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.MobileInstaller$3$1"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.MobileInstaller$3$1</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$3$1</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$3::execute</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$install</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$3$1::$onSuccess</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$3$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$3::execute</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$install</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$3$1::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$3::execute</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$install</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$3$1::onOtherFailure</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$3::execute</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$install</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$3$1::onSuccess</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$3::execute</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$install</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.MobileInstaller$3"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.MobileInstaller$3</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$3</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$install</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$3::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$3::$MobileInstaller$3</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$install</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$3::execute</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$install</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller$3::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$install</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.MobileInstaller"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.MobileInstaller</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller::$addNewPhoneNo</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$loadPhoneNos</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller::$install</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller$1::onClick</li>
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller::$loadPhoneNos</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.MobileInstaller::$MobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.MobileInstaller::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.MainView::$mobileInstaller</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$5::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.openxdata.server.admin.client.tools.StatusWatchTool"><h3 class="soyc-class-header">Class: org.openxdata.server.admin.client.tools.StatusWatchTool</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.StatusWatchTool</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.StatusWatchTool::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.StatusWatchTool::$update</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.StatusWatchTool::$setupWidgets</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.tools.StatusWatchTool::$StatusWatchTool</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.StatusWatchTool::$update</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$updateDiagnosis</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::$onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5$1::onSuccess</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog$5::execute</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$diagnoseSystem</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$initializeDiagnostics</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.StatusWatchTool::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.openxdata.server.admin.client.tools.StatusWatchTool::update</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.controller.observe.OpenXDataObserver::$clinit</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$setupWidgets</li>
+<li>org.openxdata.server.admin.client.view.dialogs.OpenXDataDiagnosticToolDialog::$OpenXDataDiagnosticToolDialog</li>
+<li>org.openxdata.server.admin.client.view.MainView::$onShowDiagnosticToolClick</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar$6::execute</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructToolsMenuBar</li>
+<li>org.openxdata.server.admin.client.view.bar.OpenXDataMenuBar::$constructMenuBarInstanceOfAdministratorUser</li>
+<li>org.openxdata.server.admin.client.view.factory.MenuBarFactory::instanceOfAdministrator</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXDataMenuBar</li>
+<li>org.openxdata.server.admin.client.view.OpenXDataBaseView::$registerWithEventDispatchers</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

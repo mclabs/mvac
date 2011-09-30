@@ -1,0 +1,1589 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>
+Method Dependencies for Initially Live Code
+</title>
+<style type="text/css" media="screen">
+@import url('goog.css');
+@import url('inlay.css');
+@import url('soyc.css');
+</style>
+</head>
+<body>
+<div class="g-doc">
+<div id="hd" class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first">
+<p>
+<a href="index.html" id="gwt-logo" class="soyc-ir"><span>Google Web Toolkit</span></a>
+</p>
+</div>
+<div class="g-unit">
+</div>
+</div>
+<div id="soyc-appbar-lrg">
+<div class="g-section g-tpl-75-25 g-split">
+<div class="g-unit g-first">
+<h1>Method Dependencies for Initially Live Code</h1>
+</div>
+<div class="g-unit"></div>
+</div>
+</div>
+<div id="bd">
+<h2>Showing Package: org.zenika.widget.client.datePicker</h2>
+<a name="org.zenika.widget.client.datePicker.DatePicker"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.DatePicker</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::$addChangeHandler</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::$fireChange</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::$setSelectedDate</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar$7::onClick</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawDayGrid</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::$parseDate</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::onChange</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::$setSelectedDate</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$7::onClick</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawDayGrid</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::$showPopup</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::onClick</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::$synchronizeFromDate</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::$setSelectedDate</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar$7::onClick</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawDayGrid</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::addChangeHandler</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::onBrowserEvent</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::onChange</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.DatePicker::onKeyPress</a>
+<ul class="soyc-call-stack-list">
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.zenika.widget.client.datePicker.PopupCalendar$1$1"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.PopupCalendar$1$1</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$1$1</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$1::execute</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$1$1::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$1$1::$PopupCalendar$1$1</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar$1::execute</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$1$1::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$1::execute</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$1$1::run</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$1::execute</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.zenika.widget.client.datePicker.PopupCalendar$1"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.PopupCalendar$1</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$1</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$1::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$1::$PopupCalendar$1</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$1::execute</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$1::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.zenika.widget.client.datePicker.PopupCalendar$2"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.PopupCalendar$2</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$2</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$2::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$2::$PopupCalendar$2</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$2::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$2::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.zenika.widget.client.datePicker.PopupCalendar$3"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.PopupCalendar$3</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$3</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$3::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$3::$PopupCalendar$3</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$3::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$3::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.zenika.widget.client.datePicker.PopupCalendar$4"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.PopupCalendar$4</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$4</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$4::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$4::$PopupCalendar$4</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$4::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$4::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.zenika.widget.client.datePicker.PopupCalendar$5"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.PopupCalendar$5</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$5</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$5::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$5::$PopupCalendar$5</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$5::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$5::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.zenika.widget.client.datePicker.PopupCalendar$6"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.PopupCalendar$6</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$6</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$6::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$6::$PopupCalendar$6</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$6::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$6::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.zenika.widget.client.datePicker.PopupCalendar$7"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.PopupCalendar$7</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$7</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawDayGrid</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$7::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$7::$PopupCalendar$7</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawDayGrid</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$7::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawDayGrid</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar$7::onClick</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawDayGrid</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<a name="org.zenika.widget.client.datePicker.PopupCalendar"><h3 class="soyc-class-header">Class: org.zenika.widget.client.datePicker.PopupCalendar</a></h3>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$changeMonth</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar$2::onClick</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$clinit</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$displayMonth</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$changeMonth</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar$2::onClick</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$drawDayGrid</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$drawDaysGridContent</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$displayMonth</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$changeMonth</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar$2::onClick</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$drawWeekLine</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$getDaysGridOrigin</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawDaysGridContent</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$displayMonth</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$changeMonth</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar$2::onClick</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$drawMonthLine</li>
+<li>org.zenika.widget.client.datePicker.PopupCalendar::$PopupCalendar</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::$setDisplayedMonth</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::$showPopup</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::onClick</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+<div class='main'>
+<a class='toggle soyc-call-stack-link' onclick='toggle.call(this)'><span class='calledBy'> Call stack: </span>org.zenika.widget.client.datePicker.PopupCalendar::getClass</a>
+<ul class="soyc-call-stack-list">
+<li>org.zenika.widget.client.datePicker.DatePicker::$$init</li>
+<li>org.zenika.widget.client.datePicker.DatePicker::$DatePicker</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$$init</li>
+<li>org.openxdata.server.admin.client.view.StudyDataView::$StudyDataView</li>
+<li>org.openxdata.server.admin.client.view.StudyView::setUp</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getStudyView</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$4::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::$onSelectedIndexChanged</li>
+<li>org.openxdata.server.admin.client.view.widget.OpenXDataStackPanel::onBrowserEvent</li>
+<li>org.openxdata.server.admin.client.view.factory.OpenXDataViewFactory::$getOpenXdataStackPanel</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade$2::execute</li>
+<li>org.openxdata.server.admin.client.controller.facade.MainViewControllerFacade::saveData</li>
+<li>org.openxdata.server.admin.client.view.helper.StudyViewHelper::onSaveLocaleText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheLanguageText</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController$14::execute</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveLanguageTextDeffered</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::$saveTheForm</li>
+<li>org.purc.purcforms.client.controller.FormDesignerController::authenticationCallback</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$publishJS</li>
+<li>org.purc.purcforms.client.FormDesignerEntryPoint::$onModuleLoad</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

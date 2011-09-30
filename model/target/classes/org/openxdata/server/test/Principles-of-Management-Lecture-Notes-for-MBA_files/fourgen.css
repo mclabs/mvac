@@ -1,0 +1,821 @@
+/* :asset_packager_compatibility, 'config/asset_packages.yml' @ 1301083522 */
+
+
+/* :files, 'public/stylesheets/shared', ... @ (none) */
+
+
+/* :files, 'app/views', ... @ (none) */
+
+
+/* :class_inlines, 'app/views', ... @ 1301083520 */
+/* app/views/documents/fourgen/_featured_docs.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_featured_docs #pub_featured_docs {white-space: normal; color: #666666; font-size: 11px; font-family: Arial}
+.autogen_class_views_documents_fourgen_featured_docs #pub_featured_docs .pub_featured_doc {margin-top: 10px; margin-bottom: 10px; width: 300px; height: 110px}
+.autogen_class_views_documents_fourgen_featured_docs #pub_featured_docs .pub_featured_doc_info {float: right; width: 215px; height: 110px}
+.autogen_class_views_documents_fourgen_featured_docs #pub_featured_docs a.pub_featured_doc_title {font-size: 13px; font-weight: bold}
+.autogen_class_views_documents_fourgen_featured_docs #pub_featured_docs .pub_featured_doc_user {margin-top: 5px}
+.autogen_class_views_documents_fourgen_featured_docs #pub_featured_docs .pub_featured_doc_user a {color: #009900}
+.autogen_class_views_documents_fourgen_featured_docs .featured_doc_small_thumbnail_shadow {position: relative; margin: 0; padding-bottom: 9px; background: transparent url("/images/ppp/shadow_suggested_77x8.png?1301083584") no-repeat center 99px; width: 78px}
+.autogen_class_views_documents_fourgen_featured_docs .featured_doc_small_thumbnail_shadow a:hover {text-decoration: none}
+.autogen_class_views_documents_fourgen_featured_docs .featured_doc_small_thumbnail_shadow .thumbnail {float: none; width: 72px; height: 93px; background-color: #fff; padding: 2px; border: 1px solid #ccc; /* @include box-shadow(#999, 1px, 1px, 3px);*/ }
+.autogen_class_views_documents_fourgen_featured_docs .featured_doc_small_thumbnail_shadow .thumbnail .no_of_pages {background-image: none; background-color: #fff; border: 1px solid #ccc; border-right: 0; border-bottom: 0; -webkit-box-shadow: -1px -1px 2px #dddddd; -moz-box-shadow: -1px -1px 2px #dddddd; box-shadow: -1px -1px 2px #dddddd; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-radius-topleft: 5px; color: #999; font-size: 10px; bottom: 10px; right: 1px}
+
+
+/* app/views/documents/fourgen/_comments.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_comments {margin-bottom: 15px}
+.autogen_class_views_documents_fourgen_comments #comments_section .revealer {border-top: 0; padding-top: 0}
+.autogen_class_views_documents_fourgen_comments #comments_section .revealer .plus {-moz-border-radius: 3px; -webkit-border-radius: 3px; background: #cccccc url('/images/home/btn_plus_8x8.gif?1301083584') no-repeat 5px 6px}
+.autogen_class_views_documents_fourgen_comments #comments_section .revealer .plus_active {-moz-border-radius: 3px; -webkit-border-radius: 3px; background: #cccccc url('/images/home/btn_plus_8x8.gif?1301083584') no-repeat 5px -8px}
+.autogen_class_views_documents_fourgen_comments #comments_section .button {float: left}
+.autogen_class_views_documents_fourgen_comments #comments_section .spinner {margin-left: 10px; margin-top: 5px}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment {white-space: normal}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment form {background: none; padding: 0}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment form textarea {background-color: #FFFFCC; padding: 4px; width: 292px; height: 16px}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment form .controls {display: none}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment #submit_comment {float: right; margin-right: 3px}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment .count {display: inline-block; margin-top: 5px; font-size: 13px; color: #b8b8b8; font-weight: bold}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment .count .number {color: #999999}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment .count .limit_reached {color: #990000}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment .share_confirmations {float: right; margin-right: 7px}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment .share_confirmations .confirmation_container {margin: 0 0 0 5px}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment .share_confirmations .share_text {font-size: 11px; color: #999; position: relative; left: 2px}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment.on {margin-bottom: 10px}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment.on textarea {background-color: #FFF; height: 4em}
+.autogen_class_views_documents_fourgen_comments #comments_section .add_a_comment.on .controls {display: block; margin-top: 5px}
+.autogen_class_views_documents_fourgen_comments #comments_section a.toggle {display: block; border: 1px solid #AAA; -moz-border-radius: 3px; -webkit-border-radius: 3px; color: #FAFAFA; font-weight: bold; height: 18px; line-height: 18px; font-size: 11px; padding-left: 20px; margin: 5px 0; background: #aaaaaa url('/images/home/triangle_fff.gif?1301083584') no-repeat 5px -10px}
+.autogen_class_views_documents_fourgen_comments #comments_section a.toggle:hover {text-decoration: none; color: #FFF}
+.autogen_class_views_documents_fourgen_comments #comments_section a.toggle.open {background-position: 7px 7px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container {white-space: nowrap; font-size: 11px; background: none; border-top: 1px dotted #999; padding: 10px 0}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container:first-child {border-top: 0}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .delete_event {float: right}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .delete_event a {color: #900}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_user {vertical-align: top; display: inline-block; width: 28px; float: none}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_user .feed_thumbnail {border: 1px solid #CCC; background-color: white; padding: 2px; width: 18px; height: 18px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_user .feed_thumbnail a {border: 0; height: 18px; width: 18px; display: block}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main {display: inline-block; width: 270px; margin: 0; line-height: normal}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .username {font-weight: bold; margin: 0; padding: 0; line-height: 22px; font-size: 11px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .username a {padding: 0 3px 0 0}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main blockquote {white-space: normal; line-height: 1.3em; margin: 0 0 5px 0; font-size: 11px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_time {float: left; margin: 0}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_time a, .autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_time span {color: #999}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply {float: right; margin: 0}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply a.event_reply_button {float: right; width: 13px; height: 12px; padding: 0; background: url('/images/home/btn_reply_white_13x12.png?1301083584')}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply a.event_reply_button span {display: none}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply a.event_reply_button:hover {background-position: 0 -12px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply .flag_event {float: right; margin-right: 7px; border-right: 1px solid #CCC; padding-right: 7px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply .flag_event a {color: #980000}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply_container {padding-top: 10px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply_container .event_reply_utilities {width: 262px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply_container textarea#event_status_reply_text {width: 262px; padding: 4px; height: 3em}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_main .event_reply_container .submit_status_reply {font-size: 11px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_children_container .event_reply_container {padding-top: 10px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .document_event_container .event_children_container .event_reply_container .event_main {width: 242px}
+.autogen_class_views_documents_fourgen_comments #comments_section .comments .more_comments .document_event_container:first-child {border-top: 1px dotted #999}
+
+
+/* app/views/documents/fourgen/_toc.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_toc #sectionlist {font-size: 11px; font-family: Arial; width: 300px; padding: 7px}
+.autogen_class_views_documents_fourgen_toc #sectionlist .sections_icon {height: 11px; width: 12px; margin-top: 4px; margin-right: 6px; float: left; background-image: url(/images/4gen/icon_sections_12x11.png?1301083584)}
+.autogen_class_views_documents_fourgen_toc #sectionlist .toc_header {display: block; height: 3em; width: 300px; position: relative}
+.autogen_class_views_documents_fourgen_toc #sectionlist .toc_title {float: left}
+.autogen_class_views_documents_fourgen_toc #sectionlist .expand_collapse {padding-left: 1em; float: left; padding-top: 4px}
+.autogen_class_views_documents_fourgen_toc #sectionlist .toc_prev_next {float: right; padding-top: 4px}
+.autogen_class_views_documents_fourgen_toc #sectionlist ul {padding-bottom: 10px}
+.autogen_class_views_documents_fourgen_toc #sectionlist li {font-size: 11px; padding-bottom: 7px; margin-left: 14px; list-style-type: square; list-style-position: outside; color: #aaaaaa; white-space: normal}
+.autogen_class_views_documents_fourgen_toc #sectionlist .toc_control {color: #999; height: 2em; font-size: 11px; margin-bottom: 10px}
+.autogen_class_views_documents_fourgen_toc #sectionlist .toc_control .grey {color: #bbb}
+.autogen_class_views_documents_fourgen_toc #sectionlist .toc_control .grey:hover {text-decoration: none; cursor: default}
+
+
+/* app/views/documents/fourgen/_search.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_search a:hover {text-decoration: none}
+.autogen_class_views_documents_fourgen_search #search_results_contaner {text-align: left; padding: 5px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header {width: auto; line-height: 24px; color: #DEDEDE; font-weight: bold; border-bottom: 2px solid #454545; padding: 0; margin-bottom: 5px; padding-bottom: 7px; overflow: hidden}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .found {font-style: italic; padding-left: 5px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .search_summary {float: left; width: 485px; overflow: hidden; white-space: nowrap}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls {float: right; -webkit-user-select: none; -moz-user-select: none}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls .results_selection {float: left}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls .results_selection span {color: #656565; float: left}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls a {float: left; width: 18px; height: 20px; background: #000000 no-repeat 0px -1px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls a:hover {background-position: 0px -26px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls .previous {background-image: url('/images/4gen/btn_prev_25x25_b.png?1301083584'); background-position: 2px -1px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls .previous:hover {background-position: 2px -26px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls .next {background-position: -2px -1px; background-image: url('/images/4gen/btn_next_25x25_b.png?1301083584')}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls .next:hover {background-position: -2px -26px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls .close_button {height: 20px; width: 20px; background-image: url('/images/4gen/btn_collapse_25x25_b.png?1301083584'); float: right}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls .close_button:hover {background-position: 0px -26px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .controls .disabled {color: #555}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .query_history {clear: both; line-height: 11px; padding-top: 5px; margin-top: 5px; font-size: 11px; border-top: 1px solid #2E2E2E}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .query_history a {font-weight: bold; color: #9E9E9E}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .query_history a.selected {color: #DEDEDE}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .query_history .sep {color: #656565}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .header .query_history .label {padding-right: 5px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .found {color: #FFD12C; font-weight: bold}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .results {height: 92px; overflow-y: auto; overflow-x: hidden; color: #BBBBBB}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .results .result {color: #BBBBBB; line-height: 23px; height: 23px; font-size: 11px; display: block}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .results .result .page, .autogen_class_views_documents_fourgen_search #search_results_contaner .results .result .snippet {display: inline-block; overflow: hidden; white-space: nowrap}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .results .result:hover {background-color: #252525; text-decoration: none}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .results .result .page {text-align: right; width: 45px; margin-left: 5px; margin-right: 5px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .results .result .snippet {width: 585px}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .results .selected, .autogen_class_views_documents_fourgen_search #search_results_contaner .results .selected:hover {background-color: #454545}
+.autogen_class_views_documents_fourgen_search #search_results_contaner .results .spinner {margin: 30px 330px}
+.autogen_class_views_documents_fourgen_search form.doc_search {padding: 7px 3px}
+.autogen_class_views_documents_fourgen_search form.doc_search a, .autogen_class_views_documents_fourgen_search form.doc_search span, .autogen_class_views_documents_fourgen_search form.doc_search input {background-color: #4c4c4c; border: none; width: 21px; color: #fff; font-size: 11px; display: block; float: left; height: 20px; padding: 0}
+.autogen_class_views_documents_fourgen_search form.doc_search .pad, .autogen_class_views_documents_fourgen_search form.doc_search .results_selection {width: 26px}
+.autogen_class_views_documents_fourgen_search form.doc_search .results_selection a {width: 13px; background-repeat: no-repeat}
+.autogen_class_views_documents_fourgen_search form.doc_search .results_selection a:hover {text-decoration: none; background-position: 0px -26px}
+.autogen_class_views_documents_fourgen_search form.doc_search .results_selection .previous {background-image: url('/images/4gen/btn_prev_25x25.png?1301083584'); background-position: -8px -2px}
+.autogen_class_views_documents_fourgen_search form.doc_search .results_selection .previous:hover {background-position: -8px -27px}
+.autogen_class_views_documents_fourgen_search form.doc_search .results_selection .next {background-position: -8px -2px; background-image: url('/images/4gen/btn_next_25x25.png?1301083584')}
+.autogen_class_views_documents_fourgen_search form.doc_search .results_selection .next:hover {background-position: -8px -27px}
+.autogen_class_views_documents_fourgen_search form.doc_search input.query {line-height: 20px; width: 200px; outline: none}
+.autogen_class_views_documents_fourgen_search form.doc_search .search_submit, .autogen_class_views_documents_fourgen_search form.doc_search .clear_query {background-color: #4c4c4c}
+.autogen_class_views_documents_fourgen_search form.doc_search .search_submit:hover, .autogen_class_views_documents_fourgen_search form.doc_search .clear_query:hover {background-position: -2px -27px}
+.autogen_class_views_documents_fourgen_search form.doc_search .search_submit {background: url('/images/4gen/btn_search_25x25.png?1301083584') -2px -2px}
+.autogen_class_views_documents_fourgen_search form.doc_search .clear_query {display: none}
+.autogen_class_views_documents_fourgen_search form.doc_search .clear_query_on {display: block; background: url('/images/4gen/btn_close_25x25.png?1301083584') -2px -2px}
+.autogen_class_views_documents_fourgen_search form.doc_search .clear_query_span, .autogen_class_views_documents_fourgen_search form.doc_search .clear_query {-moz-border-radius: 0px 3px 3px 0px; -webkit-border-radius: 0px 3px 3px 0px}
+.autogen_class_views_documents_fourgen_search form.doc_search .search_submit, .autogen_class_views_documents_fourgen_search form.doc_search .search_submit_span {-moz-border-radius: 3px 0px 0px 3px; -webkit-border-radius: 3px 0px 0px 3px}
+.autogen_class_views_documents_fourgen_search form.querying .pad, .autogen_class_views_documents_fourgen_search form.querying .results_selection, .autogen_class_views_documents_fourgen_search form.querying .next {-moz-border-radius: 0px 3px 3px 0px; -webkit-border-radius: 0px 3px 3px 0px}
+.autogen_class_views_documents_fourgen_search form.found .search_submit {background-position: -2px -52px}
+.autogen_class_views_documents_fourgen_search div.popup {position: absolute; left: 10px; bottom: 40px; width: 675px}
+.autogen_class_views_documents_fourgen_search div.popup div.content {background-color: #000000}
+.autogen_class_views_documents_fourgen_search div.popup div.tail {height: 15px; margin-top: 5px; background: url('/images/4gen/bubbles/triangle.png?1301083584') no-repeat 371px 0}
+
+
+/* app/views/documents/fourgen/layout/base.rb:14 @ 1301083519 */
+.outer_page {position: relative}
+.outer_page .b_tl {background-image: url(/images/4gen/page_border/tl.png?1301083584); background-position: top left; background-repeat: no-repeat; position: absolute; height: 8px; width: 8px; top: -8px; left: -8px}
+.outer_page .b_tr {background-image: url(/images/4gen/page_border/tr.png?1301083584); background-position: top right; background-repeat: no-repeat; position: absolute; height: 8px; width: 8px; top: -8px; right: -8px}
+.outer_page .b_br {background-image: url(/images/4gen/page_border/br.png?1301083584); background-position: bottom right; background-repeat: no-repeat; position: absolute; height: 8px; width: 8px; bottom: -8px; right: -8px}
+.outer_page .b_bl {background-image: url(/images/4gen/page_border/bl.png?1301083584); background-position: bottom left; background-repeat: no-repeat; position: absolute; height: 8px; width: 8px; bottom: -8px; left: -8px}
+.outer_page .b_t {background-image: url(/images/4gen/page_border/t.png?1301083584); background-repeat: repeat-x; position: absolute; height: 8px; top: -8px; left: 0px; right: 0px}
+.outer_page .b_r {background-image: url(/images/4gen/page_border/r.png?1301083584); background-repeat: repeat-y; position: absolute; width: 8px; right: -8px; top: 0px; bottom: 0px}
+.outer_page .b_b {background-image: url(/images/4gen/page_border/b.png?1301083584); background-repeat: repeat-x; position: absolute; height: 8px; bottom: -8px; left: 0px; right: 0px}
+.outer_page .b_l {background-image: url(/images/4gen/page_border/l.png?1301083584); background-repeat: repeat-y; position: absolute; width: 8px; left: -8px; top: 0px; bottom: 0px}
+
+
+/* app/views/documents/fourgen/layout/base.rb:15 @ 1301083519 */
+.between_page_ads .outer_page {position: relative}
+.between_page_ads .outer_page .b_tl {background-image: url(/images/4gen/ad_border/tl.png?1301083584); background-position: top left; background-repeat: no-repeat; position: absolute; height: 8px; width: 8px; top: -8px; left: -8px}
+.between_page_ads .outer_page .b_tr {background-image: url(/images/4gen/ad_border/tr.png?1301083584); background-position: top right; background-repeat: no-repeat; position: absolute; height: 8px; width: 8px; top: -8px; right: -8px}
+.between_page_ads .outer_page .b_br {background-image: url(/images/4gen/ad_border/br.png?1301083584); background-position: bottom right; background-repeat: no-repeat; position: absolute; height: 8px; width: 8px; bottom: -8px; right: -8px}
+.between_page_ads .outer_page .b_bl {background-image: url(/images/4gen/ad_border/bl.png?1301083584); background-position: bottom left; background-repeat: no-repeat; position: absolute; height: 8px; width: 8px; bottom: -8px; left: -8px}
+.between_page_ads .outer_page .b_t {background-image: url(/images/4gen/ad_border/t.png?1301083584); background-repeat: repeat-x; position: absolute; height: 8px; top: -8px; left: 0px; right: 0px}
+.between_page_ads .outer_page .b_r {background-image: url(/images/4gen/ad_border/r.png?1301083584); background-repeat: repeat-y; position: absolute; width: 8px; right: -8px; top: 0px; bottom: 0px}
+.between_page_ads .outer_page .b_b {background-image: url(/images/4gen/ad_border/b.png?1301083584); background-repeat: repeat-x; position: absolute; height: 8px; bottom: -8px; left: 0px; right: 0px}
+.between_page_ads .outer_page .b_l {background-image: url(/images/4gen/ad_border/l.png?1301083584); background-repeat: repeat-y; position: absolute; width: 8px; left: -8px; top: 0px; bottom: 0px}
+
+
+/* app/views/documents/fourgen/layout/_web.css @ 1301083519 */
+#view_container.base_layout {background-color: #F6F6F6}
+div#view_container {width: auto; overflow: hidden}
+div#view_container div#zoom_debug {display: none}
+div#view_container h1 {color: #1982ab; text-align: left; font-size: 25px; font-family: Georgia; font-style: italic; margin-bottom: 10px; line-height: 1em}
+div#view_container p.description {color: gray; font-size: 11px; width: 300px; white-space: normal}
+div#view_container #view_main_bar_wrapper {padding-top: 20px; white-space: nowrap; text-align: center; padding-bottom: 30px}
+div#view_container #view_main.new_view_main {float: none; width: auto; /* Inline Block This */ display: inline-block; vertical-align: top; zoom: 1; *display: inline}
+div#view_container #view_bar.new_view_bar {float: none; display: inline-block; /* a bug in IE7 causes margin-left to collapse sometimes here, so we use padding */ padding-left: 15px; vertical-align: top; text-align: left; zoom: 1; *display: inline}
+div#view_container #view_bar.new_view_bar .carousel_content a.username {background: none}
+div#view_container #view_bar .summary {white-space: normal; padding: 0}
+div#view_container #view_bar .summary .autogen_class_views_documents_ads_sideboard {padding: 25px 0}
+div#view_container #view_bar #great input[type=submit] {display: block}
+div#view_container #view_bar h3 {font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif; font-style: italic; color: #666; font-size: 16px; font-weight: normal; text-shadow: 0px 1px 0px white; text-align: left; margin-bottom: 10px}
+#viewer_main {position: relative}
+#viewer_document {/* This is commented out due to a bug in the current (4.0.4) version of Safari. As of today (5/4/2010) the nightly build does not have the bug. So, we may be able to uncomment this and remove the HACK HACK HACK lines from 4gen.js when the new version arrives. */ /* -webkit-perspective: 3500;*/ }
+#viewer_document div.outer_page {background-color: white}
+.basicPageflipForward {-moz-transform-origin: bottom left; -webkit-transform-origin: bottom left; background-color: white; border: 1px solid silver; -moz-box-shadow: none; -webkit-box-shadow: none}
+.basicPageflipBackward {-moz-transform-origin: bottom left; -webkit-transform-origin: bottom left; background-color: white; border: 1px solid silver; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-transform: rotateY(-90deg) skewY(-12deg); -moz-transform: rotateY(-90deg) skewY(-12deg)}
+.pageflipForward {border: 1px solid silver; background-color: white; -webkit-box-shadow: none; -webkit-transform-style: preserve-3d; -webkit-animation-name: pageflipForward; -webkit-animation-duration: 0.6s; -webkit-transform-origin: 0% 0%; -webkit-backface-visibility: hidden}
+.pageflipBackward {border: 1px solid silver; background-color: white; -webkit-box-shadow: none; -webkit-transform-style: preserve-3d; -webkit-animation-name: pageflipBackward; -webkit-animation-duration: 0.6s; -webkit-transform-origin: 0% 0%; -webkit-backface-visibility: hidden}
+div#exposed_share_panel {clear: both; margin-bottom: 15px}
+.between_page_ads {width: 679px; margin-bottom: 20px}
+.between_page_module {width: 679px}
+/** CSS for missing page units - not technically part of the buy_doc_bar, but better than putting this in genserve **/ .page_missing_explanation {-webkit-user-select: none; background-color: #352e2a; color: #eee}
+.page_missing_explanation .page_missing_explanation_inner {background-image: url("/images/4gen/buy_doc_rpt_1x150.png"); height: 51px; font-size: 15px; text-align: left; width: 100%; padding-top: 18px; font-family: Arial, Helvetica, sans-serif}
+.page_missing_explanation .page_missing_explanation_inner img {margin-left: 20px; margin-right: 5px}
+.page_missing_explanation .page_missing_explanation_inner span.missing_page_number {font-size: 15px; font-weight: bold}
+.page_missing_explanation .page_missing_explanation_inner .page_missing_explanation_contents {float: left}
+.page_missing_explanation .page_missing_explanation_inner .missing_page_buy_button {overflow: hidden; float: right; margin-right: 20px; position: relative}
+.page_missing_explanation .page_missing_explanation_inner .missing_page_buy_button a {outline: none; display: block; border: 0; background-image: url("/images/4gen/btn_readfull_170x36.png"); background-position: 0 0}
+.page_missing_explanation .page_missing_explanation_inner .missing_page_buy_button a:hover {background-position: 0 -36px}
+.page_missing_explanation .page_missing_explanation_inner .missing_page_buy_button .container {width: 170px; height: 36px}
+/** Can't live in _buy_doc_bar.css because the div contents are injected elsewhere via JS **/ .buy_doc_bar_inner {-webkit-user-select: none; height: 150px; background-image: url("/images/4gen/buy_doc_rpt_1x150.png"); text-align: left; color: #eee; background-color: #352e2a}
+.buy_doc_bar_inner .top_border {width: 100%; height: 8px; background-image: url("/images/4gen/buy_doc_bar_15x8.png")}
+.buy_doc_bar_inner .contents {padding-left: 15px; padding-top: 10px}
+.buy_doc_bar_inner .headline {font-size: 20px; font-weight: bold; padding-bottom: 5px}
+.buy_doc_bar_inner .message {width: 550px; white-space: normal; font-family: Arial, Helvetica, sans-serif; font-size: 13px}
+.buy_doc_bar_inner .bar_list_price {font-size: 18px; border-top: none; margin-top: 10px; margin-left: 10px; width: 300px; color: #999}
+.fourgen_highlight {padding: 0; margin: 0; color: black; background-color: #FF5}
+.fourgen_highlight_selected {background-color: #FFD12C}
+#apture_promo {margin-bottom: 5px}
+
+
+/* app/views/documents/fourgen/_scrubber.css @ 1301083519 */
+div#scrubber {height: 11px; cursor: pointer; position: relative}
+div#scrubber #all_track {position: absolute; background: transparent url('/images/4gen/scrubber_1x3.png?1301083584') repeat-x scroll 0 -9px; height: 3px; top: 4px; left: 5px; right: 5px; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; overflow: hidden}
+div#scrubber #all_track #left_track {height: 3px; background: transparent url('/images/4gen/scrubber_1x3.png?1301083584') repeat-x scroll 0 -3px; margin-right: auto; position: relative; width: 0px; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px}
+div#scrubber #all_track.no_notches #left_track {border-right: 1px solid #222}
+div#scrubber #track {position: absolute; left: 5px; right: 5px; top: 0; bottom: 0}
+div#scrubber table#track_notch_overlay {position: absolute; height: 3px; line-height: 3px; width: 100%; top: 0; left: 0}
+div#scrubber table#track_notch_overlay tr, div#scrubber table#track_notch_overlay td {height: 3px; line-height: 3px}
+div#scrubber table#track_notch_overlay .notch {background: transparent url('/images/4gen/tickmarks_2x3.png?1301083584') no-repeat 0 -3px}
+div#scrubber #handle {position: absolute; width: 0px; padding-bottom: 5px; bottom: 0; display: none}
+div#scrubber #handle #handle_inner:active {cursor: grabbing; cursor: -moz-grabbing; cursor: -webkit-grabbing}
+div#scrubber #handle #handle_inner:hover {background: transparent url('/images/4gen/scrubber_handle_11x12.gif?1301083584') no-repeat 0 -12px}
+div#scrubber #handle #handle_inner {background: transparent url('/images/4gen/scrubber_handle_11x12.gif?1301083584') no-repeat 0 0px; /*display: none;*/ curser: move; cursor: grab; cursor: -moz-grab; cursor: -webkit-grab; margin-left: -5px; width: 13px; height: 12px}
+div#scrubber #handle #handle_inner #page_num {-moz-border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -webkit-border-radius: 5px; background-color: #000000; color: #FFFFFF; font-size: 11px; left: -15px; opacity: 0.8; padding-bottom: 0; padding-left: 4px; padding-right: 4px; padding-top: 3px; position: absolute; top: -19px; width: 24px; height: 15px}
+div#scrubber.hovered #all_track, div#scrubber.sliding #all_track {background: transparent url('/images/4gen/scrubber_1x3.png?1301083584') repeat-x scroll 0 -6px; border-right-color: gray}
+div#scrubber.hovered #all_track #left_track, div#scrubber.sliding #all_track #left_track {background: transparent url('/images/4gen/scrubber_1x3.png?1301083584') repeat-x scroll 0 0}
+div#scrubber.hovered table#track_notch_overlay .notch, div#scrubber.sliding table#track_notch_overlay .notch {background: transparent url('/images/4gen/tickmarks_2x3.png?1301083584') no-repeat 0 0}
+div#scrubber.hovered #handle, div#scrubber.sliding #handle {display: block}
+
+
+/* app/views/documents/fourgen/mobile/_dialogs.css @ 1301083519 */
+#mobile_dialog_container {-webkit-user-select: none; position: absolute; z-index: 20000; width: 100%; height: 550px; overflow: hidden; display: none}
+#mobile_dialog_container .mobile_dialog {position: absolute; top: 550px; width: 100%; z-index: 25000; background-color: #383838; padding: 5px 0 12px 0; -webkit-transition: all 0.5s ease}
+#mobile_dialog_container #comments .spinner {width: 0; height: 0}
+#mobile_dialog_container #comments #activity_container {height: 300px; margin: 10px 10px 0 10px; background-color: transparent}
+#mobile_dialog_container #comments #activity_container #document_activity {border: 1px solid black; background-color: #656565}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container {border-top: 1px solid #555; background-color: #656565; background-image: none; margin: 0 5px; color: #bbb}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container * {font-size: 16px}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container .event_main {float: left; margin-left: 10px; margin-top: 0px}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container .username {background-color: transparent; text-align: left}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container a {color: white; text-align: left}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container blockquote {margin: 6px 0 6px 2px; text-align: left; padding: 0px; width: 820px}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container .delete_event {display: none}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container .event_document_read * {float: left}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container .event_document_read .event_detail {margin-left: 10px}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container .event_document_read .event_detail a {padding: 0 4px 0 0}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container .event_document_read .event_time {clear: both; margin-left: 45px; color: white}
+#mobile_dialog_container #comments #activity_container #document_activity .document_event_container .event_document_read .learn_more {display: none}
+#mobile_dialog_container #comments #activity_container #document_activity :first-child {border-top: none}
+#mobile_dialog_container #comments .comment_form {margin: 1%}
+#mobile_dialog_container #comments .comment_form h3 {display: none}
+#mobile_dialog_container #comments .comment_form #comment_input {float: left; width: 863px; height: 25px; margin-bottom: 5px; background-color: #ffffcc; font-size: 22px}
+#mobile_dialog_container #comments .comment_form .share_confirmations {float: left; margin-left: 5px}
+#mobile_dialog_container #comments .comment_form .readcast_confirmation input {vertical-align: top}
+#mobile_dialog_container #comments .comment_form .view_comments, #mobile_dialog_container #comments .comment_form .close_button {display: none}
+#mobile_dialog_container #comments .comment_form .spinner {float: right}
+#mobile_dialog_container #comments .comment_form #submit_document_comment_button {height: 33px; width: 77px; background: transparent url("/images/4gen/ipad/btn_submit_77x37.png") 0 -5px no-repeat; cursor: pointer; border: 0; float: left; margin: 4px 0 0 8px}
+#mobile_dialog_container #information #doc_metadata {margin: 12px 12px 8px 12px; -webkit-border-radius: 8px; padding: 8px; background-color: white}
+#mobile_dialog_container #information h1 {color: #1982AB; text-align: left; font-family: Georgia; font-size: 20pt; font-style: italic}
+#mobile_dialog_container #information .stats {margin-right: 32px; width: 350px}
+#mobile_dialog_container #information .stats .label {text-align: left; font-size: 14pt; margin: 0 24px 8px 8px}
+#mobile_dialog_container #information .stats .value {font-size: 14pt; margin-bottom: 8px}
+#mobile_dialog_container #information .user {margin-top: 12px}
+#mobile_dialog_container #information .buttons {display: none}
+#mobile_dialog_container .autogen_class_views_documents_fourgen_metadata {margin-bottom: 0; border: none}
+
+
+/* app/views/documents/fourgen/_exit_full_screen_button.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_exit_full_screen_button div#exit_fs_button {z-index: 15000; width: 139px; height: 141px; opacity: 0.3}
+.autogen_class_views_documents_fourgen_exit_full_screen_button div#exit_fs_button:hover {opacity: 1}
+.autogen_class_views_documents_fourgen_exit_full_screen_button div#exit_fs_button a {display: block; height: 26px; width: 32px; margin: 5px 7px 100px 100px; background: url('/images/4gen/ext-fullscreen_32x25.png?1301083584') no-repeat 0px -25px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px}
+
+
+/* app/views/documents/fourgen/_sections.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup {position: absolute; left: 10px; bottom: 40px; width: 675px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup div.tail {height: 15px; margin-top: 5px; background: url(/images/4gen/bubbles/triangle.png?1301083584) no-repeat 180px 0}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .content {background-color: #000000}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup #section_list_container {text-align: left; padding: 5px; padding-top: 0px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup ul {font-size: 11px; text-align: left; line-height: 20px; height: 60px; overflow-y: auto; overflow-x: hidden; color: #BBBBBB}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup ul li {height: 20px; font-size: 11px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup ul li:hover {background-color: #252525}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup ul li.current {background-color: #454545}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup ul a {color: #BBBBBB; padding: 4px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup ul a:hover {text-decoration: none}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup ul span.name {display: inline-block; float: left}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup ul span.page {float: right; padding-right: 20px; min-width: 3em}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header {width: 100%; height: 25px; color: #DEDEDE; font-weight: bold; border-bottom: 2px solid #454545; position: relative; padding: 0; margin-top: 0px; margin-bottom: 5px; padding-bottom: 5px; overflow: hidden}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .found {font-style: italic}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .section_title {float: left; margin-top: -4px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .section_info {margin-top: -4px; float: left; color: #FFD12C; padding-left: 5px; overflow: hidden; white-space: nowrap}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls {float: right; -webkit-user-select: none; -moz-user-select: none}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .results_selection {/*float:left;*/ }
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .results_selection span {color: #656565; float: left}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls a {width: 18px; height: 20px; background: #000000 no-repeat 0px -1px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls a:hover {text-decoration: none; background-position: 0px -26px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .section_counter {color: #656565; margin-top: -4px; float: left}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .previous {float: left; background-image: url(/images/4gen/btn_prev_25x25_b.png?1301083584); background-position: 2px -1px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .previous:hover {background-position: 2px -26px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .next {float: left; background-position: -2px -1px; background-image: url(/images/4gen/btn_next_25x25_b.png?1301083584)}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .next:hover {background-position: -2px -26px}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .close_button {float: left; height: 20px; /*!important;*/ width: 20px; /*!important;*/ background-image: url(/images/4gen/btn_collapse_25x25_b.png?1301083584)}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .close_button:hover {background-position: 0px -26px !important}
+.autogen_class_views_documents_fourgen_sections #sectionlist_popup .header .controls .disabled {color: #555}
+
+
+/* app/views/documents/fourgen/_remote_link_buttons.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons {margin-bottom: 10px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #more_info_button {width: 300px; height: 54px; margin-left: auto; margin-right: auto; background: transparent url('/images/ppp/btn_moreinfo_300x54.png?1301083584') no-repeat}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #more_info_button:hover {background-position: 0 -54px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #more_info_button:active {background-position: 0 -108px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #buy_button {width: 300px; height: 54px; margin-left: auto; margin-right: auto; background: transparent url('/images/ppp/btn_buy-generic_300x54.png?1301083584') no-repeat}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #buy_button:hover {background-position: 0 -54px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #buy_button:active {background-position: 0 -108px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #branded_buy_button {width: 300px; height: 54px; margin-left: auto; margin-right: auto; background: transparent url('/images/ppp/button_buynow_300x54.png?1301083584') no-repeat}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #branded_buy_button:hover {background-position: 0 -54px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #branded_buy_button:active {background-position: 0 -108px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #multi_buy_button {width: 300px; height: 54px; margin-left: auto; margin-right: auto; float: left; background: transparent url('/images/ppp/BuyNow_multi_background.png?1301083584') no-repeat; margin-bottom: 10px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #multi_buy_icons {position: relative; left: -150px; top: 5px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #multi_buy_icons #small_amazon_button {width: 49px; height: 42px; background: transparent url('/images/ppp/BuyNow_amazon_small.png?1301083584') no-repeat}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #multi_buy_icons #small_amazon_button:hover {background-position: 0 -42px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #multi_buy_icons #small_amazon_button:active {background-position: 0 -84px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #multi_buy_icons #small_bn_button {width: 49px; height: 42px; background: transparent url('/images/ppp/BuyNow_barnes_small.png?1301083584') no-repeat}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #multi_buy_icons #small_bn_button:hover {background-position: 0 -42px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #multi_buy_icons #small_bn_button:active {background-position: 0 -84px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #amazon_logo, .autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons #bn_logo {position: relative; left: -114px; top: 2px}
+.autogen_class_views_documents_fourgen_remote_link_buttons #remote_link_buttons .temp_store_title {position: relative; left: -114px; top: 2px}
+
+
+/* app/views/documents/fourgen/mobile/_readcast.css @ 1301083519 */
+#readcast {height: 46px; background: #383838 url("/images/4gen/ipad/logo_readcast_114x26.png") 15px 17px no-repeat; text-align: left}
+#readcast .network {float: left; background-color: #363636; border: 1px solid black; padding: 6px; margin: 5px 0 0 12px; line-height: 25px; -webkit-border-radius: 4px}
+#readcast .network img {margin-right: 8px}
+#readcast .network:first-child {margin-left: 147px}
+#readcast #readcast_now {float: left; width: 148px; height: 39px; background: transparent url("/images/4gen/ipad/btn_readcast_148x78.png") top left no-repeat; margin: 6px 0 0 12px; text-indent: -9999px}
+#readcast #prefs {display: block; float: right; width: 95px; height: 25px; margin: 11px 15px 0 0; background: transparent url("/images/4gen/ipad/btn_prefs_95x25.png") top left no-repeat; text-indent: -9999px}
+
+
+/* app/views/documents/fourgen/_comment_form.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_comment_form .comment_form h3 {color: #fff; margin: 0; margin-bottom: 5px; font-size: 13px; line-height: 20px}
+.autogen_class_views_documents_fourgen_comment_form .comment_form textarea {width: 290px; height: 68px; margin-bottom: 10px; background-color: #ffffcc}
+.autogen_class_views_documents_fourgen_comment_form .comment_form .share_confirmations {float: right; margin-left: 5px}
+.autogen_class_views_documents_fourgen_comment_form .comment_form .share_confirmations .share_text {font-size: 11px; color: #666}
+.autogen_class_views_documents_fourgen_comment_form .comment_form .readcast_confirmation input {vertical-align: top}
+.autogen_class_views_documents_fourgen_comment_form .comment_form .view_comments {float: left; margin-left: 5px; color: #fff; line-height: 24px; font-size: 11px}
+.autogen_class_views_documents_fourgen_comment_form .comment_form .spinner {float: right}
+.autogen_class_views_documents_fourgen_comment_form .comment_form #submit_document_comment_button {float: right; margin-right: 4px}
+.autogen_class_views_documents_fourgen_comment_form .comment_form .count {display: inline-block; margin-top: 3px; font-size: 13px; color: #666666; font-weight: bold}
+.autogen_class_views_documents_fourgen_comment_form .comment_form .count .number {color: #b8b8b8}
+.autogen_class_views_documents_fourgen_comment_form .comment_form .count .limit_reached {color: #990000}
+
+
+/* app/views/documents/fourgen/_readcast_pro.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro {position: relative; display: block; width: 325px; height: 59px; background: url('/images/ppp/banner_rpt_1x59.png?1301083584'); background-repeat: repeat-x; margin-top: 10px; margin-bottom: 10px; margin-left: -14px}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro #banner_left {position: absolute; left: -8px; width: 9px; height: 59px; background: url('/images/ppp/banner_left_9x49.png?1301083584'); background-repeat: no-repeat}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro #banner_right {position: absolute; right: -4px; width: 5px; height: 64px; background: url('/images/ppp/banner_rt_5x64.png?1301083584'); background-repeat: no-repeat}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro .content_box {position: relative; left: 8px; width: 300px; margin: auto; padding-top: 15px}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro #intro_text {display: none}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro div#arrow {float: left; padding-top: 13px}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro #readcast_status {float: right}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro .link_prefs {font-size: 11px}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro .readcast_begin {width: 100%; margin-top: 5px; font-weight: bold}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro #twitter_pref_pro.pref_item, .autogen_class_views_documents_fourgen_readcast_pro #readcast_pro #twitter_pref.pref_item {border-right: none}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro .pref_item {float: left; margin-right: 11px; text-align: center; border-right: 1px dotted #bbb; overflow: hidden}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro .pref_item.network {margin-right: 0; width: 70px}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro .pref_item .network_input_pro {display: inline-block; width: 23px; margin: 0px auto 0px 5px}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro .pref_item .network_input_pro .link_account {color: #EEEEEE; font-size: 12px; font-weight: bold}
+.autogen_class_views_documents_fourgen_readcast_pro #readcast_pro .pref_item.last {border-right: 0; padding-right: 0; margin-right: 0; text-align: center; font-size: 11px}
+
+
+/* app/views/documents/fourgen/mobile/_scrubber.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_mobile_scrubber {-webkit-user-select: none}
+.autogen_class_views_documents_fourgen_mobile_scrubber #touch_scrubber {width: auto; text-align: center; height: 20px; display: block; padding: 20px; background: #373737}
+.autogen_class_views_documents_fourgen_mobile_scrubber #touch_scrubber #track {position: relative; width: auto; height: 10px; background: #999}
+.autogen_class_views_documents_fourgen_mobile_scrubber #touch_scrubber #track_progress {width: 0; height: 10px; background-color: #CCC}
+.autogen_class_views_documents_fourgen_mobile_scrubber #touch_scrubber #handle {position: absolute; top: -16px; left: 0px; width: 40px; height: 40px; background: transparent url(/images/4gen/ipad/scrubber_handle_38x38.png) no-repeat 0 1px}
+.autogen_class_views_documents_fourgen_mobile_scrubber #touch_scrubber #handle #page_tooltip {display: none}
+.autogen_class_views_documents_fourgen_mobile_scrubber #touch_scrubber #handle.touched {background-position: 0 -35px}
+.autogen_class_views_documents_fourgen_mobile_scrubber #touch_scrubber #handle.touched #page_tooltip {display: inline-block; position: relative; top: -32px; background-color: #373737; color: #CCCCCC; min-width: 40px; padding: 5px; left: -5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-radius-topright: 5px; -webkit-box-shadow: 0px -1px 10px #333333; -moz-box-shadow: 0px -1px 10px #333333; box-shadow: 0px -1px 10px #333333}
+.autogen_class_views_documents_fourgen_mobile_scrubber #touch_scrubber #track, .autogen_class_views_documents_fourgen_mobile_scrubber #touch_scrubber #track_progress {-moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px}
+
+
+/* app/views/documents/show.css @ 1301083519 */
+.html_text {white-space: normal; word-wrap: break-word; height: auto; width: 650px; text-align: left}
+
+
+/* app/views/documents/fourgen/_store_header.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_store_header .seller_box_top {width: 970px; white-space: normal}
+
+
+/* app/views/documents/fourgen/mobile/_toolbar.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_mobile_toolbar {-webkit-user-select: none}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar {z-index: 15000; width: 100%; height: 56px; color: #aaa; position: relative; margin-bottom: -20px; margin-top: -10px; background: #2c2c2c url("/images/4gen/ipad/1x1_black.png") top left repeat-x}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_left_side {float: left; height: 56px}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_left_side div.logo {float: left; width: 99px; height: 25px; display: block; background: url("/images/4gen/ipad/logo_scribd_99x26.png") 0px 0; margin: 14px}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_left_side div.pages {margin-left: 8px; font-size: 20px; float: left; line-height: 56px}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_left_side div.pages span {color: white}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_left_side div.pages input.current_page {width: 50px; border: 1px solid #333; -webkit-border-radius: 4px; background-color: #4c4c4c; padding: 3px; text-align: center; color: black}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_left_side div.admob {width: 318px; margin-top: 5px}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_right_side {float: right; height: 56px}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_right_side .ctl_button {width: 58px; height: 46px; float: left; background-color: transparent; background-position: 0 -7px; background-repeat: no-repeat; margin: 2px 0 0 10px; -webkit-tap-highlight-color: none}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_right_side :first-child {margin-left: 0px}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_right_side .information {background-image: url("/images/4gen/ipad/tab_info_51x54.png")}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_right_side .readcast {background-image: url("/images/4gen/ipad/tab_ipd_readcast_58x54.png")}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_right_side .comments {background-image: url("/images/4gen/ipad/tab_ipd_comment_53x54.png")}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_right_side .collections {background-image: url("/images/4gen/ipad/tab_ipd_collct_53x54.png")}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_right_side .related {background-image: url("/images/4gen/ipad/tab_related_51x54.png")}
+.autogen_class_views_documents_fourgen_mobile_toolbar div#mobile_toolbar div#toolbar_right_side .active {margin-top: 0px; background-position: 0 -55px}
+
+
+/* app/views/documents/fourgen/layout/_web_pro.css @ 1301083519 */
+div#view_container.pro_layout #view_main_bar_wrapper {padding-top: 0px; padding-bottom: 0px}
+div#view_container.pro_layout #view_mid_section {width: 996px; margin-left: auto; margin-right: auto}
+div#view_container.pro_layout #view_mid_section #viewer_document div.outer_page {margin-top: 11px; margin-left: 0px; margin-right: 10px}
+div#view_container.pro_layout #view_mid_section #view_main {float: left; margin-left: 5px; width: 656px}
+div#view_container.pro_layout #view_mid_section #view_bar {float: left; margin: 11px 5px 30px 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 2px #666666; -moz-box-shadow: 0 1px 2px #666666; box-shadow: 0 1px 2px #666666; background-color: #f6f6f6; width: 300px; padding-left: 10px; padding-right: 10px; text-align: left}
+div#view_container.pro_layout #view_mid_section #view_bar #view_bar_content {padding-top: 10px}
+div#view_container.pro_layout #view_mid_section #view_bar #view_bar_content div.fb_like_container {margin-top: 10px; padding-bottom: 0px; border-bottom: none}
+
+
+/* app/views/documents/fourgen/layout/_web_pro.rb:3 @ 1301083519 */
+.pro_layout .outer_page {position: relative}
+.pro_layout .outer_page .b_tl {background-image: url(/images/4gen/page_border/tl.png?1301083584); background-position: top left; background-repeat: no-repeat; position: absolute; height: 6px; width: 6px; top: -6px; left: -6px}
+.pro_layout .outer_page .b_tr {background-image: url(/images/4gen/page_border/tr.png?1301083584); background-position: top right; background-repeat: no-repeat; position: absolute; height: 6px; width: 6px; top: -6px; right: -6px}
+.pro_layout .outer_page .b_br {background-image: url(/images/4gen/page_border/br.png?1301083584); background-position: bottom right; background-repeat: no-repeat; position: absolute; height: 6px; width: 6px; bottom: -6px; right: -6px}
+.pro_layout .outer_page .b_bl {background-image: url(/images/4gen/page_border/bl.png?1301083584); background-position: bottom left; background-repeat: no-repeat; position: absolute; height: 6px; width: 6px; bottom: -6px; left: -6px}
+.pro_layout .outer_page .b_t {background-image: url(/images/4gen/page_border/t.png?1301083584); background-repeat: repeat-x; position: absolute; height: 6px; top: -6px; left: 0px; right: 0px}
+.pro_layout .outer_page .b_r {background-image: url(/images/4gen/page_border/r.png?1301083584); background-repeat: repeat-y; position: absolute; width: 6px; right: -6px; top: 0px; bottom: 0px}
+.pro_layout .outer_page .b_b {background-image: url(/images/4gen/page_border/b.png?1301083584); background-repeat: repeat-x; position: absolute; height: 6px; bottom: -6px; left: 0px; right: 0px}
+.pro_layout .outer_page .b_l {background-image: url(/images/4gen/page_border/l.png?1301083584); background-repeat: repeat-y; position: absolute; width: 6px; left: -6px; top: 0px; bottom: 0px}
+
+
+/* app/views/documents/fourgen/_buy_doc_bar.css @ 1301083519 */
+
+
+
+/* app/views/documents/fourgen/mobile/_hot_spots.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_mobile_hot_spots {/** CSS Animations **/ }
+.autogen_class_views_documents_fourgen_mobile_hot_spots #mobile_left_hotspot, .autogen_class_views_documents_fourgen_mobile_hot_spots #mobile_right_hotspot {height: 100%; position: absolute; top: 0px; width: 200px; z-index: 10000; -webkit-user-select: none}
+.autogen_class_views_documents_fourgen_mobile_hot_spots #mobile_left_hotspot {left: 0px}
+.autogen_class_views_documents_fourgen_mobile_hot_spots #mobile_right_hotspot {right: 0px}
+.autogen_class_views_documents_fourgen_mobile_hot_spots .indicator {position: absolute; width: 60px; height: 250px; top: 35%; background-color: rgba(0, 0, 0, 0.75); background-repeat: no-repeat; background-position: center center; opacity: 0; z-index: 10000; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px}
+.autogen_class_views_documents_fourgen_mobile_hot_spots .left_indicator {left: 5px; background-image: url(/images/4gen/ipad/arrow_left_32x51.png)}
+.autogen_class_views_documents_fourgen_mobile_hot_spots .right_indicator {right: 5px; background-image: url(/images/4gen/ipad/arrow_right_32x51.png)}
+.autogen_class_views_documents_fourgen_mobile_hot_spots #overlay_pagenum {position: absolute; top: 7px; right: 5px; padding: 10px; background-color: #000000; color: #DDD; font-size: 20px; opacity: 0; z-index: 10000; -webkit-user-select: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px}
+.autogen_class_views_documents_fourgen_mobile_hot_spots .indicator.touched {-webkit-transition-property: opacity; -webkit-transition-delay: 1s; -webkit-transition-duration: 1s}
+.autogen_class_views_documents_fourgen_mobile_hot_spots #overlay_pagenum.touched {-webkit-transition-property: opacity; -webkit-transition-delay: 3s; -webkit-transition-duration: 1s}
+
+
+/* app/views/documents/fourgen/_metadata.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_metadata .view_page_thumbnail a {display: block; float: left; padding: 2px; width: 20px; height: 20px; border: 1px solid #ccc; margin-right: 5px}
+.autogen_class_views_documents_fourgen_metadata div.user {margin-bottom: 10px; border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; font-size: 12px; line-height: 20px; padding: 10px 0}
+.autogen_class_views_documents_fourgen_metadata div.user a.username {color: #1982AB; background-color: transparent; display: block; float: left; padding-left: 1px}
+.autogen_class_views_documents_fourgen_metadata div.owner_controls {clear: left; margin-bottom: 10px}
+.autogen_class_views_documents_fourgen_metadata div.owner_controls .ctr_button {border: 0 none; display: block; float: left; height: 27px}
+.autogen_class_views_documents_fourgen_metadata div.owner_controls .edit_button {width: 91px; background: url('/images/readpage/docpage-controls.png?1301083584') no-repeat scroll -600px 0}
+.autogen_class_views_documents_fourgen_metadata div.owner_controls .edit_button:hover {background-position: -600px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.owner_controls .edit_button {width: 82px; background: url('/images/locales/es/readpage/docpage-controls.png?1301083584') no-repeat scroll -600px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.owner_controls .edit_button:hover {background-position: -600px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.owner_controls .edit_button {width: 82px; background: url('/images/locales/pt-br/readpage/docpage-controls.png?1301083584') no-repeat scroll -600px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.owner_controls .edit_button:hover {background-position: -600px -27px}
+.autogen_class_views_documents_fourgen_metadata div.owner_controls .upload_revision_button {width: 114px; background: url('/images/readpage/docpage-controls.png?1301083584') no-repeat scroll -691px 0}
+.autogen_class_views_documents_fourgen_metadata div.owner_controls .upload_revision_button:hover {background-position: -691px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.owner_controls .upload_revision_button {width: 99px; background: url('/images/locales/es/readpage/docpage-controls.png?1301083584') no-repeat scroll -682px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.owner_controls .upload_revision_button:hover {background-position: -682px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.owner_controls .upload_revision_button {width: 99px; background: url('/images/locales/pt-br/readpage/docpage-controls.png?1301083584') no-repeat scroll -682px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.owner_controls .upload_revision_button:hover {background-position: -682px -27px}
+.autogen_class_views_documents_fourgen_metadata div.owner_controls .privacy_button {width: 95px}
+.autogen_class_views_documents_fourgen_metadata .public .privacy_button {background: url('/images/readpage/docpage-controls.png?1301083584') no-repeat scroll -900px 0}
+.autogen_class_views_documents_fourgen_metadata .public .privacy_button:hover {background-position: -900px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata .public .privacy_button {width: 120px; background: url('/images/locales/es/readpage/docpage-controls.png?1301083584') no-repeat scroll -901px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata .public .privacy_button:hover {background-position: -901px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata .public .privacy_button {width: 120px; background: url('/images/locales/pt-br/readpage/docpage-controls.png?1301083584') no-repeat scroll -901px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata .public .privacy_button:hover {background-position: -901px -27px}
+.autogen_class_views_documents_fourgen_metadata .private .privacy_button {background: url('/images/readpage/docpage-controls.png?1301083584') no-repeat scroll -805px 0}
+.autogen_class_views_documents_fourgen_metadata .private .privacy_button:hover {background-position: -805px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata .private .privacy_button {width: 118px; background: url('/images/locales/es/readpage/docpage-controls.png?1301083584') no-repeat scroll -782px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata .private .privacy_button:hover {background-position: -782px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata .private .privacy_button {width: 118px; background: url('/images/locales/pt-br/readpage/docpage-controls.png?1301083584') no-repeat scroll -782px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata .private .privacy_button:hover {background-position: -782px -27px}
+.autogen_class_views_documents_fourgen_metadata .public .privacy_indicator {display: none}
+.autogen_class_views_documents_fourgen_metadata .private div.owner_controls .make_private_button {display: none}
+.autogen_class_views_documents_fourgen_metadata .public div.owner_controls .make_public_button {display: none}
+.autogen_class_views_documents_fourgen_metadata div#doc_metadata div.info_section {margin-top: 10px}
+.autogen_class_views_documents_fourgen_metadata div#doc_metadata div.info_section h3 {cursor: pointer; padding-left: 15px; background: transparent url('/images/arrows/triangle_info.png?1301083584') no-repeat scroll 0 6px}
+.autogen_class_views_documents_fourgen_metadata div#doc_metadata div.info_section.closed h3 {background-position: 0 -11px}
+.autogen_class_views_documents_fourgen_metadata div.stats {float: left; clear: left; font-weight: bold; font-size: 11px; margin: 0 0 10px; line-height: 16px}
+.autogen_class_views_documents_fourgen_metadata div.stats .row {clear: left}
+.autogen_class_views_documents_fourgen_metadata div.stats .separator {color: #999}
+.autogen_class_views_documents_fourgen_metadata div.stats .label {color: #999; float: left; width: 80px; margin: 0 0 3px}
+.autogen_class_views_documents_fourgen_metadata div.stats .value {color: #666; float: left; margin: 0 0 3px}
+.autogen_class_views_documents_fourgen_metadata div.stats .copyright {font-weight: normal}
+.autogen_class_views_documents_fourgen_metadata div.stats div#rating {line-height: 18px}
+.autogen_class_views_documents_fourgen_metadata div.stats div#rating .starbox {float: left}
+.autogen_class_views_documents_fourgen_metadata div.stats div#rating .count {font-weight: normal; margin-left: 5px}
+.autogen_class_views_documents_fourgen_metadata div.privacy_indicator {clear: left; background: url('/images/shared/alerts/rpt_red_1x33.png?1301083584') repeat-x scroll left bottom white; border: 1px solid #990000; margin-bottom: 10px}
+.autogen_class_views_documents_fourgen_metadata div.privacy_indicator div.message {color: #990000; background: transparent url('/images/shared/alerts/error_trans.gif?1301083584') no-repeat 0 2px; font-size: 13px; font-weight: bold; padding: 10px 10px 10px 35px}
+.autogen_class_views_documents_fourgen_metadata .owner_controls .ctr_button, .autogen_class_views_documents_fourgen_metadata .buttons .ctr_button {text-indent: -9999px}
+.autogen_class_views_documents_fourgen_metadata div.buttons {clear: left; padding: 0 0 5px 0}
+.autogen_class_views_documents_fourgen_metadata div.buttons .ctr_button {display: block; float: left; line-height: 14px; background: transparent url('/images/readpage/docpage-controls.png?1301083584') no-repeat 0 0; width: 1px; height: 27px}
+.autogen_class_views_documents_fourgen_metadata div.buttons .ctr_button:active {background-position: 0 -54px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .ctr_button {background: transparent url('/images/locales/es/readpage/docpage-controls.png?1301083584') no-repeat 0 0; width: 1px; height: 27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .ctr_button:active {background-position: 0 -54px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .ctr_button {background: transparent url('/images/locales/pt-br/readpage/docpage-controls.png?1301083584') no-repeat 0 0; width: 1px; height: 27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .ctr_button:active {background-position: 0 -54px}
+.autogen_class_views_documents_fourgen_metadata div.buttons .ctr_button.disabled, .autogen_class_views_documents_fourgen_metadata div.buttons #flag_document_link.disabled {color: #999}
+.autogen_class_views_documents_fourgen_metadata div.buttons .download {width: 76px; background-position: 0 0}
+.autogen_class_views_documents_fourgen_metadata div.buttons .download:hover {background-position: 0 -27px}
+.autogen_class_views_documents_fourgen_metadata div.buttons .download.disabled {background-position: 0 -54px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .download {width: 71px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .download:hover {background-position: 0 -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .download.disabled {background-position: 0 -54px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .download {width: 63px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .download:hover {background-position: 0 -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .download.disabled {background-position: 0 -54px}
+.autogen_class_views_documents_fourgen_metadata div.buttons .print {width: 54px; background-position: -76px 0}
+.autogen_class_views_documents_fourgen_metadata div.buttons .print:hover {background-position: -76px -27px}
+.autogen_class_views_documents_fourgen_metadata div.buttons .print.disabled {background-position: -76px -54px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .print {width: 73px; background-position: -71px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .print:hover {background-position: -71px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .print.disabled {background-position: -71px -54px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .print {width: 73px; background-position: -63px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .print:hover {background-position: -63px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .print.disabled {background-position: -63px -54px}
+.autogen_class_views_documents_fourgen_metadata div.buttons .mobile {width: 60px; background-position: -130px 0}
+.autogen_class_views_documents_fourgen_metadata div.buttons .mobile:hover {background-position: -130px -27px}
+.autogen_class_views_documents_fourgen_metadata div.buttons .mobile.disabled {background-position: -130px -54px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .mobile {width: 60px; background-position: -144px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .mobile:hover {background-position: -144px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .mobile.disabled {background-position: -144px -54px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .mobile {width: 71px; background-position: -136px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .mobile:hover {background-position: -136px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .mobile.disabled {background-position: -136px -54px}
+.autogen_class_views_documents_fourgen_metadata div.buttons .collections {width: 87px; background-position: -190px 0}
+.autogen_class_views_documents_fourgen_metadata div.buttons .collections:hover {background-position: -190px -27px}
+.autogen_class_views_documents_fourgen_metadata div.buttons .collections.disabled {background-position: -190px -54px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .collections {width: 73px; background-position: -204px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .collections:hover {background-position: -204px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata div.buttons .collections.disabled {background-position: -204px -54px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .collections {width: 70px; background-position: -207px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .collections:hover {background-position: -207px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata div.buttons .collections.disabled {background-position: -207px -54px}
+.autogen_class_views_documents_fourgen_metadata div.buttons #flag_document_link, .autogen_class_views_documents_fourgen_metadata div.buttons .report {padding: 0; margin: 0; width: 23px; background: transparent url('/images/readpage/docpage-controls.png?1301083584') no-repeat scroll -277px 0}
+.autogen_class_views_documents_fourgen_metadata div.buttons #flag_document_link:hover, .autogen_class_views_documents_fourgen_metadata div.buttons .report:hover {background-position: -277px -27px}
+.autogen_class_views_documents_fourgen_metadata div.buttons #flag_document_link.disabled, .autogen_class_views_documents_fourgen_metadata div.buttons .report.disabled {background-position: -277px -54px}
+.autogen_class_views_documents_fourgen_metadata div.buttons #flag_document_container {padding: 10px 0 5px 5px; margin: 0; border: none; float: none; clear: left; white-space: normal; background-color: transparent}
+.autogen_class_views_documents_fourgen_metadata div.buttons #flag_document_container h4.first {color: #333}
+.autogen_class_views_documents_fourgen_metadata div.buttons #flag_document_container .close_button {display: none}
+.autogen_class_views_documents_fourgen_metadata #tag_list .tag_container {float: left; white-space: normal; line-height: 19px; width: 300px; margin-bottom: 10px; font-size: 11px; font-family: arial; font-weight: normal}
+.autogen_class_views_documents_fourgen_metadata #tag_list .tag_container .tag {float: left; padding: 2px 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px; margin: 0 2px 2px 0; line-height: 12px}
+.autogen_class_views_documents_fourgen_metadata #tag_list .tag_container .tag a {color: #339933; text-decoration: none; white-space: nowrap}
+.autogen_class_views_documents_fourgen_metadata #tag_list .tag_container .term {text-decoration: none; white-space: nowrap; background-color: #ddd; color: #666}
+.autogen_class_views_documents_fourgen_metadata #tag_list .tag_container .clickable_tag {background-color: #E1F0E1; color: #339933}
+.autogen_class_views_documents_fourgen_metadata #tag_list .tag_container .control_btn {float: left; padding: 2px 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px; margin: 0 2px 2px 0; line-height: 12px; color: #999}
+
+
+/* app/views/documents/fourgen/_hot_spots.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_hot_spots #slideshow_right_hotspot {height: 100%; position: absolute; top: 0px; width: 200px; right: 0px; cursor: pointer; z-index: 2500}
+.autogen_class_views_documents_fourgen_hot_spots #slideshow_left_hotspot {height: 100%; position: absolute; top: 0px; width: 200px; left: 0px; cursor: pointer; z-index: 2500}
+
+
+/* app/views/shared/fourgen/nag.css @ 1301083520 */
+.autogen_class_views_shared_fourgen_nag .fourgen_nag {white-space: normal; background-color: #E5EAF2; padding: 15px; margin-bottom: 15px; margin-top: 15px; -moz-border-radius: 5px; -webkit-border-radius: 5px}
+.autogen_class_views_shared_fourgen_nag .fourgen_nag ul a {font-weight: bold}
+.autogen_class_views_shared_fourgen_nag .fourgen_nag p {color: #666666}
+.autogen_class_views_shared_fourgen_nag .fourgen_nag li {font-size: 15px; color: #1982AB; list-style: square inside}
+
+
+/* app/views/documents/fourgen/_toolbar.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_toolbar div#toolbar {z-index: 15000; width: 1010px; height: 46px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; background-color: #2C2C2C; /*opacity:0.9; filter:alpha(opacity=90);*/ /* overflow: hidden;*/ }
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.section {float: left; height: 46px; line-height: 39px; border-right: 1px solid #000; border-left: 1px solid #2c2c2c; font-size: 12px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar .ctl_button {display: block; height: 25px; width: 25px; margin: 8px 0 11px 5px; float: left; font-size: 14px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar .ctl_button.disabled {visibility: hidden}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#toolbar_left_side {float: left; width: 682px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#toolbar_left_side div.section {background: url('/images/4gen/gradient1_1x3.png?1301083584') repeat-x 0px 0; height: 35px; line-height: 35px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#toolbar_left_side div.section .ctl_button {margin: 5px 0 14px 5px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#toolbar_left_side div.logo {width: 87px; border-left: 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#toolbar_left_side div.logo a {display: block; height: 17px; width: 65px; margin: 9px auto; background: url('/images/4gen/logo_65x34.png?1301083584') 0px 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#toolbar_left_side div.logo a:hover {background: url('/images/4gen/logo_65x34.png?1301083584') 0px 17px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.popup .close_button {overflow: hidden; float: right; height: 9px; width: 9px; background-image: url('/images/4gen/btn_close_4gen_9x9.png?1301083584')}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.popup .close_button:hover {background-position: 0 -9px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls {width: 205px; padding-left: 8px; /* these default styles won't be used once we add a call to detect initial view mode */ /* end default styles */ }
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.to_top {background: url('/images/4gen/btn_start_scrl_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.to_top:hover {background: url('/images/4gen/btn_start_scrl_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.to_top:active {background: url('/images/4gen/btn_start_scrl_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.page_up {background: url('/images/4gen/btn_page-up_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.page_up:hover {background: url('/images/4gen/btn_page-up_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.page_up:active {background: url('/images/4gen/btn_page-up_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.page_down {background: url('/images/4gen/btn_page-down_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.page_down:hover {background: url('/images/4gen/btn_page-down_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.page_down:active {background: url('/images/4gen/btn_page-down_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.section_list {width: 20px; background: url('/images/4gen/btn_sections_21x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.section_list:active {background: url('/images/4gen/btn_sections_21x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.section_list:hover {background: url('/images/4gen/btn_sections_21x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls a.section_list_disabled {width: 20px; background: url('/images/4gen/btn_sections_21x25.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .scroll a.to_top {background: url('/images/4gen/btn_start_scrl_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .scroll a.to_top:hover {background: url('/images/4gen/btn_start_scrl_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .scroll a.to_top:active {background: url('/images/4gen/btn_start_scrl_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .scroll a.page_up {background: url('/images/4gen/btn_page-up_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .scroll a.page_up:hover {background: url('/images/4gen/btn_page-up_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .scroll a.page_up:active {background: url('/images/4gen/btn_page-up_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .scroll a.page_down {background: url('/images/4gen/btn_page-down_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .scroll a.page_down:hover {background: url('/images/4gen/btn_page-down_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .scroll a.page_down:active {background: url('/images/4gen/btn_page-down_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .slideshow a.to_top {background: url('/images/4gen/btn_start_pres_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .slideshow a.to_top:hover {background: url('/images/4gen/btn_start_pres_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .slideshow a.to_top:active {background: url('/images/4gen/btn_start_pres_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .slideshow a.page_up {background: url('/images/4gen/btn_page-left_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .slideshow a.page_up:hover {background: url('/images/4gen/btn_page-left_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .slideshow a.page_up:active {background: url('/images/4gen/btn_page-left_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .slideshow a.page_down {background: url('/images/4gen/btn_page-right_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .slideshow a.page_down:hover {background: url('/images/4gen/btn_page-right_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .slideshow a.page_down:active {background: url('/images/4gen/btn_page-right_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .book a.to_top {background: url('/images/4gen/btn_start_pres_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .book a.to_top:hover {background: url('/images/4gen/btn_start_pres_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .book a.to_top:active {background: url('/images/4gen/btn_start_pres_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .book a.page_up {background: url('/images/4gen/btn_page-left_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .book a.page_up:hover {background: url('/images/4gen/btn_page-left_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .book a.page_up:active {background: url('/images/4gen/btn_page-left_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .book a.page_down {background: url('/images/4gen/btn_page-right_27x27.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .book a.page_down:hover {background: url('/images/4gen/btn_page-right_27x27.png?1301083584') 0px -27px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls .book a.page_down:active {background: url('/images/4gen/btn_page-right_27x27.png?1301083584') 0px -54px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls div.pages {font-size: 10px; float: left; width: 80px; line-height: 37px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls div.pages span {color: white}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.controls div.pages input.current_page {width: 20px; border: 1px solid #000; -moz-border-radius: 2px; -webkit-border-radius: 2px; background-color: #4c4c4c; padding: 3px; text-align: right; color: #ccc}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom {width: 110px; padding-left: 8px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom a.zoom_in {width: 24px; background: url('/images/4gen/zoom-in_24x25.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom a.zoom_in:hover {background: url('/images/4gen/zoom-in_24x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom a.zoom_out {width: 24px; background: url('/images/4gen/zoom-out_24x25.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom a.zoom_out:hover {background: url('/images/4gen/zoom-out_24x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom div.zoom_in_disabled {width: 24px; background: url('/images/4gen/zoom-in_24x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom div.zoom_out_disabled {width: 24px; background: url('/images/4gen/zoom-out_24x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom a.fullscreen {width: 32px; background: url('/images/4gen/fullscreen_32x25.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom a.fullscreen:hover {background: url('/images/4gen/fullscreen_32x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom a.exit_fullscreen {width: 32px; background: url('/images/4gen/ext-fullscreen_32x25.png?1301083584') 0px 0px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.zoom a.exit_fullscreen:hover {background: url('/images/4gen/ext-fullscreen_32x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.view_mode {width: 50px; float: left; text-align: center; padding-left: 15px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.view_mode a#viewmode_selector {display: block; float: left; width: 35px; height: 25px; margin: 5px 0 0 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.view_mode a.book {background: transparent url('/images/4gen/view_book_35x25.png?1301083584') no-repeat scroll 0 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.view_mode a.book:hover {background: transparent url('/images/4gen/view_book_35x25.png?1301083584') no-repeat scroll 0 -26px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.view_mode a.scroll {background: transparent url('/images/4gen/view_scroll_35x25.png?1301083584') no-repeat scroll 0 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.view_mode a.scroll:hover {background: transparent url('/images/4gen/view_scroll_35x25.png?1301083584') no-repeat scroll 0 -26px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.view_mode a.slideshow {background: transparent url('/images/4gen/view_slideshow_35x25.png?1301083584') no-repeat scroll 0 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.view_mode a.slideshow:hover {background: transparent url('/images/4gen/view_slideshow_35x25.png?1301083584') no-repeat scroll 0 -26px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.search {width: 275px; line-height: 30px; border-right: 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section {float: left; height: 46px; background-color: #373737}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section .ctl_button {margin: 11px 10px 19px 8px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup {position: absolute; right: -5px; bottom: 45px; width: 329px; background-image: none}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup div.content_wrapper_wrapper {padding: 5px 10px 5px 5px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup div.content {background-color: #000000; padding: 7px; z-index: 10}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup div.content:after {content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup div.tail {height: 10px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup h3 {padding: 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup div.share_form h3 {padding-bottom: 5px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer {float: none; margin: 0; width: auto}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer div#arrow {display: none}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer div#readcast_popup {padding: 0px; background: transparent; width: 300px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer div#readcast_popup div.controls {width: auto; padding: 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer div#readcast_popup div.controls #intro_text {line-height: 11px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer div#readcast_popup div.prefs_for_next_time {line-height: 14px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer div#readcast_popup #save_changes_button {background: url('/images/4gen/btn_save_88x22.gif?1301083584') no-repeat 0 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer div#readcast_popup #save_changes_button:hover {background: url('/images/4gen/btn_save_88x22.gif?1301083584') no-repeat 0 -22px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer #readcast_preferences div.pref_container div.description {width: 134px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div.popup #readcast_popup_outer #readcast_preferences #sharing_prefs .preferences input {display: none}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div#social_readcast_popup div.tail {background: url('/images/4gen/bubbles/triangle.png?1301083584') no-repeat 11px 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section #embed_popup .share_row {margin-left: 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section #embed_popup input.link_input {width: 172px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section #embed_popup .embed_params {margin-right: 1px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section #embed_popup .expanded input.embed_code_input {width: 221px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div#comment_popup div.tail {background: url('/images/4gen/bubbles/triangle.png?1301083584') no-repeat 52px 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social_icon_section div#embed_popup div.tail {background: url('/images/4gen/bubbles/triangle.png?1301083584') no-repeat 93px 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social {background: #373737 url('/images/4gen/gradient2_6x1.png?1301083584') repeat-y scroll 0 0; width: 134px; padding-left: 5px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social a.readcast {width: 22px; background: url('/images/4gen/readcast_22x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social a.readcast:hover {background: url('/images/4gen/readcast_22x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social a.comment {width: 22px; margin-left: 5px; background: url('/images/4gen/comment_22x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social a.comment:hover {background: url('/images/4gen/comment_22x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social a.embed {margin-left: 5px; width: 28px; background: url('/images/4gen/embed_28x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social a.embed:hover {background: url('/images/4gen/embed_28x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social a.embed_cohort {background: url('/images/4gen/embed_2_28x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.social a.embed_cohort:hover {background: url('/images/4gen/embed_2_28x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume {background: #373737 url('/images/4gen/gradient3_6x1.png?1301083584') repeat-y scroll 0 0; padding: 0; padding-left: 13px; width: 150px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.mobile {width: 20px; background: url('/images/4gen/mobile_20x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.mobile:hover {background: url('/images/4gen/mobile_20x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume span.mobile_disabled {display: block; height: 25px; margin: 8px 0 11px 5px; float: left; width: 20px; background: url('/images/4gen/mobile_20x25.png?1301083584') 0px 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.collections {margin-right: 0; margin-left: 0; float: left; width: 21px; background: url('/images/4gen/collections_21x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.collections:hover {background: url('/images/4gen/collections_21x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.print {width: 24px; margin-left: 8px; background: url('/images/4gen/print_24x25.png?1301083584') 0px -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.print:hover {background: url('/images/4gen/print_24x25.png?1301083584') 0px -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.download {margin: 0; margin-top: 9px; margin-left: 13px; background: transparent url('/images/4gen/btn_download.png?1301083584') no-repeat 0 0; width: 98px; height: 30px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.download:hover {background-position: 0 -30px}
+body.smartling-es .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.download {background: transparent url('/images/locales/es/4gen/btn_download.png?1301083584') no-repeat 0 0; width: 95px; height: 26px}
+body.smartling-es .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.download:hover {background-position: 0 -26px}
+body.smartling-pt .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.download {background: transparent url('/images/locales/pt-br/4gen/btn_download.png?1301083584') no-repeat 0 0; width: 72px; height: 26px}
+body.smartling-pt .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.download:hover {background-position: 0 -26px}
+body.smartling-es .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.download, body.smartling-pt .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume a.download {margin-top: 12px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume .download, .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume .download_disabled {text-indent: -9999px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume span.download_disabled {margin: 9px 0 0 14px; display: block; float: left; background: transparent url('/images/4gen/btn_download.png?1301083584') no-repeat 0 0; width: 98px; height: 30px; background-position: 0 -60px}
+body.smartling-es .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume span.download_disabled {background: transparent url('/images/locales/es/4gen/btn_download.png?1301083584') no-repeat 0 0; width: 95px; height: 26px}
+body.smartling-pt .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume span.download_disabled {background: transparent url('/images/locales/pt-br/4gen/btn_download.png?1301083584') no-repeat 0 0; width: 72px; height: 26px}
+body.smartling-es .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume span.download_disabled, .autogen_class_views_documents_fourgen_toolbar div#toolbar div.consume span.download_disabled pt_selector {background-position: 0 -51px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar .auto_hiding {background: #373737 url('/images/4gen/gradient3_6x1.png?1301083584') repeat-y scroll 0 0; padding: 0; width: 26px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar .auto_hiding #hide_switch {display: block; width: 12px; height: 25px; margin-top: 12px; margin-left: 8px; background-image: url('/images/4gen/pin-switch_12x25.png?1301083584'); background-position: 0 -75px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar .auto_hiding #hide_switch:hover {background-position: 0 -100px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar .auto_hiding #hide_switch:active {background-position: 0 -50px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar .auto_hiding #hide_switch.on {background-position: 0 0}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar .auto_hiding #hide_switch.on:hover {background-position: 0 -25px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup {left: -5px; position: absolute; top: -134px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.options {-moz-border-radius: 5px; -webkit-border-radius: 5px; background-color: #000000; width: 100px; padding: 10px 10px 3px 10px; -moz-box-shadow: 2px 2px 8px #000; -webkit-box-shadow: 2px 2px 8px #000; box-shadow: 2px 2px 8px #000}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.options h4 {color: #FFFFFF; font-weight: bold; font-size: 13px; font-family: Helvetica, Arial, sans-serif; line-height: 7px; margin: 0 0 7px; text-align: left}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.options a.option {border-top: 1px solid #444; display: block; font-size: 11px; line-height: 11px; padding: 8px 0 9px 39px; text-align: left; color: #fff}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.options a.book {background: transparent url('/images/4gen/view_book_P_35x25.png?1301083584') no-repeat scroll -3px 2px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.options a.book:hover {background: transparent url('/images/4gen/view_book_P_35x25.png?1301083584') no-repeat scroll -3px -24px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.options a.scroll {background: transparent url('/images/4gen/view_scroll_P_35x25.png?1301083584') no-repeat scroll -3px 2px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.options a.scroll:hover {background: transparent url('/images/4gen/view_scroll_P_35x25.png?1301083584') no-repeat scroll -3px -24px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.options a.slideshow {background: transparent url('/images/4gen/view_slideshow_P_35x25.png?1301083584') no-repeat scroll -3px 2px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.options a.slideshow:hover {background: transparent url('/images/4gen/view_slideshow_P_35x25.png?1301083584') no-repeat scroll -3px -24px}
+.autogen_class_views_documents_fourgen_toolbar div#toolbar div#viewmode_popup div.tail {height: 10px; background: url('/images/4gen/bubbles/triangle.png?1301083584') no-repeat 19px 0}
+
+
+/* app/views/documents/fourgen/_toolbar.rb:7 @ 1301083519 */
+.autogen_class_views_documents_fourgen_toolbar .content_wrapper {position: relative}
+.autogen_class_views_documents_fourgen_toolbar .content_wrapper .b_tl {background-image: url(/images/4gen/bubbles/tl.png?1301083584); background-position: top left; background-repeat: no-repeat; position: absolute; height: 5px; width: 5px; top: -5px; left: -5px}
+.autogen_class_views_documents_fourgen_toolbar .content_wrapper .b_tr {background-image: url(/images/4gen/bubbles/tr.png?1301083584); background-position: top right; background-repeat: no-repeat; position: absolute; height: 5px; width: 10px; top: -5px; right: -10px}
+.autogen_class_views_documents_fourgen_toolbar .content_wrapper .b_br {background-image: url(/images/4gen/bubbles/br.png?1301083584); background-position: bottom right; background-repeat: no-repeat; position: absolute; height: 10px; width: 10px; bottom: -10px; right: -10px}
+.autogen_class_views_documents_fourgen_toolbar .content_wrapper .b_bl {background-image: url(/images/4gen/bubbles/bl.png?1301083584); background-position: bottom left; background-repeat: no-repeat; position: absolute; height: 10px; width: 5px; bottom: -10px; left: -5px}
+.autogen_class_views_documents_fourgen_toolbar .content_wrapper .b_t {background-image: url(/images/4gen/bubbles/t.png?1301083584); background-repeat: repeat-x; position: absolute; height: 5px; top: -5px; left: 0px; right: 0px}
+.autogen_class_views_documents_fourgen_toolbar .content_wrapper .b_r {background-image: url(/images/4gen/bubbles/r.png?1301083584); background-repeat: repeat-y; position: absolute; width: 10px; right: -10px; top: 0px; bottom: 0px}
+.autogen_class_views_documents_fourgen_toolbar .content_wrapper .b_b {background-image: url(/images/4gen/bubbles/b.png?1301083584); background-repeat: repeat-x; position: absolute; height: 10px; bottom: -10px; left: 0px; right: 0px}
+.autogen_class_views_documents_fourgen_toolbar .content_wrapper .b_l {background-image: url(/images/4gen/bubbles/l.png?1301083584); background-repeat: repeat-y; position: absolute; width: 5px; left: -5px; top: 0px; bottom: 0px}
+
+
+/* app/views/documents/fourgen/_share_form.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_share_form .share_form {text-align: left}
+.autogen_class_views_documents_fourgen_share_form .share_form .share_button_container {background-image: none; border-bottom: 1px solid #666; padding-left: 0}
+.autogen_class_views_documents_fourgen_share_form .share_form .share_button_container .email_share {margin-right: 0}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed {padding-left: 0; background-color: #000000}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed label {color: #fff}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed .share_row {background-color: #000000; border-bottom: 0}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed .link_input, .autogen_class_views_documents_fourgen_share_form .share_form .link_embed .embed_code {padding: 4px 0}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed .embed_drawer label.embed_label {background-image: url('/images/4gen/expander_wht_9x15.gif?1301083584'); line-height: 10px}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed .embed_drawer.expanded label.embed_label {background-position: 0 -9px}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed .embed_drawer.expanded .embed_code_input {width: 218px}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed .embed_drawer.expanded #embed_code.embed_code_input {width: 218px}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed .embed_drawer.expanded .embed_params {margin-right: 4px}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed .embed_params li {border-bottom: 1px solid #666; padding: 3px 0}
+.autogen_class_views_documents_fourgen_share_form .share_form .link_embed .copy_button {margin-right: 1px}
+.autogen_class_views_documents_fourgen_share_form .share_form h3 {color: #fff; margin: 0; font-size: 13px; line-height: 20px; padding-bottom: 5px; border-bottom: 1px solid #444}
+
+
+/* app/views/documents/fourgen/_metadata_pro.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_metadata_pro .summary {margin-top: 5px; color: #666666; font-size: 11px; line-height: 14px; font-family: Arial; padding-left: 12px}
+.autogen_class_views_documents_fourgen_metadata_pro .summary#summary_hidden {background: url('/images/buttons/arrow_side_9x9.png?1301083584') no-repeat 0 3px}
+.autogen_class_views_documents_fourgen_metadata_pro .summary#summary_show {background: url('/images/buttons/arrow_down_9x9.png?1301083584') no-repeat 0 3px}
+.autogen_class_views_documents_fourgen_metadata_pro .summary h1#pro_doc_name {color: #666666; font-size: 18px; font-weight: normal; font-style: italic; font-family: Georgia; padding-left: 12px}
+.autogen_class_views_documents_fourgen_metadata_pro .summary a:hover {text-decoration: none}
+.autogen_class_views_documents_fourgen_metadata_pro div#pro_user {margin-top: 10px; margin-bottom: 10px; font-size: 12px; display: block}
+.autogen_class_views_documents_fourgen_metadata_pro div#pro_user div.tinier_thumbnail.thumbnail_outer {display: inline; float: left}
+.autogen_class_views_documents_fourgen_metadata_pro div#pro_user .tinier_thumbnail a {border: 1px solid #CCC; padding: 2px}
+.autogen_class_views_documents_fourgen_metadata_pro div#pro_user a.username {display: inline; margin-top: 5px; margin-left: 5px; float: left}
+.autogen_class_views_documents_fourgen_metadata_pro .doc_desc {padding-bottom: 5px}
+.autogen_class_views_documents_fourgen_metadata_pro .rating_text {float: left; margin-right: 5px; line-height: 18px}
+.autogen_class_views_documents_fourgen_metadata_pro div.owner_controls {clear: left; margin-bottom: 10px}
+.autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .ctr_button {text-indent: -9999px; border: 0 none; display: block; float: left; height: 27px}
+.autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .edit_button {width: 91px; background: url('/images/readpage/docpage-controls.png?1301083584') no-repeat scroll -600px 0}
+.autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .edit_button:hover {background-position: -600px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .edit_button {width: 82px; background: url('/images/locales/es/readpage/docpage-controls.png?1301083584') no-repeat scroll -600px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .edit_button:hover {background-position: -600px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .edit_button {width: 82px; background: url('/images/locales/pt-br/readpage/docpage-controls.png?1301083584') no-repeat scroll -600px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .edit_button:hover {background-position: -600px -27px}
+.autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .upload_revision_button {width: 114px; background: url('/images/readpage/docpage-controls.png?1301083584') no-repeat scroll -691px 0}
+.autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .upload_revision_button:hover {background-position: -691px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .upload_revision_button {width: 99px; background: url('/images/locales/es/readpage/docpage-controls.png?1301083584') no-repeat scroll -682px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .upload_revision_button:hover {background-position: -682px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .upload_revision_button {width: 99px; background: url('/images/locales/pt-br/readpage/docpage-controls.png?1301083584') no-repeat scroll -682px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .upload_revision_button:hover {background-position: -682px -27px}
+.autogen_class_views_documents_fourgen_metadata_pro div.owner_controls .privacy_button {width: 95px}
+.autogen_class_views_documents_fourgen_metadata_pro .public .privacy_button {background: url('/images/readpage/docpage-controls.png?1301083584') no-repeat scroll -900px 0}
+.autogen_class_views_documents_fourgen_metadata_pro .public .privacy_button:hover {background-position: -900px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata_pro .public .privacy_button {width: 120px; background: url('/images/locales/es/readpage/docpage-controls.png?1301083584') no-repeat scroll -901px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata_pro .public .privacy_button:hover {background-position: -901px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata_pro .public .privacy_button {width: 120px; background: url('/images/locales/pt-br/readpage/docpage-controls.png?1301083584') no-repeat scroll -901px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata_pro .public .privacy_button:hover {background-position: -901px -27px}
+.autogen_class_views_documents_fourgen_metadata_pro .private .privacy_button {background: url('/images/readpage/docpage-controls.png?1301083584') no-repeat scroll -805px 0}
+.autogen_class_views_documents_fourgen_metadata_pro .private .privacy_button:hover {background-position: -805px -27px}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata_pro .private .privacy_button {width: 118px; background: url('/images/locales/es/readpage/docpage-controls.png?1301083584') no-repeat scroll -782px 0}
+body.smartling-es .autogen_class_views_documents_fourgen_metadata_pro .private .privacy_button:hover {background-position: -782px -27px}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata_pro .private .privacy_button {width: 118px; background: url('/images/locales/pt-br/readpage/docpage-controls.png?1301083584') no-repeat scroll -782px 0}
+body.smartling-pt .autogen_class_views_documents_fourgen_metadata_pro .private .privacy_button:hover {background-position: -782px -27px}
+.autogen_class_views_documents_fourgen_metadata_pro .summary a.summary_link img {float: left}
+.autogen_class_views_documents_fourgen_metadata_pro .public .privacy_indicator {display: none}
+.autogen_class_views_documents_fourgen_metadata_pro .private div.owner_controls .make_private_button {display: none}
+.autogen_class_views_documents_fourgen_metadata_pro .public div.owner_controls .make_public_button {display: none}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container {margin-top: 10px; height: 70px; background: transparent url('/images/stats/stats_rpt_1x68.png?1301083584') repeat-x}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container .left {float: left; height: 70px; width: 12px; background: transparent url('/images/stats/stats_left_12x68.png?1301083584') no-repeat}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container .right {float: right; height: 70px; width: 12px; background: transparent url('/images/stats/stats_right_12x68.png?1301083584') no-repeat}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul {display: block; float: left; height: 70px; width: 270px}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li {display: block; float: left; width: 75px; height: 55px; text-align: center; overflow: hidden; padding-top: 14px}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li a:hover {text-decoration: none}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li .label {margin: 0; color: #999; font-size: 11px; line-height: 18px; font-weight: normal}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li .label a {color: #999}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li .stat {margin: 0; color: #666; font-size: 14px; font-weight: bold}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li .stat a {color: #666; font-weight: bold}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li.uploaded {width: 100px}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li.sep {width: 8px; background: transparent url('/images/stats/stats_sep_8x68.png?1301083584') no-repeat}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li:hover .stat a {color: #000}
+.autogen_class_views_documents_fourgen_metadata_pro .stats_container ul li:hover .label a {color: #666}
+
+
+/* app/views/documents/fourgen/_tooltip.css @ 1301083519 */
+.tooltip {-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background-color: #4D4D4D; border-width: 1px; border-style: solid; border-color: #2C2C2C; opacity: 0.9; position: absolute; height: 18px; line-height: 13px}
+.tooltip .inner {font-size: 11px; font-weight: normal; color: #FFFFFF; padding-bottom: 3px; padding-left: 4px; padding-right: 4px; padding-top: 3px; display: block; white-space: nowrap; line-height: 13px}
+.tooltip .tooltip_tail {height: 5px; background: url('/images/4gen/triangle_trans_9x5.png?1301083584') no-repeat top center; margin-top: -1px}
+
+
+/* app/views/documents/fourgen/_readcasters.css @ 1301083519 */
+.autogen_class_views_documents_fourgen_readcasters {width: 300px; white-space: normal}
+.autogen_class_views_documents_fourgen_readcasters .pile {margin-bottom: 15px}
+.autogen_class_views_documents_fourgen_readcasters .pile .readpage_facepile_thumbnail {float: left; margin-bottom: 2px; line-height: 10px}
+.autogen_class_views_documents_fourgen_readcasters .pile .readpage_facepile_thumbnail a {display: inline-block; padding: 2px; width: 28px; height: 28px; overflow: hidden; border: 1px solid #ccc; margin-right: 2px}

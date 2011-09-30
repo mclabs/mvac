@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/EpiHandy/!svn/ver/3280/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/workflows
+END
+SpecificationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/workflows/SpecificationServiceImpl.java
+END
+SpecStudyMapServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/EpiHandy/!svn/ver/3377/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/workflows/SpecStudyMapServiceImpl.java
+END
+WorkItemsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/EpiHandy/!svn/ver/2708/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/workflows/WorkItemsServiceImpl.java
+END
+ServletConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/EpiHandy/!svn/ver/3071/branches/oxd-wf-prototype/openxdata/admin/src/main/java/org/openxdata/server/admin/server/workflows/ServletConfig.java
+END

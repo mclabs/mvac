@@ -1,0 +1,401 @@
+====================================
+Types potentially sent from browser:
+====================================
+
+Reachable types computed on: Thu Sep 22 02:52:36 EAT 2011
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException
+   Serialization status
+      Instantiable
+   Path
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.Exception
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.RuntimeException
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.String
+   Serialization status
+      Instantiable
+   Path
+      Started from 'java.lang.String'
+
+java.lang.Throwable
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Throwable' is reachable as a supertype of type 'class java.lang.Exception'
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+===================================
+Types potentially sent from server:
+===================================
+
+Reachable types computed on: Thu Sep 22 02:52:36 EAT 2011
+E
+   Serialization status
+      Not serializable
+   Path
+      'E' is reachable from field 'exposeElement' of type 'java.util.Vector<E>'
+      'java.util.Vector<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+E
+   Serialization status
+      Not serializable
+   Path
+      'E' is reachable from field 'exposeElement' of type 'java.util.LinkedList<E>'
+      'java.util.LinkedList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+E
+   Serialization status
+      Not serializable
+   Path
+      'E' is reachable from field 'exposeElement' of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+E[]
+   Serialization status
+      Not serializable
+   Path
+      'E[]' is reachable from field 'array' of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+K
+   Serialization status
+      Not serializable
+   Path
+      'K' is reachable from field 'exposeKey' of type 'java.util.HashMap<K, V>'
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable as a subtype of type 'class java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>'
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable from field 'mParams' of type 'org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable from field 'decomposition' of type 'org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable from type argument 0 of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+V
+   Serialization status
+      Not serializable
+   Path
+      'V' is reachable from field 'exposeValue' of type 'java.util.HashMap<K, V>'
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable as a subtype of type 'class java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>'
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable from field 'mParams' of type 'org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable from field 'decomposition' of type 'org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable from type argument 0 of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException
+   Serialization status
+      Instantiable
+   Path
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+int
+   Serialization status
+      Not serializable
+   Path
+      'int' is reachable from field 'size' of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.lang.Exception
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.RuntimeException
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.String
+   Serialization status
+      Instantiable
+   Path
+      Started from 'java.lang.String'
+
+java.lang.Throwable
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Throwable' is reachable as a supertype of type 'class java.lang.Exception'
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.util.ArrayList<org.openxdata.modules.workflows.model.shared.ODecomposition>
+   Serialization status
+      Instantiable
+   Path
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.ODecomposition>' is reachable from field 'decompositions' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>
+   Serialization status
+      Instantiable
+   Path
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>
+   Serialization status
+      Instantiable
+   Path
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>
+   Serialization status
+      Instantiable
+   Path
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>
+   Serialization status
+      Instantiable
+   Path
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable from field 'mParams' of type 'org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable from field 'decomposition' of type 'org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable from type argument 0 of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.LinkedHashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>
+   Serialization status
+      Instantiable
+   Path
+      'java.util.LinkedHashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable as a subtype of type 'class java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>'
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable from field 'mParams' of type 'org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable from field 'decomposition' of type 'org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable from type argument 0 of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.LinkedList<org.openxdata.modules.workflows.model.shared.OSpecification>
+   Serialization status
+      Instantiable
+   Path
+      'java.util.LinkedList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.LinkedList.Node<E>
+   Serialization status
+      Not serializable
+   Path
+      'java.util.LinkedList.Node<E>' is reachable from field 'header' of type 'java.util.LinkedList<E>'
+      'java.util.LinkedList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>
+   Serialization status
+      Not serializable
+   Path
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.Stack<org.openxdata.modules.workflows.model.shared.OSpecification>
+   Serialization status
+      Instantiable
+   Path
+      'java.util.Stack<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+java.util.Vector<org.openxdata.modules.workflows.model.shared.OSpecification>
+   Serialization status
+      Instantiable
+   Path
+      'java.util.Vector<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+org.openxdata.modules.workflows.model.shared.ODecomposition
+   Serialization status
+      Instantiable
+   Path
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable from field 'decomposition' of type 'org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable from type argument 0 of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+org.openxdata.modules.workflows.model.shared.OParameter
+   Serialization status
+      Instantiable
+   Path
+      'org.openxdata.modules.workflows.model.shared.OParameter' is reachable from type argument 1 of type 'java.util.HashMap<K, V>'
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable as a subtype of type 'class java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>'
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable from field 'mParams' of type 'org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable from field 'decomposition' of type 'org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable from type argument 0 of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+org.openxdata.modules.workflows.model.shared.OParameter.Flow
+   Serialization status
+      Instantiable
+   Path
+      'org.openxdata.modules.workflows.model.shared.OParameter.Flow' is reachable from field 'flow' of type 'org.openxdata.modules.workflows.model.shared.OParameter'
+      'org.openxdata.modules.workflows.model.shared.OParameter' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OParameter'
+      'org.openxdata.modules.workflows.model.shared.OParameter' is reachable from type argument 1 of type 'java.util.HashMap<K, V>'
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable as a subtype of type 'class java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>'
+      'java.util.HashMap<java.lang.String, org.openxdata.modules.workflows.model.shared.OParameter>' is reachable from field 'mParams' of type 'org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.ODecomposition'
+      'org.openxdata.modules.workflows.model.shared.ODecomposition' is reachable from field 'decomposition' of type 'org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OTask'
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable from type argument 0 of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+org.openxdata.modules.workflows.model.shared.OSpecification
+   Serialization status
+      Instantiable
+   Path
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+org.openxdata.modules.workflows.model.shared.OSpecification[]
+   Serialization status
+      Instantiable
+   Path
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+org.openxdata.modules.workflows.model.shared.OTask
+   Serialization status
+      Instantiable
+   Path
+      'org.openxdata.modules.workflows.model.shared.OTask' is reachable from type argument 0 of type 'java.util.ArrayList<E>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable as a subtype of type 'class java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>'
+      'java.util.ArrayList<org.openxdata.modules.workflows.model.shared.OTask>' is reachable from field 'tasks' of type 'org.openxdata.modules.workflows.model.shared.OSpecification'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable as a subtype of type 'class org.openxdata.modules.workflows.model.shared.OSpecification'
+      Type 'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from array type 'org.openxdata.modules.workflows.model.shared.OSpecification[]'
+      'org.openxdata.modules.workflows.model.shared.OSpecification' is reachable from type argument 0 of type 'java.util.Arrays.ArrayList<E>'
+      'java.util.Arrays.ArrayList<org.openxdata.modules.workflows.model.shared.OSpecification>' is reachable as a subtype of type 'interface java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+      Started from 'java.util.List<org.openxdata.modules.workflows.model.shared.OSpecification>'
+
+org.openxdata.server.admin.model.exception.ContextException
+   Serialization status
+      Instantiable
+   Path
+      'org.openxdata.server.admin.model.exception.ContextException' is reachable as a subtype of type 'class org.openxdata.server.admin.model.exception.OpenXDataException'
+      Started from 'org.openxdata.server.admin.model.exception.OpenXDataException'
+
+org.openxdata.server.admin.model.exception.OpenXDataException
+   Serialization status
+      Instantiable
+   Path
+      Started from 'org.openxdata.server.admin.model.exception.OpenXDataException'
+
+org.openxdata.server.admin.model.exception.OpenXDataParsingException
+   Serialization status
+      Instantiable
+   Path
+      'org.openxdata.server.admin.model.exception.OpenXDataParsingException' is reachable as a subtype of type 'class org.openxdata.server.admin.model.exception.OpenXDataException'
+      Started from 'org.openxdata.server.admin.model.exception.OpenXDataException'
+
+org.openxdata.server.admin.model.exception.OpenXDataValidationException
+   Serialization status
+      Instantiable
+   Path
+      'org.openxdata.server.admin.model.exception.OpenXDataValidationException' is reachable as a subtype of type 'class org.openxdata.server.admin.model.exception.OpenXDataException'
+      Started from 'org.openxdata.server.admin.model.exception.OpenXDataException'
+
+org.openxdata.server.admin.model.exception.UserNotFoundException
+   Serialization status
+      Instantiable
+   Path
+      'org.openxdata.server.admin.model.exception.UserNotFoundException' is reachable as a subtype of type 'class org.openxdata.server.admin.model.exception.OpenXDataException'
+      Started from 'org.openxdata.server.admin.model.exception.OpenXDataException'
+
